@@ -38,17 +38,29 @@
 
 ## Tech
 
-- Sphinx worked well as a generator for the old handbook. Probably we can use it again. I might rather go with markdown than with RSt this time, but this is up for discussion. I'm also OK with looking around for another tool that can do PDF layout.
+- [Sphinx](https://www.sphinx-doc.org/en/master/) worked well as a generator for the old handbook. Probably we can use it again. I might rather go with markdown than with RSt this time, but this is up for discussion. I'm also OK with looking around for another tool that can do PDF layout.
 - We don't have a printing service selected yet, and should do it soon.
 - The print format can be unusual, like A4. Ideas welcome.
+- We organize on [here](https://chat.mnt.re/mnt/channels/town-square).
+
+## Assets
+
+- Logo
+- Type
+- Graphics
 
 ## Style
 
 - Inspiration: classic computer manuals, like ZX Spectrum, QL, Commodore 64, Amiga 500. But also LISP machines, classic Macintosh. Classic Sony, Nintendo?
 - International Typographic Style https://en.wikipedia.org/wiki/International_Typographic_Style
 - TODO: Moodboard
+- TODO: Grid
 
-## See also
+## Resources
 
+- Corporate design: http://dump.mntmn.com/mnt-corporate-design-20200929.pdf
+- Exploded view: https://www.behance.net/gallery/96804715/MNT-Reform
+- Dense manual for ZZ9000: https://mntre.com/media/ZZ9000_info_md/zz9000-manual-r2.pdf
+- Sinclair Programming: https://k1.spdns.de/Vintage/Sinclair/80/Sinclair%20ZX81/ZX81%20Basic%20Programming.pdf
 - https://mntre.com/reform2-handbook/system.html
 - https://mntre.com/reform2-ibom/reform2-motherboard/ibom.html
