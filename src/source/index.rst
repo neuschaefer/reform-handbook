@@ -16,6 +16,7 @@ Guide
    :maxdepth: 2
    :caption: Contents:
 
+   cheatsheet
    license
    help
 

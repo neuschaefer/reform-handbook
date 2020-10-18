@@ -16,6 +16,7 @@ Install [Sphinx(https://docs.readthedocs.io/en/stable/intro/getting-started-with
 ```
 sudo pacman -S python
 sudo pacman -S python-pip
+sudo pacman -S texlive-core # latex support
 sudo pip install sphinx
 sudo pip install recommonmark # to parse md
 ```
@@ -32,6 +33,5 @@ firefox build/html/index.html
 
 ```
 cd src
-make latex
-
+make latexpdf
 ```
