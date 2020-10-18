@@ -11,6 +11,27 @@ An absolute and universal form of graphic expression through objective and imper
 
 ## Build
 
+Install [Sphinx(https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html).
+
 ```
->
+sudo pacman -S python
+sudo pacman -S python-pip
+sudo pip install sphinx
+sudo pip install recommonmark # to parse md
+```
+
+### Build HTML version
+
+```
+cd src
+make html
+firefox build/html/index.html
+```
+
+### Build LaTex version
+
+```
+cd src
+make latex
+
 ```
