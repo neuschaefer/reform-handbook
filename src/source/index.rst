@@ -15,11 +15,20 @@ Guide
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-
-   cheatsheet
+   
+   preface
+   contactandreferences
+   safety
+   quickstart
+   motherboard
+   case
+   trackball
+   power
+   boot
    license
    help
-
+   credits
+   cheatsheet
 
 
 Indices and tables
