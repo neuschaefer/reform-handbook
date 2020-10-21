@@ -1,0 +1,2 @@
+body { background:#fff !important }
+h1.logo > a { border: 0;background-image: url(../../../source/_static/logo.svg);display: block;background-size: contain;background-repeat: no-repeat;text-indent: -9999px;overflow: hidden;margin-bottom: 30px;}

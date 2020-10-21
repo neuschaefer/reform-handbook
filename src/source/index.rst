@@ -55,8 +55,6 @@ Guide
    trackball
    power
    boot
-   license
-   help
    credits
    cheatsheet
 
