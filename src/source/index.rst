@@ -4,13 +4,14 @@ Reform Handbook
 Mobile personal computers are becoming more and more opaque, vendor controlled, and hard to repair. Modern laptops have secret schematics, glued-in batteries, and components not under user control, like the Intel Management Engine or the Apple T2 security chip. Many people decide to tape over the built-in cameras of their laptops because they don’t know if they can trust the device or the software running on it.
 
 Reform goes in the opposite direction. It is designed to be as open and transparent as possible, and to support a free and open source software stack from the ground up. It invites you to take a look under the hood, customize the documented electronics, and even repair it youself if you like. The Reform laptop has no built-in surveillance technologies, cameras, or microphones, so you can be confident that it will never spy on you. Built not around Intel technology, but NXP i.MX8M with 64-bit ARM Cortex-A53 cores, Reform has a much simpler architecture than conventional laptops. This simplicity also makes for a more pleasant developer experience.
-Use Cases
 
 A computer that is really yours
 ----
 
 Reform is designed to stay with you for a long time. From open hardware input devices to user-swappable 18650 battery cells, we designed it to be the most repairable and best documented portable computer. We selected its components to strike a good balance between open source and usability. Reform is not bound to any cloud services, contracts, user agreements, or tracking. You can extend it and customize it as you like.
+
 A more private computer
+----
 
 Reform doesn’t have any microphones or cameras built in, and Wi-Fi is provided by a removable PCIe card. You can even install your operating system or sensitive work data on an SD card that you can simply eject before travelling. Full-disk encryption is easy to set up with LUKS, and the system has no "management engine" or other remote control features that could be used to attack you.
 
