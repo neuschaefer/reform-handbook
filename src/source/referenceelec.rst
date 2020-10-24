@@ -18,55 +18,26 @@ The Reform motherboard is open source hardware designed with the free KiCAD EDA.
 Reform Motherboard KiCAD Sources
 Reform System Controller Firmware Sources
 
-
-.. image:: reform-motherboard-markupb.pdf
-   :target: reform-motherboard-markup.pdf
-            
 Schematics
 ----------
-
-.. image:: reform-motherboard-page-1b.pdf
-   :target: reform-motherboard-page-1.pdf
 
 Power
 -----
 
-.. image:: reform-motherboard-page-2b.pdf
-   :target: reform-motherboard-page-2.pdf
-
 Storage
 -------
-
-.. image:: reform-motherboard-page-3b.pdf
-   :target: reform-motherboard-page-3.pdf
 
 Display
 -------
 
-.. image:: reform-motherboard-page-6b.pdf
-   :target: reform-motherboard-page-6.pdf
-           
 PCIe
 ----
 
-.. image:: reform-motherboard-page-4b.pdf
-   :target: reform-motherboard-page-4.pdf
+Ethernet
+--------
 
-Ethernet, USB
--------------
+USB
+---
 
-.. image:: reform-motherboard-page-5b.pdf
-   :target: reform-motherboard-page-5.pdf
-            
 Audio
 -----
-
-.. image:: reform-motherboard-page-7b.pdf
-   :target: reform-motherboard-page-7.pdf
-
-
-The Battery Controller
-=======================
-
-Coupled to the power system, an NXP LPC11U24 Cortex-M0 MCU controls an analog monitor chip for the eight battery cells as well as the charger. It is connected to the SoM via SPI, and has GPIO lines to the main power rail switchers in the system. It has a UART (serial port) that the keyboard can talk to directly for issuing power on/off commands and battery status queries.
-

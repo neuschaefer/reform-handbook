@@ -4,39 +4,37 @@ The Trackball
 .. image:: trackball.pdf
    :target: trackball.pdf
 
-The trackball uses the same microcontroller and LUFA framework as the keyboard_, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the PMW3360DM-T2QU optical sensor that is connected via SPI.
+The trackball uses the same microcontroller and LUFA framework as the keyboard_, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the PAT9125EL-TKIT optical sensor that is connected via I2C.
 
-Wheel Mode, Middle Click
-------------------------
+The trackball has five buttons. The top two buttons function as left and right mouse buttons, the lower center button maps to the middle mouse button.
 
-The trackball firmware has a special "wheel mode" that allows you to use it like a mouse wheel for scrolling or to perform a middle mouse click.
-
-You can enter wheel mode by pressing the left button and then pressing the right button while keeping the left button pressed. Release both buttons. Rolling the ball up and down will send wheel up/down commands. Clicking the right button will perform a middle click. Clicking the left button will exit wheel mode.
+Holding either the lower left or right buttons activates wheel mode, where vertical movement of the ball is translated into vertical mouse wheel events.
 
 Firmware
 --------
 
-You can find the Reform trackball firmware_ in the source folder "reform-trackball-fw".
+You can find the Reform trackball firmware_ in the source folder "reform2-trackball-fw".
 
 The trackball firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackball, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
 
 .. code-block:: none
-                
-   make
-   
-As with the keyboard, the trackball's MCU has to be in "Atmega DFU bootloader" USB mode. This is achieved by shorting the pins HWB and GND with a jumper and then briefly shorting the RESET pin to ground. The pins are marked on the silkscreen of the main trackball PCB.
 
-After a reset with HWB pulled to ground, The trackball will reappear as a Atmel DFU bootloader USB device. You can then upload your new firmware by executing:
+   make
+
+Same as the keyboard, the trackball's MCU has to be in "Atmega DFU bootloader" USB mode.
+
+Toggle the programming DIP switch SW7 to "ON" and press the reset button SW6.
+
+The trackball will reappear as a Atmel DFU bootloader USB device. You can then upload your new firmware by executing:
 
 .. code-block:: none
-                
+
    ./flash.sh
 
-.. _firmware: https://github.com/mntmn/reform/reform-trackball-fw
+.. _firmware: https://source.mntmn.com/MNT/reform/reform2-trackball-fw
 .. _keyboard: ../keyboard/index.html
 
 Schematics
 ----------
 
-.. image:: reform-trackballb.pdf
-   :target: reform-trackbal
+TODO
