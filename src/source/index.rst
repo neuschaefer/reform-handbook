@@ -51,10 +51,8 @@ Guide
    safety
    quickstart
    tutorial
-   motherboard
-   case
-   trackball
-   power
+   referenceelec
+   referencemech
    boot
    credits
    cheatsheet
