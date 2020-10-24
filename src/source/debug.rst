@@ -1,36 +1,29 @@
-Debugging
-=========
+Troubleshooting
+===============
 
 Power
 -----
 
-The TinyRex module has a red and a green LED. Both have to light up to signal good power.
+To troubleshoot power, disconnect the internal battery and all internal and external peripherals, and connect the wall power adapter.
 
-To troubleshoot power, disconnect the internal battery and all internal and external peripherals, connect the 5V wall adapter. If you want to unplug the TinyRex module, you should take the motherboard out of the case first.
+The i.MX8M processor module has a green LED. It has to light up to signal good power. The processor module only needs power on the main 5V rail to work, but with only 5V power it cannot talk to the SD card (which requires both 3V3 and 1V8 rails to work). Thus, you have to toggle the small DIP switch on the i.MX8M module to boot the from eMMC flash.
 
-Turn the power switch on. Get a multimeter and find the following voltages in the system:
+TODO: graph of power tree?
 
-- **5V** The main input rail. Can be found on pin 1 of J25 or J29.
-- **3.3V** The big regulator U4 (AP1501A-33) turns 5V into 3.3V. Check test point TP3 next to the big coil L2.
-- **2.5V** Regulated by U11 (LP3962EMP-2.5). Check TP5 next to it.
-- **1.5V** Regulated by U13. Check TP12. Needed for PCIe.
-- **1.1V** Regulated by U5 near the USB hub U9. Check TP6.
+Reform can accept ~7V-32V of DC power on barrel jack J1. The nominal input voltage is 24V. If you can't measure the input voltage on R49, check if fuse F1 is blown.
 
-If voltages are way off, there can be a short somewhere on the board which usually generates heat.
-  
+Either input or battery power will be output by the buck-boost regulator/charger LTC4020 to the main system regulators. U14 is the always-on 3V3 regulator that powers critical chips like the System Controller (U18). Confirm input voltage on R1. Confirm LPC_VCC power with 3.3V on J22 pin 15. System Controller (TODO link to its chapter) has to have working firmware. If it is not responding to Keyboard commands, use a UART adapter on SYSCTL header J23 to talk to the System Controller directly (57600 baud 8N1).
+
 Serial Console
 --------------
 
-The motherboard connector labelled CONSOLE is a serial port (UART) to which U-Boot and the Linux kernel output diagnostic information on startup. The baud rate is 115200.
+The motherboard connector labelled SER1 is a serial port (UART) to which U-Boot and the Linux kernel output diagnostic information on startup. The baud rate is 115200.
 
-Wire up a generic USB-to-UART adapter to the following pins of J25 (pin 1 is next to the J25 label):
+Wire up a generic USB-to-UART adapter to the following pins of connector J18:
 
-- **1** 5V, don't connect
-- **2** UART1_TXD, connect to RX of your adapter
-- **3** UART1_RXD, connect to TX of your adapter
-- **4** UART1_RTS, don't connect
-- **5** UART1_CTS, don't connect
-- **6** GND, connect to GND of your adapter
+- **1** UART1_TXD, connect to RX of your adapter
+- **2** UART1_RXD, connect to TX of your adapter
+- **3** GND, connect to GND of your adapter
 
 Then, use a terminal program such as screen on your host computer:
 
