@@ -1,6 +1,12 @@
 Tutorial
 ====
 
+This section describes how to create programs using audio, video, and 
+keyboard/mouse inputs (for example, video games).
+
+For this we'll use Interscheme - MNT's all-in-one utility for building 
+such programs.
+
 Setup
 ----
 
@@ -8,7 +14,7 @@ Open the Interscheme scripting file:
 
 .. code-block:: none
 
- micro ~/interscheme/main.scm
+ micro ~/interscheme/init.scm
 
 This file may already be populated with code, demonstrating an 
 Interscheme program that displays a white box on the upper-left hand 
@@ -20,7 +26,7 @@ Run the code::
  ./interscheme main.scm
 
 At this point you should see the default white box (or whatever you 
-may have programmed in ``main.scm``)
+may have programmed in ``init.scm``)
 
 Draw a pixel
 ----
