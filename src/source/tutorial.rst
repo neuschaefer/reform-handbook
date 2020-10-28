@@ -10,9 +10,17 @@ Open the Interscheme scripting file:
 
  micro ~/interscheme/init.scm
 
+This file may already be populated with code, demonstrating an 
+Interscheme program that displays a white box on the upper-left hand 
+corner of the window. The ``(main)`` procedure does the actual drawing 
+and is always being updated.
+
 Run the code::
 
  ./interscheme
+
+At this point you should see the default white box (or whatever you 
+may have programmed in ``init.scm``)
 
 Draw a pixel
 ----
