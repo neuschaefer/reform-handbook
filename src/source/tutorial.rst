@@ -8,7 +8,7 @@ Open the Interscheme scripting file:
 
 .. code-block:: none
 
- micro ~/interscheme/init.scm
+ micro ~/interscheme/main.scm
 
 This file may already be populated with code, demonstrating an 
 Interscheme program that displays a white box on the upper-left hand 
@@ -17,10 +17,10 @@ and is always being updated.
 
 Run the code::
 
- ./interscheme
+ ./interscheme main.scm
 
 At this point you should see the default white box (or whatever you 
-may have programmed in ``init.scm``)
+may have programmed in ``main.scm``)
 
 Draw a pixel
 ----
