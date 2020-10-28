@@ -4,13 +4,13 @@ Tutorial
 Setup
 ----
 
-To start the tutorial::
+Open the Interscheme scripting file::
 
- micro ~/interscheme/tutorial
+ micro ~/interscheme/init.scm
 
 Run the code::
 
- interscheme main.scm
+ ./interscheme
 
 Draw a pixel
 ----
