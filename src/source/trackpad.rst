@@ -33,6 +33,7 @@ The trackpad will reappear as a Atmel DFU bootloader USB device. You can then up
 .. _firmware: https://source.mntmn.com/MNT/reform/reform2-trackpad-fw
 .. _keyboard: ../keyboard/index.html
 .. _trackpad: ../trackpad/index.html
+.. _trackball: ../trackball/index.html
 
 Schematics
 ----------
