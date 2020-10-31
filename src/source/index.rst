@@ -10,6 +10,7 @@ Reform Handbook
    safety
    quickstart
    tutorial
+   software
    referenceelec
    referencemech
    boot
