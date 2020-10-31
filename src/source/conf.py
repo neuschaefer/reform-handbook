@@ -38,6 +38,12 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
+latex_elements = {
+    'preamble': r'\usepackage{reformstyle}',
+}
+
+latex_additional_files = ["reformstyle.sty"]
+
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
