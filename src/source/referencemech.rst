@@ -6,11 +6,14 @@ The Case
 
 The case consists of the following 5 parts. All parts except the bottom plate are milled from 6061 aluminum, sand blasted and anodized.
 
-**Screen Back:** housing the display and upper half of hinges
-**Screen Front:** housing speakers and providing display bezel
-**Main Box:** to which all PCBs (printed circuit boards) are attached via M2 screws: The keyboard from the top and motherboard, trackball/trackpad, and battery boards from the bottom. The lower half of the hinges and the system controller OLED PCB are mounted from the top as well.
-**Bezel:** a thin part that provides a bezel for the keyboard and the system controller OLED
-**Bottom Plate:** the bottom lid that is either milled from clear acrylic or aluminum
+.. image:: _static/speakers.jpg
+  :alt: Speaker Closers
+
+1. **Screen Back:** housing the display and upper half of hinges
+2. **Screen Front:** housing speakers and providing display bezel
+3. **Main Box:** to which all PCBs (printed circuit boards) are attached via M2 screws: The keyboard from the top and motherboard, trackball/trackpad, and battery boards from the bottom. The lower half of the hinges and the system controller OLED PCB are mounted from the top as well.
+4. **Bezel:** a thin part that provides a bezel for the keyboard and the system controller OLED
+5. **Bottom Plate:** the bottom lid that is either milled from clear acrylic or aluminum
 
 For easy (dis)assembly, Reform uses only M2 screws with Phillips-head everywhere (with one exception: M4 on the hinges).
 
