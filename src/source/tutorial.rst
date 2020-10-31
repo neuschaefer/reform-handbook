@@ -16,17 +16,16 @@ Open the Interscheme scripting file:
 
  micro ~/interscheme/init.scm
 
-This file may already be populated with code, demonstrating an 
-Interscheme program that displays a white box on the upper-left hand 
-corner of the window. The ``(main)`` procedure does the actual drawing 
-and is always being updated.
+This file may already be populated with code, demonstrating the
+different utilities Interscheme provides.  The ``(main)`` procedure
+does the actual drawing and is updated 60 times per second.
 
 Run the code::
 
- ./interscheme main.scm
+ ./interscheme init.scm
 
-At this point you should see the default white box (or whatever you 
-may have programmed in ``init.scm``)
+At this point you should see the default example program (or whatever
+you may have programmed in ``init.scm``)
 
 Draw a pixel
 ------------
@@ -35,7 +34,7 @@ To draw a red pixel at ``30,30``:
 
 .. code-block:: none
 
- (pixel 30 30 #f00)
+ (pixel-put 30 30 #f00)
 
 Draw a line
 -----------
