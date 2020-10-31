@@ -30,6 +30,7 @@ for section in \
   tutorial \
   _referenceelec \
   referencemech \
+  software \
   credits
 do
   pandoc -o _$section.tex -frst+smart --verbose --top-level-division=chapter $section.rst
