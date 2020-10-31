@@ -46,12 +46,12 @@ xelatex reform-handbook.tex
 
 # clean up
 mv reform-handbook.pdf ../build/
-rm _*.tex
-rm _*.rst
-rm *.out
-rm *.log
-rm *.aux
-rm *.toc
+rm -- _*.tex
+rm -- _*.rst
+rm -- *.out
+rm -- *.log
+rm -- *.aux
+rm -- *.toc
 
 echo ">>> generated ../build/reform-handbook.pdf <<<"
 
