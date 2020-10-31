@@ -4,7 +4,7 @@
 
 ### Install Inter font by rsms
 
-```
+```bash
 wget https://github.com/rsms/inter/releases/download/v3.15/Inter-3.15.zip
 mkdir -p ~/.local/share/fonts
 unzip Inter-3.15.zip
@@ -16,9 +16,9 @@ More info: https://rsms.me/inter/
 
 ### Prerequisites: Arch
 
-Install [Sphinx(https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html).
+Install [Sphinx](https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html).
 
-```
+```bash
 sudo pacman -S python
 sudo pacman -S python-pip
 sudo pacman -S texlive-most # latex support
@@ -28,14 +28,14 @@ sudo pip install sphinx
 
 ### Prerequisites: Debian
 
-```
+```bash
 sudo apt install python3-pip texlive-xetex texlive-latex-extra pandoc
 sudo pip3 install sphinx
 ```
 
 ### Build HTML version
 
-```
+```bash
 cd src
 make html
 firefox build/html/index.html
@@ -43,7 +43,7 @@ firefox build/html/index.html
 
 ### Build LaTeX/PDF version
 
-```
+```bash
 cd src/source
 ./build-pdf-book.sh
 ```
