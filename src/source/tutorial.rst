@@ -27,26 +27,20 @@ Run the code::
 At this point you should see the default example program (or whatever
 you may have programmed in ``init.scm``)
 
-Draw a pixel
+Drawing Basic Shapes
 ------------
 
-To draw a red pixel at ``30,30``:
+To draw a single red pixel at ``30,30``:
 
 .. code-block:: none
 
- (pixel-put 30 30 #f00)
-
-Draw a line
------------
+ (pixel-put 30 30 #ff0000)
 
 To draw a green line from ``30,30`` to ``40,80``:
 
 .. code-block:: none
 
- (stroke-line 30 30 40 80 #x0f0)
-
-Draw a shape
-------------
+ (stroke-line 30 30 40 80 #x00ff00ff)
 
 To fill a blue rectangle from ``20,20`` to ``60,30``:
 
@@ -60,7 +54,7 @@ To fill a yellow ellipse from ``20,20`` to ``60,30``:
 
  (fill-ellipse 20 20 60 30 #ff0)
 
-Draw a shape with the mouse
+Drawing Shapes Using the Mouse
 ---------------------------
 
 To fill a purple circle, with a radius of ``10``, at the mouse cursor:
@@ -84,6 +78,26 @@ Move a sprite with the mouse
 
 Play a sound
 ------------
+
+To play a ``.WAV`` file from Interscheme, you can use:
+
+.. code-block:: none
+
+  (load-wav "file.wav" 0)
+
+In this example, ``file.wav`` is the name of the audio file we want to
+load, and ``0`` tells Interscheme to play the audio once, then stop
+(if you would rather loop the audio forever, use ``-1`` instead).
+
+To generate a tone, you can use:
+
+.. code-block:: none
+		
+  (generate-tone 440.0 0.5)
+
+In this example, ``440.0`` is the frequency (in this case, the musical
+key of A4), and ``0.5`` is how long the sound should play for in
+seconds (half a second, in this case).
 
 Share your project
 ------------------
