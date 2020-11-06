@@ -27,7 +27,7 @@ Run the code::
 At this point you should see the default example program (or whatever
 you may have programmed in ``init.scm``)
 
-Drawing Basic Shapes
+Draw a pixel
 ------------
 
 To draw a single red pixel at ``30,30``:
@@ -36,11 +36,17 @@ To draw a single red pixel at ``30,30``:
 
  (pixel-put 30 30 #ff0000)
 
+Drawing Lines
+-----------
+
 To draw a green line from ``30,30`` to ``40,80``:
 
 .. code-block:: none
 
  (stroke-line 30 30 40 80 #x00ff00ff)
+
+Drawing Shapes
+--------------
 
 To fill a blue rectangle from ``20,20`` to ``60,30``:
 
@@ -55,7 +61,7 @@ To fill a yellow ellipse from ``20,20`` to ``60,30``:
  (fill-ellipse 20 20 60 30 #ff0)
 
 Drawing Shapes Using the Mouse
----------------------------
+------------------------------
 
 To fill a purple circle, with a radius of ``10``, at the mouse cursor:
 
