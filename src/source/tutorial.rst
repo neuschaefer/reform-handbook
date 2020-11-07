@@ -36,29 +36,28 @@ To draw a single red pixel at ``30,30``:
 
  (pixel-put 30 30 #ff0000)
 
-
-
-..
- .. The following code is NOT WORKING due to (random-integer)
- .. being a part of SRFI-27, which cannot currently be loaded
- .. from Interscheme.
-
- You may also use a loop to draw a series of pixels:
+You may also use a loop to draw a series of pixels. For example,
+here's one way to put 50 pixels down in random positions:
  
- .. code-block:: none
+.. code-block:: none
 
  (import (srfi 27))
+ (define (put-pixels? #t)
  (define (pixels-everywhere n)
-  ;; Set i to 0, and increase by 1 on every loop.
-  (do ((i 0) (1+ i))
-    ;; If i is equal to the input (n), stop. We are done.
-    (=? i n)
-    ;; If i < n, put a pixel at a random position.
-    (pixel-put (random-integer 300)
-               (random-integer 300)
-	       #x00ff00)))
-  
- (pixels-everywhere 50)
+   ;; Set i to 0, and increase by 1 on every loop.
+   (do ((i 0 (1+ i)))
+     ;; If i is equal to the input (n), stop. We are done.
+     ((eq? i n)
+      (set! put-pixels? #f))
+     ;; If i < n, put a pixel at a random position.
+     (pixel-put (random-integer 300)
+                (random-integer 300) 
+                #x00ff00)))
+  (set! put-pixels? #f)))
+
+  (define (main)
+   (if put-pixels?
+    (pixels-everywhere 50)))
  
 Drawing Lines
 -----------
