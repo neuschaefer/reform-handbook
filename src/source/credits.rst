@@ -1,6 +1,8 @@
 Credits
 =======
 
+TODO: many people are still missing from special thanks!
+
 :Concept, Electronics, Firmware, Software: Lukas F. Hartmann (mntmn)
 
 :Industrial Design: Ana Beatriz Albertini Dantas
@@ -14,7 +16,7 @@ Credits
 :Handbook Editing: Lukas F. Hartmann, Brendan Nystedt, 100rabbits
 
 :Illustration: Paul Klingberg, 100rabbits
-
+               
 :Special Thanks: Jonas Haring, CCC, etnaviv, Xorg, Mesa, wayland, Igalia, heise/Make Germany/Helga Hansen, Philip Steffan, Golem, Interface Critique/Florian Hadler, Gabriel Yoran, JD Music Labs, Crowd Supply, malcolmputer, zakx, darthrake, erlehmann, plomlompom, oomono, schneider, buckket, grncdr, agento, Daniel Stone, Martin Meyerhoff, Gregor May, Chris Healy, Martin Borgert, Stephan Urbach, furan, Radoslaw Kujawa, Daniel Amor, bunnie, NLnet, mozilla
 
 :Inter Font: rsms

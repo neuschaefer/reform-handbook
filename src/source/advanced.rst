@@ -1,10 +1,16 @@
-System Boot Details
-===================
+Advanced Topics
+===============
 
-Powering Up
------------
+Sub-Topics TODO:
 
-When the power switch is turned on, the TinyRex module (the little red board that contains the i.MX6 and the memory chips) receives power. If it is happy with the applied voltages (POWEROK signals are present), the green LED on the TinyRex module will light up. If only the red LED lights up, there is a problem with the power supply.
+- Encrypted SSD Setup
+- SD vs eMMC Boot
+- Loading other OSes
+
+i.MX8M Boot Process
+-------------------
+
+TODO: this section contains outdated i.MX6 info
 
 Next, the i.MX6 chip will jump to internal boot ROM code at memory address *0x00000000*. The boot ROM looks for an SD card on port SD1 and reads the DCD (Device Configuration Data) table from physical address 0x400 (1024 decimal, or the second physical block) on the SD card. This means that you can only use the MBR partition scheme on the boot disk, as it only occupies the first disk block. The more modern GPT partition format could work in theory, but most GPT tools and parsers do not understand GPT structures where the second block is in an alternative location.
 
@@ -14,6 +20,8 @@ Reform ships with U-Boot. It is installed onto the SD card and includes the DCD 
 
 U-Boot
 ------
+
+TODO: this section contains outdated i.MX6 info
 
 U-Boot is a mini operating system and shell that allows you to inspect parts of the system (like PCIe, USB devices and Harddisks) and set up parameters to be passed to a "big" operating system kernel such as Linux, and start such an operating system.
 
@@ -30,6 +38,8 @@ Both files are created when building Linux from source with the "imx6qp-mntrefor
 
 Booting the Linux Kernel
 ------------------------
+
+TODO: this section contains outdated i.MX6 info
 
 Theoretically, you could boot other operating systems besides Linux, such as FreeBSD, NetBSD, OpenBSD or anything else that supports the i.MX6QP SoC. So far, we didn't have the time to test them, though. We'll happily expand this guide with your contributions if you've managed to run an alternative OS on Reform.
 

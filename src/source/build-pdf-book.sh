@@ -27,10 +27,14 @@ for section in \
   preface \
   safety \
   quickstart \
-  tutorial \
-  _referenceelec \
-  referencemech \
+  input \
+  linux \
   software \
+  tutorial \
+  referencemech \
+  _referenceelec \
+  advanced \
+  online \
   credits
 do
   pandoc -o _$section.tex -frst+smart --verbose --top-level-division=chapter $section.rst

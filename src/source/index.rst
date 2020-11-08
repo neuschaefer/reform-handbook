@@ -6,16 +6,17 @@ Reform Handbook
    :caption: Contents:
 
    preface
-   contactandreferences
    safety
    quickstart
-   tutorial
+   input
+   linux
    software
-   referenceelec
+   tutorial
    referencemech
-   boot
+   referenceelec
+   advanced
+   online
    credits
-   cheatsheet
 
 Indices and tables
 ==================

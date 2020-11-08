@@ -1,6 +1,5 @@
 Recommended Software 
-+++++++++++++++++++++ 
- 
+====================
 
 MNT Reform can run many Linux applications that are available for ARM-based computers. Below are applications that have been verified to work on Reform in a number of categories. 
 

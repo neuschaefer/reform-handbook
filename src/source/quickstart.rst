@@ -1,6 +1,11 @@
 Quick Start
 ===========
 
+TODO:
+
+- Show how to open the bottom and connect the batteries (illustartions)
+- Review First boot / first steps
+
 Thank you for acquiring MNT Reform, a portable open-source computer system.
 
 Reform can be powered either by the internal LiFePo4 batteries or by the 24V wall adapter. The wall adapter will automatically charge the battery if present. For safety reasons, the battery cables are not connected by default. To use the batteries, unscrew the bottom lid and plug the battery cable plugs into the battery connectors on the motherboard. Then reattach the bottom lid.

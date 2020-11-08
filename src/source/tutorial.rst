@@ -1,5 +1,5 @@
-Tutorial
-========
+Programming Tutorial
+====================
 
 This section describes how to create programs using audio, video, and 
 keyboard/mouse inputs (for example, video games).

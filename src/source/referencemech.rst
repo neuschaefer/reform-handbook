@@ -1,6 +1,12 @@
 Reference: Mechanical
 +++++++++++++++++++++
 
+TODO sub-topics:
+
+- Install a WiFi Card
+- Install an SSD
+- Exchange Batteries
+
 The Case
 ========
 
