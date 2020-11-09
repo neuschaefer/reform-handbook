@@ -1,16 +1,41 @@
 Programming Tutorial
 ====================
 
-This section describes how to create programs using audio, video, and 
-keyboard/mouse inputs (for example, video games).
+In this section we'll demonstrate how to create your own computer
+programs using the Scheme programming language.
 
-For this we'll use Interscheme - MNT's all-in-one utility for building 
-such programs.
+What is Scheme?
+---------------
 
-Setup
------
+Scheme is a programming language that looks like this:
 
-Open the Interscheme scripting file:
+.. code-block:: none
+
+ (define (square x)
+   (* x x))
+ 
+ (square 5)
+
+This code can be read like "Define a new function named 'square',
+which takes a single argument, x. Multiply x by itself."
+
+After defining the function, ``(square 5)`` is called to test out the
+function. When our function ``(square x)`` is applied to our argument
+(``5``), we get the output ``25``, because 5 * 5 is 25.
+
+One thing that you may notice right away is that the math is performed
+like ``(* 5 5)`` instead of ``(5 * 5)`` as you may expect. This is
+called "Prefix Notation" and can be very helpful. For example, if we
+wanted to add a lot of numbers, we conventionally do ``2 + 3 + 4 + 6 +
+11``, but in Scheme it's ``(+ 2 3 4 6 11)``, which is much more
+concise.
+   
+
+Setting Up Interscheme
+----------------------
+
+Let's start working with graphics now! Open the Interscheme scripting
+file:
 
 .. code-block:: none
 
@@ -60,7 +85,7 @@ here's one way to put 50 pixels down in random positions:
     (pixels-everywhere 50)))
  
 Drawing Lines
------------
+-------------
 
 To draw a green line from ``30,30`` to ``40,80``:
 
