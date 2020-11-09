@@ -37,18 +37,9 @@ Now that you have a simple understanding of how Scheme works, feel
 free to dive further into the language with this list of works (feel
 free to finish this tutorial now and check these links out later):
 
-..
- I'd like for the names themselves to be hyperlinks, but I can't
- figure out how to do that properly in RST. This will work for now.
-
-- The Little Schemer:
-  <https://mitpress.mit.edu/books/little-schemer-fourth-edition>
-  
-- Structure and Interpretation of Computer Programs:
-  <https://mitpress.mit.edu/sites/default/files/sicp/index.html>
-  
-- Land of Lisp:
-  <http://landoflisp.com/>
+- `The Little Schemer <https://mitpress.mit.edu/books/little-schemer-fourth-edition>`_
+- `Structure and Interpretation of Computer Programs <https://mitpress.mit.edu/sites/default/files/sicp/index.html>`_
+- `Land of Lisp <http://landoflisp.com/>`_
   
 
 
