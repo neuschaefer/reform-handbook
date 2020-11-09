@@ -6,16 +6,20 @@ TODO:
 - Show how to open the bottom and connect the batteries (illustartions)
 - Review First boot / first steps
 
-Thank you for acquiring MNT Reform, a portable open-source computer system.
+**Brendan questions/comments:** are there details about unboxing process to include? can we link to or include DIY assembly instructions? will the circle key shortcut guide be part of the shipping firmware...if so should mention here. for completeness, should list all the Circle commands in the handbook as well. I also think we should include networking setup details before mentioning using apt.
 
-Reform can be powered either by the internal LiFePo4 batteries or by the 24V wall adapter. The wall adapter will automatically charge the battery if present. For safety reasons, the battery cables are not connected by default. To use the batteries, unscrew the bottom lid and plug the battery cable plugs into the battery connectors on the motherboard. Then reattach the bottom lid.
+Thank you for acquiring **MNT Reform**, a portable, open-source computer system.
 
-To turn the system on and off (hard power enable/disable) press Circle-1 or Circle-0 (zero),
-respectively. Circle-1 also does a hard reset of the main SoC if the system is already on.
-To display cell voltage information, press Circle-V.
+Reform can be powered either by the internal LiFePo4 batteries or by the 24V wall adapter.  The wall adapter will automatically charge the battery when plugged into the port on Reform's left hand side.  
 
-Circle-F1 and Circle-F2 decrease and increase the keyboard backlight brightness (but only if the main
-CPU/USB hub is powered).
+For safety reasons, the battery cables are not connected . To use the batteries, unscrew the bottom lid and plug the battery cable plugs into the battery connectors on the motherboard. Then reattach the bottom lid.
+
+To turn the system on and off (hard power enable/disable) press Circle+1 or Circle+0 (zero),
+respectively. Circle+1 also does a hard reset of the main SoC if the system is already on.
+
+To display battery state of charge information, press Circle+V.
+
+Circle+F1 and Circle+F2 decrease and increase the keyboard backlight brightness when system power is on.
 
 Reform will boot into the Debian GNU/Linux operating system that is preinstalled on the SD card. The kernel will show diagnostic information as it activates all the devices in the system, and you'll end up at the login prompt if everything is OK.
 
@@ -45,4 +49,4 @@ You can install additional software and desktop environments by using *apt*, for
 
    man apt
 
-Enjoy your MNT Reform computer!
+Your MNT computer is now ready to be used! If you are new to the Debian GNU/Linux operating system, please refer to the Linux Basics section to learn more. 
