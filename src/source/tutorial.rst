@@ -29,7 +29,29 @@ called "Prefix Notation" and can be very helpful. For example, if we
 wanted to add a lot of numbers, we conventionally do ``2 + 3 + 4 + 6 +
 11``, but in Scheme it's ``(+ 2 3 4 6 11)``, which is much more
 concise.
-   
+
+More Scheme Resources
+---------------------
+
+Now that you have a simple understanding of how Scheme works, feel
+free to dive further into the language with this list of works (feel
+free to finish this tutorial now and check these links out later):
+
+..
+ I'd like for the names themselves to be hyperlinks, but I can't
+ figure out how to do that properly in RST. This will work for now.
+
+- The Little Schemer:
+  <https://mitpress.mit.edu/books/little-schemer-fourth-edition>
+  
+- Structure and Interpretation of Computer Programs:
+  <https://mitpress.mit.edu/sites/default/files/sicp/index.html>
+  
+- Land of Lisp:
+  <http://landoflisp.com/>
+  
+
+
 
 Setting Up Interscheme
 ----------------------
