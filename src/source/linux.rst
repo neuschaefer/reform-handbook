@@ -59,28 +59,29 @@ Giving Sudo Access to a User
 ----------------------------
 
 Often times you might want to use a command that requires
-administrator privileges, but logging out of your user account just to
-log back in as root is a bit of a hassle, so you can give a user
-"sudo" access, which allows you to use a command as root by using
-``sudo <COMMAND>``. Log in as root and edit the file ``/etc/sudoers``:
+administrator (root) privileges, but logging out of your user account
+just to log back in as root is a bit of a hassle, so you can give a
+user "sudo" access, which allows you to use a command as root by using
+``sudo <COMMAND>``. You can add a user to the ``sudo`` group with:
 
 .. code-block:: none
 
- micro /etc/sudoers
-
-In this file find a line that says:
-
-.. code-block:: none
-
- root    ALL=(ALL:ALL) ALL
-
-And add a file right below it that looks like:
-
-.. code-block:: none
-
- bob    ALL=(ALL:ALL) ALL
+ usermod -a -G sudo bob
 
 (Again, "bob" here should be replaced by your username).
+
+The ``-a`` flag means "Append the user to a group list", and the
+``-G`` option is the name of the group you want to add the user to, in
+this case it's the ``sudo`` group.
+
+From now on you can use commands as root, for example, the command
+``shutdown now`` requires root privileges, so you can run:
+
+.. code-block:: none
+
+ sudo shutdown now
+
+Which asks you for your password, then shuts down the computer.
 
 View / Edit Text Files
 ----------------------
