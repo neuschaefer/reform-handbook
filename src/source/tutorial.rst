@@ -115,11 +115,12 @@ To fill a blue rectangle from ``20,20`` to ``60,30``:
 
  (fill-rect 20 20 60 30 #x00f)
 
-To fill a yellow ellipse from ``20,20`` to ``60,30``:
+To fill a yellow ellipse, with the center at ``20,20`` with a width of
+``60`` and a height of ``30``:
 
 .. code-block:: none
 
- (fill-ellipse 20 20 60 30 #ff0)
+ (pixel-fill-ellipse 20 20 60 30 #xffff00ff)
 
 Drawing Shapes Using the Mouse
 ------------------------------
@@ -129,7 +130,7 @@ To fill a purple circle, with a radius of ``10``, at the mouse cursor:
 .. code-block:: none
 
  (on-mouse-down
-   (fill-circle mouse-x mouse-y 10 #0ff))
+   (pixel-fill-ellipse mouse-x mouse-y 10 10 #xffff00ff))
 
 Draw a sprite
 -------------
