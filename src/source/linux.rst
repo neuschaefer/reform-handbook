@@ -139,11 +139,68 @@ If you want to see everything the kernel sees, you can check out the log with ``
 Choose a Desktop
 ----------------
 
+GNOME is an intuitive, modern, and efficient graphical environment
+with support for productive functionality such as workspaces and
+custom keyboard bindings.
+
+Sway is a highly configurable tiling window manager that is lighter on
+resources, but comes with a steeper learning curve.
+
 Sway Basics
 -----------
 
+You may start sway from the command line simply by running the
+``sway`` command:
+
+.. code-block:: none
+
+ sway
+
+If no errors occur, you should be presented with a message asking you
+to select a Command key. This is the key you press in order to
+perform most tasks in Sway. Many people like to use the "Super" key
+("Windows key" or "Command key" on some keyboard models) as most
+programs do not utilize it, so it does not get in the way.
+
+From now on, you can start a new terminal window by using the command:
+
+.. code-block:: none
+
+ Super + Return
+
 Tiling
 ------
+
+When you press ``Super + Return`` multiple times to open several
+terminals, you'll notice that your currently open windows will be
+resized to accomidate for the new window.. You can switch between
+these tabs using the shortcuts:
+
+.. code-block:: none
+
+ Super + j   - Move to the left
+ Super + k   - Move down
+ Super + l   - Move up
+ Super + ;   - Move to the right
+
+These shortcuts may be familiar to you if you have used the ``vi``
+text editor.
+
+If you keep adding windows, they will continuously shrink
+horizontally, but if you would rather have a window split vertically,
+you can. Use these shortcuts for deciding:
+
+.. code-block:: none
+
+ Super + h   - Split window horizontally
+ Super + v   - Split window vertically
+
+Note that the window is not split instantaneously. You're just telling
+Sway "The next time I create a window, put it below/beside my current
+window.
+
+You may also use ``Super + w`` to tell Sway to use tabs. You can
+switch your tab using the same shortcuts for windows (``jkl;``).
 
 Workspaces
 ----------
