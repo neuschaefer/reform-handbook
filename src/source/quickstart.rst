@@ -38,4 +38,4 @@ To start the Sway graphical environment, type:
 
    sway
 
-From here, you can begin installing software and using Reform. If you are new to the Debian GNU/Linux operating system, or Sway, please refer to the Linux Basics section to learn more. 
+From here, you can begin installing software and using Reform. If you are new to the Debian GNU/Linux operating system, or Sway, please refer to the :ref:`Linux Basics` section to learn more. 
