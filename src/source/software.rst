@@ -132,7 +132,9 @@ Tools
 
 **Emacs-gtk** 
 
-One of the most popular Linux text editing environments. 
+One of the most popular Linux text editing environments.
+
+`Emacs website <https://www.gnu.org/software/emacs/>`_
 
 **Vim** 
 
