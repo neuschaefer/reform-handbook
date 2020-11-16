@@ -11,38 +11,74 @@ Scheme is a programming language that looks like this:
 
 .. code-block:: none
 
+  (define (greet name)
+    (string-append "Hello " name "!"))
+ 
+  (greet "Reform")
+
+The previous code defines a new function named 'greet', which takes a single
+argument called ``name``. After defining the function, ``(greet "Reform")`` is 
+called to test out the function and the result of the function is the 
+text ``Hello Reform!``.
+
+In Scheme, a pair of parentheses indicates one step of calculation. A function 
+name comes after the open parenthesis followed by arguments. Tokens are 
+reparated by spaces, tabs and newlines.
+
+.. code-block:: none
+
  (define (square x)
    (* x x))
  
  (square 5)
 
-This code can be read like "Define a new function named 'square',
-which takes a single argument, x. Multiply x by itself."
+Scheme follows the "Prefix Notation", where operations use the format 
+``(* 5 5)`` instead of ``(5 * 5)``. For example, if we wanted to add a lot of 
+numbers together, we conventionally do ``2 + 3 + 4 + 6 + 11``, in Scheme we 
+would instead write ``(+ 2 3 4 6 11)``, which is much more concise.
 
-After defining the function, ``(square 5)`` is called to test out the
-function. When our function ``(square x)`` is applied to our argument
-(``5``), we get the output ``25``, because 5 * 5 is 25.
+Variables
+^^^^^^^^^
 
-One thing that you may notice right away is that the math is performed
-like ``(* 5 5)`` instead of ``(5 * 5)`` as you may expect. This is
-called "Prefix Notation" and can be very helpful. For example, if we
-wanted to add a lot of numbers, we conventionally do ``2 + 3 + 4 + 6 +
-11``, but in Scheme it's ``(+ 2 3 4 6 11)``, which is much more
-concise.
+To define a variable, use ``define``, to print the value of an expression, 
+use ``display``.
 
-More Scheme Resources
----------------------
+.. code-block:: none
 
-Now that you have a simple understanding of how Scheme works, feel
-free to dive further into the language with this list of works (feel
-free to finish this tutorial now and check these links out later):
+ (define color "red")
+ (display color)
 
-- `The Little Schemer <https://mitpress.mit.edu/books/little-schemer-fourth-edition>`_
-- `Structure and Interpretation of Computer Programs <https://mitpress.mit.edu/sites/default/files/sicp/index.html>`_
-- `Land of Lisp <http://landoflisp.com/>`_
-  
+Functions
+^^^^^^^^^
 
+To define a function, use ``define``, to add parameters to the 
+function, use ``lambda``. 
 
+.. code-block:: none
+
+ (define add-three
+   (lambda (a b c)
+     (+ a b c)))
+
+The previous example can also be defined using the following short-form:
+
+.. code-block:: none
+
+ (define (add-three a b c)
+   (+ a b c))
+
+Logic
+^^^^^
+
+Logic operations are in the format of ``(if true this that)`` where 
+the result of the operation will be ``this`` if the second parameter is ``true``
+, otherwise will be ``that``. In Scheme, true is indicated as ``#t``, and false
+is indicated as ``#f``.
+
+.. code-block:: none
+
+ (define (min a b) 
+   (if (< a b) a b))
 
 Setting Up Interscheme
 ----------------------
@@ -170,3 +206,14 @@ seconds (half a second, in this case).
 Share your project
 ------------------
 
+
+More Scheme Resources
+---------------------
+
+Now that you have a simple understanding of how Scheme works, feel
+free to dive further into the language with this list of works (feel
+free to finish this tutorial now and check these links out later):
+
+- `The Little Schemer <https://mitpress.mit.edu/books/little-schemer-fourth-edition>`_
+- `Structure and Interpretation of Computer Programs <https://mitpress.mit.edu/sites/default/files/sicp/index.html>`_
+- `Land of Lisp <http://landoflisp.com/>`_
