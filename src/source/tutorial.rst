@@ -4,16 +4,37 @@ Programming Tutorial
 In this section we'll demonstrate how to create your own computer
 programs using the Scheme programming language.
 
+Setting Up Interscheme
+----------------------
+
+Let's start working with graphics now! Open the Interscheme scripting
+file:
+
+.. code-block:: none
+
+  micro ~/interscheme/init.scm
+
+This file may already be populated with code, demonstrating the
+different utilities Interscheme provides.  The ``(main)`` procedure
+does the actual drawing and is updated 60 times per second.
+
+Run the code::
+
+  ./interscheme init.scm
+
+At this point you should see the default example program (or whatever
+you may have programmed in ``init.scm``)
+
 What is Scheme?
 ---------------
 
 Scheme is a programming language that looks like this:
 
-.. code-block:: none
+.. code-block:: lisp
 
   (define (greet name)
     (string-append "Hello " name "!"))
- 
+
   (greet "Reform")
 
 The previous code defines a new function named 'greet', which takes a single
@@ -25,12 +46,12 @@ In Scheme, a pair of parentheses indicates one step of calculation. A function
 name comes after the open parenthesis followed by arguments. Tokens are 
 reparated by spaces, tabs and newlines.
 
-.. code-block:: none
+.. code-block:: lisp
 
- (define (square x)
+  (define (square x)
    (* x x))
- 
- (square 5)
+
+  (square 5)
 
 Scheme follows the "Prefix Notation", where operations use the format 
 ``(* 5 5)`` instead of ``(5 * 5)``. For example, if we wanted to add a lot of 
@@ -40,32 +61,80 @@ would instead write ``(+ 2 3 4 6 11)``, which is much more concise.
 Variables
 ^^^^^^^^^
 
-To define a variable, use ``define``, to print the value of an expression, 
-use ``display``.
+To define a variable, use ``define``, followed by a **name** and a **value**. 
 
-.. code-block:: none
+.. code-block:: lisp
 
- (define color "red")
- (display color)
+  (define red #xff0000)
+
+To draw a pixel at the location ``20,30`` with the color we just defined, we will use ``put-pixel`` followed by **x**, **y** and our **color**. 
+
+.. code-block:: lisp
+
+  (put-pixel 20 30 red)
+
+A complete interscheme project that will draw 4 pixels to the screen might look something like: 
+
+.. code-block:: lisp
+
+  (define red #xff0000)
+  (define yellow #xffff00)
+  (define green #x00ff00)
+  (define cyan #x00ffff)
+
+  (define (main)
+    (put-pixel 20 20 red)
+    (put-pixel 21 20 yellow)
+    (put-pixel 22 20 green)
+    (put-pixel 23 20 cyan)
+  )
 
 Functions
 ^^^^^^^^^
 
-To define a function, use ``define``, to add parameters to the 
-function, use ``lambda``. 
+To define a function, use ``define`` again, but followed by an expression to name and define parameters, and a second to define the operation. Here we will define a function to help us draw rectangles.
 
-.. code-block:: none
+A rectangle is made up of 4 lines, our function is named ``stroke-rect``, followed by the **x,y** position, the **w,h** size and the color of the rectangle.
 
- (define add-three
-   (lambda (a b c)
-     (+ a b c)))
+The ``stroke-line`` function is something that comes with interscheme to help us draw lines.
 
-The previous example can also be defined using the following short-form:
+.. code-block:: lisp
 
-.. code-block:: none
+  (define (stroke-rect x y w h color)
+    (begin 
+      (stroke-line x y (+ x w) y color)
+      (stroke-line (+ x w) y (+ x w) (+ y h) color)
+      (stroke-line (+ x w) (+ y h) x (+ y h) color)
+      (stroke-line x (+ y h) x y color)))
 
- (define (add-three a b c)
-   (+ a b c))
+We can use our newly created function like so:
+
+.. code-block:: lisp
+
+  (define red #xff0000)
+  (define yellow #xffff00)
+  (define green #x00ff00)
+  (define cyan #x00ffff)
+
+  (define (stroke-rect x y w h color)
+    (begin 
+      (stroke-line x y (+ x w) y color)
+      (stroke-line (+ x w) y (+ x w) (+ y h) color)
+      (stroke-line (+ x w) (+ y h) x (+ y h) color)
+      (stroke-line x (+ y h) x y color)))
+
+  (define (main)
+    (stroke-rect 20 20 20 20 red)
+    (stroke-rect 22 22 20 20 yellow)
+    (stroke-rect 24 24 20 20 green)
+    (stroke-rect 26 26 20 20 cyan)
+  )
+
+Loops
+^^^^^
+
+Let's say we wanted to draw many rectangles, but didn't want to individually write them into the loop one after the other. 
+
 
 Logic
 ^^^^^
@@ -75,45 +144,24 @@ the result of the operation will be ``this`` if the second parameter is ``true``
 , otherwise will be ``that``. In Scheme, true is indicated as ``#t``, and false
 is indicated as ``#f``.
 
-.. code-block:: none
+.. code-block:: lisp
 
  (define (min a b) 
    (if (< a b) a b))
-
-Setting Up Interscheme
-----------------------
-
-Let's start working with graphics now! Open the Interscheme scripting
-file:
-
-.. code-block:: none
-
- micro ~/interscheme/init.scm
-
-This file may already be populated with code, demonstrating the
-different utilities Interscheme provides.  The ``(main)`` procedure
-does the actual drawing and is updated 60 times per second.
-
-Run the code::
-
- ./interscheme init.scm
-
-At this point you should see the default example program (or whatever
-you may have programmed in ``init.scm``)
 
 Draw a pixel
 ------------
 
 To draw a single red pixel at ``30,30``:
 
-.. code-block:: none
+.. code-block:: lisp
 
  (pixel-put 30 30 #ff0000)
 
 You may also use a loop to draw a series of pixels. For example,
 here's one way to put 50 pixels down in random positions:
  
-.. code-block:: none
+.. code-block:: lisp
 
  (import (srfi 27))
  (define (put-pixels? #t)
