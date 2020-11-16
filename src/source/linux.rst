@@ -205,8 +205,32 @@ switch your tab using the same shortcuts for windows (``jkl;``).
 Workspaces
 ----------
 
+You can change your workspace with the number keys, for example:
+
+.. code-block:: none
+
+ Super + 2      - Move to workspace #2
+ Super + 1      - Move back to workspace #1
+ Super + 5      - Move to workspace #5
+
+You can open different spaces for different programs. For example, you
+might want to put your code-editing programs in workspace 1, a web
+browser in workspace 2, and some instant messaging programs in
+workspace 3.
+
 Config File
 -----------
+
+The file ``~/.config/sway`` is the configuration file, which you can
+use to map your own keybindings and color themes.
+
+Open the config file:
+
+.. code-block:: none
+
+ micro ~/.config/sway
+
+You can learn about the different Sway configuration options at the `Sway Wiki <https://github.com/swaywm/sway/wiki>`_
 
 Display Brightness
 ------------------
