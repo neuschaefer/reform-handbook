@@ -254,7 +254,7 @@ your app menu.
 
 (Screenshot of App Menu)
 
-Using ``MNT-Shift-Down`` / ``MNT-Shift-Up`` will switch your
+Using ``MNT-PageDown`` / ``MNT-PageUp`` will switch your
 workspace.
 
 Install/remove software
