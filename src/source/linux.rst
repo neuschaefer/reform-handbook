@@ -201,6 +201,8 @@ window.
 You may also use ``MNT + w`` to tell Sway to use tabs. You can
 switch your tab using the same shortcuts for windows (``jkl;``).
 
+You can use ``MNT + ESC`` to kill your currently selected window.
+
 Workspaces
 ----------
 
