@@ -254,8 +254,20 @@ your app menu.
 
 (Screenshot of App Menu)
 
-Using ``MNT-PageDown`` / ``MNT-PageUp`` will switch your
-workspace.
+There are a few keyboard shortcuts that might come in handy while
+working:
+
+.. code-block:: none
+
+ MNT             - Open app menu
+ Ctrl+Alt+t      - Launch terminal
+ MNT+PageUp      - Workspace above
+ MNT+PageDown    - Workspace below
+ Ctrl+Alt+Delete - Log out
+
+
+
+
 
 Install/remove software
 -----------------------
