@@ -157,31 +157,30 @@ You may start sway from the command line simply by running the
  sway
 
 If no errors occur, you should be presented with a message asking you
-to select a Command key. This is the key you press in order to
-perform most tasks in Sway. Many people like to use the "Super" key
-("Windows key" or "Command key" on some keyboard models) as most
+to select a Command key. This is the key you press in order to perform
+most tasks in Sway. Many people like to use the "MNT" key, as most
 programs do not utilize it, so it does not get in the way.
 
 From now on, you can start a new terminal window by using the command:
 
 .. code-block:: none
 
- Super + Return
+ MNT + Return
 
 Tiling
 ------
 
-When you press ``Super + Return`` multiple times to open several
+When you press ``MNT + Return`` multiple times to open several
 terminals, you'll notice that your currently open windows will be
 resized to accomidate for the new window.. You can switch between
 these tabs using the shortcuts:
 
 .. code-block:: none
 
- Super + j   - Move to the left
- Super + k   - Move down
- Super + l   - Move up
- Super + ;   - Move to the right
+ MNT + j   - Move to the left
+ MNT + k   - Move down
+ MNT + l   - Move up
+ MNT + ;   - Move to the right
 
 These shortcuts may be familiar to you if you have used the ``vi``
 text editor.
@@ -192,14 +191,14 @@ you can. Use these shortcuts for deciding:
 
 .. code-block:: none
 
- Super + h   - Split window horizontally
- Super + v   - Split window vertically
+ MNT + h   - Split window horizontally
+ MNT + v   - Split window vertically
 
 Note that the window is not split instantaneously. You're just telling
 Sway "The next time I create a window, put it below/beside my current
 window.
 
-You may also use ``Super + w`` to tell Sway to use tabs. You can
+You may also use ``MNT + w`` to tell Sway to use tabs. You can
 switch your tab using the same shortcuts for windows (``jkl;``).
 
 Workspaces
@@ -209,9 +208,9 @@ You can change your workspace with the number keys, for example:
 
 .. code-block:: none
 
- Super + 2      - Move to workspace #2
- Super + 1      - Move back to workspace #1
- Super + 5      - Move to workspace #5
+ MNT + 2      - Move to workspace #2
+ MNT + 1      - Move back to workspace #1
+ MNT + 5      - Move to workspace #5
 
 You can open different spaces for different programs. For example, you
 might want to put your code-editing programs in workspace 1, a web
@@ -253,7 +252,7 @@ your app menu.
 
 (Screenshot of App Menu)
 
-Using ``Super-Shift-Down`` / ``Super-Shift-Up`` will switch your
+Using ``MNT-Shift-Down`` / ``MNT-Shift-Up`` will switch your
 workspace.
 
 Install/remove software
