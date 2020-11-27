@@ -30,7 +30,7 @@ What is Scheme?
 
 Scheme is a programming language that looks like this:
 
-.. code-block:: lisp
+.. code-block:: none
 
   (define (greet name)
     (string-append "Hello " name "!"))
@@ -46,7 +46,7 @@ In Scheme, a pair of parentheses indicates one step of calculation. A function
 name comes after the open parenthesis followed by arguments. Tokens are 
 reparated by spaces, tabs and newlines.
 
-.. code-block:: lisp
+.. code-block:: none
 
   (define (square x)
    (* x x))
@@ -63,19 +63,19 @@ Variables
 
 To define a variable, use ``define``, followed by a **name** and a **value**. 
 
-.. code-block:: lisp
+.. code-block:: none
 
   (define red #xff0000)
 
 To draw a pixel at the location ``20,30`` with the color we just defined, we will use ``put-pixel`` followed by **x**, **y** and our **color**. 
 
-.. code-block:: lisp
+.. code-block:: none
 
   (put-pixel 20 30 red)
 
 A complete interscheme project that will draw 4 pixels to the screen might look something like: 
 
-.. code-block:: lisp
+.. code-block:: none
 
   (define red #xff0000)
   (define yellow #xffff00)
@@ -98,7 +98,7 @@ A rectangle is made up of 4 lines, our function is named ``stroke-rect``, follow
 
 The ``stroke-line`` function is something that comes with interscheme to help us draw lines.
 
-.. code-block:: lisp
+.. code-block:: none
 
   (define (stroke-rect x y w h color)
     (begin 
@@ -109,7 +109,7 @@ The ``stroke-line`` function is something that comes with interscheme to help us
 
 We can use our newly created function like so:
 
-.. code-block:: lisp
+.. code-block:: none
 
   (define red #xff0000)
   (define yellow #xffff00)
@@ -144,7 +144,7 @@ the result of the operation will be ``this`` if the second parameter is ``true``
 , otherwise will be ``that``. In Scheme, true is indicated as ``#t``, and false
 is indicated as ``#f``.
 
-.. code-block:: lisp
+.. code-block:: none
 
  (define (min a b) 
    (if (< a b) a b))
@@ -154,14 +154,14 @@ Draw a pixel
 
 To draw a single red pixel at ``30,30``:
 
-.. code-block:: lisp
+.. code-block:: none
 
  (pixel-put 30 30 #ff0000)
 
 You may also use a loop to draw a series of pixels. For example,
 here's one way to put 50 pixels down in random positions:
  
-.. code-block:: lisp
+.. code-block:: none
 
  (import (srfi 27))
  (define (put-pixels? #t)
