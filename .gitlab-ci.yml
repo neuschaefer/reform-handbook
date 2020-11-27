@@ -1,0 +1,18 @@
+image: bitnami/minideb:latest
+
+build:
+  script:
+    - apt update
+    - apt install -y python3-pip texlive-xetex texlive-latex-extra pandoc wget unzip fontconfig
+    - pip3 install sphinx
+    - wget https://github.com/rsms/inter/releases/download/v3.15/Inter-3.15.zip
+    - mkdir -p ~/.local/share/fonts
+    - unzip Inter-3.15.zip
+    - mv 'Inter Desktop' ~/.local/share/fonts/
+    - fc-cache ~/.local/share/fonts
+    - cd src/source
+    - mkdir -p ../build
+    - ./build-pdf-book.sh
+  artifacts:
+    paths:
+      - "src/build/*.pdf"
