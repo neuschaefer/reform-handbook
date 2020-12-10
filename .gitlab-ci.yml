@@ -11,7 +11,8 @@ build:
     - mv 'Inter Desktop' ~/.local/share/fonts/
     - fc-cache ~/.local/share/fonts
     - cd src/source
+    - mkdir -p ../build
     - ./build-pdf-book.sh
   artifacts:
     paths:
-      - "build/*.pdf"
+      - "src/build/*.pdf"
