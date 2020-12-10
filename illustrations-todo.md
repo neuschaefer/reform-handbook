@@ -1,0 +1,33 @@
+- detail of a battery pack with contacts highlighted (danger!)
+- bottom view of plate being taken off, screws to remove marked
+- detail of battery cables to be connected to motherboard (before/after)
+- keyboard overview with Circle key highlight (probably SVG styled drawing suffices)
+- illustration of how hands and thumbs are placed on keyboard?
+- isolated view of trackball, fully assembled (for functional callouts)
+- isolated view of trackball, exploded (for assembly callouts)
+- trackball bottom view
+- isolated view of trackpad, fully assembled (for callouts)
+- step by step: wifi card being plugged into socket
+- step by step: ssd being plugged into socket
+- mounting screw put on SSD
+- batteries hovering over battery pack with polarity marked
+- screen back overview with display, speakers, cables, hinges and magnets (!) installed for callouts
+- detail: exploded view of speaker with cable, speaker holder, 2 screws
+- screen front going on top of screen back and screws flying on top of it for callouts
+- empty main box top view for callouts of screw holes
+- empty main box top view with hinges and their screws hovering over it
+- empty main box with keyboard + its screws hovering over it, and OLED with screws hovering over it
+- detail of OLED cable plugging into keyboard
+- detail of OLED cable plugging into OLED PCB
+- single keycap hovering over keyboard key detail (showing how it is installed)
+- filled mainbox with keyboard top bezel and its screws hovering over it
+- detail of full mainbox's port farm (left) with screws hovering, for callouts
+- detail of full mainbox's port farm (right) with screws hovering, for callouts
+- full overview of motherboard for callouts
+- detail: motherboard UART debug connector, LPC flashing connector, reset buttons for callouts
+- detail: motherboard "hack the planet" connector
+- detail: motherboard 4x boot config dip switch
+- main box bottom view with keyboard installed but motherboard and its screws hovering (motherboard already with heatsink)
+- main box bottom view with everything except batteries and input device installed, trackball module hovering with screws
+- main box bottom view with everything except batteries and input device installed, trackpad module hovering with screws
+- main box bottom view detail of magnet slots for callout
