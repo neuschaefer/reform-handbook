@@ -37,7 +37,7 @@ for section in \
   online \
   credits
 do
-  pandoc -o _$section.tex -frst+smart --verbose --top-level-division=chapter $section.rst
+  pandoc -o _$section.tex -frst+smart --verbose -V fontsize=10pt --top-level-division=chapter $section.rst
   cat _tex/section.tex >>reform-handbook.tex
   cat _$section.tex >>reform-handbook.tex
 done
