@@ -3,14 +3,14 @@ Reference: Mechanical
 
 TODO sub-topics:
 
+- Exchange Batteries
 - Install a WiFi Card
 - Install an SSD
-- Exchange Batteries
 
 The Case
 ========
 
-The case consists of the following 5 parts. All parts except the bottom plate are milled from 6061 aluminum, sand blasted and anodized.
+The case consists of the following 5 parts. All parts except the bottom plate are milled from sand-blasted and anodized 6061 aluminum.
 
 .. image:: _static/speakers.jpg
   :alt: Speaker Closers
@@ -19,7 +19,7 @@ The case consists of the following 5 parts. All parts except the bottom plate ar
 2. **Screen Front:** housing speakers and providing display bezel
 3. **Main Box:** to which all PCBs (printed circuit boards) are attached via M2 screws: The keyboard from the top and motherboard, trackball/trackpad, and battery boards from the bottom. The lower half of the hinges and the system controller OLED PCB are mounted from the top as well.
 4. **Bezel:** a thin part that provides a bezel for the keyboard and the system controller OLED
-5. **Bottom Plate:** the bottom lid that is either milled from clear acrylic or aluminum
+5. **Bottom Plate:** the clear acrylic bottom lid
 
 For easy (dis)assembly, Reform uses only M2 screws with Phillips-head everywhere (with one exception: M4 on the hinges).
 

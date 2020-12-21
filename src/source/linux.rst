@@ -1,15 +1,6 @@
 Linux Basics
 ============
 
-TODO
-
-- Provide links/refs to advanced reading on Linux system administration
-- Display Brightness
-- Reform Waybar
-- Network, CPU/IO Meter, Memory, Audio, Clock
-- Reform Launcher
-- Install/remove software
-
 The Console
 -----------
 
@@ -48,8 +39,8 @@ asks for your password, so enter the password that you selected with
 ``passwd`` (again, this is invisible). You will be logged in to your
 home directory.
 
-Giving Sudo Access to a User
-----------------------------
+Sudo
+----
 
 Often you will want to use a command that requires superuser
 (root) privileges, but logging out of your user account just to log
@@ -83,16 +74,19 @@ File System
 Your system's file storage is organized in a tree of directories. To move around in it, you use the ``cd`` command to change the current directory. The top of the hierarchy is called root (not to be confused with the superuser of the same name), but spelled out as the symbol ``/``. To go to the root directory, enter:
 
 .. code-block:: none
+
  cd /
 
 To see what's here, use the ``ls`` (list) command:
 
 .. code-block:: none
+
  ls
 
 If you want to know more details, such as the modification times and permissions of files, use:
 
 .. code-block:: none
+
  ls -l
 
 There are two special files that appear to be in every directory, called `..` and `.`. The dot `.` means "the current directory", and you can use it if you ever want to point at the current directory explicitly, like ``ls .``. To go to the parent directory, use:
@@ -100,12 +94,21 @@ There are two special files that appear to be in every directory, called `..` an
 .. code-block:: none
  cd ..
 
-Commands like ``ls`` have many options. To learn about them, you can read the built-in manual pages like so:
+Commands like ``ls`` have many options. To learn about them, you can read the built-in manual pages:
 
 .. code-block:: none
+
  man ls
 
 With ``man`` you can learn more about any command. You should make yourself familiar with the most important commands like ``cp`` (copy), ``mv`` (move), ``rm`` (remove), ``mkdir`` (make directory), ``mount`` and ``ln`` (link). Armed with this knowledge, you will be able to navigate any UNIX-like system, not only Linux.
+
+If you want to free up some disk space by finding large files, you can
+use ``ncdu``, which scans your disk for filesizes and allows you to
+traverse the filesystem and delete the files you don't want.
+
+.. code-block:: none
+
+ ncdu
 
 View / Edit Text Files
 ----------------------
@@ -115,181 +118,158 @@ Most system configuration is done via text files.
 The two most common text editors among Linux users are ``vim`` and ``emacs``. Both of them have a steep learning curve, which can be rewarding to climb -- but the standard Reform system also ships with a simpler editor more suited for beginners. This editor is called ``micro``.
 
 You can create, view, and edit files using the ``micro`` text
-editor. To edit a file in the current directory called ``file.txt`, use:
+editor. To edit a file in the current directory named ``file.txt``, use:
 
 .. code-block:: none
 
  micro file.txt
 
-While in micro, you can use ``Ctrl-s`` to save, ``Ctrl-q`` to quit,
-and ``Ctrl-g`` to display a help menu.
+While in micro, you can use ``Ctrl+S`` to save, ``Ctrl+Q`` to quit,
+and ``Ctrl+G`` to display a help menu.
 
-What's My Computer Doing?
--------------------------
+What Is My Computer Doing?
+--------------------------
 
-You can check your RAM usage, CPU usage, and programs / processes
+You can check your RAM usage, CPU usage, and processes
 currently running by using ``htop``:
 
 .. code-block:: none
 
  htop
 
-In htop you can use the arrow keys to scroll down through the list of
-processes.
+Hit F1 to display the built-in help screen.
 
-If you want to free up some disk space by finding large files, you can
-use ``ncdu``, which scans your disk for filesizes and allows you to
-traverse the filesystem and delete the files you don't want, or quit
-if you change your mind.
+You will see that there are a few processes running that you didn't start yourself. These are background processes, also called services, daemons, or units. They are controlled by ``systemd``, the so-called "init system". It is the first program started by the Linux kernel, and it spawns all other programs including services. You can learn more about systemd by reading the manual page:
 
 .. code-block:: none
 
- ncdu
+ man systemd
 
-If you want to see all the programs currently set to start on boot, you can check ``systemctl``:
-
-.. code-block:: none
-
- systemctl status
-
-If you want to see everything the kernel sees, you can check out the log with ``dmesg``:
+The most important commands to manage systemd are ``systemctl`` and ``journalctl``. Their manual pages are worth a look, too. To see the list of known units and their status, you can use (press q to quit):
 
 .. code-block:: none
 
- dmesg | less
+ systemctl
+
+To inspect a unit in more detail, you can pass its name to systemctl, for example:
+
+.. code-block:: none
+
+ systemctl status ssh
+
+Instead of ``status``, you can use verbs like ``start``, ``stop`` or ``restart`` to control units.
+
+The Linux kernel itself outputs a lot of diagnostic information at boot and when hardware changes (e.g. new devices are plugged in). To see the kernel log, you can (as superuser) use:
+
+.. code-block:: none
+
+ sudo dmesg -H
 
 Choose a Desktop
 ----------------
 
-GNOME is an intuitive, modern, and efficient graphical environment
-with support for productive functionality such as workspaces and
-custom keyboard bindings.
+MNT Reform ships with two graphical environments ("desktops") on the SD card. The Debian distribution, which the system on the SD card is based on, has a number of additional desktops in its package manager (See "Install/Remove Software").
 
-Sway is a highly configurable tiling window manager that is lighter on
-resources, but comes with a steeper learning curve.
+1. The GNOME desktop features classic overlapping windows and a modern look. It is generally easy to learn and use, but requires more system resources and mouse / trackball / trackpad pointing and clicking.
 
-Sway Basics
------------
+2. The Sway compositor emphasizes the concept of "tiling". This means that normally, windows don't overlap, but instead the screen space is automatically divided to make space for new windows. You can arrange windows in horizontal and vertical splits and shuffle them around a number of virtual workspaces. Sway consumes very little system resources and relies heavily on keyboard shortcuts.
 
-You may start sway from the command line simply by running the
+Sway
+----
+
+You may start sway from the command line by running the
 ``sway`` command:
 
 .. code-block:: none
 
  sway
 
-If no errors occur, you should be presented with a message asking you
-to select a Command key. This is the key you press in order to perform
-most tasks in Sway. Many people like to use the "MNT" key, as most
-programs do not utilize it, so it does not get in the way.
-
-From now on, you can start a new terminal window by using the command:
-
-.. code-block:: none
-
- MNT + Return
+From now on, you can start a new terminal window by holding down the MNT key and pressing the Return key once (``MNT + Enter``).
 
 Tiling
-------
+++++++
 
-When you press ``MNT + Return`` multiple times to open several
+When you press ``MNT + Enter`` multiple times to open several
 terminals, you'll notice that your currently open windows will be
-resized to accomidate for the new window.. You can switch between
-these tabs using the shortcuts:
-
-.. code-block:: none
-
- MNT + j   - Move to the left
- MNT + k   - Move down
- MNT + l   - Move up
- MNT + ;   - Move to the right
-
-These shortcuts may be familiar to you if you have used the ``vi``
-text editor.
+resized to accomodate for the new window. You can switch between
+these windows by holding the MNT key and pressing the cursor (arrow) keys in the desired direction.
 
 If you keep adding windows, they will continuously shrink
 horizontally, but if you would rather have a window split vertically,
 you can. Use these shortcuts for deciding:
 
-.. code-block:: none
-
- MNT + h   - Split window horizontally
- MNT + v   - Split window vertically
+- MNT+H -- Split window horizontally
+- MNT+V -- Split window vertically
 
 Note that the window is not split instantaneously. You're just telling
 Sway "The next time I create a window, put it below/beside my current
-window.
+window."
 
 You may also use ``MNT + w`` to tell Sway to use tabs. You can
-switch your tab using the same shortcuts for windows (``jkl;``).
+switch your tab using the same shortcuts for switching between windows.
 
-You can use ``MNT + ESC`` to kill your currently selected window.
+You can use ``MNT + ESC`` to close your currently selected window.
 
 Workspaces
-----------
+++++++++++
 
-You can change your workspace with the number keys, for example:
+You can change your active workspace with the number keys, for example:
 
 .. code-block:: none
 
- MNT + 2      - Move to workspace #2
- MNT + 1      - Move back to workspace #1
- MNT + 5      - Move to workspace #5
+- MNT+2 -- Go to workspace #2
+- MNT+1 -- Go back to workspace #1
+- MNT+Shift+5 -- Move the current window to workspace #5
 
 You can open different spaces for different programs. For example, you
 might want to put your code-editing programs in workspace 1, a web
 browser in workspace 2, and some instant messaging programs in
 workspace 3.
 
-Config File
------------
+Launching Applications
+++++++++++++++++++++++
 
-The file ``~/.config/sway`` is the configuration file, which you can
+Press ``MNT+D`` to start the application launcher.
+
+Config File
++++++++++++
+
+The file ``~/.config/sway/config`` is the configuration file, which you can
 use to map your own keybindings and color themes.
 
-Open the config file:
+To open the config file:
 
 .. code-block:: none
 
- micro ~/.config/sway
+ micro ~/.config/sway/config
 
-You can learn about the different Sway configuration options at the `Sway Wiki <https://github.com/swaywm/sway/wiki>`_
+You can learn more about the Sway configuration options at the `Sway Wiki <https://github.com/swaywm/sway/wiki>`_
 
 Display Brightness
-------------------
+++++++++++++++++++
 
-Reform Waybar
--------------
+The shortcuts to decrease and increase the display brightness in Sway are ``MNT+F1`` and ``MNT+F2``, respectively.
 
-Network, CPU/IO Meter, Memory, Audio, Clock
--------------------------------------------
+Waybar
+++++++
 
-Reform Launcher
----------------
+TODO: Network, CPU/IO Meter, Memory, Audio, Clock
 
-GNOME Basics
--------------
+GNOME
+-----
 
-On the upper-right hand of the screen, you should see some text that
-says "Activities". You can slide your mouse over this corner to open
-your app menu.
+In the top-left corner of the screen, you can see the label "Activities". Click this label to reveal the Activities overview. Alternatively, you can press the MNT key to open this overview. From here, you can launch applications by typing (a part of) their name. You can drag and drop applications that you commonly use to the bar on the left (also called a "dock"). Applications that are already running are displayed in the dock, too. Clicking on them will bring them to the foreground.
 
-(Screenshot of App Menu)
+GNOME supports a range of keyboard shortcuts to speed up working with the desktop:
 
-There are a few keyboard shortcuts that might come in handy while
-working:
+- MNT           -- Open Activities
+- MNT+Tab       -- Go to next window
+- MNT+Shift+Tab -- Go to previous window
+- Ctrl+Alt+T    -- Launch a terminal
+- MNT+PageUp    -- Workspace above
+- MNT+PageDown  -- Workspace below
 
-.. code-block:: none
+Install and Remove Software
+---------------------------
 
- MNT             - Open app menu
- Ctrl+Alt+t      - Launch terminal
- MNT+PageUp      - Workspace above
- MNT+PageDown    - Workspace below
- Ctrl+Alt+Delete - Log out
-
-
-
-
-
-Install/remove software
------------------------
+TODO: explain apt
