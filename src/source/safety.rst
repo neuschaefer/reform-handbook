@@ -1,8 +1,6 @@
 Safety
-=============
+======
 
-Please be extremely careful after opening the bottom panel, as there are up to 29V generated inside
-of the device which, when shorted, can cause sparks that can potentially ignite flammable material
-around the device. For this reason, we advise to unplug the battery cables from the motherboard
-before further disassembling the device. Do not touch/short the exposed metal pins of the battery
-holders with a metal tool!
+Before you get started with your MNT Reform, please read these safety instructions carefully to prevent harm to yourself and your belongings.
+
+**Electrical Shock and Fire Hazard** Please be extra careful while and after opening the case of the device. The device uses 8 batteries in series. When fully charged, these combine to a voltage of almost 29V. The individual battery cells can deliver a lot of current. Do not touch the metal pins of the battery holders with metal tools. Before servicing anything on the inside, make sure that the wall power is unplugged and that the battery packs are disconnected, or better, the cells removed.
