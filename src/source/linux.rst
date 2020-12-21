@@ -3,41 +3,35 @@ Linux Basics
 
 TODO
 
-.. Things that are already done:
-   - Create user and change password, log in and out
-   - Navigate the filesystem: cd, ls
-   - View/edit text files
-   - What's the computer doing? htop, ncdu, systemctl
-   - Choose a desktop (sway or GNOME3)
-   - Sway Basics
-   - Tiling
-   - Workspaces
-   - Config File
-   - GNOME3 Basics     
+- Provide links/refs to advanced reading on Linux system administration
 - Display Brightness
 - Reform Waybar
 - Network, CPU/IO Meter, Memory, Audio, Clock
 - Reform Launcher
 - Install/remove software
 
+The Console
+-----------
+
+With the provided SD card, MNT Reform will boot to a Linux console, which is a pure text interface (opposed to graphical windowing environments). This is so that you have a chance to learn about the lowest level of interaction with the operating system before moving on to more featureful desktops. If something goes wrong, you can always go back to this level and fix things -- if you know a few basics of Linux administration.
 
 Create a New User and Password
 ------------------------------
 
 In order to add a new user (such as yourself) to the system, log in as
 root and run the following command (this will add a new user named
-"bob", and add a new "home directory" for bob at ``/home/bob``):
+"kim", and add a new home directory for kim at ``/home/kim``):
 
 .. code-block:: none
 
- useradd --create-home bob
+ useradd --create-home kim
 
-In order to create or change the password for the user bob, you can
+In order to create or change the password for the user kim, you can
 use the ``passwd`` command:
 
 .. code-block:: none
 
- passwd bob
+ passwd kim
 
 Now you should be prompted to input a password (your input for this is
 invisible).
@@ -51,30 +45,31 @@ use the ``exit`` command, or the ``logout`` command.
 When you log out or start the computer, you should see a login
 prompt. Enter the username that you added with ``useradd``. Then it
 asks for your password, so enter the password that you selected with
-``passwd`` (again, this is invisible). You should be logged in to your
+``passwd`` (again, this is invisible). You will be logged in to your
 home directory.
 
 Giving Sudo Access to a User
 ----------------------------
 
-Often times you might want to use a command that requires
-administrator (root) privileges, but logging out of your user account
-just to log back in as root is a bit of a hassle, so you can give a
-user "sudo" access, which allows you to use a command as root by using
-``sudo <COMMAND>``. You can add a user to the ``sudo`` group with:
+Often you will want to use a command that requires superuser
+(root) privileges, but logging out of your user account just to log
+back in as root is a bit of a hassle, so you can give a user ``sudo``
+(meaning: "do something as superuser"). Sudo allows you to use a
+command as root by using ``sudo <COMMAND>``. You can add a user to the
+``sudo`` group with:
 
 .. code-block:: none
 
- usermod -a -G sudo bob
+ usermod -a -G sudo kim
 
-(Again, "bob" here should be replaced by your username).
+(Again, ``kim`` here should be replaced by your username).
 
 The ``-a`` flag means "Append the user to a group list", and the
 ``-G`` option is the name of the group you want to add the user to, in
 this case it's the ``sudo`` group.
 
-From now on you can use commands as root, for example, the command
-``shutdown now`` requires root privileges, so you can run:
+From now on you can use commands as root. For example, the command
+``shutdown now`` (to shut down your computer safely) requires root privileges, so you can run:
 
 .. code-block:: none
 
@@ -82,23 +77,52 @@ From now on you can use commands as root, for example, the command
 
 Which asks you for your password, then shuts down the computer.
 
+File System
+-----------
+
+Your system's file storage is organized in a tree of directories. To move around in it, you use the ``cd`` command to change the current directory. The top of the hierarchy is called root (not to be confused with the superuser of the same name), but spelled out as the symbol ``/``. To go to the root directory, enter:
+
+.. code-block:: none
+ cd /
+
+To see what's here, use the ``ls`` (list) command:
+
+.. code-block:: none
+ ls
+
+If you want to know more details, such as the modification times and permissions of files, use:
+
+.. code-block:: none
+ ls -l
+
+There are two special files that appear to be in every directory, called `..` and `.`. The dot `.` means "the current directory", and you can use it if you ever want to point at the current directory explicitly, like ``ls .``. To go to the parent directory, use:
+
+.. code-block:: none
+ cd ..
+
+Commands like ``ls`` have many options. To learn about them, you can read the built-in manual pages like so:
+
+.. code-block:: none
+ man ls
+
+With ``man`` you can learn more about any command. You should make yourself familiar with the most important commands like ``cp`` (copy), ``mv`` (move), ``rm`` (remove), ``mkdir`` (make directory), ``mount`` and ``ln`` (link). Armed with this knowledge, you will be able to navigate any UNIX-like system, not only Linux.
+
 View / Edit Text Files
 ----------------------
 
+Most system configuration is done via text files.
+
+The two most common text editors among Linux users are ``vim`` and ``emacs``. Both of them have a steep learning curve, which can be rewarding to climb -- but the standard Reform system also ships with a simpler editor more suited for beginners. This editor is called ``micro``.
+
 You can create, view, and edit files using the ``micro`` text
-editor. Simply use:
+editor. To edit a file in the current directory called ``file.txt`, use:
 
 .. code-block:: none
 
  micro file.txt
 
 While in micro, you can use ``Ctrl-s`` to save, ``Ctrl-q`` to quit,
-and ``Ctrl-g`` to display a help menu that should help get you
-started.
-
-Micro has features like line numbers, code indentation, syntax
-highlighting, intuitive commands, and a configuration file. Of course,
-you can also install the text editor of your preference.
+and ``Ctrl-g`` to display a help menu.
 
 What's My Computer Doing?
 -------------------------
@@ -122,7 +146,6 @@ if you change your mind.
 
  ncdu
 
-
 If you want to see all the programs currently set to start on boot, you can check ``systemctl``:
 
 .. code-block:: none
@@ -133,7 +156,7 @@ If you want to see everything the kernel sees, you can check out the log with ``
 
 .. code-block:: none
 
- dmseg | less
+ dmesg | less
 
 Choose a Desktop
 ----------------
