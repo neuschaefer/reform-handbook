@@ -2,8 +2,14 @@
 
 \usepackage[a5paper,left=3cm,right=2cm,top=2cm,bottom=2cm]{geometry}
 \usepackage{graphicx}
+\usepackage{microtype}
+\usepackage{parskip}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fontspec}
+\usepackage{booktabs}
+\usepackage{makecell}
+\usepackage{longtable}
+
 \setmainfont[Ligatures=TeX]{Inter}
 
 % nuke a useless pandoc command
@@ -14,8 +20,11 @@
 
 % turn off paragraph indentation
 \setlength{\parindent}{0pt}
+% \setlength{\parskip}{1em}
+\raggedbottom
 
 \title{MNT Reform Operator Manual}
+\author{MNT Research GmbH}
 \date{2020-10-31}
 
 \begin{document}

@@ -30,7 +30,7 @@ invisible).
 Logging In and Out
 ------------------
 
-You can log out by pressing ``Ctrl+D`` one or more times. You may also
+You can log out by pressing *CTRL+D* one or more times. You may also
 use the ``exit`` command, or the ``logout`` command.
 
 When you log out or start the computer, you should see a login
@@ -92,6 +92,7 @@ If you want to know more details, such as the modification times and permissions
 There are two special files that appear to be in every directory, called `..` and `.`. The dot `.` means "the current directory", and you can use it if you ever want to point at the current directory explicitly, like ``ls .``. To go to the parent directory, use:
 
 .. code-block:: none
+
  cd ..
 
 Commands like ``ls`` have many options. To learn about them, you can read the built-in manual pages:
@@ -124,8 +125,8 @@ editor. To edit a file in the current directory named ``file.txt``, use:
 
  micro file.txt
 
-While in micro, you can use ``Ctrl+S`` to save, ``Ctrl+Q`` to quit,
-and ``Ctrl+G`` to display a help menu.
+While in micro, you can use *CTRL+S* to save, *CTRL+Q* to quit,
+and *CTRL+G* to display a help menu.
 
 What Is My Computer Doing?
 --------------------------
@@ -184,12 +185,12 @@ You may start sway from the command line by running the
 
  sway
 
-From now on, you can start a new terminal window by holding down the MNT key and pressing the Return key once (``MNT + Enter``).
+From now on, you can start a new terminal window by holding down the *MNT* key and pressing the *ENTER* key once (*MNT+ENTER*).
 
 Tiling
 ++++++
 
-When you press ``MNT + Enter`` multiple times to open several
+When you press *MNT+ENTER* multiple times to open several
 terminals, you'll notice that your currently open windows will be
 resized to accomodate for the new window. You can switch between
 these windows by holding the MNT key and pressing the cursor (arrow) keys in the desired direction.
@@ -198,28 +199,30 @@ If you keep adding windows, they will continuously shrink
 horizontally, but if you would rather have a window split vertically,
 you can. Use these shortcuts for deciding:
 
-- MNT+H -- Split window horizontally
-- MNT+V -- Split window vertically
+======= =========================
+*MNT+H* Split window horizontally
+*MNT+V* Split window vertically
+======= =========================
 
 Note that the window is not split instantaneously. You're just telling
 Sway "The next time I create a window, put it below/beside my current
 window."
 
-You may also use ``MNT + w`` to tell Sway to use tabs. You can
+You may also use *MNT+W* to tell Sway to use tabs. You can
 switch your tab using the same shortcuts for switching between windows.
 
-You can use ``MNT + ESC`` to close your currently selected window.
+You can use *MNT+ESC* to close the currently selected window.
 
 Workspaces
 ++++++++++
 
 You can change your active workspace with the number keys, for example:
 
-.. code-block:: none
-
-- MNT+2 -- Go to workspace #2
-- MNT+1 -- Go back to workspace #1
-- MNT+Shift+5 -- Move the current window to workspace #5
+============= ======================================
+*MNT+2*       Go to workspace 2
+*MNT+1*       Go back to workspace 1
+*MNT+SHIFT+5* Move the current window to workspace 5
+============= ======================================
 
 You can open different spaces for different programs. For example, you
 might want to put your code-editing programs in workspace 1, a web
@@ -229,13 +232,13 @@ workspace 3.
 Launching Applications
 ++++++++++++++++++++++
 
-Press ``MNT+D`` to start the application launcher.
+Reform's sway configuration includes "rofi", a popup menu for launching an application by typing a part of its name. Press *MNT+D* to open the menu. Over time, rofi will remember the applications you regularly launch and list them in the initial menu.
 
 Config File
 +++++++++++
 
 The file ``~/.config/sway/config`` is the configuration file, which you can
-use to map your own keybindings and color themes.
+use to map your own keybindings and customize the look and feel.
 
 To open the config file:
 
@@ -248,7 +251,10 @@ You can learn more about the Sway configuration options at the `Sway Wiki <https
 Display Brightness
 ++++++++++++++++++
 
-The shortcuts to decrease and increase the display brightness in Sway are ``MNT+F1`` and ``MNT+F2``, respectively.
+======== ===========================
+*MNT+F1* Decrease display brightness
+*MNT+F2* Increase display brightness
+======== ===========================
 
 Waybar
 ++++++
@@ -262,14 +268,44 @@ In the top-left corner of the screen, you can see the label "Activities". Click 
 
 GNOME supports a range of keyboard shortcuts to speed up working with the desktop:
 
-- MNT           -- Open Activities
-- MNT+Tab       -- Go to next window
-- MNT+Shift+Tab -- Go to previous window
-- Ctrl+Alt+T    -- Launch a terminal
-- MNT+PageUp    -- Workspace above
-- MNT+PageDown  -- Workspace below
+=============== ===========================
+*MNT*           Open Activities
+*MNT+TAB*       Go to next window
+*MNT+SHIFT+TAB* Go to previous window
+*CTRL+ALT+T*    Launch a terminal
+*MNT+PGUP*      Workspace above
+*MNT+PGDN*      Workspace below
+=============== ===========================
 
 Install and Remove Software
 ---------------------------
 
-TODO: explain apt
+The Debian GNU/Linux distribution consists of a large number of software packages. These are centrally managed by "apt", the package manager. As a rule of thumb, on a Linux system you rarely download executables from the internet and launch them. Instead, you can cleanly install and remove software packages by using the package manager. Apt also has the ability to search for keywords (or regular expression patterns):
+
+.. code-block:: none
+
+   apt search browser
+
+This will list all packages in the apt cache that contain the keyword "browser". To refresh apt's cache of what is available in the Debian repositories, use (this requires an internet connection):
+
+.. code-block:: none
+
+   sudo apt update
+
+If you have found a package you would like to install:
+
+.. code-block:: none
+
+   sudo apt install firefox
+
+To remove (uninstall) the package from your system, do:
+
+.. code-block:: none
+
+   sudo apt remove firefox
+
+To explore all of apt's functionality, read the man pages for ``apt`` and ``apt-cache``. If you are more comfortable with a graphical user interface for managing apt packages, you can install ``synaptic``:
+
+.. code-block:: none
+
+   sudo apt install synaptic

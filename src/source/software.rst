@@ -6,204 +6,233 @@ MNT Reform can run most Linux applications that are available for 64bit ARM-base
 Web & Communications
 --------------------
 
-**Firefox:** Mozilla's open-source web browser.
+Firefox
+  Mozilla's open-source web browser.
 
-- Command: ``firefox``
-- `Firefox website <https://www.mozilla.org/>`_
+  Command: ``firefox``
 
-**Chromium:** The open-source variant of Google's Chrome browser.
+  `<https://www.mozilla.org/en-US/firefox>`_
 
-- Command: ``chromium``
-- `Chromium website <https://www.chromium.org/>`_
+Chromium
+  The open-source variant of Google's Chrome web browser.
 
-**Evolution:** This graphical email client includes many features for organizing your inbox. Additionally, it includes a calendar, notes, and an address book.
+  Command: ``chromium``
 
-- Command: ``evolution``
-- `Evolution website <https://help.gnome.org/users/evolution/stable/>`_
+  `<https://www.chromium.org>`_
 
-**Linphone:** A voice-over-IP client which has support across all major platforms. You can use it for voice and video calls, along with messaging. (Setup instructions?)
+Evolution
+  This graphical email client includes many features for organizing your inbox. Additionally, it includes a calendar, notes, and an address book.
 
-- Command: ``linphone``
-- `Linphone website <https://www.linphone.org/>`_
+  Command: ``evolution``
+
+  `<https://wiki.gnome.org/Apps/Evolution>`_
+
+Linphone
+  A voice-over-IP client which has support across all major platforms. You can use it for voice and video calls, along with messaging. TODO: Setup instructions
+
+  Command: ``linphone``
+
+  `<https://www.linphone.org>`_
 
 Productivity & Creativity
 -------------------------
 
-**LibreOffice:** LibreOffice is your one-stop shop for common productivity tasks. Includes a word processor (Writer), spreadsheet (Calc), presentation (Impress), diagramming (Draw) and more.
+LibreOffice
+  LibreOffice is your one-stop shop for common productivity tasks. Includes a word processor (Writer), spreadsheet (Calc), presentation (Impress), diagramming (Draw) and more.
 
-- Command: ``libreoffice``
-- `LibreOffice website <https://www.libreoffice.org/>`_
+  Command: ``libreoffice``
 
-**GIMP:** The "GNU image manipulation program" is a complete image editing and photo manipulation tool.
+  `<https://www.libreoffice.org>`_
 
-- Command: ``gimp``
-- `GIMP website <https://www.gimp.org/>`_
+GIMP
+  The "GNU image manipulation program" is a complete image editing and photo manipulation tool.
 
-**Inkscape:** Create vector (SVG) based artwork including text.
+  Command: ``gimp``
 
-- Command: ``inkscape``
-- `Inkscape website <https://inkscape.org/>`_
+  `<https://www.gimp.org>`_
 
-**Blender 2.79:** Create and render 3D objects and scenes. TODO: Note about custom build.
+Inkscape
+  Create vector (SVG) based artwork including text.
 
-- Command: ``blender``
-- `Blender website <https://www.blender.org/>`_
+  Command: ``inkscape``
 
-**Ardour 6:** Record, edit and mix multitrack audio and MIDI.
+  `<https://inkscape.org>`_
 
-- Command: ``ardour``
-- `Ardour website <https://ardour.org/>`_
+FreeCAD
+  Create and view 3D models of objects, buildings, and complex mechanisms. You can use FreeCAD to inspect the mechanical design files of MNT Reform.
 
-**Evince:** View PDFs and other documents. TODO: Should we ship zathura?
+  Command: ``freecad``
 
-- Command: ``evince``
-- `Evince website <http://grafx2.chez.com/>`_
+  `<https://www.freecadweb.org>`_
 
-**Sxiv:** A simple and fast image viewer.
+KiCAD
+  Design electronic circuit schematics and printed circuit boards. You can use KiCAD to browse the electronics design files of MNT Reform.
 
-- Command: ``sxiv``
-- `Sxiv website <https://github.com/muennich/sxiv/>`_
+  Command: ``kicad``
+
+  `<https://kicad.org>`_
+
+Blender
+  Create and render 3D objects and scenes. MNT Reform ships with a custom build of Blender 2.79b, the last version that works with the Vivante GC7000L GPU built into the i.MX8MQ processor.
+
+  Command: ``blender``
+
+  `<https://www.blender.org>`_
+
+Ardour 6
+  Record, edit and mix multitrack audio and MIDI.
+
+  Command: ``ardour``
+
+  `<https://ardour.org>`_
+
+Evince
+  View PDFs and other documents. TODO: Should we ship zathura?
+
+  Command: ``evince``
+
+  `Evince website <http://grafx2.chez.com/>`_
+
+Sxiv
+  A simple and fast image viewer.
+
+  Command: ``sxiv``
+
+  `<https://github.com/muennich/sxiv/>`_
 
 Games
------------
+-----
 
-**Neverball**
+Neverball
+  This 3D game lets you guide a ball through 24 challenging levels.
 
-This 3d game lets you guide a ball through 24 challenging levels.
+  Command: ``neverball``
 
-`Neverball website <https://neverball.org/>`_
+  `<https://neverball.org>`_
 
-**ScummVM**
+ScummVM
+  Play classic adventure games on Linux using this utility. Copyrighted games may be purchased on GoG.com, although a handful of games are freeware.
 
-Play classic LucasArts, Sierra, and Humongous Entertainment adventure games on Linux using this utility. Copyrighted games may be purchased legally on GoG.com, although a handful of games are freeware.
+  Command: ``scummvm``
 
-`ScummVM website <https://www.scummvm.org/>`_
+  `<https://www.scummvm.org>`_
 
-**Cataclysm: Dark Days Ahead**
+Minetest_Game
+  An 3D block-based open-world game focused on exploration, resource gathering, and construction.
 
-A turn-based horror/survival title with roguelike gameplay and procedurally-generated levels.
+  Command: ``minetest``
 
-`Cataclysm website <https://cataclysmdda.org/>`_
+  `<http://www.minetest.net>`_
 
-**Minetest_Game**
+VICE
+  Commodore 64 (and related) system emulator
 
-An open-world game focused on exploration, resource gathering, and construction.
+  Command: ``x64``, ``x128`` etc.
 
-`Minetest_Game website <http://www.minetest.net/>`_
+  `<https://vice-emu.sourceforge.io>`_
+
+Amiberry
+  Commodore Amiga system emulator
+
+  Command: ``amiberry``
+
+  `<https://blitterstudio.com/amiberry/>`_
+
+DOSbox
+  MS-DOS PC system emulator
+
+  Command: ``dosbox``
+
+  `DOSbox website <https://www.dosbox.com>`_
 
 Tools
---------
+-----
+Thunar
+  Lightweight file manager.
 
-**Emacs-gtk**
+  Command: ``thunar``
 
-One of the most popular Linux text editing environments.
+  Sway Shortcut: *MNT+T*
 
-`Emacs website <https://www.gnu.org/software/emacs/>`_
+  `<https://docs.xfce.org/xfce/thunar/start>`_
 
-**Vim**
+Xfce4 Terminal
+  A terminal emulator with convenient features like tabs and custom themes.
 
-The other major open text editor.
+  Command: ``xfce4-terminal``
 
-`Vim website <https://www.vim.org/>`_
+  Sway Shortcut: *MNT+ENTER*
 
-**Htop**
+  `<https://docs.xfce.org/apps/terminal/start>`_
 
-A terminal-based look at system performance, which simply displays usage of all resources.
+Grim & Slurp
+  Grim is a wayland-based screen shot tool, and Slurp lets you select the region of the screen you want to capture.
 
-`Htop website <https://htop.dev/>`_
+  Command: ``grim -g "$(slurp)"``
 
-**MPV Player**
+  Sway Shortcut: *MNT+SHIFT+X*
 
-A versatile, terminal-based media player.
+  `<https://wayland.emersion.fr/grim>`_
 
-`MPV website <https://mpv.io/>`_
+Emacs
+  One of the popular Linux text editing environments.
 
-**Thunar**
+  Command: ``emacs`` (Exit with *CTRL+X* followed by *CTRL+C*)
 
-Lightweight file manager application.
+  `<https://www.gnu.org/software/emacs>`_
 
-`Thunar website <https://docs.xfce.org/xfce/thunar/start>`_
+Vim
+  The other major open text editor.
 
-**Gnome-disks**
+  Command: ``vim`` (Exit by typing ``:q`` followed by *ENTER*)
 
-Partition, format, and manage internal and external disks.
+  `<https://www.vim.org>`_
 
-`Gnome-disks website <https://wiki.gnome.org/Apps/Disks>`_
+Htop
+  A terminal-based look at system processes, CPU and memory usage.
 
-**Ncdu**
+  Command: ``htop``
 
-Terminal-based disk usage analysis utility.
+  `<https://htop.dev>`_
 
-`Ncdu website <https://dev.yorhel.nl/ncdu>`_
+MPV
+  A versatile, terminal-based media player.
 
-**Xfce4-terminal**
+  Command: ``mpv a-movie-file.mp4``
 
-A familiar terminal emulator with convenient features like tabs and custom themes.
+  `<https://mpv.io>`_
 
-`Xfce4-terminal website <https://docs.xfce.org/apps/terminal/start>`_
+GNOME Disks
+  Partition, format, and manage internal and external disks.
 
-**Foot**
+  Command: ``gnome-disks``
 
-An efficient, simple, and quick Wayland terminal emulator.
+  `<https://wiki.gnome.org/Apps/Disks>`_
 
-`Foot website <https://codeberg.org/dnkl/foot>`_
+Ncdu
+  Terminal-based disk usage analysis utility.
 
-**Wev**
+  Command: ``ncdu``
 
-Event viewer useful when troubleshooting or debugging.
+  `Ncdu website <https://dev.yorhel.nl/ncdu>`_
 
-`Wev website <https://git.sr.ht/~sircmpwn/wev>`_
+Wev
+  Event viewer useful when debugging input devices under wayland-based compositors such as Sway.
 
-**Wayvnc**
+  Command: ``wev``
 
-Access your Reform from VNC clients on other platforms using this server application.
+  `<https://git.sr.ht/~sircmpwn/wev>`_
 
-`Wayvnc website <https://github.com/any1/wayvnc>`_
+Wayvnc
+  Access your MNT Reform desktop remotely from VNC clients on other platforms using this server application.
 
-**VICE**
+  Command: ``wayvnc``
 
-Commodore 64 system emulator (What are the correct settings?)
+  `Wayvnc website <https://github.com/any1/wayvnc>`_
 
-`VICE website <https://vice-emu.sourceforge.io/>`_
+Wf-Recorder
+  Record MP4 video of your desktop with this program.
 
-**Amiberry**
+  Command: ``wf-recorder`` (Stop with *CTRL+C*. The resulting video is named "recording.mp4")
 
-Commodore Amiga system emulator
-
-`Amiberry website <https://blitterstudio.com/amiberry/>`_
-
-**DOSbox**
-
-MS-DOS system emulator
-
-`DOSbox website <https://www.dosbox.com/>`_
-
-**PCSX4All**
-
-Sony PlayStation 1 system emulator
-
-`PCSX4All website <https://github.com/gameblabla/pcsx4all/releases>`_
-
-**Grim & Slurp**
-
-Grim is a screen shot tool, and Slurp lets you select the region of the screen you want to capture.
-
-`Grim & Slurp website <https://wayland.emersion.fr/grim/>`_
-
-**Wf-recorder**
-
-Capture MP4 video of your screen with this program.
-
-`Wf-recorder website <https://github.com/ammen99/wf-recorder>`_
-
-**FreeCAD**
-
-Create and view 3D models of objects, buildings, and complex mechanisms.
-
-`Freecad website <https://www.freecadweb.org/>`_
-
-**KiCAD**
-
-Design circuit schematics and printed circuit boards.
-
-`Kicad website <https://kicad.org/>`_
+  `<https://github.com/ammen99/wf-recorder>`_
