@@ -1,7 +1,9 @@
 The Motherboard
 ===============
 
-TODO: line-art render of the motherboard STEP file with callouts of important parts and connectors.
+.. image:: _static/illustrations/3t.png
+
+TODO: callouts of important parts and connectors.
 
 The motherboard spans the complete inner width of the device (around 27 cm) and ends with external ports on both sides. It has the following features:
 

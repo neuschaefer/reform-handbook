@@ -17,7 +17,7 @@ TODO: some people are still missing from special thanks!
 
 :Illustration: Paul Klingberg, 100rabbits
 
-:Special Thanks: Daniel Amor, Zoe & Elen, timonsku, Lukas Stach, Marek Vasut, Christian Gmeiner, Daniel Stone, Chris Healy, Igalia, Helga Hansen, Philip Steffan, Golem, Florian Hadler, Gabriel Yoran, Jonas Haring, JD Music Labs, Crowd Supply, NLnet, F. Schneider, zakx, Christian Heller, Caro A. Sosat, Nils Dagsson Moskopp, schneider, Felix Schneider, Jan Varwig, Martin Meyerhoff, Ian Hanschen
+:Special Thanks: Daniel Amor, Felix Schneider, Zoe & Elen, timonsku, Lukas Stach, Marek Vasut, Christian Gmeiner, Daniel Stone, Chris Healy, Igalia, Helga Hansen, Philip Steffan, Golem, Florian Hadler, Gabriel Yoran, Jonas Haring, JD Music Labs, Crowd Supply, NLnet, F. Schneider, zakx, Christian Heller, Caro A. Sosat, Nils Dagsson Moskopp, Li0n, schneider, Jan Varwig, Martin Meyerhoff, Ian Hanschen, Stefan Kalkowski
 
 :Inter Font: rsms
 
@@ -26,12 +26,14 @@ TODO: some people are still missing from special thanks!
 :Software: Debian GNU/Linux, KiCAD, Inkscape, GIMP, Emacs, Vim, Git, LUFA, MicroBuilder, Blender, FreeCAD, OpenSCAD, Fusion 360, Cura, Sphinx
 
 Web: https://mntre.com
+
 Email: info@mntre.com
-Copyright 2018-2020 MNT Research GmbH, Fehlerstr. 8, 12161 Berlin
-Managing Director: Lukas F. Hartmann
-Registergericht: Amtsgericht Charlottenburg
-Aktenzeichen: HRB 136605 B
-VAT ID: DE278908891
-WEEE: DE 33315564
+
+| Copyright 2018-2020 MNT Research GmbH, Fehlerstr. 8, 12161 Berlin
+| Managing Director: Lukas F. Hartmann
+| Registergericht: Amtsgericht Charlottenburg
+| Aktenzeichen: HRB 136605 B
+| VAT ID: DE278908891
+| WEEE: DE 33315564
 
 TODO: License

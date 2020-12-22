@@ -1,7 +1,9 @@
 The Trackball
 =============
 
-TODO: line art of trackball with callouts
+.. image:: _static/illustrations/7t.png
+
+TODO: callouts, screws are in random places
 
 The trackball uses the same microcontroller and LUFA framework as the keyboard_, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the PAT9125EL-TKIT optical sensor that is connected via I2C.
 

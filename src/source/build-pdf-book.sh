@@ -9,9 +9,12 @@ cat _tex/pre.tex >reform-handbook.tex
 
 # concat _referenceelec subsections
 # because pandoc can't work with toctree
-echo >_referenceelec.rst
+echo >_referenceelec.rst <<EOF
+Reference: Electronics
+++++++++++++++++++++++
+
+EOF
 for subsection in \
-    referenceelec \
     motherboard \
     keyboard \
     trackball \

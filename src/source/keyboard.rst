@@ -39,6 +39,8 @@ TODO: describe OLED functionality (this has a lot of cross links to System Contr
 Replacing a Keycap
 ------------------
 
+.. image:: _static/illustrations/22t.png
+
 You can easily pull out individual keycaps with your fingernails or better, using a keycap puller.
 
 Replacing a Keyswitch
