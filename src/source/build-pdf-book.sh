@@ -30,7 +30,7 @@ for section in \
   input \
   linux \
   software \
-  tutorial \
+  development \
   referencemech \
   _referenceelec \
   advanced \
@@ -59,4 +59,3 @@ rm -- *.aux
 rm -- *.toc
 
 echo ">>> generated ../build/reform-handbook.pdf <<<"
-
