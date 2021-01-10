@@ -12,8 +12,7 @@ Reform Handbook
    linux
    software
    development
-   referencemech
-   referenceelec
+   parts
    advanced
    online
    credits
