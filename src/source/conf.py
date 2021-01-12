@@ -18,9 +18,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Reform Handbook'
-copyright = '2020, Reform'
-author = 'Reform'
+project = 'MNT Reform Handbook'
+copyright = '2020-2021, MNT Research GmbH'
+author = 'Lukas F. Hartmann et al'
 
 
 # -- General configuration ---------------------------------------------------
