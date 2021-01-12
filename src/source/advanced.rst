@@ -92,7 +92,7 @@ Then, copy the operating system and all your files (as root):
 
 .. code-block:: none
 
-   rsync -avxHAX --info=progress2 / /mnt/
+   rsync -axHAWXS --numeric-ids --info=progress2 / /mnt/
    umount /mnt
 
 Encrypted NVMe
