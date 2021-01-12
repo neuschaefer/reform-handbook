@@ -16,8 +16,6 @@ For easy (dis)assembly, Reform uses only M2 screws with Phillips-head everywhere
 
 When closed, the case is held shut by 4 little neodymium bar magnets which are located in the front edge of the screen enclosure and in the front of the main box.
 
-TODO: mention that hinges can be opened >180 degrees
-
 Main Box
 --------
 .. image:: _static/illustrations/17t.png
@@ -29,6 +27,8 @@ The main box contains most of the electronics:
 - Keyboard, connecting to the motherboard via two JST-PH cables
 - OLED display, connecting to the keyboard via a 4-pin 1mm pitch flex cable
 - Trackball or Trackpad, connecting to motherboard via one JST-PH cable
+
+The main box features four neodymium bar magnets inserted into slots below the front edge. These match with their counterparts in the screen front.
 
 Keyboard Frame
 --------------
@@ -160,25 +160,42 @@ Install an M.2 Card (SSD)
 
 TODO: illustration
 
-Exchange the CPU module
------------------------
-
-TODO: illustration
-TODO: heatsink
-  
 Motherboard Schematics
 ----------------------
 
 TODO: how do we insert a rendition of all of the schematics? (source is probably PDF)
-
 TODO: link (QR code?) to IBOM
+
+CPU Module
+==========
+
+The CPU module is plugged into motherboard connector U1. It contains the main SoC (System-on-Chip) and memory as well as the ethernet PHY. MNT Reform release 1 ships with the Boundary Devices Nitrogen8M_SOM CPU module, which features a NXP i.MX8MQ SoC with 4x Cortex-A53 cores clocked at 1.5GHz, Vivante GC7000L GPU, 4GB LPDDR4 memory and 16GB eMMC flash storage. The schematics of this module are freely available on Boundary Devices' Website after creating an account.
+
+At the time of writing, the following alternative CPU modules are in development:
+
+- LS1028A Module with NXP LS1028A SoC (2x Cortex-A72, GC7000L GPU) and 8GB or 16GB LPDDR4 (Co-developed with RBZ, open source hardware)
+- FPGA Module with Xilinx Kintex-7 and 2GB DDR3 memory, open source hardware
+
+If you want to develop your own CPU module, visit source.mnt.re/reform for a KiCAD template and more technical information.
+
+Display Connector
+-----------------
+
+The default display in MNT Reform conforms to the eDP (embedded DisplayPort) standard. The Nitrogen8M_SOM outputs a MIPI-DSI signal on its flex connector that is fed into the J24 connector on the motherboard using the 30 pin, 0.5mm pitch flex cable. The SN65DSI86 chip on the motherboard converts the MIPI-DSI signal to eDP. If you use an alternative module that outputs eDP directly, the J24 connection is skipped. Refer to the manual of your module instead.
+
+Heatsink
+========
+
+The heatsink is a piece of milled aluminum that connects to the silicon die of the main SoC on the CPU module, with a dab of thermal paste applied on the die. The heatsink is fixed to the motherboard by four M2x14 (TODO: double check) screws. The screws are supported by four plastic cylindrical spacers.
 
 Keyboard
 ========
 
 TODO: line-art render of the keyboard module with callouts of ports and buttons
 
-The keyboard is a row/column matrix scanner with anti-ghosting diodes on each switch. Each row and column is connected to one pin of the ATMega32U4_ 8-bit microcontroller. This microcontroller runs a firmware based on LUFA_. This converts the scanned out keycodes to the USB HID protocol.
+The keyboard is powered by an ATMega32U4_ 8-bit microcontroller. The controller scans the row/column matrix of keyswitches and reports keypresses via USB HID (human interface device) to the motherboard. Each switch has a diode do prevent ghosting, so you can press multiple keys at once. The microcontroller runs a firmware based on LUFA_, which is an open source library for implementing USB input devices.
+
+The second role of the keyboard is to serve as a user interface to the LPC system controller on the mainboard, even when the main SoC is turned off. To make this possible, the keyboard connects via a separate UART cable to the motherboards SYSCTL header (J23). 
 
 Keyboard Firmware
 -----------------
@@ -193,7 +210,7 @@ To modify the scancodes of the keyboard matrix, edit the file Keyboard.c and reb
 
 To be able to flash the firmware to the keyboard, the ATMega has to be in a special mode where it identifies as an "Atmega DFU bootloader" USB device.
 
-Toggle the programming DIP switch SW84 to "ON" and press the reset button SW83.
+Remove the keyboard's frame and toggle the programming DIP switch SW84 on the keyboard to "ON". Then press the reset button SW83. Before doing this, you need a means to start the flashing command without the internal keyboard. You can use an external USB keyboard, or use the trackball/trackpad to copy and paste the flash command and a newline.
 
 The keyboard will reappear as a Atmel DFU bootloader USB device. You can then upload your new firmware by executing:
 
@@ -201,29 +218,29 @@ The keyboard will reappear as a Atmel DFU bootloader USB device. You can then up
 
    ./flash.sh
 
-Backlight
----------
-
-TODO: describe how the backlight works and that it can be controlled by key combinations.
-
 OLED
 ----
 
 TODO: describe OLED functionality (this has a lot of cross links to System Controller, because the OLED together with the keyboard's Circle key is the front end to the System Controller).
+
+Backlight
+---------
+
+Each key except for the space bars has a white light emitting diode (LED) to illuminate the transparent part of the keycaps, making the laser engraved letters visible in darkness. You can control the backlight's brightness via Circle key combinations or the OLED menu. (TODO: cross ref)
 
 Replacing a Keycap
 ------------------
 
 .. image:: _static/illustrations/22t.png
 
-You can easily pull out individual keycaps with your fingernails or better, using a keycap puller.
+MNT Reform comes with custom MBK keycaps by MKTN, but you can use any keycaps compatible with Kailh Choc keyswitches. You can easily pull out individual keycaps with your fingernails or better, using a keycap puller, and swap them around. The only two keycap sizes on the keyboard are 1U and 1.5U.
 
 Replacing a Keyswitch
 ---------------------
 
-Set your iron/station to ~380 degrees and dissolve the solder of one pin. Try to pull out the corresponding side of the switch from the top while continuing to heat the pin. Repeat the same for the other pin and go back and forth until you can remove the switch.
+Should a keyswitch ever break, you can replace it with Kailh Choc Brown (CPG135001D02).
 
-Replace with model Kailh Choc Brown, also known as CPG135001D02.
+Use a soldering iron for lead-free soldering and dissolve the solder of one pin. Try to pull out the corresponding side of the switch from the top while continuing to heat the pin. Repeat the same for the other pin and go back and forth until you can remove the switch.
 
 .. _LUFA: http://www.fourwalledcubicle.com/files/LUFA/Doc/170418/html/
 .. _ATMega32U4: http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf
@@ -232,7 +249,7 @@ Replace with model Kailh Choc Brown, also known as CPG135001D02.
 Keyboard Schematics
 -------------------
 
-TODO
+TODO: include schematics
 
 Trackball
 =========
@@ -241,11 +258,14 @@ Trackball
 
 TODO: callouts, screws are in random places
 
-The trackball uses the same microcontroller and LUFA framework as the keyboard_, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the PAT9125EL-TKIT optical sensor that is connected via I2C.
+The trackball uses the same microcontroller and LUFA library as the keyboard_, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the PAT9125EL optical sensor that is connected via I2C. The electronic connection between trackball sensor and controller is made with a 6-pin 0.5mm pitch flex cable.
 
-The trackball has five buttons. The top two buttons function as left and right mouse buttons, the lower center button maps to the middle mouse button.
+The trackball has five buttons. These make use of the same keyswitches as the keyboard: Kailh Choc Brown (CPG135001D02). The button caps are 3D printed using SLA technology (Formlabs Form 2). If you want to substitute your own replacements, you can find the STL files for the caps in the MNT Reform source repository. The cup and lid of the trackball are 3D printed using the same method.
 
-Holding either the lower left or right buttons activates wheel mode, where vertical movement of the ball is translated into vertical mouse wheel events.
+Trackball Cleaning
+------------------
+
+TODO: explain how to clean the trackball
 
 Trackball Firmware
 ------------------
@@ -258,23 +278,20 @@ The trackball firmware is based on the LUFA USB device library and implements a 
 
    make
 
-Same as the keyboard, the trackball's MCU has to be in "Atmega DFU bootloader" USB mode.
+Same as the keyboard, the trackball's MCU has to be in bootloader USB mode for flashing. Toggle the programming DIP switch SW7 on the trackball controller to "ON" and press the reset button SW6.
 
-Toggle the programming DIP switch SW7 to "ON" and press the reset button SW6.
-
-The trackball will reappear as a Atmel DFU bootloader USB device. You can then upload your new firmware by executing:
+The trackball will reappear as an "Atmel DFU bootloader" USB device. You can then upload your new firmware by executing:
 
 .. code-block:: none
 
    ./flash.sh
 
 .. _firmware: https://source.mntmn.com/MNT/reform/reform2-trackball-fw
-.. _keyboard: ../keyboard/index.html
 
 Trackball Schematics
 --------------------
 
-TODO
+TODO: include trackball schematics
 
 Trackpad
 ========
@@ -284,8 +301,6 @@ TODO: line-art render of trackpad with callouts
 The trackpad uses the same microcontroller and LUFA framework as the keyboard_ and trackball_.
 
 TODO: describe Azoteq captouch sensor
-
-TODO: describe gestures for left/right/middle click and wheel
 
 Trackpad Firmware
 -----------------
@@ -316,10 +331,12 @@ The trackpad will reappear as a Atmel DFU bootloader USB device. You can then up
 Trackpad Schematics
 -------------------
 
-TODO
+TODO: include trackpad schematics
 
 Battery Packs
 =============
+
+TODO: explain the battery packs and cells
 
 Exchange Batteries
 ------------------
