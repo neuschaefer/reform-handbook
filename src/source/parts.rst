@@ -1,6 +1,9 @@
 Parts and Schematics
 ++++++++++++++++++++
 
+.. role:: raw-latex(raw)
+   :format: latex
+
 Case Parts
 ==========
 
@@ -203,8 +206,19 @@ TODO: illustration
 Motherboard Schematics
 ----------------------
 
-TODO: how do we insert a rendition of all of the schematics? (source is probably PDF)
 TODO: link (QR code?) to IBOM
+
+`Motherboard Schematic PDF <https://source.mnt.re/reform/reform/-/blob/master/reform2-motherboard-pcb/reform2-motherboard-r2c.pdf>`_
+
+:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-motherboard.pdf}`
+:raw-latex:`\includepdf[pages=2,angle=90]{_static/schem/reform2-motherboard.pdf}`
+:raw-latex:`\includepdf[pages=3,angle=90]{_static/schem/reform2-motherboard.pdf}`
+:raw-latex:`\includepdf[pages=4,angle=90]{_static/schem/reform2-motherboard.pdf}`
+:raw-latex:`\includepdf[pages=5,angle=90]{_static/schem/reform2-motherboard.pdf}`
+:raw-latex:`\includepdf[pages=6,angle=90]{_static/schem/reform2-motherboard.pdf}`
+:raw-latex:`\includepdf[pages=7,angle=90]{_static/schem/reform2-motherboard.pdf}`
+:raw-latex:`\includepdf[pages=8,angle=90]{_static/schem/reform2-motherboard.pdf}`
+:raw-latex:`\includepdf[pages=9,angle=90]{_static/schem/reform2-motherboard.pdf}`
 
 CPU Module
 ==========
@@ -278,6 +292,7 @@ OLED
 
 TODO: describe OLED functionality (this has a lot of cross links to System Controller, because the OLED together with the keyboard's Circle key is the front end to the System Controller).
 
+
 Backlight
 ---------
 
@@ -304,7 +319,12 @@ Use a soldering iron for lead-free soldering and dissolve the solder of one pin.
 Keyboard Schematics
 -------------------
 
-TODO: include schematics
+TODO: web links
+
+:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-keyboard.pdf}`
+:raw-latex:`\includepdf[pages=2,angle=90]{_static/schem/reform2-keyboard.pdf}`
+:raw-latex:`\includepdf[pages=3,angle=90]{_static/schem/reform2-keyboard.pdf}`
+:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-oled.pdf}`
 
 Trackball
 =========
@@ -346,7 +366,10 @@ The trackball will reappear as an "Atmel DFU bootloader" USB device. You can the
 Trackball Schematics
 --------------------
 
-TODO: include trackball schematics
+TODO: web links
+
+:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-trackball.pdf}`
+:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-trackball-sensor.pdf}`
 
 Trackpad
 ========
@@ -383,7 +406,9 @@ The trackpad will reappear as a Atmel DFU bootloader USB device. You can then up
 Trackpad Schematics
 -------------------
 
-TODO: include trackpad schematics
+TODO: web links
+
+:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-trackpad.pdf}`
 
 Battery Packs
 =============
