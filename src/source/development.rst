@@ -26,7 +26,7 @@ A popular architecture for PCs and laptops is x86_64 (aka amd64). Binaries compi
 - JIT (just-in-time) compilers
 - Docker images built for x86_64
 
-Generally, instead of using inline assembler or targeting a single architecture directly, use cross-platform libraries and code-emitting backends. Examples are LLVM or libsimdpp.
+Generally, instead of using inline assembler or targeting a single architecture directly, use cross-platform libraries and code-emitting backends. Examples are LLVM and GLM.
 
 i.MX8MQ: GPU
 ------------
@@ -44,6 +44,8 @@ Tested and recommended libraries/frameworks are:
 - SDL 2
 - GTK 3/GTK 4
 - Qt 5/Qt 6
+- Dear Imgui
+- Godot Engine (targeting GL ES 2.0)
 - Text-based interfaces (TUIs)
 
 Wayland works better than Xorg directly, but Xorg applications work well on top of Wayland through Xwayland or Xephyr.
@@ -63,6 +65,6 @@ You can use the ALSA API directly or higher level APIs such as PulseAudio, Jack 
 Languages
 ---------
 
-While you can easily write programs in C and C++ -- and the Linux kernel and most layers on top of it are still written in C -- you can also use Rust, Go, Java or scripting languages such as JavaScript, Python or Ruby on MNT Reform. All of these have first-class aarch64 support.
+While you can easily write programs in C and C++ -- and the Linux kernel and most layers on top of it are still written in C -- you can also use Rust, Go, SBCL, Haskell, Java or scripting languages such as JavaScript, Python, Ruby on MNT Reform. All of these have first-class aarch64 support.
 
 Applications that use web browser engines (such as Electron) can disappoint in terms of performance on MNT Reform. Programs using native toolkits will run faster, use less memory and provide a better user experience.
