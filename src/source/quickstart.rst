@@ -9,7 +9,7 @@ To prevent discharge during shipment, the battery cables are not connected by de
 
 Step 2: Turn On
 ---------------
-Insert the included SD card into the slot on the left hand side of the device.
+Insert the included SD card into the slot on the left hand side of the device. (TODO: illustration)
 
 .. image:: _static/illustrations/5t-callouts.png
 
