@@ -15,17 +15,21 @@ The motherboard connector labelled SER1 is a serial port (UART) to which U-Boot 
 
 Wire up a generic USB-to-UART adapter to the following pins of connector J18:
 
-- **1** UART1_TXD, connect to RX of your adapter
-- **2** UART1_RXD, connect to TX of your adapter
-- **3** GND, connect to GND of your adapter
+=== ========================================
+Pin Function
+=== ========================================
+1   UART1_TXD, connect to RX of your adapter
+2   UART1_RXD, connect to TX of your adapter
+3   GND, connect to GND of your adapter
+=== ========================================
 
-Then, use a terminal program such as screen on your host computer:
+Then, use a terminal program such as ``screen`` on your host computer:
 
 .. code-block:: none
 
    screen /dev/ttyUSB0 115200
 
-If you then switch on Reform (powered by the wall adapter) with the provided SD card inserted, you should see the U-Boot console in *screen*.
+If you then switch on Reform (powered by the wall adapter) with the provided SD card inserted, you should see the U-Boot console in ``screen``.
 
 Power Rails
 +++++++++++
@@ -110,4 +114,4 @@ To let Linux load your root filesystem from your encrypted disk, you need a way 
    saveenv
    boot
 
-TODO: Provide an easier/automated way of doing this
+TODO: Provide an easier/automated way of doing this.
