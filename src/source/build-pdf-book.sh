@@ -7,25 +7,6 @@ set -x
 
 cat _tex/pre.tex >reform-handbook.tex
 
-# concat _referenceelec subsections
-# because pandoc can't work with toctree
-echo >_referenceelec.rst <<EOF
-Reference: Electronics
-++++++++++++++++++++++
-
-EOF
-for subsection in \
-    motherboard \
-    keyboard \
-    trackball \
-    trackpad \
-    power \
-    debug
-do
-  cat $subsection.rst >>_referenceelec.rst
-  echo >>_referenceelec.rst
-done
-
 for section in \
   preface \
   safety \
@@ -34,8 +15,7 @@ for section in \
   linux \
   software \
   development \
-  referencemech \
-  _referenceelec \
+  parts \
   advanced \
   online \
   credits
@@ -55,7 +35,6 @@ xelatex reform-handbook.tex
 # clean up
 mv reform-handbook.pdf ../build/
 rm -- _*.tex
-rm -- _*.rst
 rm -- *.out
 rm -- *.log
 rm -- *.aux

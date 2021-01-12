@@ -17,7 +17,7 @@ TODO: some people are still missing from special thanks!
 
 :Illustration: Paul Klingberg, 100rabbits
 
-:Special Thanks: Daniel Amor, Felix Schneider, Zoe & Elen, timonsku, Lukas Stach, Marek Vasut, Christian Gmeiner, Daniel Stone, Chris Healy, Igalia, Helga Hansen, Philip Steffan, Golem, Florian Hadler, Gabriel Yoran, Jonas Haring, JD Music Labs, Crowd Supply, NLnet, F. Schneider, zakx, Christian Heller, Caro A. Sosat, Nils Dagsson Moskopp, Li0n, schneider, Jan Varwig, Martin Meyerhoff, Ian Hanschen, Stefan Kalkowski
+:Special Thanks: Daniel Amor, Felix Schneider, Zoe & Elen, timonsku, Lukas Stach, Marek Vasut, Christian Gmeiner, Daniel Stone, Chris Healy, Igalia, Helga Hansen, Philip Steffan, Golem, Florian Hadler, Gabriel Yoran, Jonas Haring, JD Music Labs, Crowd Supply, NLnet, zakx, Christian Heller, Caro A. Sosat, Nils Dagsson Moskopp, Li0n, schneider, Jan Varwig, Martin Meyerhoff, Ian Hanschen, Stefan Kalkowski
 
 :Inter Font: rsms
 

@@ -1,7 +1,7 @@
 Input Devices
 =============
 
-Reform comes with a custom keyboard and either a trackball or a trackpad preinstalled. All of the input devices are modular and can be easily swapped in and out. They all connect via internal USB2.0 cables.
+Reform comes with a keyboard and either a trackball or a trackpad preinstalled. All of the input devices are modular and can be easily swapped in and out. They all connect via internal USB2.0 cables.
 
 Keyboard
 --------
@@ -15,13 +15,11 @@ Trackball
 ---------
 .. image:: _static/illustrations/6t-callouts.png
 
-The trackball works similar to a three-button mouse. Rolling the ball will push the cursor in the same direction. In addition to the standard three mouse buttons, the trackball also has two "Wheel Mode" buttons. Holding down either while moving the ball will scroll the currently focused content.
-
-TODO: cleaning the trackball.
+The trackball works similar to a three-button mouse. Rolling the ball will move the cursor in the same direction. In addition to the standard three mouse buttons (left, middle, right), the trackball also has two "Wheel Mode" buttons. Holding down either while moving the ball will scroll the currently focused content.
 
 Trackpad
 --------
 
 TODO trackpad illustration.
 
-TODO explain gestures.
+The trackpad senses the touch of your fingers. Unlike the trackball, it does not have any moving parts or buttons. Slide one finger across to move the cursor. Tapping with one finger acts like a left mouse button click. Sliding two fingers allows you to scroll (similar to a mouse wheel). Tapping with two fingers performs a right click. To click and drag, i.e. to select text or drag and drop icons, use three fingers. Tapping three fingers is equivalent to a middle click.
