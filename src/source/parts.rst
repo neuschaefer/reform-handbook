@@ -50,6 +50,7 @@ Both speaker and display cable are fed through a hollow part in the hinge and in
 
 Four little neodymium magnets are mounted along the top edge. These, together with their counterparts in the main box, hold the laptop shut when closed.
 
+
 Screen Front
 ------------
 
@@ -220,10 +221,25 @@ Display Connector
 
 The default display in MNT Reform conforms to the eDP (embedded DisplayPort) standard. The Nitrogen8M_SOM outputs a MIPI-DSI signal on its flex connector that is fed into the J24 connector on the motherboard using the 30 pin, 0.5mm pitch flex cable. The SN65DSI86 chip on the motherboard converts the MIPI-DSI signal to eDP. If you use an alternative module that outputs eDP directly, the J24 connection is skipped. Refer to the manual of your module instead.
 
+Compatible Displays
++++++++++++++++++++
+
+MNT Reform was designed to be compatible with a number of 13.3 inch (diagonal) 1920x1080 pixel eDP displays. We tested the following display models successfully:
+
+============ ==============================
+Brand        Model
+============ ==============================
+Innolux      N125HCE-GN1 (Center Connector)
+Innolux      N125HCE-GN1 (Side Connector)
+Innolux      N125HCE-GPA (glossy or matte)
+BOE          NV125FH1-N82
+AU Optronics B125HAN02.2
+============ ==============================
+
 Heatsink
 ========
 
-The heatsink is a piece of milled aluminum that connects to the silicon die of the main SoC on the CPU module, with a dab of thermal paste applied on the die. The heatsink is fixed to the motherboard by four M2x14 (TODO: double check) screws. The screws are supported by four plastic cylindrical spacers.
+The heatsink is a piece of milled aluminum that connects to the silicon die of the main SoC on the CPU module, with a dab of thermal paste applied on the die. The heatsink is fixed to the motherboard by four M2x14 (TODO: double check length!) screws. The screws are supported by four plastic cylindrical spacers.
 
 Keyboard
 ========
@@ -335,7 +351,7 @@ Trackpad
 
 TODO: line-art render of trackpad with callouts
 
-The trackpad uses the same microcontroller and LUFA framework as the keyboard_ and trackball_.
+The trackpad uses the same microcontroller and LUFA framework as the keyboard and trackball.
 
 TODO: describe Azoteq captouch sensor
 
@@ -361,9 +377,6 @@ The trackpad will reappear as a Atmel DFU bootloader USB device. You can then up
    ./flash.sh
 
 .. _firmware: https://source.mntmn.com/MNT/reform/reform2-trackpad-fw
-.. _keyboard: ../keyboard/index.html
-.. _trackpad: ../trackpad/index.html
-.. _trackball: ../trackball/index.html
 
 Trackpad Schematics
 -------------------
@@ -373,11 +386,30 @@ TODO: include trackpad schematics
 Battery Packs
 =============
 
-TODO: explain the battery packs and cells
+MNT Reform has two identical battery packs, referred to as the Left and Right packs. Each pack has four 3.2V cells with LiFePO4 chemistry. You may be tempted to try cells of other chemistries like LiIon, **but never do this, as these are incompatible.**
 
-Exchange Batteries
-------------------
+**Only use LiFePO4 cells with MNT Reform!**
+
+When inserting battery cells, **make sure that the positive and negative poles are facing in the correct direction.** The poles are marked on the silkscreen of the battery pack PCBs.
+
+All 8 cells are connected in series. When fully charged at 3.6V, the total voltage of the cells can add up to 28.8V. **Make sure not to bridge/short any battery clips to the case or neighboring clips or pins, as this will immediately cause sparks and burnt traces.**
+
+When working with MNT Reform internals, it is good practice to remove all battery cells. This way you can easily prevent damage from accidental discharge.
+
+LiFePO4 cells are safely discharged to 2.5V. Please make sure not to discharge the cells further. If you plan to leave your MNT Reform turned off/uncharged for more than a few days, disconnect the battery packs or take out the cells.
 
 .. image:: _static/illustrations/13t.png
 
-TODO: text. safety!
+Compatible Battery Cells
+-------------------------
+
+The following table lists compatible LiFePO4 cells, but any LiFePO4 chemistry cell of 18650 size should work. It is not recommended to mix cells of different capacities, as the lowest capacity cell will dictate the lowest safe point of discharge.
+
+============ ============== ========
+Brand        Model          Capacity
+============ ============== ========
+JGNE         MH48108        1800mAh
+IFR          18650 LiFePO4  1400mAh
+LithiumWerks APR18650M1-B   1100mAh
+Sony Konion  US18650FTC1    1100mAh
+============ ============== ========
