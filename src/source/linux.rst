@@ -406,17 +406,55 @@ Command     Description
 ``free -h`` Get information about system memory.
 =========== ===============================================================================================
 
+To view of a structured list of all clock frequencies in use in the SoC:
+
+.. code-block:: none
+
+ sudo cat /sys/kernel/debug/clk/clk_summary
+
+To see a table of interrupts:
+
+.. code-block:: none
+
+ sudo cat /proc/interrupts
+
 Clock
 -----
 
-The motherboard of MNT Reform has a battery-backed realtime clock chip (PCF8523T, U5). This chip keeps the date and time even if your system is shut down or loses power.
-
-TODO: ``sudo hwclock``
+The motherboard of MNT Reform has a battery-backed realtime clock chip (PCF8523T, U5). This chip keeps the date and time even if your system is shut down or loses power. You can interact (as ``root``) with the clock using the ``hwclock`` tool. Review ``man hwclock`` for the details.
 
 Network
 -------
 
-TODO: ``ip``
+MNT Reform has a built-in Gigabit Ethernet (1 GbE) port for networking. Additionally, you can install a Wi-Fi card in the mPCIe slot.
+
+Usually, you want to use a convenient management tool like ``connman-gtk`` (preinstalled) or ``network-manager`` (available as Debian package) to easily manage your network connections. If you want to low-level troubleshoot, you can use the ``ip`` tool:
+
+==================================== ========================================
+Command                              Meaning
+==================================== ========================================
+ip addr                              Show the status of the network interfaces including addresses. ``eth0`` is the built-in Ethernet; ``wlp1s0`` is a WiFi interface.
+ip route                             Show the network routing table.
+ip route add default via 192.168.1.1 Set the default IPV4 gateway to 192.168.1.1
+==================================== ========================================
+
+You can trigger an automatic configuration of an interface via DHCP by executing ``dhclient eth0``, and you can change the DNS nameservers by editing the configuration file ``/etc/resolv.conf``.
+
+To connect to a remote computer via a secure shell connection, try ``ssh`` followed by the IP address of the computer you want to connect to. If you want to login to MNT Reform over the network, you can enable the secure shell daemon service as follows:
+
+.. code-block:: none
+
+ sudo systemctl enable sshd
+
+You can then login to MNT Reform from another computer on your local network by executing:
+
+.. code-block:: none
+
+ ssh kim@192.168.1.242
+
+Substitute your username for ``kim`` and your IP address for ``192.168.1.242``. You can find your IP address by looking for the ``inet`` entries in the output of the ``ip addr`` command.
+
+Before using SSH functionality, you should generate a public/private keypair by executing ``ssh-keygen``.
 
 External Display
 ----------------
