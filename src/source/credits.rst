@@ -36,4 +36,4 @@ Email: info@mntre.com
 | VAT ID: DE278908891
 | WEEE: DE 33315564
 
-TODO: License
+License: The sources for this handbook and most MNT Reform software components (check repositories for details) are licensed under GNU GPL v3 or newer. The artwork is licensed under CC BY-SA 4.0. The MNT Reform hardware design files are licensed under CERN-OHL-S 2.0.

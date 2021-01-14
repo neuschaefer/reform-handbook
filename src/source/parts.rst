@@ -236,25 +236,10 @@ Display Connector
 
 The default display in MNT Reform conforms to the eDP (embedded DisplayPort) standard. The Nitrogen8M_SOM outputs a MIPI-DSI signal on its flex connector that is fed into the J24 connector on the motherboard using the 30 pin, 0.5mm pitch flex cable. The SN65DSI86 chip on the motherboard converts the MIPI-DSI signal to eDP. If you use an alternative module that outputs eDP directly, the J24 connection is skipped. Refer to the manual of your module instead.
 
-Compatible Displays
-===================
-
-MNT Reform was designed to be compatible with a number of 13.3 inch (diagonal) 1920x1080 pixel eDP displays. We tested the following display models successfully:
-
-============ ==============================
-Brand        Model
-============ ==============================
-Innolux      N125HCE-GN1 (Center Connector)
-Innolux      N125HCE-GN1 (Side Connector)
-Innolux      N125HCE-GPA (glossy or matte)
-BOE          NV125FH1-N82
-AU Optronics B125HAN02.2
-============ ==============================
-
 Heatsink
 ========
 
-The heatsink is a piece of milled aluminum that connects to the silicon die of the main SoC on the CPU module, with a dab of thermal paste applied on the die. The heatsink is fixed to the motherboard by four M2x14 (TODO: double check length!) screws. The screws are supported by four plastic cylindrical spacers.
+The heatsink is a piece of milled aluminum that connects to the silicon die of the main SoC on the CPU module, with a dab of thermal paste applied on the die. The heatsink is fixed to the motherboard by four M2x14 screws. The screws are supported by four plastic cylindrical spacers.
 
 Keyboard
 ========
@@ -285,14 +270,6 @@ The keyboard will reappear as a Atmel DFU bootloader USB device. You can then up
 .. code-block:: none
 
    ./flash.sh
-
-OLED Display
-------------
-
-TODO: describe OLED functionality (this has a lot of cross links to System Controller, because the OLED together with the keyboard's Circle key is the front end to the System Controller).
-
-TODO: "screenshot" of OLED menu
-TODO: "screenshot" of battery mgmt screen
 
 Backlight
 ---------
@@ -325,6 +302,18 @@ TODO: web links
 :raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-keyboard.pdf}`
 :raw-latex:`\includepdf[pages=2,angle=90]{_static/schem/reform2-keyboard.pdf}`
 :raw-latex:`\includepdf[pages=3,angle=90]{_static/schem/reform2-keyboard.pdf}`
+
+OLED Display
+============
+
+TODO: describe OLED functionality (this has a lot of cross links to System Controller, because the OLED together with the keyboard's Circle key is the front end to the System Controller).
+
+TODO: "screenshot" of OLED menu
+TODO: "screenshot" of battery mgmt screen
+
+OLED Schematics
+---------------
+
 :raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-oled.pdf}`
 
 Trackball
@@ -341,12 +330,12 @@ The trackball has five buttons. These make use of the same keyswitches as the ke
 Trackball Cleaning
 ------------------
 
-TODO: explain how to clean the trackball
+From time to time, you should clean the trackball from accumulated dust. To do this, carefully lift off the left and right buttons. Then, unscrew the two screws holding the trackball's lid and remove the ball. Clean the inside of the cup with a soft cloth. Don't use detergents as these can dissolve the cup's material.
 
 Trackball Firmware
 ------------------
 
-You can find the Reform trackball firmware_ in the source folder "reform2-trackball-fw".
+You can find the trackball firmware_ in the source folder "reform2-trackball-fw".
 
 The trackball firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackball, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
 
@@ -441,3 +430,18 @@ IFR          18650 LiFePO4  1400mAh
 LithiumWerks APR18650M1-B   1100mAh
 Sony Konion  US18650FTC1    1100mAh
 ============ ============== ========
+
+Compatible Displays
+===================
+
+MNT Reform was designed to be compatible with a number of 13.3 inch (diagonal) 1920x1080 pixel eDP displays. We tested the following display models successfully:
+
+============ ==============================
+Brand        Model
+============ ==============================
+Innolux      N125HCE-GN1 (Center Connector)
+Innolux      N125HCE-GN1 (Side Connector)
+Innolux      N125HCE-GPA (glossy or matte)
+BOE          NV125FH1-N82
+AU Optronics B125HAN02.2
+============ ==============================

@@ -36,11 +36,12 @@ Power Rails
 
 Reform can accept ~7V-32V of DC power on barrel jack J1. The nominal input voltage is 24V. If you can't measure the input voltage on R49, check if fuse F1 is blown.
 
-The i.MX8M processor module has a green LED. It has to light up to signal good power (5V rail). The processor module only needs power on the main 5V rail to work, but with only 5V power it cannot talk to the SD card (which requires both 3V3 and 1V8 rails to work). Thus, you can toggle the DIP switch on the i.MX8M module to try booting from the eMMC flash.
+Either wall or battery power will be regulated to ~28V by the buck-boost regulator/charger LTC4020 and output to the main system regulators. U14 is the always-on 3V3 regulator that powers critical chips like the System Controller (LPC11U24, U18). You can confirm LPC_VCC power with 3.3V on J22 pin 15.
 
-Either wall or battery power will be regulated to ~28V by the buck-boost regulator/charger LTC4020 and output to the main system regulators. U14 is the always-on 3V3 regulator that powers critical chips like the System Controller (LPC11U24, U18). Confirm input voltage on R1. Confirm LPC_VCC power with 3.3V on J22 pin 15.
+Two white indicator LEDs on the motherboard, D11 and D12, signal that 3.3V and 5V rails are turned on, respectively.
+The i.MX8M processor module has a green LED that signals 5V power arriving at the module. Because of the level shifters U28 and U8, booting from the SD card requires both 3.3V and 1.8V rails to work. You can measure 1.8V on C130, for example. Booting from eMMC requires only 5V power to go into the CPU module.
 
-TODO: improve this section
+The USB hub U9 and the MIPI to eDP converter U10 also need 1.2V power to work (measure on C37). The display itself requires the 3V3_PWR_AUX (3.3V) and USB_PWR (5V) rails to be switched on by the System Controller.
 
 SYSCTL
 ++++++
@@ -84,6 +85,8 @@ The Linux kernel parameters are passed via the ``bootargs`` U-Boot environment v
      pci=nomsi
 
 This tells the kernel to mount the root filesystem from the ``mmcblk1p1`` device, which is the first partition on the SD card. To boot from the second partition, for example, you would change this to ``mmcblk1p2``. ``mmcblk0...`` is the eMMC flash. ``ttymxc0`` is the serial UART SER1. ``cma=512M`` sets up a memory area for contiguous allocation for the GPU. ``pci=nomsi`` turns off message-signaled interrupts (MSI) for the PCIe controller, which helps with some WiFi cards.
+
+TODO: mention ARM TF-A, DDR4 blob, HDMI blob
 
 Operating System on NVMe
 ------------------------

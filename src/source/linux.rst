@@ -391,8 +391,25 @@ The Linux kernel itself outputs a lot of diagnostic information at boot and when
 
  sudo dmesg -H
 
+Inspect Hardware
+----------------
+
+The following commands are useful to inspect devices connected internally or externally:
+
+=========== ===============================================================================================
+Command     Description
+=========== ===============================================================================================
+``lsblk``   List block devices (storage).
+``lsusb``   List USB devices. Use ``-v`` for more detail and ``-t`` for a tree view.
+``lspci``   List devices connected to PCIe ports. Use ``-v`` for more detail and ``-t`` for a tree view.
+``lscpu``   Get information about the processors.
+``free -h`` Get information about system memory.
+=========== ===============================================================================================
+
 Clock
 -----
+
+The motherboard of MNT Reform has a battery-backed realtime clock chip (PCF8523T, U5). This chip keeps the date and time even if your system is shut down or loses power.
 
 TODO: ``sudo hwclock``
 
