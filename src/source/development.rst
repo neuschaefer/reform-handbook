@@ -8,14 +8,16 @@ i.MX8MQ: CPU
 
 The i.MX8MQ SoC has the following CPU cores:
 
-- 4x Cortex-A53 at 1.5GHz
-- 1x Cortex-M4F at 600MHz (TODO: verify???)
+- 4x Cortex-A53 at 1.5 GHz
+- 1x Cortex-M4F at 266 MHz
 
 At the time of writing, the integration of the M4 core into mainline Linux is not production-ready.
 
-Linux (or another operating system) runs on the four Cortex-A53 cores. Cortex-A53 is a power efficient in-order core. This makes it less performant but also less vulnerable to certain security weaknesses of out-of-order processors (TODO: which ones exactly?).
+Linux (or another operating system) runs on the four Cortex-A53 cores. Cortex-A53 is a power efficient in-order core. This makes it less performant but also immune to certain security weaknesses of out-of-order processors, for example Meltdown.[3]_
 
 Optimizing your program to make use of multiple cores versus relying on single-core performance will pay off on MNT Reform. Also, make use of SIMD (NEON) optimizations. Try to keep memory usage and UI effects minimal. If your application runs well on MNT Reform, it will run well on a broad range of older PC hardware, too.
+
+.. [3] See `<https://meltdownattack.com>`_
 
 Binary (In)compatibility
 ------------------------

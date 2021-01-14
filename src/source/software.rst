@@ -28,7 +28,7 @@ Evolution
   `<https://wiki.gnome.org/Apps/Evolution>`_
 
 Linphone
-  A voice-over-IP client which has support across all major platforms. You can use it for voice and video calls, along with messaging. TODO: Setup instructions
+  A voice-over-IP (SIP) client which has support across all major platforms. You can use it for voice and video calls, along with messaging.
 
   Command: ``linphone``
 
@@ -87,11 +87,11 @@ Ardour 6
   `<https://ardour.org>`_
 
 Evince
-  View PDFs and other documents. TODO: Should we ship zathura?
+  View PDFs and other documents.
 
   Command: ``evince``
 
-  `Evince website <http://grafx2.chez.com/>`_
+  `Evince website <https://wiki.gnome.org/Apps/Evince>`_
 
 Sxiv
   A simple and fast image viewer.
