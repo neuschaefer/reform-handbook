@@ -520,7 +520,7 @@ Config File
 
 You can tailor Sway's behaviour and keyboard shortcuts by editing the file ``~/.config/sway/config``.
 
-All configuration options are documented in the Sway Wiki: <https://github.com/swaywm/sway/wiki>`_.
+All configuration options are documented in the Sway Wiki: `<https://github.com/swaywm/sway/wiki>`_.
 
 GNOME Basics
 ------------
