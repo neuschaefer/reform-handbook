@@ -152,7 +152,7 @@ Thunar
 
   Command: ``thunar``
 
-  Sway Shortcut: *MNT+T*
+  Sway keyboard shortcut: *MNT+T*
 
   `<https://docs.xfce.org/xfce/thunar/start>`_
 
@@ -161,7 +161,7 @@ Xfce4 Terminal
 
   Command: ``xfce4-terminal``
 
-  Sway Shortcut: *MNT+ENTER*
+  Sway keyboard shortcut: *MNT+ENTER*
 
   `<https://docs.xfce.org/apps/terminal/start>`_
 
@@ -170,7 +170,7 @@ Grim & Slurp
 
   Command: ``grim -g "$(slurp)"``
 
-  Sway Shortcut: *MNT+SHIFT+X*
+  Sway keyboard shortcut: *MNT+SHIFT+X*
 
   `<https://wayland.emersion.fr/grim>`_
 

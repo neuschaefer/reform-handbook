@@ -1,7 +1,7 @@
 Software Development
 ====================
 
-If you want to develop software for MNT Reform, there are a few things to consider. You can write software targeting the main CPU or modify firmware for the system controller and input devices. All of these have different architectures. Also consider that the main CPU is exchangeable, though targeting 64-bit ARM (aarch64) is a good bet until modules with other architectures become available (for example, RISC-V). This chapter covers development for the default i.MX8MQ module and some general best practices to keep your software portable.
+If you want to develop software for MNT Reform, there are a few things to consider. You can write software targeting the main CPU or modify firmware for the system controller and input devices. All of these have different architectures. Keep in mind that the main CPU is modular, though targeting 64-bit ARM (aarch64) is a good bet until upgrades with other architectures become available (for example, RISC-V). This chapter covers development for the default i.MX8MQ module and some general best practices to keep your software portable.
 
 i.MX8MQ: CPU
 ------------
@@ -11,11 +11,11 @@ The i.MX8MQ SoC has the following CPU cores:
 - 4x Cortex-A53 at 1.5GHz
 - 1x Cortex-M4F at 600MHz (TODO: verify???)
 
-At the time of writing, the integration of the M4 core into mainline Linux is not production ready, so we don't cover it here.
+At the time of writing, the integration of the M4 core into mainline Linux is not production-ready.
 
 Linux (or another operating system) runs on the four Cortex-A53 cores. Cortex-A53 is a power efficient in-order core. This makes it less performant but also less vulnerable to certain security weaknesses of out-of-order processors (TODO: which ones exactly?).
 
-Optimizing your program to make use of multiple cores versus relying on single-core performance will pay off on MNT Reform. Also, make use of SIMD (NEON) optimizations. Try to keep memory usage and unnecessary UI effects minimal. If your application runs well on MNT Reform, it will run well on a broad range of older PC hardware, too.
+Optimizing your program to make use of multiple cores versus relying on single-core performance will pay off on MNT Reform. Also, make use of SIMD (NEON) optimizations. Try to keep memory usage and UI effects minimal. If your application runs well on MNT Reform, it will run well on a broad range of older PC hardware, too.
 
 Binary (In)compatibility
 ------------------------
@@ -31,7 +31,7 @@ Generally, instead of using inline assembler or targeting a single architecture 
 i.MX8MQ: GPU
 ------------
 
-The embedded GPU in i.MX8MQ is Vivante GC7000L. It can theoretically support OpenGL ES 3.1, but the open-source Etnaviv drivers (included in the Mesa project) don't support this level at the time of writing. The safest target for 3D graphics is OpenGL ES 2.0. Desktop OpenGL 2.1 API support is good, too. There is no support for Vulkan nor OpenCL yet.
+The embedded GPU in i.MX8MQ is a Vivante GC7000L. It can theoretically support OpenGL ES 3.1, but the open-source Etnaviv drivers (included in the Mesa project) don't support this level at the time of writing. The safest target for 3D graphics is OpenGL ES 2.0. Desktop OpenGL 2.1 API support is good, too. There is no support for Vulkan nor OpenCL yet.
 
 If you want to make sure your 3D application or game works well, target:
 

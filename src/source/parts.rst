@@ -17,16 +17,16 @@ The case consists of the following 5 parts. All parts except the bottom plate ar
 
 For easy (dis)assembly, Reform uses only M2 screws with Phillips-head everywhere -- with one exception: M4x5 on the top half of the hinges.
 
-When closed, the case is held shut by 4 little neodymium bar magnets which are located in the front edge of the screen enclosure and in the front of the main box.
+When closed, the case is held shut by four neodymium bar magnets which are located in the front edge of the screen enclosure and another four in the front of the main box (8 in total).
 
 Main Box
 --------
 .. image:: _static/illustrations/17t.png
 
-The main box contains most of the electronics:
+The main box houses most of the electronics:
 
 - Motherboard, exposing ports through openings on the left and right
-- Two LiFePo4 battery packs, connecting to motherboard via Molex PicoLock cables
+- Two LiFePO4 battery packs, connecting to motherboard via Molex PicoLock cables
 - Keyboard, connecting to the motherboard via two JST-PH cables
 - OLED display, connecting to the keyboard via a 4-pin 1mm pitch flex cable
 - Trackball or Trackpad, connecting to motherboard via one JST-PH cable
@@ -51,8 +51,7 @@ The stereo speakers are mounted below the display and secured with the speaker h
 
 Both speaker and display cable are fed through a hollow part in the hinge and into the main box.
 
-Four little neodymium magnets are mounted along the top edge. These, together with their counterparts in the main box, hold the laptop shut when closed.
-
+Four neodymium magnets are mounted along the top edge. These, together with their counterparts in the main box, hold the laptop shut when closed.
 
 Screen Front
 ------------
@@ -85,7 +84,7 @@ TODO: rewrite this list
 - **USB 3.0 hub:** i.MX8M has 2x USB 3.0 controllers. As we need two internal USB ports for the keyboard and trackball (or trackpad) and wanted to provide three external USB ports, we put a Texas Instruments TUSB8041 USB hub chip on the board that provides the extra ports. We have USB load switches on each external port to protect from too much current draw.
 - **Sound system:** the Reform motherboard features a Wolfson/Cirrus WM8960 audio DAC (digital-to-analog converter)/amplifier interfacing to the headphone/microphone jack and powering two speakers housed below the main display.
 - **mPCIe slot:** the other PCIe controller drives an mPCIe connector that you can use for expansions like a Wi-Fi card (included in the Reform Max pledge level), an embedded graphics card or an FPGA board, for example.
-- **M.2 slot:** we put one M.2 M-key slot on the board that can house a NVMe SSD.
+- **M.2 slot:** we put one M.2 M-key slot on the board that can house an NVMe SSD.
 
 System Controller
 -----------------
@@ -102,7 +101,7 @@ The System Controller runs a bare metal program in an endless loop that has the 
 - Reporting total current flowing in and out of the batteries
 - Turning charge current on or off
 
-Your main way of talking to the System Controller is the Keyboard. The Keyboard has, aside from its USB connection to the main processor, a second serial (UART) connection/cable to the motherboard's SYSCTL port. A 57600 bps connection is always established between the Keyboard and the System Controller.
+Your main way of talking to the System Controller is with the Keyboard. The Keyboard has, aside from its USB connection to the main processor, a second serial (UART) connection/cable to the motherboard's SYSCTL port. A 57600 bps connection is always established between the Keyboard and the System Controller.
 
 It accepts commands in the form of a single letter followed by return. A command can also be prefixed with a single argument, a positive integer of up to 4 digits. The most important commands are:
 
@@ -118,10 +117,10 @@ The individual cell voltages are measured by the Battery Monitor LTC6803IG-4#PBF
 
 The total voltage and current are measured by the INA260 chip and reported via I2C to the System Controller.
 
-To understand the available commands in more detail, you can take a look at the System Controller's handle_commands_ function.
+To understand the available commands in more detail, you can take a look at the System Controller's ``handle_commands()`` function.
 
 TODO: Side note:
-The System Controller is permanently connected to the main processor's UART2 (/dev/ttymxc1 in Linux). If you want to interrupt this connection for safety reasons, you can desolder resistors R48 and R50.
+The System Controller is permanently connected to the main processor's UART2 (/dev/ttymxc1 in Linux). If you want to interrupt this connection for security reasons, you can desolder resistors R48 and R50.
 
 You can monitor the raw output of the System Controller going to the keyboard by connecting a terminal such as GNU Screen to the internal serial port UART2:
 
@@ -134,7 +133,7 @@ Flashing the Firmware
 
 You can find the source code of the firmware_ in the folder "reform2-lpc-fw" of the Reform source repository.
 
-To change (flash) the firmware of the System Controller, you need another computer and a Micro-USB cable.
+To flash the firmware of the System Controller, you need another computer and a Micro-USB cable.
 
 - TODO: drawing of where to connect the cable (Micro-USB connector on motherboard)
 
@@ -154,7 +153,7 @@ To change (flash) the firmware of the System Controller, you need another comput
 Expansion Port
 --------------
 
-The Expansion Port U18, labelled "Hack the Planet" is meant for advanced users that want to connect sensors or other peripherals to MNT Reform's system controller. Please note that changing the system controller's program can disrupt the battery charging control loop, potentially causing over- or undercharged cells, resulting in physical damage and/or injury. **Experiment with the system controller only if you know exactly what you're doing and at your own responsibility.**
+The Expansion Port U18, labelled "Hack the Planet" is meant for advanced users that want to connect sensors or other peripherals to MNT Reform's system controller. Please note that changing the system controller's program can disrupt the battery charging control loop, potentially causing over- or undercharged cells, resulting in physical damage and/or injury. **Experiment with the system controller only if you know exactly what you're doing and at your own risk.**
 
 The Expansion Port features an SPI interface, two analog-digital converters, a UART, JTAG and 3.3V Power. All non-power pins can alternatively be used as GPIOs.
 
@@ -197,7 +196,7 @@ TODO: illustration
 M.2 Socket (Key M)
 ------------------
 
-The second PCIe controller of the i.MX8M module is connected to the M.2 socket J10. The standard use for the port is to install a M.2 NVMe drive, for example one that comes with some versions of MNT Reform. Plug the NVMe module into the socket and fix it with an M2 screw to one of the three mounting holes that corresponds to the module's size.
+The second PCIe controller of the i.MX8M module is connected to the M.2 socket (J10). The standard use for the port is to install an M.2 NVMe solid state drive. Plug the NVMe module into the socket and fix it with an M2 screw to one of the three mounting holes that corresponds to the module's size.
 
 Only one PCIe lane and the reset signal are connected to the port. The reference clock for the port is generated by U23.
 
@@ -223,7 +222,7 @@ TODO: link (QR code?) to IBOM
 CPU Module
 ==========
 
-The CPU module is plugged into motherboard connector U1. It contains the main SoC (System-on-Chip) and memory as well as the ethernet PHY. MNT Reform release 1 ships with the Boundary Devices Nitrogen8M_SOM CPU module, which features a NXP i.MX8MQ SoC with 4x Cortex-A53 cores clocked at 1.5GHz, Vivante GC7000L GPU, 4GB LPDDR4 memory and 16GB eMMC flash storage. The schematics of this module are freely available on Boundary Devices' Website after creating an account.
+The CPU module is plugged into motherboard connector U1. It contains the main SoC (System-on-Chip) and memory as well as the ethernet PHY. MNT Reform release 1 ships with the Boundary Devices Nitrogen8M_SOM CPU module, which features an NXP i.MX8MQ SoC with 4x Cortex-A53 cores clocked at 1.5GHz, Vivante GC7000L GPU, 4GB LPDDR4 memory and 16GB eMMC flash storage. The schematics of this module are freely available on Boundary Devices' Website after creating an account.
 
 At the time of writing, the following alternative CPU modules are in development:
 
@@ -238,7 +237,7 @@ Display Connector
 The default display in MNT Reform conforms to the eDP (embedded DisplayPort) standard. The Nitrogen8M_SOM outputs a MIPI-DSI signal on its flex connector that is fed into the J24 connector on the motherboard using the 30 pin, 0.5mm pitch flex cable. The SN65DSI86 chip on the motherboard converts the MIPI-DSI signal to eDP. If you use an alternative module that outputs eDP directly, the J24 connection is skipped. Refer to the manual of your module instead.
 
 Compatible Displays
-+++++++++++++++++++
+===================
 
 MNT Reform was designed to be compatible with a number of 13.3 inch (diagonal) 1920x1080 pixel eDP displays. We tested the following display models successfully:
 
@@ -262,7 +261,7 @@ Keyboard
 
 TODO: line-art render of the keyboard module with callouts of ports and buttons
 
-The keyboard is powered by an ATMega32U4_ 8-bit microcontroller. The controller scans the row/column matrix of keyswitches and reports keypresses via USB HID (human interface device) to the motherboard. Each switch has a diode do prevent ghosting, so you can press multiple keys at once. The microcontroller runs a firmware based on LUFA_, which is an open source library for implementing USB input devices.
+The keyboard is powered by an ATMega32U4_ 8-bit microcontroller. The controller scans the row/column matrix of keyswitches and reports keypresses via USB HID (human interface device) to the motherboard. Each switch has a diode to prevent ghosting, so you can press multiple keys at once. The microcontroller runs a firmware based on LUFA_, which is an open source library for implementing USB input devices.
 
 The second role of the keyboard is to serve as a user interface to the LPC system controller on the mainboard, even when the main SoC is turned off. To make this possible, the keyboard connects via a separate UART cable to the motherboards SYSCTL header (J23).
 
@@ -279,7 +278,7 @@ To modify the scancodes of the keyboard matrix, edit the file Keyboard.c and reb
 
 To be able to flash the firmware to the keyboard, the ATMega has to be in a special mode where it identifies as an "Atmega DFU bootloader" USB device.
 
-Remove the keyboard's frame and toggle the programming DIP switch SW84 on the keyboard to "ON". Then press the reset button SW83. Before doing this, you need a means to start the flashing command without the internal keyboard. You can use an external USB keyboard, or use the trackball/trackpad to copy and paste the flash command and a newline.
+Remove the keyboard's frame and toggle the programming DIP switch SW84 on the keyboard to "ON". Then press the reset button SW83. Before doing this, you need a means to start the flashing command without MNT Reform's internal keyboard. You can use an external USB keyboard, or use the trackball/trackpad to copy and paste the flash command and a new line.
 
 The keyboard will reappear as a Atmel DFU bootloader USB device. You can then upload your new firmware by executing:
 
@@ -287,16 +286,18 @@ The keyboard will reappear as a Atmel DFU bootloader USB device. You can then up
 
    ./flash.sh
 
-OLED
-----
+OLED Display
+------------
 
 TODO: describe OLED functionality (this has a lot of cross links to System Controller, because the OLED together with the keyboard's Circle key is the front end to the System Controller).
 
+TODO: "screenshot" of OLED menu
+TODO: "screenshot" of battery mgmt screen
 
 Backlight
 ---------
 
-Each key except for the space bars has a white light emitting diode (LED) to illuminate the transparent part of the keycaps, making the laser engraved letters visible in darkness. You can control the backlight's brightness via Circle key combinations or the OLED menu. (TODO: cross ref)
+Most keys have a white light emitting diode (LED) to illuminate the transparent part of the keycaps, making the laser engraved letters visible in darkness. You can control the backlight's brightness via Circle key combinations or the OLED menu. (TODO: cross ref)
 
 Replacing a Keycap
 ------------------
@@ -310,7 +311,7 @@ Replacing a Keyswitch
 
 Should a keyswitch ever break, you can replace it with Kailh Choc Brown (CPG135001D02).
 
-Use a soldering iron for lead-free soldering and dissolve the solder of one pin. Try to pull out the corresponding side of the switch from the top while continuing to heat the pin. Repeat the same for the other pin and go back and forth until you can remove the switch.
+Use a soldering iron and solder wick to remove the solder of one pin. Try to pull out the corresponding side of the switch from the top while continuing to heat the pin. Repeat the same for the other pin and go back and forth until you can remove the switch.
 
 .. _LUFA: http://www.fourwalledcubicle.com/files/LUFA/Doc/170418/html/
 .. _ATMega32U4: http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf
@@ -376,7 +377,7 @@ Trackpad
 
 TODO: line-art render of trackpad with callouts
 
-The trackpad uses the same microcontroller and LUFA framework as the keyboard and trackball.
+The trackpad uses the same microcontroller as the keyboard and trackball.
 
 TODO: describe Azoteq captouch sensor
 
@@ -413,7 +414,7 @@ TODO: web links
 Battery Packs
 =============
 
-MNT Reform has two identical battery packs, referred to as the Left and Right packs. Each pack has four 3.2V cells with LiFePO4 chemistry. You may be tempted to try cells of other chemistries like LiIon, **but never do this, as these are incompatible.**
+MNT Reform has two identical battery packs, referred to as the Left and Right packs. Each pack has four 18650 cells with LiFePO4 chemistry and 3.2V. You may be tempted to try cells of other chemistries like LiIon or NiMH, **but never do this, as these are incompatible.**
 
 **Only use LiFePO4 cells with MNT Reform!**
 
