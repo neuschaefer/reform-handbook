@@ -432,9 +432,8 @@ Usually, you want to use a convenient management tool like ``connman-gtk`` (prei
 ==================================== ========================================
 Command                              Meaning
 ==================================== ========================================
-ip addr                              Show the status of the network interfaces including addresses. ``eth0`` is the built-in Ethernet; ``wlp1s0`` is a WiFi interface.
-ip route                             Show the network routing table.
-ip route add default via 192.168.1.1 Set the default IPV4 gateway to 192.168.1.1
+``ip addr``                          Show the status of the network interfaces including addresses. ``eth0`` is the built-in Ethernet; ``wlp1s0`` is a WiFi interface.
+``ip route``                         Show the network routing table.
 ==================================== ========================================
 
 You can trigger an automatic configuration of an interface via DHCP by executing ``dhclient eth0``, and you can change the DNS nameservers by editing the configuration file ``/etc/resolv.conf``.
@@ -557,7 +556,7 @@ Config File
 
 You can tailor Sway's behaviour and keyboard shortcuts by editing the file ``~/.config/sway/config``.
 
-All configuration options are documented in the Sway Wiki: <https://github.com/swaywm/sway/wiki>`_.
+All configuration options are documented in the Sway Wiki: `<https://github.com/swaywm/sway/wiki>`_.
 
 GNOME Basics
 ------------
