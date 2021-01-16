@@ -13,7 +13,7 @@ This chapter will introduce you to the basics of exploring and administering you
 Set a Root Password
 -------------------
 
-The most powerful user in the system is ``root``. When logged in as ``root``, you can modify but also destroy any file in the system. To prevent others from logging in as ``root``, you should protect the account with a password. This is done by executing the following command:
+The most powerful user in the system is ``root``. When logged in as ``root``, you can modify but also destroy any file in the system. To prevent others from logging in as ``root``, you should protect the account with a password. This is done by typing in the following command (followed by **Enter**):
 
 .. code-block:: none
 
@@ -26,8 +26,7 @@ During normal Linux usage you will rarely want to be ``root`` -- only when perfo
 Create a New User and Password
 ------------------------------
 
-In order to add such a new user account to the system, log in as
-``root`` (you already have) and run the ``adduser`` command (this will add a new user named
+In order to add such a new user account to the system, log in as ``root`` (you already have) and run the ``adduser`` command (this will add a new user named
 "kim", and add a new home directory for kim at ``/home/kim``):
 
 .. code-block:: none
