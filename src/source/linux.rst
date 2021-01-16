@@ -13,7 +13,7 @@ This chapter will introduce you to the basics of exploring and administering you
 Set a Root Password
 -------------------
 
-The most powerful user in the system is ``root``. When logged in as ``root``, you can modify but also destroy any file in the system. To prevent others from logging in as ``root``, you should protect the account with a password. This is done by typing in the following command (followed by **Enter**):
+The most powerful user in the system is ``root``. When logged in as ``root``, you can modify but also destroy any file in the system. To prevent others from logging in as ``root``, you should protect the account with a password. In the shell, you execute all commands by typing them in and pressing **Enter**. To set your password, execute this command:
 
 .. code-block:: none
 
@@ -26,7 +26,7 @@ During normal Linux usage you will rarely want to be ``root`` -- only when perfo
 Create a New User and Password
 ------------------------------
 
-In order to add such a new user account to the system, log in as ``root`` (you already have) and run the ``adduser`` command (this will add a new user named
+In order to add such a new user account to the system, log in as ``root`` (you already have) and execute the ``adduser`` command (this will add a new user named
 "kim", and add a new home directory for kim at ``/home/kim``):
 
 .. code-block:: none
@@ -344,7 +344,7 @@ By now you know most of the ingredients to be able to write **shell scripts**: p
  day=$(date +%A)
  echo Hello, $USER. Today is $day.
 
-The first line of the script, called the "shebang" line is important to tell the operating system that this script is to be interpreted by the shell ``/bin/sh``. Save the script to a file named ``greet.sh``. Mark the file executable and run it:
+The first line of the script, called the "shebang" line is important to tell the operating system that this script is to be interpreted by the shell ``/bin/sh``. Save the script to a file named ``greet.sh``. Mark the file executable and execute it:
 
 .. code-block:: none
 
@@ -478,7 +478,7 @@ Sway Basics
 
 TODO: sway screenshot
 
-You may start sway from the command line by running the ``sway`` command:
+You can start sway from the command line by executing the ``sway`` command:
 
 .. code-block:: none
 
