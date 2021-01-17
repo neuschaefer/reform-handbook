@@ -72,38 +72,34 @@ The bottom plate closes the main box from the bottom with ten M2x6 flathead scre
 Motherboard
 ===========
 
-.. image:: _static/illustrations/3t.png
+.. image:: _static/illustrations/3-callouts.png
 
-TODO: callouts of important parts and connectors.
+The motherboard spans the inner width of the device and ends with external ports on both sides. It has the following main features:
 
-The motherboard spans the complete inner width of the device (around 27 cm) and ends with external ports on both sides. It has the following features:
-
-TODO: rewrite this list
-
-- **Power system:** includes a charger for LiFePO4 cells and seamlessly switches between wall and battery power.
-- **System controller:** coupled to the power system, an NXP LPC11U24 Cortex-M0 MCU controls an analog monitor chip for the eight battery cells as well as the charger. It is connected to the SoM via SPI, and has GPIO lines to the main power rail switchers in the system. It has a UART (serial port) that the keyboard can talk to directly for issuing power on/off commands and battery status queries.
-- **DSI to eDP converter:** it was an important goal for us to make the main display path for Reform blob-free, so we couldn't use the existing HDMI/DisplayPort block in i.MX8M to drive the internal display, because this needs a chunk of firmware related to content protection. Instead, we're using the MIPI DSI output and convert its signal to eDP using a Texas Instruments SN65DSI86 chip. All involved drivers are open and in mainline Linux.
-- **USB 3.0 hub:** i.MX8M has 2x USB 3.0 controllers. As we need two internal USB ports for the keyboard and trackball (or trackpad) and wanted to provide three external USB ports, we put a Texas Instruments TUSB8041 USB hub chip on the board that provides the extra ports. We have USB load switches on each external port to protect from too much current draw.
-- **Sound system:** the Reform motherboard features a Wolfson/Cirrus WM8960 audio DAC (digital-to-analog converter)/amplifier interfacing to the headphone/microphone jack and powering two speakers housed below the main display.
-- **mPCIe slot:** the other PCIe controller drives an mPCIe connector that you can use for expansions like a Wi-Fi card (included in the Reform Max pledge level), an embedded graphics card or an FPGA board, for example.
-- **M.2 slot:** we put one M.2 M-key slot on the board that can house an NVMe SSD.
+- **Power system:** based on the LTC4020 buck/boost converter, regulates charging of the LiFePO4 batteries and seamlessly switches between wall and battery power.
+- **System controller:** coupled to the power system, an NXP LPC11U24 Cortex-M0 MCU controls an analog monitor chip for the eight battery cells as well as the charger. It is connected to the CPU module via SPI, and has GPIO lines to the main power rail switchers in the system. It has a UART (SYSCTL) that the keyboard can talk to directly for issuing power on/off commands and battery status queries.
+- **DSI to eDP bridge:** The SN65DSI86 chip converts the MIPI-DSI output from the CPU module to an embedded DisplayPort (eDP) signal that the display panel can understand.
+- **USB 3.0 hub:** The CPU module has two USB 3.0 controllers. To provide for a total of five USB ports (two internal and three external), there is a TUSB8041 USB hub chip on the motherboard that provides the extra ports. USB load switches on each external port protect the system from too much current draw.
+- **Sound chip:** A Wolfson/Cirrus WM8960 audio DAC (digital-to-analog converter)/amplifier interfaces to the headphone/microphone jack and powers two speakers housed below the main display.
+- **mPCIe slot:** An mPCIe connector that you can use for expansions like a Wi-Fi card.
+- **M.2 slot:** An M-key NGFF slot that can house an NVMe SSD (solid state disk).
 
 System Controller
 -----------------
 
-Independent from the main processor module, a low-power processor sits on MNT Reform's motherboard. The NXP LPC11U24 is a 32-bit ARM Cortex-M0 CPU that uses very little power and is always on as long as there is battery or wall power in the system. We call this processor the System Controller.
+Independent from the main processor module, a low-power processor sits on MNT Reform's motherboard. The NXP LPC11U24 is a 32-bit ARM Cortex-M0 processor that uses very little power and is always on as long as there is battery or wall power in the system. We call this processor the System Controller.
 
-The System Controller runs a bare metal program in an endless loop that has the following jobs:
+The System Controller runs a program in an endless loop that has the following jobs:
 
 - Powering the individual voltage rails of the system on and off (including the main processor's power and the mPCIe slot's power, to implement a WiFi-killswitch, for example)
-- Hard resetting the main processor
+- Hard resetting the main processor on demand
 - Monitoring the voltage of each battery cell
 - Balancing battery cells. If a cell is overvolted, charging is halted and the overvolted cells are discharged until they are back to a nominal voltage
 - Turning off the system if battery cells are undervolted
 - Reporting total current flowing in and out of the batteries
 - Turning charge current on or off
 
-Your main way of talking to the System Controller is with the Keyboard. The Keyboard has, aside from its USB connection to the main processor, a second serial (UART) connection/cable to the motherboard's SYSCTL port. A 57600 bps connection is always established between the Keyboard and the System Controller.
+Your main way of communicating with the System Controller is with the Keyboard. The Keyboard has, aside from its USB connection to the main processor, a second serial (UART) connection/cable to the motherboard's SYSCTL port. A 57600 bps connection is always established between the Keyboard and the System Controller.
 
 It accepts commands in the form of a single letter followed by return. A command can also be prefixed with a single argument, a positive integer of up to 4 digits. The most important commands are:
 
@@ -115,14 +111,12 @@ It accepts commands in the form of a single letter followed by return. A command
 - *s*: Get System Controller state (a message string)
 - *g*: Get estimated "fuel gauge" of batteries (percentage)
 
-The individual cell voltages are measured by the Battery Monitor LTC6803IG-4#PBF and reported via SPI to the System Controller.
-
-The total voltage and current are measured by the INA260 chip and reported via I2C to the System Controller.
+The individual cell voltages are measured by the Battery Monitor LTC6803IG-4#PBF and reported via SPI to the System Controller. The total voltage and current are measured by the INA260 chip and reported via I2C.
 
 To understand the available commands in more detail, you can take a look at the System Controller's ``handle_commands()`` function.
 
 TODO: Side note:
-The System Controller is permanently connected to the main processor's UART2 (/dev/ttymxc1 in Linux). If you want to interrupt this connection for security reasons, you can desolder resistors R48 and R50.
+The System Controller is permanently connected to the main processor's UART2 (``/dev/ttymxc1`` in Linux). If you want to interrupt this connection for security reasons, you can desolder resistors R48 and R50.
 
 You can monitor the raw output of the System Controller going to the keyboard by connecting a terminal such as GNU Screen to the internal serial port UART2:
 
@@ -261,7 +255,7 @@ The second role of the keyboard is to serve as a user interface to the LPC syste
 Keyboard Firmware
 -----------------
 
-You can find the Reform keyboard firmware_ in the source folder "reform2-keyboard-fw".
+You can find the MNT Reform keyboard firmware `in the source folder "reform2-keyboard-fw" <https://source.mntmn.com/MNT/reform/reform2-keyboard-fw>`_.
 
 To modify the scancodes of the keyboard matrix, edit the file Keyboard.c and rebuild the firmware by typing the following command in a terminal:
 
@@ -300,7 +294,6 @@ Use a soldering iron and solder wick to remove the solder of one pin. Try to pul
 
 .. _LUFA: http://www.fourwalledcubicle.com/files/LUFA/Doc/170418/html/
 .. _ATMega32U4: http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf
-.. _firmware: https://source.mntmn.com/MNT/reform/reform2-keyboard-fw
 
 Keyboard Schematics
 -------------------
@@ -331,7 +324,7 @@ Trackball
 
 TODO: callouts, screws are in random places
 
-The trackball uses the same microcontroller and LUFA library as the keyboard_, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the PAT9125EL optical sensor that is connected via I2C. The electronic connection between trackball sensor and controller is made with a 6-pin 0.5mm pitch flex cable.
+The trackball uses the same microcontroller and LUFA library as the keyboard, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the PAT9125EL optical sensor that is connected via I2C. The electronic connection between trackball sensor and controller is made with a 6-pin 0.5mm pitch flex cable.
 
 The trackball has five buttons. These make use of the same keyswitches as the keyboard: Kailh Choc Brown (CPG135001D02). The button caps are 3D printed using SLA technology (Formlabs Form 2). If you want to substitute your own replacements, you can find the STL files for the caps in the MNT Reform source repository. The cup and lid of the trackball are 3D printed using the same method.
 
@@ -343,7 +336,7 @@ From time to time, you should clean the trackball from accumulated dust. To do t
 Trackball Firmware
 ------------------
 
-You can find the trackball firmware_ in the source folder "reform2-trackball-fw".
+You can find the trackball firmware `in the source folder "reform2-trackball-fw" <https://source.mnt.re/reform/reform/reform2-trackball-fw>`_.
 
 The trackball firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackball, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
 
@@ -358,8 +351,6 @@ The trackball will reappear as an "Atmel DFU bootloader" USB device. You can the
 .. code-block:: none
 
    ./flash.sh
-
-.. _firmware: https://source.mntmn.com/MNT/reform/reform2-trackball-fw
 
 Trackball Schematics
 --------------------
@@ -383,7 +374,7 @@ TODO: describe Azoteq captouch sensor
 Trackpad Firmware
 -----------------
 
-You can find the Reform trackpad firmware_ in the source folder "reform2-trackpad-fw".
+You can find the trackpad firmware `in the source folder  "reform2-trackpad-fw" <https://source.mnt.re/reform/reform/reform2-trackpad-fw>`_.
 
 The trackpad firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackpad, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
 
@@ -400,8 +391,6 @@ The trackpad will reappear as a Atmel DFU bootloader USB device. You can then up
 .. code-block:: none
 
    ./flash.sh
-
-.. _firmware: https://source.mntmn.com/MNT/reform/reform2-trackpad-fw
 
 Trackpad Schematics
 -------------------

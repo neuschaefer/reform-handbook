@@ -3,7 +3,7 @@ Credits
 
 TODO: some people are still missing from special thanks!
 
-:Concept, Electronics, Firmware, Software: Lukas F. Hartmann (mntmn)
+:Concept, Electronics, Firmware, Software: Lukas F. Hartmann
 
 :Industrial Design: Ana Beatriz Albertini Dantas
 
@@ -11,7 +11,7 @@ TODO: some people are still missing from special thanks!
 
 :Sleeve Assembly: Magda Abdel Hafith
 
-:Handbook Design: 100rabbits (web), Lukas F. Hartmann (print)
+:Handbook Design: 100rabbits, Lukas F. Hartmann
 
 :Handbook Editing: Lukas F. Hartmann, Brendan Nystedt, Ben Cardinal
 
