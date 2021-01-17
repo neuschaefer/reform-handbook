@@ -1,7 +1,7 @@
 Input Devices
 =============
 
-Reform comes with a keyboard and either a trackball or a trackpad preinstalled. All of the input devices are modular and can be easily swapped in and out. They all connect via internal USB2.0 cables.
+MNT Reform comes with a keyboard and either a trackball or a trackpad preinstalled. All of the input devices are modular and can be easily swapped in and out. They all connect via internal USB2.0 cables.
 
 Keyboard
 --------
@@ -11,7 +11,7 @@ The layout of the MNT Reform keyboard is slightly unusual. We simplified the tra
 
 The biggest difference is the split spacebar: instead of one long key, there are two 1.5x wide space keys, with left and right Alt keys sandwiched between them. Because many advanced users remap the traditional Caps Lock key to a different function, we swapped Caps Lock for a Ctrl key.
 
-This makes the use of Ctrl key combinations more ergonomic. Next to the Ctrl key is a key with 3 dots (an ellipsis). This is normally the Menu key, but on the default MNT Reform system software, it is mapped to Compose (a key that allows you to generate Unicode symbols from Compose sequences). Lastly, Reform features an additional modifier key, the Hyper key, in the lower left. The idea is to let you assign this key to whatever function you require.
+This makes the use of Ctrl key combinations more ergonomic. Next to the Ctrl key is a key with 3 dots (an ellipsis). This is normally the Menu key, but on the default MNT Reform system software, it is mapped to Compose (a key that allows you to generate Unicode symbols from Compose sequences). Lastly, MNT Reform features an additional modifier key, the Hyper key, in the lower left. The idea is to let you assign this key to whatever function you require.
 
 Trackball
 ---------
@@ -22,6 +22,6 @@ The trackball works like a three-button mouse. Rolling the ball will move the cu
 Trackpad
 --------
 
-TODO trackpad illustration.
+.. image:: _static/illustrations/9t-callouts.png
 
 The trackpad senses the touch of your fingers. Unlike the trackball, it does not have any moving parts or buttons. Slide one finger across to move the cursor. Tapping with one finger acts like a left mouse button click. Sliding two fingers vertically allows you to scroll (like a mouse wheel). Tapping with two fingers performs a right click. To click and drag, i.e. to select text or drag and drop icons, use three fingers. Tapping three fingers is equivalent to a middle click.
