@@ -17,6 +17,7 @@ for section in \
   development \
   parts \
   advanced \
+  schematics \
   online \
   credits
 do

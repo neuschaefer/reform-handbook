@@ -14,6 +14,7 @@ Reform Handbook
    development
    parts
    advanced
+   schematics
    online
    credits
 
