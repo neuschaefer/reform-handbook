@@ -1,8 +1,6 @@
 Credits
 =======
 
-TODO: rewrite/split thanks
-
 :Concept, Electronics, Firmware, Software: Lukas F. Hartmann
 
 :Industrial Design: Ana Beatriz Albertini Dantas
@@ -15,15 +13,27 @@ TODO: rewrite/split thanks
 
 :Handbook Editing: Lukas F. Hartmann, Brendan Nystedt, Ben Cardinal
 
-:Illustration: Paul Klingberg
+:3D Illustration: Paul Klingberg
 
-:Inter Font: rsms
+:Partnerships & Fundraising: Caroline A. Sosat
 
-:Special Thanks: Daniel Amor, Felix Schneider, Zoe & Elen, timonsku, Lukas Stach, Marek Vasut, Christian Gmeiner, Daniel Stone, Chris Healy, Igalia, Drew Fustini, Helga Hansen, Philip Steffan, Golem, Florian Hadler, Gabriel Yoran, Jonas Haring, JD Music Labs, Crowd Supply, NLnet, zakx, Christian Heller, Caro A. Sosat, Felix Bayer, Nils Dagsson Moskopp, Li0n, schneider, Jan Varwig, Martin Meyerhoff, Ian Hanschen, Stefan Kalkowski, GyrosGeier
+:Accounting: Christian Heller
+             
+:Help and Consulting: Daniel Amor, Felix Schneider, Zoe & Elen (Fully Automated), timonsku, Lukas Stach, Marek Vasut, Christian Gmeiner, Daniel Stone, Chris Healy, Drew Fustini, Jonas Haring, Philip Steffan, Florian Hadler (Interface Critique), Felix Bayer, Nils Dagsson Moskopp, Li0n, schneider, Sven Gebhardt, Jan Varwig, Gabriel Yoran, Martin Meyerhoff, Stefan Kalkowski, GyrosGeier
+
+:Crowdfunding Partner: Crowd Supply
+
+:Additional Funding: NLNet, Mozilla MOSS
+
+:Milling: JPR
+
+:PCB Assembly: PCBWay
+
+:Inter Font: @rsms
 
 :Lab Tools: Rigol DS1054Z, Fluke 117, Weller WD-1, Puhui T-962C, AmScope SM-4T, BCN3D Sigma R17, Formlabs Form2, Epilog Mini 18
 
-:Software: Debian GNU/Linux, KiCAD, Inkscape, GIMP, Emacs, Vim, Git, LUFA, MicroBuilder, Blender, FreeCAD, OpenSCAD, Fusion 360, Cura, Sphinx
+:Software: Debian GNU/Linux, KiCAD, Inkscape, GIMP, Emacs, Vim, GitLab, LUFA, MicroBuilder, Blender, FreeCAD, OpenSCAD, Fusion 360, Cura, Sphinx
 
 Web: https://mntre.com
 
