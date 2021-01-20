@@ -135,10 +135,10 @@ To flash the firmware of the System Controller, you need another computer and a 
 3. Connect Micro-USB cable.
 4. System Controller's memory appears as virtual flash drive on secondary computer (check ``lsblk``).
 5. Edit ``flash.sh`` and change the path to virtual flash drive (i.e. ``/dev/sdx``). **Make sure the path is correct, or you could destroy data on your harddisk!**
-5. Execute ``flash.sh`` as ``root``.
-6. Unplug Micro-USB cable.
-7. Set DIP switch LPCPROG to "OFF".
-8. Press button LPCRESET.
+6. Execute ``flash.sh`` as ``root``.
+7. Unplug Micro-USB cable.
+8. Set DIP switch LPCPROG to "OFF".
+9. Press button LPCRESET.
 
 .. _firmware: https://source.mntmn.com/MNT/reform/reform2-lpc-fw
 .. _handle_commands: https://source.mntmn.com/MNT/reform/reform2-lpc-fw/src/boards/reform2.c
