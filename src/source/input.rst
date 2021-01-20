@@ -13,6 +13,17 @@ The biggest difference is the split spacebar: instead of one long key, there are
 
 This makes the use of Ctrl key combinations more ergonomic. Next to the Ctrl key is a key with 3 dots (an ellipsis). This is normally the Menu key, but on the default MNT Reform system software, it is mapped to Compose (a key that allows you to generate Unicode symbols from Compose sequences). Lastly, MNT Reform features an additional modifier key, the Hyper key, in the lower left. The idea is to let you assign this key to whatever function you require.
 
+OLED Menu
+---------
+
+.. image:: _static/illustrations/oled1-callouts.png
+
+The keyboard has a built-in OLED display for interaction with the System Controller on the motherboard. You can select a menu option and scroll through the menu by using the **↑** and **↓** keys. To trigger the highlighted option, press **Enter**. Alternatively, you can press the shortcut key that is displayed on the right hand side of each menu option. For example, to show the Battery Status, press **B** when the menu is active. To leave the menu, press **ESC**.
+
+.. image:: _static/illustrations/oled2-callouts.png
+
+You can see detailled battery information including the estimated total charge percentage on the Battery Status screen reachable through the OLED menu. Each cell icon corresponds to one of the eight battery cells. The leftmost group of four icons represent the battery pack on the left side of the device, and the top icon in each group represents the leftmost cell in each pack -- assuming you look at MNT Reform when flipped on its back and the battery closer towards you.
+
 Trackball
 ---------
 .. image:: _static/illustrations/6t-callouts.png

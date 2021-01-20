@@ -111,7 +111,7 @@ It accepts commands in the form of a single letter followed by return. A command
 - *s*: Get System Controller state (a message string)
 - *g*: Get estimated "fuel gauge" of batteries (percentage)
 
-The individual cell voltages are measured by the Battery Monitor LTC6803IG-4#PBF and reported via SPI to the System Controller. The total voltage and current are measured by the INA260 chip and reported via I2C.
+The individual cell voltages are measured by the Battery Monitor LTC6803IG-4#PBF and reported via SPI to the System Controller. The total voltage and current are measured by the INA260 chip and reported via I²C.
 
 To understand the available commands in more detail, you can take a look at the System Controller's ``handle_commands()`` function.
 
@@ -124,22 +124,21 @@ The System Controller is permanently connected to the main processor's UART2 (``
 Flashing the Firmware
 ---------------------
 
-.. image:: _static/illustrations/27t.png
+.. image:: _static/illustrations/27-callouts.png
 
-TODO: callouts for micro-usb and switches
 You can find the source code of the firmware_ in the folder "reform2-lpc-fw" of the Reform source repository.
 
 To flash the firmware of the System Controller, you need another computer and a Micro-USB cable.
 
-1. Set DIP switch LPCPROG to "ON"
-2. Press button LPCRESET
-3. Connect Micro-USB cable
-4. System Controller's memory appears as virtual flash drive on secondary computer
-5. Execute `flash.sh` and provide path to virtual flash drive
-   TODO: Programming task: automatically find correct drive in flash script
-6. Unplug cable
-7. Set DIP switch LPCPROG to "OFF"
-8. Press button LPCRESET
+1. Set DIP switch LPCPROG to "ON".
+2. Press button LPCRESET.
+3. Connect Micro-USB cable.
+4. System Controller's memory appears as virtual flash drive on secondary computer (check ``lsblk``).
+5. Edit ``flash.sh`` and change the path to virtual flash drive (i.e. ``/dev/sdx``). **Make sure the path is correct, or you could destroy data on your harddisk!**
+5. Execute ``flash.sh`` as ``root``.
+6. Unplug Micro-USB cable.
+7. Set DIP switch LPCPROG to "OFF".
+8. Press button LPCRESET.
 
 .. _firmware: https://source.mntmn.com/MNT/reform/reform2-lpc-fw
 .. _handle_commands: https://source.mntmn.com/MNT/reform/reform2-lpc-fw/src/boards/reform2.c
@@ -147,9 +146,8 @@ To flash the firmware of the System Controller, you need another computer and a 
 Expansion Port
 --------------
 
-.. image:: _static/illustrations/28t.png
+.. image:: _static/illustrations/28-callouts.png
 
-TODO: annotate expansion port and LPC
 The Expansion Port U18, labelled "Hack the Planet" is meant for advanced users that want to connect sensors or other peripherals to MNT Reform's system controller. Please note that changing the system controller's program can disrupt the battery charging control loop, potentially causing over- or undercharged cells, resulting in physical damage and/or injury. **Experiment with the system controller only if you know exactly what you're doing and at your own risk.**
 
 The Expansion Port features an SPI interface, two analog-digital converters, a UART, JTAG and 3.3V Power. All non-power pins can alternatively be used as GPIOs.
@@ -243,7 +241,7 @@ To modify the scancodes of the keyboard matrix, edit the file Keyboard.c and reb
 
    make
 
-To be able to flash the firmware to the keyboard, the ATMega has to be in a special mode where it identifies as an "Atmega DFU bootloader" USB device.
+To be able to flash the firmware to the keyboard, the ATMega has to be in a special mode where it identifies as an "Atmel DFU bootloader" USB device.
 
 Remove the keyboard's frame and toggle the programming DIP switch SW84 on the keyboard to "ON". Then press the reset button SW83. Before doing this, you need a means to start the flashing command without MNT Reform's internal keyboard. You can use an external USB keyboard, or use the trackball/trackpad to copy and paste the flash command and a new line.
 
@@ -256,14 +254,14 @@ The keyboard will reappear as a Atmel DFU bootloader USB device. You can then up
 Backlight
 ---------
 
-Most keys have a white light emitting diode (LED) to illuminate the transparent part of the keycaps, making the laser engraved letters visible in darkness. You can control the backlight's brightness via Circle key combinations or the OLED menu. (TODO: cross ref)
+Most keys have a white light emitting diode (LED) to illuminate the transparent part of the keycaps, making the laser engraved letters visible in darkness. You can control the backlight's brightness via Circle key combinations or the OLED menu.
 
 Replacing a Keycap
 ------------------
 
 .. image:: _static/illustrations/22t.png
 
-MNT Reform comes with custom MBK keycaps by MKTN, but you can use any keycaps compatible with Kailh Choc keyswitches. You can easily pull out individual keycaps with your fingernails or better, using a keycap puller, and swap them around. The only two keycap sizes on the keyboard are 1U and 1.5U.
+MNT Reform comes with custom "MBK" keycaps by FKcaps, but you can use any keycaps compatible with Kailh Choc keyswitches. You can easily pull out individual keycaps with your fingernails or better, using a keycap puller, and swap them around. The only two keycap sizes on the keyboard are 1U and 1.5U.
 
 Replacing a Keyswitch
 ---------------------
@@ -275,25 +273,25 @@ Use a soldering iron and solder wick to remove the solder of one pin. Try to pul
 .. _LUFA: http://www.fourwalledcubicle.com/files/LUFA/Doc/170418/html/
 .. _ATMega32U4: http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf
 
-OLED Display
-============
+OLED Module
+===========
 
-TODO: describe OLED functionality (this has a lot of cross links to System Controller, because the OLED together with the keyboard's Circle key is the front end to the System Controller).
+.. image:: _static/illustrations/21-callouts.png
 
-TODO: OLED module illustration
-TODO: "screenshot" of OLED menu
-TODO: "screenshot" of battery mgmt screen
+The OLED display sits on the OLED Module which is connected to the keyboard through a 4-pin, 1mm pitch flex cable. The communication protocol is I²C. The module is mounted in the Main Box on top of the keyboardd with two M2x6 flathead screws.
 
 Trackball
 =========
 
 .. image:: _static/illustrations/7t.png
 
-TODO: callouts, screws are in random places
+TODO: fix 2 cap screws in illustration
 
-The trackball uses the same microcontroller and LUFA library as the keyboard, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the PAT9125EL optical sensor that is connected via I2C. The electronic connection between trackball sensor and controller is made with a 6-pin 0.5mm pitch flex cable.
+The trackball uses the same microcontroller and LUFA library as the keyboard, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the PAT9125EL optical sensor that is connected via I²C. The electronic connection between trackball sensor and controller is made with a 6-pin 0.5mm pitch flex cable.
 
 The trackball has five buttons. These make use of the same keyswitches as the keyboard: Kailh Choc Brown (CPG135001D02). The button caps are 3D printed using SLA technology (Formlabs Form 2). If you want to substitute your own replacements, you can find the STL files for the caps in the MNT Reform source repository. The cup and lid of the trackball are 3D printed using the same method.
+
+.. image:: _static/illustrations/8-1-callouts.png
 
 Trackball Cleaning
 ------------------
@@ -324,28 +322,24 @@ Trackpad
 
 .. image:: _static/illustrations/8t.png
 
-TODO: trackpad callouts
+The trackpad uses the same microcontroller as the keyboard and trackball. To sense the touch and motion of fingers, it integrates an Azoteq TPS65-201 capacitive sensor which reports coordinates to the microcontroller via the SPI protocol.
 
-The trackpad uses the same microcontroller as the keyboard and trackball.
-
-TODO: describe Azoteq captouch sensor
+.. image:: _static/illustrations/8-2-callouts.png
 
 Trackpad Firmware
 -----------------
 
 You can find the trackpad firmware `in the source folder  "reform2-trackpad-fw" <https://source.mnt.re/reform/reform/reform2-trackpad-fw>`_.
 
-The trackpad firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackpad, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
+Same as the trackball and keyboard, the trackpad firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackpad, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
 
 .. code-block:: none
 
    make
 
-For flashing, the MCU has to be in "Atmega DFU bootloader" USB mode.
+For flashing, the MCU has to be in bootloader USB mode. Toggle the programming DIP switch SW7 to "ON" and press the reset button SW6.
 
-Toggle the programming DIP switch SW7 to "ON" and press the reset button SW6.
-
-The trackpad will reappear as a Atmel DFU bootloader USB device. You can then upload your new firmware by executing:
+The trackpad will reappear as an "Atmel DFU bootloader USB" device. You can then upload your new firmware by executing:
 
 .. code-block:: none
 
@@ -366,9 +360,7 @@ When working with MNT Reform internals, it is good practice to remove all batter
 
 LiFePO4 cells are safely discharged to 2.5V. Please make sure not to discharge the cells further. If you plan to leave your MNT Reform turned off/uncharged for more than a few days, disconnect the battery packs or take out the cells to avoid deep discharge.
 
-.. image:: _static/illustrations/13t.png
-
-TODO: mark plus/minus poles
+.. image:: _static/illustrations/13-callouts.png
 
 Compatible Battery Cells
 -------------------------

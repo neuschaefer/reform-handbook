@@ -57,6 +57,13 @@ U-Boot is a mini operating system and shell that allows you to inspect parts of 
 
 U-Boot itself has to be compiled with the board support files for Reform. This is done by the ``mkuboot.sh`` script that is part of the ``reform-system-image`` repository. The resulting file, processed to be in the correct format loadable by the i.MX8MQ processor is ``flash.bin``. This file has to be written to the boot medium at an offset of 33kB (33792 bytes).
 
+The build process combines the following files into ``flash.bin``:
+
+- Synopsys DDR4 controller calibration firmware ``lpddr4_pmu_train_*.bin`` (no source available)
+- Cadence HDMI controller firmare ``signed_hdmi_imx8m.bin`` (no source available, optional)
+- ARM trusted firmware "TF-A" ``bl31-iMX8MQ.bin`` (open source)
+- The u-boot binary (open source)
+
 U-Boot needs 2 files to boot Linux:
 
 - The Linux kernel itself, named ``Image``.
@@ -85,8 +92,6 @@ The Linux kernel parameters are passed via the ``bootargs`` U-Boot environment v
      pci=nomsi
 
 This tells the kernel to mount the root filesystem from the ``mmcblk1p1`` device, which is the first partition on the SD card. To boot from the second partition, for example, you would change this to ``mmcblk1p2``. ``mmcblk0...`` is the eMMC flash. ``ttymxc0`` is the serial UART SER1. ``cma=512M`` sets up a memory area for contiguous allocation for the GPU. ``pci=nomsi`` turns off message-signaled interrupts (MSI) for the PCIe controller, which helps with some WiFi cards.
-
-TODO: mention ARM TF-A, DDR4 blob, HDMI blob
 
 Operating System on NVMe
 ------------------------
@@ -123,4 +128,4 @@ To let Linux load your root filesystem from your encrypted disk, you need a way 
    saveenv
    boot
 
-TODO: Provide an easier/automated way of doing this.
+TODO: Provide an easier/automated way of copying the system to SSD.

@@ -1,7 +1,7 @@
 Credits
 =======
 
-TODO: some people are still missing from special thanks!
+TODO: rewrite/split thanks
 
 :Concept, Electronics, Firmware, Software: Lukas F. Hartmann
 

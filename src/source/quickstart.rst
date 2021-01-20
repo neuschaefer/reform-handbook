@@ -18,7 +18,7 @@ Step 2: Turn On
 
 First, insert the included SD card into the slot on the left hand side of the device.
 
-Then, to turn Reform on, press **Circle** and then **1**. The **Circle** key is used for system control commands. When you press **Circle**, a menu of system control functions and their shortcuts will be displayed on the OLED screen embedded in the keyboard. **1** is the shortcut for turning the system power on. Alternatively you can scroll through the menu by using the **↑** and **↓** keys and trigger the highlighted option by pressing **Enter**.
+Then, to turn Reform on, press **Circle** and then **1**. The **Circle** key is used for system control commands. When you press **Circle**, a menu of system control functions and their shortcuts will be displayed on the OLED screen embedded in the keyboard. **1** is the shortcut for turning the system power on.
 
 Step 3: Log In
 --------------
