@@ -320,8 +320,6 @@ The trackball will reappear as an "Atmel DFU bootloader" USB device. You can the
 Trackpad
 ========
 
-.. image:: _static/illustrations/8t.png
-
 The trackpad uses the same microcontroller as the keyboard and trackball. To sense the touch and motion of fingers, it integrates an Azoteq TPS65-201 capacitive sensor which reports coordinates to the microcontroller via the SPI protocol.
 
 .. image:: _static/illustrations/8-2-callouts.png
