@@ -115,14 +115,11 @@ The individual cell voltages are measured by the Battery Monitor LTC6803IG-4#PBF
 
 To understand the available commands in more detail, you can take a look at the System Controller's ``handle_commands()`` function.
 
-TODO: Side note:
-The System Controller is permanently connected to the main processor's UART2 (``/dev/ttymxc1`` in Linux). If you want to interrupt this connection for security reasons, you can desolder resistors R48 and R50.
-
-You can monitor the raw output of the System Controller going to the keyboard by connecting a terminal such as GNU Screen to the internal serial port UART2:
+The System Controller is permanently connected to the main processor's UART2 (``/dev/ttymxc2`` in Linux). You can monitor the raw output of the System Controller going to the keyboard by connecting a terminal such as GNU Screen to the internal serial port UART2:
 
 .. code-block:: none
 
-   screen /dev/ttymxc1 57600
+   screen /dev/ttymxc2 57600
 
 Flashing the Firmware
 ---------------------

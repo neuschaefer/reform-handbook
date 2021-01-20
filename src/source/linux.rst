@@ -461,12 +461,26 @@ Before using SSH functionality, you should generate a public/private keypair by 
 External Display
 ----------------
 
-TODO: describe HDMI and its blob
+MNT Reform has an HDMI connector that has a different function depending on the installed CPU module. In case of the i.MX8MQ module you can connect an external HDMI displayo to this port. If you have the LS1028A module instead, the port carries PCIe signals to connect an external dock. The manual of for the LS1028A module will explain the details.
 
-Sleep
------
+i.MX8MQ has two display engines, LCDIF and DCSS. In the default configuration, DCSS powers the internal display. If you want to use the external display, DCSS has to power HDMI instead. The internal display can then either be turned off or powered by LCDIF. At the time of writing, there is a limitation in i.MX8MQ that prevents the use of LCDIF together with PCIe devices like NVMe storage -- the LCDIF output will glitch when the disk is accessed over PCIe. This means that if you want to use a dual display setup with i.MX8MQ and MNT Reform, you have to run your system from eMMC or SD card instead. You can also use USB3.0 based storage externally.
 
-TODO: describe status of sleep and wake
+The HDMI controller of i.MX8MQ requires a piece of binary firmware that is signed by NXP and loaded by the CPU into the HDMI controller as part of the U-Boot bootloader. If you don't want to use HDMI, you can download an alternative version of U-Boot with the HDMI firmware stripped out at the MNT Reform website.
+
+TODO: settle on a method for selecting HDMI output mode at boot (probably through OLED menu)
+
+Standby
+-------
+
+The i.MX8MQ system-on-chip has the ability to enter a low power standby mode that you can use to keep your work session while leaving MNT Reform at rest. At the time of writing, we consider this function experimental and are still optimizing it. Don't rely on the stability of the function and always save your work to disk regardless. In our tests, the power consumption in standby mode is roughly halved compared to the normal working mode.
+
+To enter standby mode, execute the provided ``reform-standby`` script:
+
+.. code-block:: none
+
+ reform-standby
+
+To make the system wake up from standby, select the "Wake" command from the keyboard OLED menu.
 
 Graphical Desktops
 ==================
