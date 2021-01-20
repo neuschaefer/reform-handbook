@@ -494,7 +494,7 @@ MNT Reform ships with two graphical environments ("desktops") on the SD card. Th
 Sway Basics
 -----------
 
-TODO: sway screenshot
+.. image:: _static/illustrations/reform-sway.png
 
 You can start sway from the command line by executing the ``sway`` command:
 
@@ -581,7 +581,7 @@ All configuration options are documented in the Sway Wiki: `<https://github.com/
 GNOME Basics
 ------------
 
-TODO: GNOME screenshot
+.. image:: _static/illustrations/reform-gnome.png
 
 Launch the GNOME desktop from the Linux console by typing:
 

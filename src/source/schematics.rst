@@ -45,29 +45,67 @@ OLED Schematics
 
 :raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-oled.pdf}`
 
-TODO OLED BOM
+.. csv-table::
+   :file: _static/bom/reform2-oled.csv
+   :header-rows: 1
+   :widths: 25,5,25,45
 
 Trackball Schematics
 ====================
 
 :raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-trackball.pdf}`
+
+Trackball Bill Of Materials
+===========================
+
+.. csv-table::
+   :file: _static/bom/reform2-trackball.csv
+   :header-rows: 1
+   :widths: 25,5,25,45
+
+Trackball Sensor Schematics
+===========================
+
 :raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-trackball-sensor.pdf}`
 
-TODO trackball BOM
+Trackball Sensor Bill Of Materials
+==================================
+
+.. csv-table::
+   :file: _static/bom/reform2-trackball-sensor.csv
+   :header-rows: 1
+   :widths: 25,5,25,45
 
 Trackpad Schematics
 ===================
 
 :raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-trackpad.pdf}`
 
-TODO trackpad BOM
+Trackpad Bill Of Materials
+==========================
 
-Cables
-======
+.. csv-table::
+   :file: _static/bom/reform2-trackpad.csv
+   :header-rows: 1
+   :widths: 25,5,25,45
 
-TODO table of cables
+Battery Pack Schematics
+=======================
 
-Screws
-======
+:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-batterypack.pdf}`
 
-TODO table of screws
+Battery Pack Bill Of Materials
+==============================
+
+.. csv-table::
+   :file: _static/bom/reform2-batterypack.csv
+   :header-rows: 1
+   :widths: 25,5,25,45
+
+Assembly Parts
+==============
+
+.. csv-table::
+   :file: _static/bom/reform2-other-parts.csv
+   :header-rows: 1
+   :widths: 45,5,25,25
