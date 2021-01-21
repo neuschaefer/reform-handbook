@@ -4,6 +4,8 @@ Parts
 .. role:: raw-latex(raw)
    :format: latex
 
+.. image:: _static/illustrations/30.png
+
 Case Parts
 ==========
 
@@ -21,6 +23,7 @@ When closed, the case is held shut by four neodymium bar magnets which are locat
 
 Main Box
 --------
+
 .. image:: _static/illustrations/17t.png
 
 The main box houses most of the electronics:
@@ -152,30 +155,22 @@ The Expansion Port U18, labelled "Hack the Planet" is meant for advanced users t
 
 The Expansion Port features an SPI interface, two analog-digital converters, a UART, JTAG and 3.3V Power. All non-power pins can alternatively be used as GPIOs.
 
-The following pins are available at the port:
+The following LPC11U24 pins are available at the port:
 
-=== ==========
-Pin Function
-=== ==========
-1   SCK0b
-2   MISO1a
-3   TMS
-4   TDI
-5   TRST#
-6   TDO
-7   AD5
-8   SWDIO
-9   SCLKa
-10  AD7
-11  TXDa
-12  RXDa
-13  USBCON#
-14  MOSI1a
-15  VCC (3.3V)
-16  GND
-=== ==========
+=== ========== === =========
+Pin Function   Pin Function
+=== ========== === =========
+16  GND        15  3.3V
+14  MOSI1a     13  USBCON#
+12  RXDa       11  TXDa
+10  AD7        9   SCLKa
+8   SWDIO      7   AD5
+6   TDO        5   TRST#
+4   TDI        3   TMS
+2   MISO1a     1   SCK0b
+=== ========== === =========
 
-Refer to the motherboard schematic's "Power" section and the NXP LPC11U24 reference manual for further details.
+Refer to the motherboard schematic's *Power* section and the NXP LPC11U24 reference manual for further details.
 
 mPCIe Socket
 ------------
@@ -224,7 +219,7 @@ The heatsink is a piece of milled aluminum that connects to the silicon die of t
 Keyboard
 ========
 
-TODO: illustration of the keyboard module with callouts of ports and buttons
+.. image:: _static/illustrations/kbdmod-callouts.png
 
 The keyboard is powered by an ATMega32U4_ 8-bit microcontroller. The controller scans the row/column matrix of keyswitches and reports keypresses via USB HID (human interface device) to the motherboard. Each switch has a diode to prevent ghosting, so you can press multiple keys at once. The microcontroller runs a firmware based on LUFA_, which is an open source library for implementing USB input devices.
 
@@ -285,7 +280,7 @@ Trackball
 
 .. image:: _static/illustrations/7t.png
 
-TODO: fix 2 cap screws in illustration
+TODO: update illustration with final screws
 
 The trackball uses the same microcontroller and LUFA library as the keyboard, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the PAT9125EL optical sensor that is connected via I²C. The electronic connection between trackball sensor and controller is made with a 6-pin 0.5mm pitch flex cable.
 
@@ -324,6 +319,8 @@ The trackpad uses the same microcontroller as the keyboard and trackball. To sen
 
 .. image:: _static/illustrations/8-2-callouts.png
 
+TODO: missing reset button in model
+
 Trackpad Firmware
 -----------------
 
@@ -335,9 +332,7 @@ Same as the trackball and keyboard, the trackpad firmware is based on the LUFA U
 
    make
 
-For flashing, the MCU has to be in bootloader USB mode. Toggle the programming DIP switch SW7 to "ON" and press the reset button SW6.
-
-The trackpad will reappear as an "Atmel DFU bootloader USB" device. You can then upload your new firmware by executing:
+For flashing, the MCU has to be in bootloader USB mode. Toggle the programming DIP switch SW7 to "ON" and press the reset button SW6. The trackpad will reappear as an "Atmel DFU bootloader USB" device. You can then upload your new firmware by executing:
 
 .. code-block:: none
 

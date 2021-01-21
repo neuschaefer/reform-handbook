@@ -4,6 +4,8 @@ Schematics
 .. role:: raw-latex(raw)
    :format: latex
 
+:raw-latex:`\includepdf[pages=1]{_static/system-diagram.pdf}`
+
 Motherboard Schematics
 ======================
 

@@ -467,7 +467,13 @@ i.MX8MQ has two display engines, LCDIF and DCSS. In the default configuration, D
 
 The HDMI controller of i.MX8MQ requires a piece of binary firmware that is signed by NXP and loaded by the CPU into the HDMI controller as part of the U-Boot bootloader. If you don't want to use HDMI, you can download an alternative version of U-Boot with the HDMI firmware stripped out at the MNT Reform website.
 
-TODO: settle on a method for selecting HDMI output mode at boot (probably through OLED menu)
+The MNT Reform system software comes with a script to select your desired display output mode and reboot:
+
+.. code-block:: none
+
+ reform-display-config
+
+Executing the script without any parameters will show you the available options.
 
 Standby
 -------
