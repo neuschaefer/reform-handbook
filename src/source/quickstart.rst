@@ -4,9 +4,9 @@ Quick Start
 Step 1: Connect Batteries
 -------------------------
 
-.. image:: _static/illustrations/2t-callouts.png
-
 To prevent discharge during shipment, the battery cables are not connected by default. After reading about :ref:`Safety` in chapter 2, unscrew the 10 bottom screws and remove the bottom plate. Attach the two battery cable plugs to the battery connectors on the motherboard, then reinstall the bottom lid.
+
+.. image:: _static/illustrations/2t-callouts.png
 
 .. image:: _static/illustrations/battconn-callouts.png
 
