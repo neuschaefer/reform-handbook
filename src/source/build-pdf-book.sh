@@ -30,7 +30,8 @@ cat _tex/post.tex >>reform-handbook.tex
 
 # generate reform-handbook.pdf
 xelatex reform-handbook.tex
-# twice to get the TOC built
+# thrice to get the TOC right
+xelatex reform-handbook.tex
 xelatex reform-handbook.tex
 
 # clean up
