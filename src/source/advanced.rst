@@ -59,7 +59,7 @@ U-Boot itself has to be compiled with the board support files for Reform. This i
 
 The build process combines the following files into ``flash.bin``:
 
-- Synopsys DDR4 controller calibration firmware ``lpddr4_pmu_train_*.bin`` (no source available)
+- Synopsys DDR4 calibration firmware ``lpddr4_pmu_train_*.bin`` (no source available)
 - Cadence HDMI controller firmare ``signed_hdmi_imx8m.bin`` (no source available, optional)
 - ARM trusted firmware "TF-A" ``bl31-iMX8MQ.bin`` (open source)
 - The u-boot binary (open source)
@@ -69,7 +69,7 @@ U-Boot needs 2 files to boot Linux:
 - The Linux kernel itself, named ``Image``.
 - The device tree blob (DTB), which depends on the CPU module. For i.MX8MQ, this is called ``imx8mq-mnt-reform2.dtb``. The device tree is a data structure that lists the addresses of and parameters for all the devices in the system that Linux needs to initialize drivers for. The source for this file is ``imx8mq-mnt-reform2.dts``, and it is compiled to the DTB as part of the Linux kernel tree (where it resides in (``arch/arm64/boot``).
 
-Theoretically, you can boot other operating systems besides Linux, such as FreeBSD, NetBSD, OpenBSD or anything else that supports the i.MX8MQ SoC. This handbook covers only the Linux operating system, but you can -- if drivers exist -- boot any of these operating systems from U-Boot.
+Theoretically, you can boot other operating systems besides Linux, such as FreeBSD, NetBSD, OpenBSD or anything else that supports the i.MX8MQ SoC. This handbook covers only the Linux operating system, but you can --- if drivers exist --- boot any of these operating systems from U-Boot.
 
 The default boot script will load the DTB and Kernel Image from the SD card using the following command:
 

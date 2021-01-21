@@ -67,6 +67,6 @@ You can use the ALSA API directly or higher level APIs such as PulseAudio, Jack 
 Languages
 ---------
 
-While you can easily write programs in C and C++ -- and the Linux kernel and most layers on top of it are still written in C -- you can also use Rust, Go, SBCL, Haskell, Java or scripting languages such as JavaScript, Python, Ruby on MNT Reform. All of these have first-class aarch64 support.
+While you can easily write programs in C and C++ --- and the Linux kernel and most layers on top of it are still written in C --- you can also use Rust, Go, SBCL, Haskell, Java or scripting languages such as JavaScript, Python, Ruby on MNT Reform. All of these have first-class aarch64 support.
 
 Applications that use web browser engines (such as Electron) can disappoint in terms of performance on MNT Reform. Programs using native toolkits will run faster, use less memory and provide a better user experience.

@@ -17,7 +17,7 @@ The case consists of the following 5 parts. All parts except the bottom plate ar
 4. **Screen Front:** housing speakers and providing display bezel
 5. **Bottom Plate:** the clear acrylic bottom lid
 
-For easy (dis)assembly, Reform uses only M2 screws with Phillips-head everywhere -- with one exception: M4x5 on the top half of the hinges.
+For easy (dis)assembly, Reform uses only M2 screws with Phillips-head everywhere --- with one exception: M4x5 on the top half of the hinges.
 
 When closed, the case is held shut by four neodymium bar magnets which are located in the front edge of the screen enclosure and another four in the front of the main box (8 in total).
 
