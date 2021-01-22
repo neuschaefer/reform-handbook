@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="148mm"
+   height="280mm"
+   viewBox="0 0 148 280"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="refman-7.svg"
+   inkscape:export-filename="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/7t-callouts.png"
+   inkscape:export-xdpi="600.0954"
+   inkscape:export-ydpi="600.0954">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="319.61107"
+     inkscape:cy="574.29108"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1406"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid10"
+       units="mm"
+       spacingx="10"
+       spacingy="10" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="14.26722"
+       y="120.02412"
+       id="text130-3-5-6-3"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2-6"
+         x="14.26722"
+         y="120.02412"
+         style="stroke-width:0.264583">Lid</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 51.589604,120 H 20"
+       id="path200-7-5-1"
+       sodipodi:nodetypes="cc" />
+    <image
+       sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/7t.png"
+       xlink:href="../_static/illustrations/7t.png"
+       y="10.024235"
+       x="9.7684412"
+       id="image917"
+       preserveAspectRatio="none"
+       height="254.42348"
+       width="130.49016" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="110.55647"
+       y="220.02411"
+       id="text130-3-5-6-3-3-5"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2-6-6-3"
+         x="110.55647"
+         y="220.02411"
+         style="stroke-width:0.264583">Cup</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 110,220 -30,0"
+       id="path200-7-5-1-7-5"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="18.03249"
+       y="240.02411"
+       id="text130-3-5-6-3-3-5-6"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2-6-6-3-2"
+         x="18.03249"
+         y="240.02411"
+         style="stroke-width:0.264583">Sensor</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 51.058116,240 H 30"
+       id="path200-7-5-1-7-5-9"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>

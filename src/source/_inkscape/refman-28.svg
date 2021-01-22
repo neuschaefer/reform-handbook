@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="148mm"
+   height="130mm"
+   viewBox="0 0 148 130"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="refman-28.svg"
+   inkscape:export-filename="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/28-callouts.png"
+   inkscape:export-xdpi="600.0954"
+   inkscape:export-ydpi="600.0954">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="285.8534"
+     inkscape:cy="241.19462"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     inkscape:window-width="2560"
+     inkscape:window-height="1406"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid10"
+       units="mm"
+       spacingx="10"
+       spacingy="10" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <image
+       sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/28t.png"
+       xlink:href="../_static/illustrations/28t.png"
+       y="20.098196"
+       x="0.15884216"
+       id="image2625"
+       preserveAspectRatio="none"
+       height="78.660019"
+       width="147.90559" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="18.562544"
+       y="10.029615"
+       id="text130-3-5-6"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2"
+         x="18.562544"
+         y="10.029615"
+         style="stroke-width:0.264583">CPU Module JTAG</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 49.386782,9.9782919 h 0.645567 l 0,30.7072951"
+       id="path200"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="61.02335"
+       y="120.01127"
+       id="text130-3-5-6-3"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2-6"
+         x="61.02335"
+         y="120.01127"
+         style="stroke-width:0.264583">System Controller</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 60.632899,119.99928 h -0.64557 V 80.003409"
+       id="path200-7"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="80.972359"
+       y="110.00238"
+       id="text130-3-5-6-3-5"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2-6-3"
+         x="80.972359"
+         y="110.00238"
+         style="stroke-width:0.264583">Expansion Port</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 80.615316,110.01111 h -0.64557 l 0,-39.99365"
+       id="path200-7-5"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="111.02178"
+       y="119.97241"
+       id="text130-3-5-6-3-5-6"><tspan
+         sodipodi:role="line"
+         x="111.02178"
+         y="119.97241"
+         style="stroke-width:0.264583"
+         id="tspan1862">Battery Cell Monitor</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 110.66474,120.02202 h -0.64557 l 0,-39.995471"
+       id="path200-7-5-9"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="61.0406"
+       y="10.002167"
+       id="text130-3-5-6-2"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2-7"
+         x="61.0406"
+         y="10.002167"
+         style="stroke-width:0.264583">SYSCTL Port</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 60.56657,10.017659 h -0.645565 v 37.58518"
+       id="path200-0"
+       sodipodi:nodetypes="ccc" />
+  </g>
+</svg>
