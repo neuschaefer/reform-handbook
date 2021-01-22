@@ -109,7 +109,7 @@ It accepts commands in the form of a single letter followed by return. A command
 - *1p*: Turn the computer on
 - *0p*: Turn the computer off
 - *a*: Get current flowing into/out of batteries in mA
-- *0v*: Get voltage of cell 0 (cells are numbered 0-7)
+- *v*: Get cell voltage statistics
 - *V*: Get system voltage at point of combined battery input/output
 - *s*: Get System Controller state (a message string)
 - *g*: Get estimated "fuel gauge" of batteries (percentage)
@@ -218,7 +218,7 @@ Keyboard
 
 .. image:: _static/illustrations/kbdmod-callouts.png
 
-The keyboard is powered by an ATMega32U4_ 8-bit microcontroller. The controller scans the row/column matrix of keyswitches and reports keypresses via USB HID (human interface device) to the motherboard. Each switch has a diode to prevent ghosting, so you can press multiple keys at once. The microcontroller runs a firmware based on LUFA_, which is an open source library for implementing USB input devices.
+The keyboard is powered by an ATmega32U4_ 8-bit microcontroller. The controller scans the row/column matrix of keyswitches and reports keypresses via USB HID (human interface device) to the motherboard. Each switch has a diode to prevent ghosting, so you can press multiple keys at once. The microcontroller runs a firmware based on LUFA_, which is an open source library for implementing USB input devices.
 
 The second role of the keyboard is to serve as a user interface to the LPC system controller on the mainboard, even when the main SoC is turned off. To make this possible, the keyboard connects via a separate UART cable to the motherboards SYSCTL header (J23).
 
@@ -233,7 +233,7 @@ To modify the scancodes of the keyboard matrix, edit the file Keyboard.c and reb
 
    make
 
-To be able to flash the firmware to the keyboard, the ATMega has to be in a special mode where it identifies as an "Atmel DFU bootloader" USB device.
+To be able to flash the firmware to the keyboard, the ATmega has to be in a special mode where it identifies as an "Atmel DFU bootloader" USB device.
 
 Remove the keyboard's frame and toggle the programming DIP switch SW84 on the keyboard to "ON". Then press the reset button SW83. Before doing this, you need a means to start the flashing command without MNT Reform's internal keyboard. You can use an external USB keyboard, or use the trackball/trackpad to copy and paste the flash command and a new line.
 
@@ -253,17 +253,17 @@ Replacing a Keycap
 
 .. image:: _static/illustrations/22t.png
 
-MNT Reform comes with custom *MBK* keycaps by FKcaps, but you can use any keycaps compatible with Kailh Choc keyswitches. You can easily pull out individual keycaps with your fingernails or better, using a keycap puller, and swap them around. The only two keycap sizes on the keyboard are 1U and 1.5U.
+MNT Reform comes with custom *MBK* keycaps by FKcaps, but you can use any keycaps compatible with `Kailh Choc <http://www.kailh.com/en/Products/Ks/CS>`_ keyswitches. You can easily pull out individual keycaps with your fingernails---or better, using a keycap puller---and swap them around. The only two keycap sizes on the keyboard are 1U and 1.5U.
 
 Replacing a Keyswitch
 ---------------------
 
-Should a keyswitch ever break, you can replace it with Kailh Choc Brown (CPG135001D02).
+Should a keyswitch ever break, you can replace it with `Kailh Choc Brown (CPG135001D02) <http://www.kailh.com/en/Products/Ks/CS/320.html>`_.
 
 Use a soldering iron and solder wick to remove the solder of one pin. Try to pull out the corresponding side of the switch from the top while continuing to heat the pin. Repeat the same for the other pin and go back and forth until you can remove the switch.
 
 .. _LUFA: http://www.fourwalledcubicle.com/files/LUFA/Doc/170418/html/
-.. _ATMega32U4: http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf
+.. _ATmega32U4: http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf
 
 OLED Module
 ===========
@@ -277,7 +277,7 @@ Trackball
 
 .. image:: _static/illustrations/7t-callouts.png
 
-The trackball uses the same microcontroller and LUFA library as the keyboard, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the PAT9125EL optical sensor that is connected via I²C. The electronic connection between trackball sensor and controller is made with a 6-pin 0.5mm pitch flex cable.
+The trackball uses the same microcontroller and LUFA library as the keyboard, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the `PAT9125EL optical sensor <https://www.pixart.com/_getfs.php?tb=product&id=72&fs=ck2_fs_en>`_ that is connected via I²C. The electronic connection between trackball sensor and controller is made with a 6-pin 0.5mm pitch flex cable.
 
 The trackball has five buttons. These make use of the same keyswitches as the keyboard: Kailh Choc Brown (CPG135001D02). The button caps are 3D printed using SLA technology (Formlabs Form 2). If you want to substitute your own replacements, you can find the STL files for the caps in the MNT Reform source repository. The cup and lid of the trackball are 3D printed using the same method.
 

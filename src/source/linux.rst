@@ -15,7 +15,7 @@ This chapter will introduce you to the basics of exploring and administering you
 Set a Root Password
 -------------------
 
-The most powerful user in the system is ``root``. When logged in as ``root``, you can modify but also destroy any file in the system. To prevent others from logging in as ``root``, you should protect the account with a password. In the shell, you execute all commands by typing them in and pressing **ENTER**. To set your password, execute this command:
+The most powerful user in the system is ``root``. When logged in as ``root``, you can modify but also destroy any file in the system. To prevent others from logging in as ``root``, you should protect the account with a password. In the shell, you execute all commands by typing them in and pressing *ENTER*. To set your password, execute this command:
 
 .. code-block:: none
 
@@ -35,7 +35,7 @@ In order to add such a new user account to the system, log in as ``root`` (you a
 
  adduser kim
 
-The ``adduser`` command will ask you for a password and a few questions that you can skip by just pressing **ENTER**.
+The ``adduser`` command will ask you for a password and a few questions that you can skip by just pressing *ENTER.*
 
 If you want to change the password for the user kim later, you can
 use the ``passwd`` command as before:
@@ -49,12 +49,12 @@ Logging In and Out
 
 You can log out by pressing *CTRL+D*. Alternatively, you can type ``exit``.
 
-When logged out, you will see the login prompt. ENTER the username that you added with ``adduser`` and press **ENTER**. Next, enter your password (it is not displayed). Press **ENTER** to complete the login.
+When logged out, you will see the login prompt. Enter the username that you added with ``adduser`` and press *ENTER*. Next, enter your password (it is not displayed). Press *ENTER* to complete the login.
 
 Sudo
 ----
 
-To make bigger changes to the system you will often need to use a command that requires ``root`` (superuser) privileges. Logging out of your user account just to log back in as ``root`` is inconvenient. Instead, you can temporarily become ``root`` by either switching to it as ``su`` (switch user) or give your regular user account ``sudo`` privileges[#]_.
+To make bigger changes to the system you will often need to use a command that requires ``root`` (superuser) privileges. Logging out of your user account just to log back in as ``root`` is inconvenient. Instead, you can temporarily become ``root`` by either switching to it as ``su`` (switch user) or give your regular user account ``sudo`` privileges [#]_.
 
 Sudo allows you to use a command as ``root`` by typing ``sudo <COMMAND>``. To add your user to the ``sudo`` group, first log out and login as ``root``. Then you can execute the following command:
 
@@ -95,9 +95,13 @@ If you want to know more details, such as the modification times and permissions
 
  ls -l
 
-You can also add the flag ``-h`` to get "human readable" filesizes instead of the raw number of bytes.
+You can also add the flag ``-h`` to get "human readable" filesizes instead of the raw number of bytes:
 
-There are two virtual files in every directory, called `..` and `.`. The single `.` means "here" (i.e. the current directory), and you can use it if you ever want to specify the current directory explicitly. For example, if you want to copy the file ``/tmp/myfile`` to the current directory, you can type:
+.. code-block:: none
+
+ ls -lh
+
+There are two virtual files in every directory, called ".." (two dots) and "." (one dot). The single "." means "here" (i.e. the current directory), and you can use it if you ever want to specify the current directory explicitly. For example, if you want to copy the file ``/tmp/myfile`` to the current directory, you can type:
 
 .. code-block:: none
 
@@ -192,7 +196,7 @@ The second occurence of ``kim`` names the group ``kim``, not the user. When you 
 
 Lastly, the third mode triplet (``r--`` as well) says that any other user logged into your system can read this file.
 
-To change the mode bits of a file, you can use ``chmod``. For example, to give nobody but yourself (assuming you're the owner) the permission to read and write the file ``notes.txt``, do:
+To change the mode bits of a file, you can use ``chmod``. For example, to give nobody but yourself (assuming you're the owner) the permission to read and write the file ``notes.txt``, execute:
 
 .. code-block:: none
 
