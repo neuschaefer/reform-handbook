@@ -17,7 +17,7 @@ The case consists of the following 5 parts. All parts except the bottom plate ar
 4. **Screen Front:** housing speakers and providing display bezel
 5. **Bottom Plate:** the clear acrylic bottom lid
 
-For easy (dis)assembly, Reform uses only M2 screws with Phillips-head everywhere --- with one exception: M4x5 on the top half of the hinges.
+For easy (dis)assembly, Reform uses only M2 screws with Phillips-head everywhere---with one exception: M4x5 on the top half of the hinges.
 
 When closed, the case is held shut by four neodymium bar magnets which are located in the front edge of the screen enclosure and another four in the front of the main box (8 in total).
 
@@ -129,7 +129,7 @@ Flashing the Firmware
 
 .. image:: _static/illustrations/27-callouts.png
 
-You can find the source code of the firmware in the source folder `reform2-lpc-fw <https://source.mnt.re/reform/reform/reform2-lpc-fw>`_.
+You can find the source code of the firmware in the source folder `reform2-lpc-fw <https://source.mnt.re/reform/reform/-/tree/master/reform2-lpc-fw>`_.
 
 To update (flash) the firmware of the System Controller, you need another computer and a Micro-USB cable.
 
@@ -225,7 +225,7 @@ The second role of the keyboard is to serve as a user interface to the LPC syste
 Keyboard Firmware
 -----------------
 
-You can find the MNT Reform keyboard firmware in the source folder `reform2-keyboard-fw <https://source.mnt.re/reform/reform/reform2-keyboard-fw>`_.
+You can find the MNT Reform keyboard firmware in the source folder `reform2-keyboard-fw <https://source.mnt.re/reform/reform/-/tree/master/reform2-keyboard-fw>`_.
 
 To modify the scancodes of the keyboard matrix, edit the file Keyboard.c and rebuild the firmware by typing the following command in a terminal:
 
@@ -291,7 +291,7 @@ From time to time, you should clean the trackball from accumulated dust. To do t
 Trackball Firmware
 ------------------
 
-You can find the trackball firmware in the source folder reform2-trackball-fw `<https://source.mnt.re/reform/reform/reform2-trackball-fw>`_.
+You can find the trackball firmware in the source folder reform2-trackball-fw `<https://source.mnt.re/reform/reform/-/tree/master/reform2-trackball-fw>`_.
 
 The trackball firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackball, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
 
@@ -319,7 +319,7 @@ TODO: missing reset button in model
 Trackpad Firmware
 -----------------
 
-You can find the trackpad firmware in the source folder `reform2-trackpad-fw <https://source.mnt.re/reform/reform/reform2-trackpad-fw>`_.
+You can find the trackpad firmware in the source folder `reform2-trackpad-fw <https://source.mnt.re/reform/reform/-/tree/master/reform2-trackpad-fw>`_.
 
 Same as the trackball and keyboard, the trackpad firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackpad, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
 

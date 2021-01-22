@@ -22,7 +22,7 @@ The keyboard has a built-in OLED display for interaction with the System Control
 
 .. image:: _static/illustrations/oled2-callouts.png
 
-You can see detailled battery information including the estimated total charge percentage on the Battery Status screen reachable through the OLED menu. Each cell icon corresponds to one of the eight battery cells. The leftmost group of four icons represent the battery pack on the left side of the device, and the top icon in each group represents the leftmost cell in each pack --- assuming you look at MNT Reform when flipped on its back and the battery closer towards you.
+You can see detailled battery information including the estimated total charge percentage on the Battery Status screen reachable through the OLED menu. Each cell icon corresponds to one of the eight battery cells. The leftmost group of four icons represent the battery pack on the left side of the device, and the top icon in each group represents the leftmost cell in each pack---assuming you look at MNT Reform when flipped on its back and the battery closer towards you.
 
 Trackball
 ---------
