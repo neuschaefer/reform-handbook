@@ -4,10 +4,15 @@ Schematics
 .. role:: raw-latex(raw)
    :format: latex
 
+- `PDF: System Diagram <_static/system-diagram.pdf>`_
+
 :raw-latex:`\includepdf[pages=1]{_static/system-diagram.pdf}`
 
 Motherboard Schematics
 ======================
+
+- `PDF: Motherboard Schematics <_static/schem/reform2-motherboard.pdf>`_
+- `KiCAD: Motherboard Design Files <https://source.mnt.re/reform/reform/-/tree/master/reform2-motherboard-pcb>`_
 
 :raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-motherboard.pdf}`
 :raw-latex:`\includepdf[pages=2,angle=90]{_static/schem/reform2-motherboard.pdf}`
@@ -30,6 +35,9 @@ Motherboard Bill of Materials
 Keyboard Schematics
 ===================
 
+- `PDF: Keyboard Schematics <_static/schem/reform2-keyboard.pdf>`_
+- `KiCAD: Keyboard Design Files <https://source.mnt.re/reform/reform/-/tree/master/reform2-keyboard-pcb>`_
+
 :raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-keyboard.pdf}`
 :raw-latex:`\includepdf[pages=2,angle=90]{_static/schem/reform2-keyboard.pdf}`
 :raw-latex:`\includepdf[pages=3,angle=90]{_static/schem/reform2-keyboard.pdf}`
@@ -45,6 +53,9 @@ Keyboard Bill of Materials
 OLED Schematics
 ===============
 
+- `PDF: OLED Schematics <_static/schem/reform2-oled.pdf>`_
+- `KiCAD: Keyboard Design Files <https://source.mnt.re/reform/reform/-/tree/master/reform2-oled-pcb>`_
+
 :raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-oled.pdf}`
 
 .. csv-table::
@@ -54,6 +65,9 @@ OLED Schematics
 
 Trackball Schematics
 ====================
+
+- `PDF: Trackball Schematics <_static/schem/reform2-trackball.pdf>`_
+- `KiCAD: Trackball Design Files <https://source.mnt.re/reform/reform/-/tree/master/reform2-trackball-pcb>`_
 
 :raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-trackball.pdf}`
 
@@ -68,6 +82,9 @@ Trackball Bill Of Materials
 Trackball Sensor Schematics
 ===========================
 
+- `PDF: Trackball Sensor Schematics <_static/schem/reform2-trackball-sensor.pdf>`_
+- `KiCAD: Trackball Sensor Design Files <https://source.mnt.re/reform/reform/-/tree/master/reform2-trackball-sensor-pcb>`_
+
 :raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-trackball-sensor.pdf}`
 
 Trackball Sensor Bill Of Materials
@@ -81,6 +98,9 @@ Trackball Sensor Bill Of Materials
 Trackpad Schematics
 ===================
 
+- `PDF: Trackpad Schematics <_static/schem/reform2-trackpad.pdf>`_
+- `KiCAD: Trackpad Design Files <https://source.mnt.re/reform/reform/-/tree/master/reform2-trackpad-pcb>`_
+
 :raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-trackpad.pdf}`
 
 Trackpad Bill Of Materials
@@ -93,6 +113,9 @@ Trackpad Bill Of Materials
 
 Battery Pack Schematics
 =======================
+
+- `PDF: Battery Pack Schematics <_static/schem/reform2-batterypack.pdf>`_
+- `KiCAD: Battery Pack Design Files <https://source.mnt.re/reform/reform/-/tree/master/reform2-batterypack-pcb>`_
 
 :raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-batterypack.pdf}`
 

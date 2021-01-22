@@ -129,9 +129,9 @@ Flashing the Firmware
 
 .. image:: _static/illustrations/27-callouts.png
 
-You can find the source code of the firmware_ in the folder "reform2-lpc-fw" of the Reform source repository.
+You can find the source code of the firmware in the source folder `reform2-lpc-fw <https://source.mnt.re/reform/reform/reform2-lpc-fw>`_.
 
-To flash the firmware of the System Controller, you need another computer and a Micro-USB cable.
+To update (flash) the firmware of the System Controller, you need another computer and a Micro-USB cable.
 
 1. Set DIP switch LPCPROG to "ON".
 2. Press button LPCRESET.
@@ -142,9 +142,6 @@ To flash the firmware of the System Controller, you need another computer and a 
 7. Unplug Micro-USB cable.
 8. Set DIP switch LPCPROG to "OFF".
 9. Press button LPCRESET.
-
-.. _firmware: https://source.mntmn.com/MNT/reform/reform2-lpc-fw
-.. _handle_commands: https://source.mntmn.com/MNT/reform/reform2-lpc-fw/src/boards/reform2.c
 
 Expansion Port
 --------------
@@ -204,7 +201,7 @@ At the time of writing, the following alternative CPU modules are in development
 - LS1028A Module with NXP LS1028A SoC (2x Cortex-A72, GC7000L GPU) and 8GB or 16GB LPDDR4 (Co-developed with RBZ, open source hardware)
 - FPGA Module with Xilinx Kintex-7 and 2GB DDR3 memory, open source hardware
 
-If you want to develop your own CPU module, visit source.mnt.re/reform for a KiCAD template and more technical information.
+If you want to develop your own CPU module, visit `<https://source.mnt.re/reform/reform-som-template>`_ for a KiCAD template and more technical information.
 
 Display Connector
 -----------------
@@ -228,7 +225,7 @@ The second role of the keyboard is to serve as a user interface to the LPC syste
 Keyboard Firmware
 -----------------
 
-You can find the MNT Reform keyboard firmware `in the source folder "reform2-keyboard-fw" <https://source.mntmn.com/MNT/reform/reform2-keyboard-fw>`_.
+You can find the MNT Reform keyboard firmware in the source folder `reform2-keyboard-fw <https://source.mnt.re/reform/reform/reform2-keyboard-fw>`_.
 
 To modify the scancodes of the keyboard matrix, edit the file Keyboard.c and rebuild the firmware by typing the following command in a terminal:
 
@@ -256,7 +253,7 @@ Replacing a Keycap
 
 .. image:: _static/illustrations/22t.png
 
-MNT Reform comes with custom "MBK" keycaps by FKcaps, but you can use any keycaps compatible with Kailh Choc keyswitches. You can easily pull out individual keycaps with your fingernails or better, using a keycap puller, and swap them around. The only two keycap sizes on the keyboard are 1U and 1.5U.
+MNT Reform comes with custom *MBK* keycaps by FKcaps, but you can use any keycaps compatible with Kailh Choc keyswitches. You can easily pull out individual keycaps with your fingernails or better, using a keycap puller, and swap them around. The only two keycap sizes on the keyboard are 1U and 1.5U.
 
 Replacing a Keyswitch
 ---------------------
@@ -278,9 +275,7 @@ The OLED display sits on the OLED Module which is connected to the keyboard thro
 Trackball
 =========
 
-.. image:: _static/illustrations/7t.png
-
-TODO: update illustration with final screws
+.. image:: _static/illustrations/7t-callouts.png
 
 The trackball uses the same microcontroller and LUFA library as the keyboard, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the PAT9125EL optical sensor that is connected via I²C. The electronic connection between trackball sensor and controller is made with a 6-pin 0.5mm pitch flex cable.
 
@@ -296,7 +291,7 @@ From time to time, you should clean the trackball from accumulated dust. To do t
 Trackball Firmware
 ------------------
 
-You can find the trackball firmware `in the source folder "reform2-trackball-fw" <https://source.mnt.re/reform/reform/reform2-trackball-fw>`_.
+You can find the trackball firmware in the source folder reform2-trackball-fw `<https://source.mnt.re/reform/reform/reform2-trackball-fw>`_.
 
 The trackball firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackball, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
 
@@ -324,7 +319,7 @@ TODO: missing reset button in model
 Trackpad Firmware
 -----------------
 
-You can find the trackpad firmware `in the source folder  "reform2-trackpad-fw" <https://source.mnt.re/reform/reform/reform2-trackpad-fw>`_.
+You can find the trackpad firmware in the source folder `reform2-trackpad-fw <https://source.mnt.re/reform/reform/reform2-trackpad-fw>`_.
 
 Same as the trackball and keyboard, the trackpad firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackpad, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
 

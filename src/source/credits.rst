@@ -1,7 +1,7 @@
 Credits
 =======
 
-:Concept, Electronics, Firmware, Software: Lukas F. Hartmann
+:Concept, Electronics, Software: Lukas F. Hartmann
 
 :Industrial Design: Ana Beatriz Albertini Dantas
 
@@ -18,8 +18,8 @@ Credits
 :Partnerships & Fundraising: Caroline A. Sosat
 
 :Accounting: Christian Heller
-             
-:Help and Consulting: Daniel Amor, Felix Schneider, Zoe & Elen (Fully Automated), timonsku, Lukas Stach, Marek Vasut, Christian Gmeiner, Daniel Stone, Chris Healy, Drew Fustini, Jonas Haring, Philip Steffan, Florian Hadler (Interface Critique), Felix Bayer, Nils Dagsson Moskopp, Li0n, schneider, Sven Gebhardt, Jan Varwig, Gabriel Yoran, Martin Meyerhoff, Stefan Kalkowski, GyrosGeier
+
+:Help and Consulting: Daniel Amor, Felix Schneider, Zoe & Elen (Fully Automated), timonsku, Lukas Stach, Marek Vasut, Christian Gmeiner, Daniel Stone, Chris Healy, Drew Fustini, Jonas Haring, Philip Steffan, Florian Hadler (Interface Critique), Felix Bayer, Nils Dagsson Moskopp, Li0n, schneider, Sven Gebhardt, Jan Varwig, Gabriel Yoran, Martin Meyerhoff, Stefan Kalkowski, GyrosGeier, Philipp Dikmann, Michael Christophersson
 
 :Crowdfunding Partner: Crowd Supply
 
@@ -27,7 +27,7 @@ Credits
 
 :Milling: JPR
 
-:PCB Assembly: PCBWay
+:Circuit Boards: PCBWay
 
 :Inter Font: @rsms
 

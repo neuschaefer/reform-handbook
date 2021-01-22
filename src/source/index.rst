@@ -1,9 +1,8 @@
-Reform Handbook
-===============
+MNT Reform Operator Handbook
+============================
 
 .. toctree::
    :maxdepth: 4
-   :caption: Contents:
 
    preface
    safety
@@ -17,10 +16,3 @@ Reform Handbook
    schematics
    online
    credits
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
