@@ -13,6 +13,7 @@ for section in \
   quickstart \
   input \
   linux \
+  desktops \
   software \
   development \
   parts \

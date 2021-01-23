@@ -291,7 +291,7 @@ From time to time, you should clean the trackball from accumulated dust. To do t
 Trackball Firmware
 ------------------
 
-You can find the trackball firmware in the source folder reform2-trackball-fw `<https://source.mnt.re/reform/reform/-/tree/master/reform2-trackball-fw>`_.
+You can find the trackball firmware in the source folder `reform2-trackball-fw <https://source.mnt.re/reform/reform/-/tree/master/reform2-trackball-fw>`_.
 
 The trackball firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackball, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
 

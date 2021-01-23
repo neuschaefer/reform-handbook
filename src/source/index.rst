@@ -9,6 +9,7 @@ MNT Reform Operator Handbook
    quickstart
    input
    linux
+   desktops
    software
    development
    parts
