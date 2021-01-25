@@ -1,7 +1,7 @@
 Input Devices
 =============
 
-MNT Reform comes with a keyboard and either a trackball or a trackpad preinstalled. All of the input devices are modular and can be easily swapped in and out. They all connect via internal USB2.0 cables.
+MNT Reform comes with a keyboard and either a trackball or a trackpad preinstalled. All of the input devices are modular and can be easily swapped in and out. They all connect via internal USB 2.0 cables.
 
 Keyboard
 --------
@@ -18,11 +18,11 @@ OLED Menu
 
 .. image:: _static/illustrations/oled1-callouts.png
 
-The keyboard has a built-in OLED display for interaction with the System Controller on the motherboard. You can select a menu option and scroll through the menu by using the **↑** and **↓** keys. To trigger the highlighted option, press **Enter**. Alternatively, you can press the shortcut key that is displayed on the right hand side of each menu option. For example, to show the Battery Status, press **B** when the menu is active. To leave the menu, press **ESC**.
+The keyboard has a built-in OLED display for interaction with the System Controller on the motherboard. You can highlight an option and scroll through the menu by using the **↑** and **↓** keys. To trigger the highlighted option, press **Enter**. Alternatively, you can press the shortcut key that is displayed on the right hand side of each menu option. For example, to show the Battery Status, press **B** when the menu is active. To leave the menu, press **ESC**.
 
 .. image:: _static/illustrations/oled2-callouts.png
 
-You can see detailled battery information including the estimated total charge percentage on the Battery Status screen reachable through the OLED menu. Each cell icon corresponds to one of the eight battery cells. The leftmost group of four icons represent the battery pack on the left side of the device, and the top icon in each group represents the leftmost cell in each pack---assuming you look at MNT Reform when flipped on its back and the battery closer towards you.
+You can see detailed battery information including the estimated total charge percentage on the Battery Status screen reachable through the OLED menu. Each cell icon corresponds to one of the eight battery cells. The leftmost group of four icons represent the battery pack on the left side of the device, and the top icon in each group represents the leftmost cell in each pack---assuming you look at MNT Reform when flipped on its back and the battery closer towards you.
 
 Trackball
 ---------

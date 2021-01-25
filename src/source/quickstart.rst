@@ -17,11 +17,11 @@ Step 2: Turn On
 
 First, insert the included SD card into the slot on the left hand side of the device.
 
-Then, to turn Reform on, press **Circle** and then **1**. The **Circle** key is used for system control commands. When you press **Circle**, a menu of system control functions and their shortcuts will be displayed on the OLED screen embedded in the keyboard. **1** is the shortcut for turning the system power on.
+Then, to turn Reform on, press **Circle** and then **1**. The **Circle** key is used for system control commands. When you press **Circle**, a menu of system control functions and their shortcuts will be displayed on the OLED screen embedded in the keyboard.
 
 Step 3: Log In
 --------------
-After being powered on, the main processor will boot the operating system installed on the included SD card. The operating system's kernel will show diagnostic information as it activates all the devices in the system until finally arriving at the login prompt. To log in, enter ``root`` as the username at the prompt. There is no default password.
+After being powered on, the main processor will boot the operating system installed on the inserted SD card. The operating system's kernel will show diagnostic information as it activates all the devices in the system until finally arriving at the login prompt. Enter ``root`` as the username at the prompt. There is no default password, so you will be logged in immediately.
 
 From here, you can begin installing software and using MNT Reform. If you are new to the Debian GNU/Linux operating system or want to learn about specifics of the operating system shipped with MNT Reform, please refer to chapter 5, :ref:`Linux Basics`.
 

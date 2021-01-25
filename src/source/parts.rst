@@ -17,7 +17,7 @@ The case consists of the following 5 parts. All parts except the bottom plate ar
 4. **Screen Front:** housing speakers and providing display bezel
 5. **Bottom Plate:** the clear acrylic bottom lid
 
-For easy (dis)assembly, Reform uses only M2 screws with Phillips-head everywhere---with one exception: M4x5 on the top half of the hinges.
+For easy (dis)assembly, Reform only uses M2 screws with Phillips-head everywhere---with one exception: M4x5 on the top half of the hinges.
 
 When closed, the case is held shut by four neodymium bar magnets which are located in the front edge of the screen enclosure and another four in the front of the main box (8 in total).
 
@@ -29,10 +29,10 @@ Main Box
 The main box houses most of the electronics:
 
 - Motherboard, exposing ports through openings on the left and right
-- Two LiFePO4 battery packs, connecting to motherboard via Molex PicoLock cables
+- Two LiFePO4 battery packs, connecting to the motherboard via Molex PicoLock cables
 - Keyboard, connecting to the motherboard via two JST-PH cables
 - OLED display, connecting to the keyboard via a 4-pin 1mm pitch flex cable
-- Trackball or Trackpad, connecting to motherboard via one JST-PH cable
+- Trackball or Trackpad, connecting to the motherboard via one JST-PH cable
 
 The main box features four neodymium bar magnets inserted into slots below the front edge. These match with their counterparts in the screen front.
 
@@ -41,7 +41,7 @@ Keyboard Frame
 
 .. image:: _static/illustrations/23t.png
 
-The Keyboard Frame is inserted into the main box to close it from the top. It has four protruding ledges on the front that go first. The frame is mounted with six M2x6 flathead screws.
+The Keyboard Frame is inserted into the main box to close it from the top. It has four tabs on the front that must be inserted first. The frame is mounted with six M2x6 flathead screws.
 
 Screen Back
 -----------
@@ -54,7 +54,7 @@ The eDP display panel rests in this case part. The left and right hinges are mou
 
 The stereo speakers are mounted below the display and secured with the speaker holders. Each holder is mounted with two M2x4 flathead screws.
 
-Both speaker and display cable are fed through a hollow part in the hinge and into the main box.
+Both speaker and display cable are fed through a cutout in the hinge and into the main box.
 
 Four neodymium magnets are mounted along the top edge. These, together with their counterparts in the main box, hold the laptop shut when closed.
 
@@ -77,7 +77,7 @@ Motherboard
 
 .. image:: _static/illustrations/3-callouts.png
 
-The motherboard spans the inner width of the device and ends with external ports on both sides. It has the following main features:
+The motherboard spans the inner width of the device and has outward-facing ports on both sides. It has the following main features:
 
 - **Power system:** based on the LTC4020 buck/boost converter, regulates charging of the LiFePO4 batteries and seamlessly switches between wall and battery power.
 - **System controller:** coupled to the power system, an NXP LPC11U24 Cortex-M0 MCU controls an analog monitor chip for the eight battery cells as well as the charger. It is connected to the CPU module via SPI, and has GPIO lines to the main power rail switchers in the system. It has a UART (SYSCTL) that the keyboard can talk to directly for issuing power on/off commands and battery status queries.
@@ -90,7 +90,7 @@ The motherboard spans the inner width of the device and ends with external ports
 System Controller
 -----------------
 
-Independent from the main processor module, a low-power processor sits on MNT Reform's motherboard. The NXP LPC11U24 is a 32-bit ARM Cortex-M0 processor that uses very little power and is always on as long as there is battery or wall power in the system. We call this processor the System Controller.
+Independent from the main processor module, a low-power processor sits on MNT Reform's motherboard. The NXP LPC11U24 is a 32-bit ARM Cortex-M0 processor that uses very little power and is always on as long as there is battery or wall power present. We call this processor the System Controller.
 
 The System Controller runs a program in an endless loop that has the following jobs:
 
@@ -129,15 +129,15 @@ Flashing the Firmware
 
 .. image:: _static/illustrations/27-callouts.png
 
-You can find the source code of the firmware in the source folder `reform2-lpc-fw <https://source.mnt.re/reform/reform/-/tree/master/reform2-lpc-fw>`_.
-
 To update (flash) the firmware of the System Controller, you need another computer and a Micro-USB cable.
+
+You can find the source code of the firmware in the source folder `reform2-lpc-fw <https://source.mnt.re/reform/reform/-/tree/master/reform2-lpc-fw>`_.
 
 1. Set DIP switch LPCPROG to "ON".
 2. Press button LPCRESET.
 3. Connect Micro-USB cable.
 4. System Controller's memory appears as virtual flash drive on secondary computer (check ``lsblk``).
-5. Edit ``flash.sh`` and change the path to virtual flash drive (i.e. ``/dev/sdx``). **Make sure the path is correct, or you could destroy data on your harddisk!**
+5. Edit ``flash.sh`` and change the path to virtual flash drive (i.e. ``/dev/sdx``). **Make sure the path is correct, or you could destroy data on your hard disk!**
 6. Execute ``flash.sh`` as ``root``.
 7. Unplug Micro-USB cable.
 8. Set DIP switch LPCPROG to "OFF".
@@ -270,7 +270,7 @@ OLED Module
 
 .. image:: _static/illustrations/21-callouts.png
 
-The OLED display sits on the OLED Module which is connected to the keyboard through a 4-pin, 1mm pitch flex cable. The communication protocol is I²C. The module is mounted in the Main Box on top of the keyboardd with two M2x6 flathead screws.
+The OLED display sits on the OLED Module which is connected to the keyboard through a 4-pin, 1mm pitch flex cable. The communication protocol is I²C. The module is mounted in the Main Box on top of the keyboard with two M2x6 flathead screws.
 
 Trackball
 =========
@@ -286,7 +286,7 @@ The trackball has five buttons. These make use of the same keyswitches as the ke
 Trackball Cleaning
 ------------------
 
-From time to time, you should clean the trackball from accumulated dust. To do this, carefully lift off the left and right buttons. Then, unscrew the two screws holding the trackball's lid and remove the ball. Clean the inside of the cup with a soft cloth. Don't use detergents as these can dissolve the cup's material.
+From time to time, you should clean dust and debris from the trackball. To do this, carefully lift off the left and right buttons. Then, unscrew the two screws holding the trackball's lid and remove the ball. Clean the inside of the cup with a soft cloth. Don't use detergents as these can dissolve the cup's material.
 
 Trackball Firmware
 ------------------
@@ -336,7 +336,7 @@ For flashing, the MCU has to be in bootloader USB mode. Toggle the programming D
 Battery Packs
 =============
 
-MNT Reform has two identical battery packs, referred to as the Left and Right packs. Each pack has four 18650 cells with LiFePO4 chemistry and 3.2V. You may be tempted to try cells of other chemistries like LiIon or NiMH, **but never do this, as these are incompatible.**
+MNT Reform has two identical battery packs, referred to as the Left and Right packs. Each pack has four 18650 cells with LiFePO4 chemistry and 3.2V. You may be tempted to try cells of other chemistries like Li-Ion or NiMH, **but never do this, as these are incompatible.**
 
 **Only use LiFePO4 cells with MNT Reform!**
 
@@ -344,7 +344,7 @@ When inserting battery cells, **make sure that the positive and negative poles a
 
 All 8 cells are connected in series. When fully charged at 3.6V, the total voltage of the cells can add up to 28.8V. **Make sure not to bridge/short any battery clips to the case or neighboring clips or pins, as this will immediately cause sparks and burnt traces.**
 
-When working with MNT Reform internals, it is good practice to remove all battery cells. This way you can easily prevent damage from accidental discharge.
+When working inside MNT Reform, remove all battery cells. This way you can easily prevent damage from accidental discharge.
 
 LiFePO4 cells are safely discharged to 2.5V. Please make sure not to discharge the cells further. If you plan to leave your MNT Reform turned off/uncharged for more than a few days, disconnect the battery packs or take out the cells to avoid deep discharge.
 

@@ -1,11 +1,11 @@
 Graphical Desktops
 ==================
 
-MNT Reform ships with two graphical environments ("desktops") on the SD card. The Debian distribution, which the system on the SD card is based on, has a number of additional desktops in its package manager (See "Install/Remove Software").
+MNT Reform ships with two graphical environments ("desktops") on the SD card. The Debian distribution, which the system on the SD card is based on, has a number of additional desktops in its package manager (See section 5.16, "Install/Remove Software").
 
 1. The **Sway** compositor emphasizes the concept of "tiling". This means that normally, windows don't overlap, but instead the screen space is automatically divided to make space for new windows. Sway consumes minimal system resources, but relies heavily on keyboard shortcuts, which makes it harder to learn.
 
-2. The **GNOME** desktop features classic overlapping windows and a modern look. It is easy to learn and use by mouse / trackball / trackpad pointing and clicking, but requires more system resources.
+2. The **GNOME** desktop features classic overlapping windows and a modern look. It is easy to learn and use with mouse/trackball/trackpad pointing and clicking, but requires more system resources.
 
 Sway Basics
 -----------
@@ -61,9 +61,9 @@ Reform's sway configuration includes "rofi", a popup menu for launching an appli
 Waybar
 ++++++
 
-On MNT Reform, Sway comes with an information bar at the top of the screen called "Waybar". On the left hand side, Waybar shows the active workspaces as tabs. Instead of using keyboard combinations, you can click on a tab to activate the corresponding workspace. Next to the workspaces, Waybar shows the title of the window that is currently in focus.
+On MNT Reform, Sway comes with an information bar at the top of the screen called "Waybar". In the left corner, Waybar shows the active workspaces as tabs. Instead of using keyboard combinations, you can click on a tab to activate the corresponding workspace. Next to the workspaces, Waybar shows the title of the window that is currently in focus.
 
-On the right hand side, Waybar shows the following information (in this order):
+In the right corner, Waybar shows the following information (in this order):
 
 =============== =========================================
 Field           Action on Click
@@ -105,7 +105,7 @@ Launch the GNOME desktop from the Linux console by typing:
 
  gnome-session
 
-After a while, the label "Activities" will appear in the top-left corner of the screen. Click this label to reveal the Activities overview. Alternatively, you can press the *SUPER* key to open this overview. From here, you can launch applications by typing (a part of) their name. You can drag and drop applications that you commonly use into the "dock" on the left. Applications that are already running are displayed in the dock, too. Clicking on them will bring them to the foreground.
+After a while, the label "Activities" will appear in the top-left corner of the screen. Click this label to reveal the Activities overview. Alternatively, you can press the *SUPER* key to open this overview. From here, you can launch applications by typing their name. You can drag and drop applications that you commonly use into the "dock" on the left. Applications that are already running are displayed in the dock, too. Clicking on them will bring them to the foreground.
 
 GNOME supports a range of keyboard shortcuts to speed up working with the desktop:
 

@@ -7,4 +7,4 @@ Before you get started with your MNT Reform, please read these safety instructio
 
 **Before servicing anything on the inside, make sure that the wall power is unplugged and remove all battery cells.**
 
-**Damage to Hearing:** The headphone output of MNT Reform can be forced to extreme volume which may damage your hearing if you are not careful. Please make sure to set the volume to 30% or less before wearing headphones connected to MNT Reform and adjust the volume to a comfortable level.
+**Damage to Hearing:** The headphone output of MNT Reform can be forced to extreme volume which may damage your hearing if you are not careful. Please make sure to set the volume to 30% or less before connecting headphones to MNT Reform, and then adjust the volume to a comfortable level.

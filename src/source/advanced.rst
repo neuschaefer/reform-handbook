@@ -128,7 +128,7 @@ To let Linux load your root filesystem from your encrypted disk, you need a way 
    saveenv
    boot
 
-To make this process more comfortable for you, you can use the provided interactive script ``reform-migrate`` to migrate your MNT Reform operating system and files to a different disk:
+To make this process more convenient for you, you can use the provided interactive script ``reform-migrate`` to migrate your MNT Reform operating system and files to a different disk:
 
 .. code-block:: none
 
