@@ -24,7 +24,7 @@ When closed, the case is held shut by four neodymium bar magnets which are locat
 Main Box
 --------
 
-.. image:: _static/illustrations/17t.png
+.. image:: _static/illustrations/17.png
 
 The main box houses most of the electronics:
 
@@ -39,14 +39,14 @@ The main box features four neodymium bar magnets inserted into slots below the f
 Keyboard Frame
 --------------
 
-.. image:: _static/illustrations/23t.png
+.. image:: _static/illustrations/23.png
 
 The Keyboard Frame is inserted into the main box to close it from the top. It has four tabs on the front that must be inserted first. The frame is mounted with six M2x6 flathead screws.
 
 Screen Back
 -----------
 
-.. image:: _static/illustrations/14t.png
+.. image:: _static/illustrations/14.png
 
 The eDP display panel rests in this case part. The left and right hinges are mounted in the bottom left and right corners with three M4x5 flathead screws each.
 
@@ -61,14 +61,14 @@ Four neodymium magnets are mounted along the top edge. These, together with thei
 Screen Front
 ------------
 
-.. image:: _static/illustrations/16t.png
+.. image:: _static/illustrations/16.png
 
 This part serves as a bezel for the display. It is mounted with seven M2x6 flathead screws to the Screen Back.
 
 Bottom Plate
 ------------
 
-.. image:: _static/illustrations/33t.png
+.. image:: _static/illustrations/33.png
 
 The bottom plate closes the main box from the bottom with ten M2x6 flathead screws.
 
@@ -216,7 +216,7 @@ The heatsink is a piece of milled aluminum that connects to the silicon die of t
 Keyboard
 ========
 
-.. image:: _static/illustrations/kbdmod-callouts.png
+.. image:: _static/illustrations/kbd-callouts.png
 
 The keyboard is powered by an ATmega32U4_ 8-bit microcontroller. The controller scans the row/column matrix of keyswitches and reports keypresses via USB HID (human interface device) to the motherboard. Each switch has a diode to prevent ghosting, so you can press multiple keys at once. The microcontroller runs a firmware based on LUFA_, which is an open source library for implementing USB input devices.
 
@@ -251,7 +251,7 @@ Most keys have a white light emitting diode (LED) to illuminate the transparent 
 Replacing a Keycap
 ------------------
 
-.. image:: _static/illustrations/22t.png
+.. image:: _static/illustrations/22.png
 
 MNT Reform comes with custom *MBK* keycaps by FKcaps, but you can use any keycaps compatible with `Kailh Choc <http://www.kailh.com/en/Products/Ks/CS>`_ keyswitches. You can easily pull out individual keycaps with your fingernails---or better, using a keycap puller---and swap them around. The only two keycap sizes on the keyboard are 1U and 1.5U.
 
@@ -275,7 +275,7 @@ The OLED display sits on the OLED Module which is connected to the keyboard thro
 Trackball
 =========
 
-.. image:: _static/illustrations/7t-callouts.png
+.. image:: _static/illustrations/7-callouts.png
 
 The trackball uses the same microcontroller and LUFA library as the keyboard, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the `PAT9125EL optical sensor <https://www.pixart.com/_getfs.php?tb=product&id=72&fs=ck2_fs_en>`_ that is connected via I²C. The electronic connection between trackball sensor and controller is made with a 6-pin 0.5mm pitch flex cable.
 

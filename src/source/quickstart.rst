@@ -6,16 +6,16 @@ Step 1: Connect Batteries
 
 To prevent discharge during shipment, the battery cables are not connected by default. After reading about :ref:`Safety` in chapter 2, unscrew the 10 bottom screws and remove the bottom plate. Attach the two battery cable plugs to the battery connectors on the motherboard, then reinstall the bottom lid.
 
-.. image:: _static/illustrations/2t-callouts.png
+.. image:: _static/illustrations/2-callouts.png
 
 .. image:: _static/illustrations/battconn-callouts.png
 
 Step 2: Turn On
 ---------------
 
-.. image:: _static/illustrations/5t-callouts.png
+.. image:: _static/illustrations/5-callouts.png
 
-First, insert the included SD card into the slot on the left hand side of the device.
+First, insert the included SD card intot the slot on the left hand side of the device.
 
 Then, to turn Reform on, press **Circle** and then **1**. The **Circle** key is used for system control commands. When you press **Circle**, a menu of system control functions and their shortcuts will be displayed on the OLED screen embedded in the keyboard.
 

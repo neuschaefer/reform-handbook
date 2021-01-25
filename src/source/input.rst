@@ -26,13 +26,13 @@ You can see detailed battery information including the estimated total charge pe
 
 Trackball
 ---------
-.. image:: _static/illustrations/6t-callouts.png
+.. image:: _static/illustrations/6-callouts.png
 
 The trackball works like a three-button mouse. Rolling the ball will move the cursor in the same direction. In addition to the standard three mouse buttons (left, middle, right), the trackball also has two *Wheel Mode* buttons. Holding down either while moving the ball up and down will scroll the currently focused content.
 
 Trackpad
 --------
 
-.. image:: _static/illustrations/9t-callouts.png
+.. image:: _static/illustrations/9-callouts.png
 
 The trackpad senses the touch of your fingers. Unlike the trackball, it does not have any moving parts or buttons. Slide one finger across to move the cursor. Tapping with one finger acts like a left mouse button click. Sliding two fingers vertically allows you to scroll (like a mouse wheel). Tapping with two fingers performs a right click. To click and drag, i.e. to select text or drag and drop icons, use three fingers. Tapping three fingers is equivalent to a middle click.

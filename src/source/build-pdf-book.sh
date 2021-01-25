@@ -24,7 +24,7 @@ for section in \
 do
   pandoc -o _$section.tex -frst+smart --verbose -V fontsize=10pt --top-level-division=chapter $section.rst
   cat _tex/section.tex >>reform-handbook.tex
-  cat _$section.tex >>reform-handbook.tex
+  sed 's/-callouts\.png/x\.eps/g' _$section.tex >>reform-handbook.tex
 done
 
 cat _tex/post.tex >>reform-handbook.tex
