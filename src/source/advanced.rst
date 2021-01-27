@@ -4,9 +4,16 @@ Advanced Topics
 Troubleshooting
 ---------------
 
-If MNT Reform should stop booting, the recommended strategy is to strip it down to a minimal system and check for output on the serial/UART console.
+Here are some things you can try if MNT Reform should stop booting (in order of increasing difficulty):
 
-First, disconnect the internal battery and all external peripherals.
+- Press *Circle*, then *0* (zero), then *1* (one) to power cycle the system and wait at least 30 seconds.
+- Remove the Bottom Plate and press the LPC_RST button on the motherboard to reset the System Controller.
+- Download the MNT Reform System Image from the MNT Research website and flash it to a fresh SD Card. Then try to boot from this SD Card.
+- Try to boot from the backup system on eMMC (see *System Boot* below).
+- Strip MNT Reform down to a minimal system (remove all peripherals) and check for output on the serial/UART console.
+- Measure individual power rails (only for advanced users with electronics knowledge).
+
+As always, before working with MNT Reform internals, first disconnect the internal battery and external power and peripherals.
 
 Serial Console
 ++++++++++++++
@@ -34,9 +41,9 @@ If you then switch on Reform (powered by the wall adapter) with the provided SD 
 Power Rails
 +++++++++++
 
-Reform can accept ~7V-32V of DC power on barrel jack J1. The nominal input voltage is 24V. If you can't measure the input voltage on R49, check if fuse F1 is blown.
+Reform will accept 9-32V of DC power on barrel jack J1. The nominal input voltage is 24V. If you can't measure the input voltage on R49, check if fuse F1 is blown.
 
-Either wall or battery power will be regulated to ~28V by the buck-boost regulator/charger LTC4020 and output to the main system regulators. U14 is the always-on 3V3 regulator that powers critical chips like the System Controller (LPC11U24, U18). You can confirm LPC_VCC power with 3.3V on J22 pin 15.
+Either wall or battery power will be regulated to ~29V by the buck-boost regulator/charger LTC4020 and output to the main system regulators. U14 is the always-on 3V3 regulator that powers critical chips like the System Controller (LPC11U24, U18). You can confirm LPC_VCC power with 3.3V on J22 pin 15.
 
 Two white indicator LEDs on the motherboard, D11 and D12, signal that 3.3V and 5V rails are turned on, respectively.
 The i.MX8M processor module has a green LED that signals 5V power arriving at the module. Because of the level shifters U28 and U8, booting from the SD card requires both 3.3V and 1.8V rails to work. You can measure 1.8V on C130, for example. Booting from eMMC requires only 5V power to go into the CPU module.
@@ -59,7 +66,7 @@ U-Boot itself has to be compiled with the board support files for Reform. This i
 
 The build process combines the following files into ``flash.bin``:
 
-- Synopsys DDR4 controller calibration firmware ``lpddr4_pmu_train_*.bin`` (no source available)
+- Synopsys DDR4 calibration firmware ``lpddr4_pmu_train_*.bin`` (no source available)
 - Cadence HDMI controller firmare ``signed_hdmi_imx8m.bin`` (no source available, optional)
 - ARM trusted firmware "TF-A" ``bl31-iMX8MQ.bin`` (open source)
 - The u-boot binary (open source)
@@ -69,7 +76,7 @@ U-Boot needs 2 files to boot Linux:
 - The Linux kernel itself, named ``Image``.
 - The device tree blob (DTB), which depends on the CPU module. For i.MX8MQ, this is called ``imx8mq-mnt-reform2.dtb``. The device tree is a data structure that lists the addresses of and parameters for all the devices in the system that Linux needs to initialize drivers for. The source for this file is ``imx8mq-mnt-reform2.dts``, and it is compiled to the DTB as part of the Linux kernel tree (where it resides in (``arch/arm64/boot``).
 
-Theoretically, you can boot other operating systems besides Linux, such as FreeBSD, NetBSD, OpenBSD or anything else that supports the i.MX8MQ SoC. This handbook covers only the Linux operating system, but you can -- if drivers exist -- boot any of these operating systems from U-Boot.
+Theoretically, you can boot other operating systems besides Linux, such as FreeBSD, NetBSD, OpenBSD or anything else that supports the i.MX8MQ SoC. This handbook covers only the Linux operating system, but you can---if drivers exist---boot any of these operating systems from U-Boot.
 
 The default boot script will load the DTB and Kernel Image from the SD card using the following command:
 
@@ -128,4 +135,8 @@ To let Linux load your root filesystem from your encrypted disk, you need a way 
    saveenv
    boot
 
-TODO: Provide an easier/automated way of copying the system to SSD.
+To make this process more convenient for you, you can use the provided interactive script ``reform-migrate`` to migrate your MNT Reform operating system and files to a different disk:
+
+.. code-block:: none
+
+   sudo /sbin/reform-migrate

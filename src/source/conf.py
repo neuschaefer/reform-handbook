@@ -18,7 +18,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'MNT Reform Handbook'
+project = 'MNT Reform Operator Handbook'
 copyright = '2020-2021, MNT Research GmbH'
 author = 'Lukas F. Hartmann et al'
 
@@ -41,10 +41,9 @@ templates_path = ['_templates']
 exclude_patterns = []
 
 latex_elements = {
-    'preamble': r'\usepackage{reformstyle}',
 }
 
-latex_additional_files = ["reformstyle.sty"]
+latex_additional_files = []
 
 # -- Options for HTML output -------------------------------------------------
 

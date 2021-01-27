@@ -15,7 +15,7 @@ At the time of writing, the integration of the M4 core into mainline Linux is no
 
 Linux (or another operating system) runs on the four Cortex-A53 cores. Cortex-A53 is a power efficient in-order core. This makes it less performant but also immune to certain security weaknesses of out-of-order processors, for example Meltdown. [#]_
 
-Optimizing your program to make use of multiple cores versus relying on single-core performance will pay off on MNT Reform. Also, make use of SIMD (NEON) optimizations. Try to keep memory usage and UI effects minimal. If your application runs well on MNT Reform, it will run well on a broad range of older PC hardware, too.
+Optimizing your program to make use of multiple cores versus relying on single-core performance will pay off on MNT Reform. Also, make use of SIMD (NEON) optimizations. Try to keep memory usage and UI effects minimal. If your application runs well on MNT Reform, it will run well on a broad range of older PC hardware, but also on single board computers such as the Rasperry Pi.
 
 .. [#] See `<https://meltdownattack.com>`_
 
@@ -67,6 +67,6 @@ You can use the ALSA API directly or higher level APIs such as PulseAudio, Jack 
 Languages
 ---------
 
-While you can easily write programs in C and C++ -- and the Linux kernel and most layers on top of it are still written in C -- you can also use Rust, Go, SBCL, Haskell, Java or scripting languages such as JavaScript, Python, Ruby on MNT Reform. All of these have first-class aarch64 support.
+While you can easily write programs in C and C++---and the Linux kernel and most layers on top of it are still written in C---you can also use Rust, Go, SBCL, Haskell, Java or scripting languages such as JavaScript, Python, Ruby on MNT Reform. All of these have first-class aarch64 support.
 
 Applications that use web browser engines (such as Electron) can disappoint in terms of performance on MNT Reform. Programs using native toolkits will run faster, use less memory and provide a better user experience.

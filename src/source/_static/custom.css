@@ -11,6 +11,7 @@ body, div.body { font-family: 'inter_regular', sans-serif !important; color:blac
 div.body h3, div.body h4, div.body h5, div.body h6 { font-family: 'inter_regular', sans-serif !important; color:black !important }
 div.body h1, div.body h2 { font-family: 'inter_medium', sans-serif !important; color:black !important }
 div.body ul li a, div.sphinxsidebar h3, div.sphinxsidebar h4 { font-family: 'inter_bold', sans-serif !important; color:black !important }
+div.sphinxsidebar { background: white !important; }
 div.sphinxsidebar li > a { background: black;color: white;border: 0;display: inline-block;padding: 2.5px 5px;line-height: 20px;margin-bottom: 1px;font-weight: bold }
 div.sphinxsidebar li > a:hover { text-decoration: none; border: 0; color:#eee }
 div.sphinxsidebar li.current > a { color:#000; background:#eee !important }
@@ -18,5 +19,10 @@ div.sphinxsidebar ul > li.current > ul > li a { color: #000;background: none }
 div.sphinxsidebar p.caption { display:none }
 div.sphinxsidebar ul li.toctree-l1 > a { font-size: 100% }
 div.sphinxsidebar ul li.toctree-l2 > a { font-size: 100% }
-h1.logo > a { border: 0;background-image: url(../../../source/_static/logo.svg);display: block;background-size: contain;background-repeat: no-repeat;text-indent: -9999px;overflow: hidden;margin-bottom: 30px; background-color:white }
+h1.logo > a { border: 0;background-image: url(logo.svg);display: block;background-size: contain;background-repeat: no-repeat;text-indent: -9999px;overflow: hidden;margin-bottom: 30px; background-color:white }
 h1.logo > a:hover { text-decoration: none; border: 0px }
+
+@media screen and (max-width: 875px) {
+    div.body { min-width: auto !important; }
+    body { padding: 10px 20px !important; }
+}

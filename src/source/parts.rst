@@ -4,6 +4,8 @@ Parts
 .. role:: raw-latex(raw)
    :format: latex
 
+.. image:: _static/illustrations/30.png
+
 Case Parts
 ==========
 
@@ -13,68 +15,72 @@ The case consists of the following 5 parts. All parts except the bottom plate ar
 2. **Keyboard Frame:** a thin rectangle that covers the sides of the keyboard and the system controller OLED
 3. **Screen Back:** housing the display and upper half of hinges
 4. **Screen Front:** housing speakers and providing display bezel
-5. **Bottom Plate:** the clear acrylic bottom lid
+5. **Bottom Plate:** the clear acrylic plate that closes the laptop from the bottom
 
-For easy (dis)assembly, Reform uses only M2 screws with Phillips-head everywhere -- with one exception: M4x5 on the top half of the hinges.
-
-When closed, the case is held shut by four neodymium bar magnets which are located in the front edge of the screen enclosure and another four in the front of the main box (8 in total).
+For easy (dis)assembly, Reform uses M2 screws with Phillips-head everywhere---with one exception: M4x5 on the top half of the hinges.
 
 Main Box
 --------
-.. image:: _static/illustrations/17t.png
 
-The main box houses most of the electronics:
+.. image:: _static/illustrations/17.png
+
+The Main Box houses most of the electronics:
 
 - Motherboard, exposing ports through openings on the left and right
-- Two LiFePO4 battery packs, connecting to motherboard via Molex PicoLock cables
+- Two LiFePO4 battery packs, connecting to the motherboard via Molex PicoLock cables
 - Keyboard, connecting to the motherboard via two JST-PH cables
 - OLED display, connecting to the keyboard via a 4-pin 1mm pitch flex cable
-- Trackball or Trackpad, connecting to motherboard via one JST-PH cable
+- Trackball or Trackpad, connecting to the motherboard via one JST-PH cable
 
-The main box features four neodymium bar magnets inserted into slots below the front edge. These match with their counterparts in the screen front.
+The Main Box features four neodymium bar magnets inserted into slots below the front edge. These match with their counterparts in the Screen Front.
 
 Keyboard Frame
 --------------
 
-.. image:: _static/illustrations/23t.png
+.. image:: _static/illustrations/23.png
 
-The Keyboard Frame is inserted into the main box to close it from the top. It has four protruding ledges on the front that go first. The frame is mounted with six M2x6 flathead screws.
+The Keyboard Frame is inserted into the Main Box to close it from the top. It has four tabs on the front that must be inserted first. The frame is mounted with six M2x6 flathead screws.
 
 Screen Back
 -----------
 
-.. image:: _static/illustrations/14t.png
+.. image:: _static/illustrations/14.png
 
 The eDP display panel rests in this case part. The left and right hinges are mounted in the bottom left and right corners with three M4x5 flathead screws each.
 
+Four neodymium magnets are mounted along the top edge of the Screen Back. These, together with their counterparts in the Main Box, hold the laptop shut when closed.
+
 .. image:: _static/illustrations/speaker.png
 
-The stereo speakers are mounted below the display and secured with the speaker holders. Each holder is mounted with two M2x4 flathead screws.
-
-Both speaker and display cable are fed through a hollow part in the hinge and into the main box.
-
-Four neodymium magnets are mounted along the top edge. These, together with their counterparts in the main box, hold the laptop shut when closed.
+The stereo speakers are mounted below the display and secured with the speaker holders. Each holder is mounted with two M2x4 flathead screws. Both speaker and display cable are fed through a cutout in the hinge and into the Main Box.
 
 Screen Front
 ------------
 
-.. image:: _static/illustrations/16t.png
+.. image:: _static/illustrations/16.png
 
 This part serves as a bezel for the display. It is mounted with seven M2x6 flathead screws to the Screen Back.
 
 Bottom Plate
 ------------
 
-.. image:: _static/illustrations/33t.png
+.. image:: _static/illustrations/33.png
 
-The bottom plate closes the main box from the bottom with ten M2x6 flathead screws.
+The bottom plate closes the Main Box from the bottom with ten M2x6 flathead screws.
+
+Port Covers
+-----------
+
+.. image:: _static/illustrations/ports-callouts.png
+
+The port covers are two pieces of laser cut acrylic (1mm thick) that cover the side openings of the Main Box. You can exchange these to fit a future motherboard or an expansion that requires a different port layout.
 
 Motherboard
 ===========
 
 .. image:: _static/illustrations/3-callouts.png
 
-The motherboard spans the inner width of the device and ends with external ports on both sides. It has the following main features:
+The motherboard spans the inner width of the device and has outward-facing ports on both sides. It has the following main features:
 
 - **Power system:** based on the LTC4020 buck/boost converter, regulates charging of the LiFePO4 batteries and seamlessly switches between wall and battery power.
 - **System controller:** coupled to the power system, an NXP LPC11U24 Cortex-M0 MCU controls an analog monitor chip for the eight battery cells as well as the charger. It is connected to the CPU module via SPI, and has GPIO lines to the main power rail switchers in the system. It has a UART (SYSCTL) that the keyboard can talk to directly for issuing power on/off commands and battery status queries.
@@ -87,7 +93,7 @@ The motherboard spans the inner width of the device and ends with external ports
 System Controller
 -----------------
 
-Independent from the main processor module, a low-power processor sits on MNT Reform's motherboard. The NXP LPC11U24 is a 32-bit ARM Cortex-M0 processor that uses very little power and is always on as long as there is battery or wall power in the system. We call this processor the System Controller.
+Independent from the main processor module, a low-power processor sits on MNT Reform's motherboard. The NXP LPC11U24 is a 32-bit ARM Cortex-M0 processor that uses very little power and is always on as long as there is battery or wall power present. We call this processor the System Controller.
 
 The System Controller runs a program in an endless loop that has the following jobs:
 
@@ -106,7 +112,7 @@ It accepts commands in the form of a single letter followed by return. A command
 - *1p*: Turn the computer on
 - *0p*: Turn the computer off
 - *a*: Get current flowing into/out of batteries in mA
-- *0v*: Get voltage of cell 0 (cells are numbered 0-7)
+- *v*: Get cell voltage statistics
 - *V*: Get system voltage at point of combined battery input/output
 - *s*: Get System Controller state (a message string)
 - *g*: Get estimated "fuel gauge" of batteries (percentage)
@@ -126,22 +132,19 @@ Flashing the Firmware
 
 .. image:: _static/illustrations/27-callouts.png
 
-You can find the source code of the firmware_ in the folder "reform2-lpc-fw" of the Reform source repository.
+To update (flash) the firmware of the System Controller, you need another computer and a Micro-USB cable.
 
-To flash the firmware of the System Controller, you need another computer and a Micro-USB cable.
+You can find the source code of the firmware in the source folder `reform2-lpc-fw <https://source.mnt.re/reform/reform/-/tree/master/reform2-lpc-fw>`_.
 
 1. Set DIP switch LPCPROG to "ON".
 2. Press button LPCRESET.
 3. Connect Micro-USB cable.
 4. System Controller's memory appears as virtual flash drive on secondary computer (check ``lsblk``).
-5. Edit ``flash.sh`` and change the path to virtual flash drive (i.e. ``/dev/sdx``). **Make sure the path is correct, or you could destroy data on your harddisk!**
+5. Edit ``flash.sh`` and change the path to virtual flash drive (i.e. ``/dev/sdx``). **Make sure the path is correct, or you could destroy data on your hard disk!**
 6. Execute ``flash.sh`` as ``root``.
 7. Unplug Micro-USB cable.
 8. Set DIP switch LPCPROG to "OFF".
 9. Press button LPCRESET.
-
-.. _firmware: https://source.mntmn.com/MNT/reform/reform2-lpc-fw
-.. _handle_commands: https://source.mntmn.com/MNT/reform/reform2-lpc-fw/src/boards/reform2.c
 
 Expansion Port
 --------------
@@ -152,30 +155,22 @@ The Expansion Port U18, labelled "Hack the Planet" is meant for advanced users t
 
 The Expansion Port features an SPI interface, two analog-digital converters, a UART, JTAG and 3.3V Power. All non-power pins can alternatively be used as GPIOs.
 
-The following pins are available at the port:
+The following LPC11U24 pins are available at the port:
 
-=== ==========
-Pin Function
-=== ==========
-1   SCK0b
-2   MISO1a
-3   TMS
-4   TDI
-5   TRST#
-6   TDO
-7   AD5
-8   SWDIO
-9   SCLKa
-10  AD7
-11  TXDa
-12  RXDa
-13  USBCON#
-14  MOSI1a
-15  VCC (3.3V)
-16  GND
-=== ==========
+=== ========== === =========
+Pin Function   Pin Function
+=== ========== === =========
+16  GND        15  3.3V
+14  MOSI1a     13  USBCON#
+12  RXDa       11  TXDa
+10  AD7        9   SCLKa
+8   SWDIO      7   AD5
+6   TDO        5   TRST#
+4   TDI        3   TMS
+2   MISO1a     1   SCK0b
+=== ========== === =========
 
-Refer to the motherboard schematic's "Power" section and the NXP LPC11U24 reference manual for further details.
+Refer to the motherboard schematic's *Power* section and the NXP LPC11U24 reference manual for further details.
 
 mPCIe Socket
 ------------
@@ -209,7 +204,7 @@ At the time of writing, the following alternative CPU modules are in development
 - LS1028A Module with NXP LS1028A SoC (2x Cortex-A72, GC7000L GPU) and 8GB or 16GB LPDDR4 (Co-developed with RBZ, open source hardware)
 - FPGA Module with Xilinx Kintex-7 and 2GB DDR3 memory, open source hardware
 
-If you want to develop your own CPU module, visit source.mnt.re/reform for a KiCAD template and more technical information.
+If you want to develop your own CPU module, visit `<https://source.mnt.re/reform/reform-som-template>`_ for a KiCAD template and more technical information.
 
 Display Connector
 -----------------
@@ -224,16 +219,16 @@ The heatsink is a piece of milled aluminum that connects to the silicon die of t
 Keyboard
 ========
 
-TODO: illustration of the keyboard module with callouts of ports and buttons
+.. image:: _static/illustrations/kbd-callouts.png
 
-The keyboard is powered by an ATMega32U4_ 8-bit microcontroller. The controller scans the row/column matrix of keyswitches and reports keypresses via USB HID (human interface device) to the motherboard. Each switch has a diode to prevent ghosting, so you can press multiple keys at once. The microcontroller runs a firmware based on LUFA_, which is an open source library for implementing USB input devices.
+The keyboard is powered by an ATmega32U4_ 8-bit microcontroller. The controller scans the row/column matrix of keyswitches and reports keypresses via USB HID (human interface device) to the motherboard. Each switch has a diode to prevent ghosting, so you can press multiple keys at once. The microcontroller runs a firmware based on LUFA_, which is an open source library for implementing USB input devices.
 
 The second role of the keyboard is to serve as a user interface to the LPC system controller on the mainboard, even when the main SoC is turned off. To make this possible, the keyboard connects via a separate UART cable to the motherboards SYSCTL header (J23).
 
 Keyboard Firmware
 -----------------
 
-You can find the MNT Reform keyboard firmware `in the source folder "reform2-keyboard-fw" <https://source.mntmn.com/MNT/reform/reform2-keyboard-fw>`_.
+You can find the MNT Reform keyboard firmware in the source folder `reform2-keyboard-fw <https://source.mnt.re/reform/reform/-/tree/master/reform2-keyboard-fw>`_.
 
 To modify the scancodes of the keyboard matrix, edit the file Keyboard.c and rebuild the firmware by typing the following command in a terminal:
 
@@ -241,7 +236,7 @@ To modify the scancodes of the keyboard matrix, edit the file Keyboard.c and reb
 
    make
 
-To be able to flash the firmware to the keyboard, the ATMega has to be in a special mode where it identifies as an "Atmel DFU bootloader" USB device.
+To be able to flash the firmware to the keyboard, the ATmega has to be in a special mode where it identifies as an "Atmel DFU bootloader" USB device.
 
 Remove the keyboard's frame and toggle the programming DIP switch SW84 on the keyboard to "ON". Then press the reset button SW83. Before doing this, you need a means to start the flashing command without MNT Reform's internal keyboard. You can use an external USB keyboard, or use the trackball/trackpad to copy and paste the flash command and a new line.
 
@@ -259,35 +254,33 @@ Most keys have a white light emitting diode (LED) to illuminate the transparent 
 Replacing a Keycap
 ------------------
 
-.. image:: _static/illustrations/22t.png
+.. image:: _static/illustrations/22.png
 
-MNT Reform comes with custom "MBK" keycaps by FKcaps, but you can use any keycaps compatible with Kailh Choc keyswitches. You can easily pull out individual keycaps with your fingernails or better, using a keycap puller, and swap them around. The only two keycap sizes on the keyboard are 1U and 1.5U.
+MNT Reform comes with custom *MBK* keycaps by FKcaps, but you can use any keycaps compatible with `Kailh Choc <http://www.kailh.com/en/Products/Ks/CS>`_ keyswitches. You can easily pull out individual keycaps with your fingernails---or better, using a keycap puller---and swap them around. The only two keycap sizes on the keyboard are 1U and 1.5U.
 
 Replacing a Keyswitch
 ---------------------
 
-Should a keyswitch ever break, you can replace it with Kailh Choc Brown (CPG135001D02).
+Should a keyswitch ever break, you can replace it with `Kailh Choc Brown (CPG135001D02) <http://www.kailh.com/en/Products/Ks/CS/320.html>`_.
 
 Use a soldering iron and solder wick to remove the solder of one pin. Try to pull out the corresponding side of the switch from the top while continuing to heat the pin. Repeat the same for the other pin and go back and forth until you can remove the switch.
 
 .. _LUFA: http://www.fourwalledcubicle.com/files/LUFA/Doc/170418/html/
-.. _ATMega32U4: http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf
+.. _ATmega32U4: http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf
 
 OLED Module
 ===========
 
 .. image:: _static/illustrations/21-callouts.png
 
-The OLED display sits on the OLED Module which is connected to the keyboard through a 4-pin, 1mm pitch flex cable. The communication protocol is I²C. The module is mounted in the Main Box on top of the keyboardd with two M2x6 flathead screws.
+The OLED display sits on the OLED Module which is connected to the keyboard through a 4-pin, 1mm pitch flex cable. The communication protocol is I²C. The module is mounted in the Main Box on top of the keyboard with two M2x6 flathead screws.
 
 Trackball
 =========
 
-.. image:: _static/illustrations/7t.png
+.. image:: _static/illustrations/7-callouts.png
 
-TODO: fix 2 cap screws in illustration
-
-The trackball uses the same microcontroller and LUFA library as the keyboard, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the PAT9125EL optical sensor that is connected via I²C. The electronic connection between trackball sensor and controller is made with a 6-pin 0.5mm pitch flex cable.
+The trackball uses the same microcontroller and LUFA library as the keyboard, but instead of scanning a matrix of switches, it gets X and Y movement coordinates from the `PAT9125EL optical sensor <https://www.pixart.com/_getfs.php?tb=product&id=72&fs=ck2_fs_en>`_ that is connected via I²C. The electronic connection between trackball sensor and controller is made with a 6-pin 0.5mm pitch flex cable.
 
 The trackball has five buttons. These make use of the same keyswitches as the keyboard: Kailh Choc Brown (CPG135001D02). The button caps are 3D printed using SLA technology (Formlabs Form 2). If you want to substitute your own replacements, you can find the STL files for the caps in the MNT Reform source repository. The cup and lid of the trackball are 3D printed using the same method.
 
@@ -296,12 +289,12 @@ The trackball has five buttons. These make use of the same keyswitches as the ke
 Trackball Cleaning
 ------------------
 
-From time to time, you should clean the trackball from accumulated dust. To do this, carefully lift off the left and right buttons. Then, unscrew the two screws holding the trackball's lid and remove the ball. Clean the inside of the cup with a soft cloth. Don't use detergents as these can dissolve the cup's material.
+From time to time, you should clean dust and debris from the trackball. To do this, carefully lift off the left and right buttons. Then, unscrew the two screws holding the trackball's lid and remove the ball. Clean the inside of the cup with a soft cloth. Don't use detergents as these can dissolve the cup's material.
 
 Trackball Firmware
 ------------------
 
-You can find the trackball firmware `in the source folder "reform2-trackball-fw" <https://source.mnt.re/reform/reform/reform2-trackball-fw>`_.
+You can find the trackball firmware in the source folder `reform2-trackball-fw <https://source.mnt.re/reform/reform/-/tree/master/reform2-trackball-fw>`_.
 
 The trackball firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackball, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
 
@@ -324,10 +317,12 @@ The trackpad uses the same microcontroller as the keyboard and trackball. To sen
 
 .. image:: _static/illustrations/8-2-callouts.png
 
+TODO: missing reset button in model
+
 Trackpad Firmware
 -----------------
 
-You can find the trackpad firmware `in the source folder  "reform2-trackpad-fw" <https://source.mnt.re/reform/reform/reform2-trackpad-fw>`_.
+You can find the trackpad firmware in the source folder `reform2-trackpad-fw <https://source.mnt.re/reform/reform/-/tree/master/reform2-trackpad-fw>`_.
 
 Same as the trackball and keyboard, the trackpad firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackpad, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
 
@@ -335,18 +330,21 @@ Same as the trackball and keyboard, the trackpad firmware is based on the LUFA U
 
    make
 
-For flashing, the MCU has to be in bootloader USB mode. Toggle the programming DIP switch SW7 to "ON" and press the reset button SW6.
-
-The trackpad will reappear as an "Atmel DFU bootloader USB" device. You can then upload your new firmware by executing:
+For flashing, the MCU has to be in bootloader USB mode. Toggle the programming DIP switch SW7 to "ON" and press the reset button SW6. The trackpad will reappear as an "Atmel DFU bootloader USB" device. You can then upload your new firmware by executing:
 
 .. code-block:: none
 
    ./flash.sh
 
+Exchanging Trackball/Trackpad
+=============================
+
+You can easily swap the Trackball for the Trackpad module and vice versa. To do this, first disconnect the wall power and flip MNT Reform on its back. Open the Bottom Plate and remove all battery cells. Unplug the side of the internal USB cable that is connected to the installed module. Then, unscrew the module's case mounting screws (four for the Trackball, two for the Trackpad) and pull out the module. Reverse the process to install the new input device. The Trackball is inserted so that its four mounting holes line up with four matching holes in the Main Box. The Trackpad slides into a slot in the Main Box with one end first (the end without mounting tabs) and is then mounted to the Main Box with two screws that go through the tabs on the other end. After mounting the desired module, reconnect the internal USB cable to it.
+
 Battery Packs
 =============
 
-MNT Reform has two identical battery packs, referred to as the Left and Right packs. Each pack has four 18650 cells with LiFePO4 chemistry and 3.2V. You may be tempted to try cells of other chemistries like LiIon or NiMH, **but never do this, as these are incompatible.**
+MNT Reform has two identical battery packs, referred to as the Left and Right packs. Each pack has four 18650 cells with LiFePO4 chemistry and 3.2V. You may be tempted to try cells of other chemistries like Li-Ion or NiMH, **but never do this, as these are incompatible.**
 
 **Only use LiFePO4 cells with MNT Reform!**
 
@@ -354,7 +352,7 @@ When inserting battery cells, **make sure that the positive and negative poles a
 
 All 8 cells are connected in series. When fully charged at 3.6V, the total voltage of the cells can add up to 28.8V. **Make sure not to bridge/short any battery clips to the case or neighboring clips or pins, as this will immediately cause sparks and burnt traces.**
 
-When working with MNT Reform internals, it is good practice to remove all battery cells. This way you can easily prevent damage from accidental discharge.
+When working inside MNT Reform, remove all battery cells. This way you can easily prevent damage from accidental discharge.
 
 LiFePO4 cells are safely discharged to 2.5V. Please make sure not to discharge the cells further. If you plan to leave your MNT Reform turned off/uncharged for more than a few days, disconnect the battery packs or take out the cells to avoid deep discharge.
 

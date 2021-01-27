@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="148mm"
+   height="90mm"
+   viewBox="0 0 148 90"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="refman-oled2.svg"
+   inkscape:export-filename="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/oled2-callouts.png"
+   inkscape:export-xdpi="600.0954"
+   inkscape:export-ydpi="600.0954">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="162.67356"
+     inkscape:cy="136.37908"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     inkscape:window-width="1270"
+     inkscape:window-height="1406"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid10"
+       units="mm"
+       spacingx="10"
+       spacingy="10" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <image
+       sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/oled-gfx2.png"
+       xlink:href="../_static/illustrations/oled-gfx2.png"
+       style="opacity:1;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:none"
+       y="24.686117"
+       x="30.384472"
+       id="image3395"
+       preserveAspectRatio="none"
+       height="30.10087"
+       width="86.540001" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="13.892538"
+       y="20.024343"
+       id="text130-3-5-6-3"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2-6"
+         x="13.892538"
+         y="20.024343"
+         style="stroke-width:0.264583">Battery Cell Voltages</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 49.382504,19.970545 h 0.750287 v 9.986459"
+       id="path200-7"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="64.587914"
+       y="20.000961"
+       id="text130-3-5-6-3-6"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2-6-3"
+         x="64.587914"
+         y="20.000961"
+         style="stroke-width:0.264583">Total Battery Charge Level</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 109.37214,19.959851 h 0.75028 v 9.602133"
+       id="path200-7-2"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="73.816566"
+       y="60.041004"
+       id="text130-3-5-6-3-6-0"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2-6-3-6"
+         x="73.816566"
+         y="60.041004"
+         style="stroke-width:0.264583">Total Battery Voltage</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="118.35077"
+       y="70.251083"
+       id="text130-3-5-6-3-6-0-1"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2-6-3-6-5"
+         x="118.35077"
+         y="70.251083"
+         style="text-align:end;text-anchor:end;stroke-width:0.264583">Current into/out</tspan><tspan
+         sodipodi:role="line"
+         x="118.35077"
+         y="74.660797"
+         style="text-align:end;text-anchor:end;stroke-width:0.264583"
+         id="tspan3450">of Batteries</tspan></text>
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.265;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 109.25592,60.018508 h 0.75028 v -9.602133"
+       id="path200-7-2-5"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:#ff0000;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 119.22341,70.116023 h 0.75028 V 42.3 h -6.85663"
+       id="path200-7-2-5-4"
+       sodipodi:nodetypes="cccc" />
+  </g>
+</svg>

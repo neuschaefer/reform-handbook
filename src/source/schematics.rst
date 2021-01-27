@@ -4,18 +4,30 @@ Schematics
 .. role:: raw-latex(raw)
    :format: latex
 
+- `PDF: System Diagram <_static/system-diagram.pdf>`_
+
+:raw-latex:`\includepdf[pages=1]{_static/system-diagramx.pdf}`
+
+:raw-latex:`\small`
+
 Motherboard Schematics
 ======================
 
-:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-motherboard.pdf}`
-:raw-latex:`\includepdf[pages=2,angle=90]{_static/schem/reform2-motherboard.pdf}`
-:raw-latex:`\includepdf[pages=3,angle=90]{_static/schem/reform2-motherboard.pdf}`
-:raw-latex:`\includepdf[pages=4,angle=90]{_static/schem/reform2-motherboard.pdf}`
-:raw-latex:`\includepdf[pages=5,angle=90]{_static/schem/reform2-motherboard.pdf}`
-:raw-latex:`\includepdf[pages=6,angle=90]{_static/schem/reform2-motherboard.pdf}`
-:raw-latex:`\includepdf[pages=7,angle=90]{_static/schem/reform2-motherboard.pdf}`
-:raw-latex:`\includepdf[pages=8,angle=90]{_static/schem/reform2-motherboard.pdf}`
-:raw-latex:`\includepdf[pages=9,angle=90]{_static/schem/reform2-motherboard.pdf}`
+- `PDF: Motherboard Schematics <_static/schem/reform2-motherboard.pdf>`_
+- `KiCAD: Motherboard Design Files <https://source.mnt.re/reform/reform/-/tree/master/reform2-motherboard-pcb>`_
+
+:raw-latex:`\includepdf[pages=1,angle=0]{_static/schem/reform2-motherboardx.pdf}`
+:raw-latex:`\includepdf[pages=2,angle=90]{_static/schem/reform2-motherboardx.pdf}`
+:raw-latex:`\includepdf[pages=3,angle=90]{_static/schem/reform2-motherboardx.pdf}`
+:raw-latex:`\includepdf[pages=4,angle=90]{_static/schem/reform2-motherboardx.pdf}`
+:raw-latex:`\includepdf[pages=5,angle=90]{_static/schem/reform2-motherboardx.pdf}`
+:raw-latex:`\includepdf[pages=6,angle=90]{_static/schem/reform2-motherboardx.pdf}`
+:raw-latex:`\includepdf[pages=7,angle=90]{_static/schem/reform2-motherboardx.pdf}`
+:raw-latex:`\includepdf[pages=8,angle=90]{_static/schem/reform2-motherboardx.pdf}`
+:raw-latex:`\includepdf[pages=9,angle=90]{_static/schem/reform2-motherboardx.pdf}`
+:raw-latex:`\includepdf[pages=10,angle=90]{_static/schem/reform2-motherboardx.pdf}`
+:raw-latex:`\includepdf[pages=11,angle=90]{_static/schem/reform2-motherboardx.pdf}`
+:raw-latex:`\includepdf[pages=12,angle=90]{_static/schem/reform2-motherboardx.pdf}`
 
 Motherboard Bill of Materials
 =============================
@@ -28,9 +40,12 @@ Motherboard Bill of Materials
 Keyboard Schematics
 ===================
 
-:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-keyboard.pdf}`
-:raw-latex:`\includepdf[pages=2,angle=90]{_static/schem/reform2-keyboard.pdf}`
-:raw-latex:`\includepdf[pages=3,angle=90]{_static/schem/reform2-keyboard.pdf}`
+- `PDF: Keyboard Schematics <_static/schem/reform2-keyboard.pdf>`_
+- `KiCAD: Keyboard Design Files <https://source.mnt.re/reform/reform/-/tree/master/reform2-keyboard-pcb>`_
+
+:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-keyboardx.pdf}`
+:raw-latex:`\includepdf[pages=2,angle=90]{_static/schem/reform2-keyboardx.pdf}`
+:raw-latex:`\includepdf[pages=3,angle=90]{_static/schem/reform2-keyboardx.pdf}`
 
 Keyboard Bill of Materials
 ==========================
@@ -43,7 +58,10 @@ Keyboard Bill of Materials
 OLED Schematics
 ===============
 
-:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-oled.pdf}`
+- `PDF: OLED Schematics <_static/schem/reform2-oled.pdf>`_
+- `KiCAD: Keyboard Design Files <https://source.mnt.re/reform/reform/-/tree/master/reform2-oled-pcb>`_
+
+:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-oledx.pdf}`
 
 .. csv-table::
    :file: _static/bom/reform2-oled.csv
@@ -53,7 +71,10 @@ OLED Schematics
 Trackball Schematics
 ====================
 
-:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-trackball.pdf}`
+- `PDF: Trackball Schematics <_static/schem/reform2-trackball.pdf>`_
+- `KiCAD: Trackball Design Files <https://source.mnt.re/reform/reform/-/tree/master/reform2-trackball-pcb>`_
+
+:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-trackballx.pdf}`
 
 Trackball Bill Of Materials
 ===========================
@@ -66,7 +87,10 @@ Trackball Bill Of Materials
 Trackball Sensor Schematics
 ===========================
 
-:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-trackball-sensor.pdf}`
+- `PDF: Trackball Sensor Schematics <_static/schem/reform2-trackball-sensor.pdf>`_
+- `KiCAD: Trackball Sensor Design Files <https://source.mnt.re/reform/reform/-/tree/master/reform2-trackball-sensor-pcb>`_
+
+:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-trackball-sensorx.pdf}`
 
 Trackball Sensor Bill Of Materials
 ==================================
@@ -79,7 +103,10 @@ Trackball Sensor Bill Of Materials
 Trackpad Schematics
 ===================
 
-:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-trackpad.pdf}`
+- `PDF: Trackpad Schematics <_static/schem/reform2-trackpad.pdf>`_
+- `KiCAD: Trackpad Design Files <https://source.mnt.re/reform/reform/-/tree/master/reform2-trackpad-pcb>`_
+
+:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-trackpadx.pdf}`
 
 Trackpad Bill Of Materials
 ==========================
@@ -92,7 +119,10 @@ Trackpad Bill Of Materials
 Battery Pack Schematics
 =======================
 
-:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-batterypack.pdf}`
+- `PDF: Battery Pack Schematics <_static/schem/reform2-batterypack.pdf>`_
+- `KiCAD: Battery Pack Design Files <https://source.mnt.re/reform/reform/-/tree/master/reform2-batterypack-pcb>`_
+
+:raw-latex:`\includepdf[pages=1,angle=90]{_static/schem/reform2-batterypackx.pdf}`
 
 Battery Pack Bill Of Materials
 ==============================
@@ -108,4 +138,6 @@ Assembly Parts
 .. csv-table::
    :file: _static/bom/reform2-other-parts.csv
    :header-rows: 1
-   :widths: 45,5,25,25
+   :widths: 40,5,25,30
+
+:raw-latex:`\normalsize`

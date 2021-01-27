@@ -13,6 +13,7 @@ for section in \
   quickstart \
   input \
   linux \
+  desktops \
   software \
   development \
   parts \
@@ -21,16 +22,17 @@ for section in \
   online \
   credits
 do
-  pandoc -o _$section.tex -frst+smart --verbose -V fontsize=10pt --top-level-division=chapter $section.rst
+  cat $section.rst | grep -v '`KiCAD: ' | grep -v '`PDF: ' | pandoc -o _$section.tex -frst+smart --verbose -V fontsize=10pt --top-level-division=chapter
   cat _tex/section.tex >>reform-handbook.tex
-  cat _$section.tex >>reform-handbook.tex
+  sed 's/\(-callouts\|-icon\)\.png/x\.eps/g' _$section.tex >>reform-handbook.tex
 done
 
 cat _tex/post.tex >>reform-handbook.tex
 
 # generate reform-handbook.pdf
 xelatex reform-handbook.tex
-# twice to get the TOC built
+# thrice to get the TOC right
+xelatex reform-handbook.tex
 xelatex reform-handbook.tex
 
 # clean up

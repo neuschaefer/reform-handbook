@@ -1,7 +1,11 @@
 Credits
 =======
 
-:Concept, Electronics, Firmware, Software: Lukas F. Hartmann
+The MNT Reform Operator Handbook, First Edition. Berlin, January 2021.
+Written by Lukas F. Hartmann. Published by MNT Research GmbH.
+Printed in Berlin.
+
+:Concept, Electronics, Software: Lukas F. Hartmann
 
 :Industrial Design: Ana Beatriz Albertini Dantas
 
@@ -11,23 +15,25 @@ Credits
 
 :Handbook Design: 100rabbits, Lukas F. Hartmann
 
-:Handbook Editing: Lukas F. Hartmann, Brendan Nystedt, Ben Cardinal
+:Handbook Editing: Brendan Nystedt, Ben Cardinal
 
 :3D Illustration: Paul Klingberg
 
-:Partnerships & Fundraising: Caroline A. Sosat
+:PR & Fundraising: Caroline A. Sosat
 
 :Accounting: Christian Heller
-             
-:Help and Consulting: Daniel Amor, Felix Schneider, Zoe & Elen (Fully Automated), timonsku, Lukas Stach, Marek Vasut, Christian Gmeiner, Daniel Stone, Chris Healy, Drew Fustini, Jonas Haring, Philip Steffan, Florian Hadler (Interface Critique), Felix Bayer, Nils Dagsson Moskopp, Li0n, schneider, Sven Gebhardt, Jan Varwig, Gabriel Yoran, Martin Meyerhoff, Stefan Kalkowski, GyrosGeier
+
+:Help and Consulting: Daniel Amor (RBZ.es), Felix Schneider, Zoe & Elen (Fully Automated), timonsku, Lukas Stach, Marek Vasut, Christian Gmeiner, Daniel Stone, Chris Healy, Drew Fustini, Jonas Haring, Philip Steffan, Florian Hadler (Interface Critique), Felix Bayer, Nils Dagsson Moskopp, Li0n, schneider, Sven Gebhardt, Jan Varwig, Gabriel Yoran, Martin Meyerhoff, Stefan Kalkowski, GyrosGeier, Philipp Dikmann, Michael Christophersson, Markus Angermeier
+
+:Therapy Dog: Tina
 
 :Crowdfunding Partner: Crowd Supply
 
 :Additional Funding: NLNet, Mozilla MOSS
 
-:Milling: JPR
+:Printed Circuit Boards: PCBWay
 
-:PCB Assembly: PCBWay
+:Milling: JPR
 
 :Inter Font: @rsms
 
@@ -35,15 +41,17 @@ Credits
 
 :Software: Debian GNU/Linux, KiCAD, Inkscape, GIMP, Emacs, Vim, GitLab, LUFA, MicroBuilder, Blender, FreeCAD, OpenSCAD, Fusion 360, Cura, Sphinx
 
-Web: https://mntre.com
-
-Email: info@mntre.com
-
-| Copyright 2018-2020 MNT Research GmbH, Fehlerstr. 8, 12161 Berlin
+| © 2018-2021 MNT Research GmbH, Fehlerstr. 8, 12161 Berlin
 | Managing Director: Lukas F. Hartmann
 | Registergericht: Amtsgericht Charlottenburg
 | Aktenzeichen: HRB 136605 B
 | VAT ID: DE278908891
 | WEEE: DE 33315564
+| Web: https://mntre.com
+| Email: info@mntre.com
 
-License: The sources for this handbook and most MNT Reform software components (check repositories for details) are licensed under GNU GPL v3 or newer. The artwork is licensed under CC BY-SA 4.0. The MNT Reform hardware design files are licensed under CERN-OHL-S 2.0.
+MNT Reform is Open Source Hardware certified by OSHWA (UID DE000017).
+
+The sources for this handbook and most MNT Reform software components (check repositories for details) are licensed under GNU GPL v3 or newer. The artwork is licensed under CC BY-SA 4.0. The MNT Reform hardware design files are licensed under CERN-OHL-S 2.0.
+
+The MNT symbol is a registered trademark of MNT Research GmbH.

@@ -1,0 +1,3584 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="148mm"
+   viewBox="0 0 559.37008 793.70076"
+   version="1.1"
+   id="svg13716"
+   sodipodi:docname="system-diagram.svg"
+   height="210mm"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)">
+  <metadata
+     id="metadata13722">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs13720" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1406"
+     id="namedview13718"
+     showgrid="false"
+     units="mm"
+     inkscape:zoom="1.9094395"
+     inkscape:cx="247.6651"
+     inkscape:cy="366.66968"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g15020" />
+  <g
+     id="graph0"
+     class="graph"
+     transform="matrix(0,-0.35186134,0.35186134,0,542.71983,764.23264)">
+    <title
+       id="title12465">G</title>
+    <!-- rtc -->
+    <!-- rtcbat -->
+    <!-- rtcbat&#45;&gt;rtc -->
+    <!-- dsi -->
+    <!-- dsi2edp -->
+    <!-- dsi&#45;&gt;dsi2edp -->
+    <!-- hdmi -->
+    <!-- phdmi -->
+    <!-- hdmi&#45;&gt;phdmi -->
+    <!-- sai -->
+    <!-- adac -->
+    <!-- sai&#45;&gt;adac -->
+    <!-- i2c0 -->
+    <!-- i2c0&#45;&gt;adac -->
+    <!-- usb0 -->
+    <!-- pusb3 -->
+    <!-- usb0&#45;&gt;pusb3 -->
+    <!-- usb1 -->
+    <!-- hub -->
+    <!-- usb1&#45;&gt;hub -->
+    <!-- ddrc -->
+    <!-- ram -->
+    <!-- ddrc&#45;&gt;ram -->
+    <!-- sd1 -->
+    <!-- emmc -->
+    <!-- sd1&#45;&gt;emmc -->
+    <!-- sd2 -->
+    <!-- lshift -->
+    <!-- sd2&#45;&gt;lshift -->
+    <!-- uart1 -->
+    <!-- iuart1 -->
+    <!-- uart1&#45;&gt;iuart1 -->
+    <!-- pcie0 -->
+    <!-- impcie -->
+    <!-- pcie0&#45;&gt;impcie -->
+    <!-- pcie1 -->
+    <!-- im2 -->
+    <!-- pcie1&#45;&gt;im2 -->
+    <!-- uart0 -->
+    <!-- iuart0 -->
+    <!-- uart0&#45;&gt;iuart0 -->
+    <!-- pwm -->
+    <!-- backlight -->
+    <!-- pwm&#45;&gt;backlight -->
+    <!-- ethmac -->
+    <!-- ethphy -->
+    <!-- ethmac&#45;&gt;ethphy -->
+    <!-- cpu0 -->
+    <!-- cpu1 -->
+    <!-- gpu -->
+    <!-- i2c1 -->
+    <!-- i2c1&#45;&gt;rtc -->
+    <!-- spi1 -->
+    <!-- lpc -->
+    <!-- spi1&#45;&gt;lpc -->
+    <!-- peth -->
+    <!-- ethphy&#45;&gt;peth -->
+    <!-- s5v -->
+    <!-- iusb0 -->
+    <!-- hub&#45;&gt;iusb0 -->
+    <!-- iusb1 -->
+    <!-- hub&#45;&gt;iusb1 -->
+    <!-- pusb2 -->
+    <!-- hub&#45;&gt;pusb2 -->
+    <!-- pusb1 -->
+    <!-- hub&#45;&gt;pusb1 -->
+    <!-- paudio -->
+    <!-- adac&#45;&gt;paudio -->
+    <!-- speakers -->
+    <!-- adac&#45;&gt;speakers -->
+    <!-- panel -->
+    <!-- dsi2edp&#45;&gt;panel -->
+    <!-- kmcu -->
+    <!-- iusb0&#45;&gt;kmcu -->
+    <!-- tmcu -->
+    <!-- iusb1&#45;&gt;tmcu -->
+    <!-- lspi -->
+    <!-- lpc&#45;&gt;lspi -->
+    <!-- li2c -->
+    <!-- lpc&#45;&gt;li2c -->
+    <!-- enabchg -->
+    <!-- lpc&#45;&gt;enabchg -->
+    <!-- enab5v -->
+    <!-- lpc&#45;&gt;enab5v -->
+    <!-- enab3v3 -->
+    <!-- lpc&#45;&gt;enab3v3 -->
+    <!-- ina -->
+    <!-- cells -->
+    <!-- ina&#45;&gt;cells -->
+    <!-- ltc -->
+    <!-- ltc&#45;&gt;cells -->
+    <!-- r28v -->
+    <!-- ltc&#45;&gt;r28v -->
+    <!-- mon -->
+    <!-- mon&#45;&gt;cells -->
+    <!-- lspi&#45;&gt;mon -->
+    <!-- li2c&#45;&gt;ina -->
+    <!-- cells&#45;&gt;r28v -->
+    <!-- supply -->
+    <!-- supply&#45;&gt;ltc -->
+    <!-- enabchg&#45;&gt;ltc -->
+    <!-- r5v -->
+    <!-- enab5v&#45;&gt;r5v -->
+    <!-- r3v3 -->
+    <!-- enab3v3&#45;&gt;r3v3 -->
+    <!-- stby -->
+    <!-- r28v&#45;&gt;stby -->
+    <!-- r28v&#45;&gt;r5v -->
+    <!-- r28v&#45;&gt;r3v3 -->
+    <!-- stby&#45;&gt;lpc -->
+    <!-- stby&#45;&gt;kmcu -->
+    <!-- r5v&#45;&gt;s5v -->
+    <!-- r1v2 -->
+    <!-- r5v&#45;&gt;r1v2 -->
+    <!-- r1v5 -->
+    <!-- r5v&#45;&gt;r1v5 -->
+    <!-- r1v8 -->
+    <!-- r3v3&#45;&gt;r1v8 -->
+    <!-- pbarrel -->
+    <!-- psdcard -->
+    <!-- lshift&#45;&gt;psdcard -->
+    <!-- panel&#45;&gt;backlight -->
+    <!-- ti2c -->
+    <!-- tmcu&#45;&gt;ti2c -->
+    <!-- tgpio -->
+    <!-- tmcu&#45;&gt;tgpio -->
+    <!-- tsens -->
+    <!-- ti2c&#45;&gt;tsens -->
+    <!-- tkeys -->
+    <!-- tgpio&#45;&gt;tkeys -->
+    <!-- ki2c -->
+    <!-- kmcu&#45;&gt;ki2c -->
+    <!-- kuart -->
+    <!-- kmcu&#45;&gt;kuart -->
+    <!-- kgpio -->
+    <!-- kmcu&#45;&gt;kgpio -->
+    <!-- oled -->
+    <!-- ki2c&#45;&gt;oled -->
+    <!-- kuart&#45;&gt;lpc -->
+    <!-- kkeys -->
+    <!-- kgpio&#45;&gt;kkeys -->
+    <g
+       id="g15020"
+       transform="translate(3.0244864,2.2021549)">
+      <text
+         text-anchor="start"
+         x="1041.6055"
+         y="-1555.0403"
+         font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+         font-size="24.9154px"
+         id="text12469"
+         style="stroke-width:1.03814" />
+      <text
+         text-anchor="start"
+         x="1041.6055"
+         y="-1501.057"
+         font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+         font-size="24.9154px"
+         id="text12473"
+         style="stroke-width:1.03814" />
+      <g
+         id="clust1"
+         class="cluster"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12475">cluster_som</title>
+        <polygon
+           fill="#d3d3d3"
+           stroke="#d3d3d3"
+           points="99.5,-1417.8 1283.5,-1417.8 1283.5,-986 99.5,-986 "
+           id="polygon12477" />
+        <text
+           text-anchor="start"
+           x="628.5"
+           y="-1389.6"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-weight="bold"
+           font-size="14px"
+           id="text12479">System on Module</text>
+      </g>
+      <g
+         id="clust2"
+         class="cluster"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12482">cluster_soc</title>
+        <polygon
+           fill="#ffffff"
+           stroke="#ffffff"
+           points="221.5,-1356.8 1063.5,-1356.8 1063.5,-1011 221.5,-1011 "
+           id="polygon12484" />
+        <text
+           text-anchor="start"
+           x="558"
+           y="-1326.6"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text12486">System on Chip (i.MX8M)</text>
+      </g>
+      <g
+         id="clust3"
+         class="cluster"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12489">cluster_headers</title>
+        <polygon
+           fill="#d3d3d3"
+           stroke="#d3d3d3"
+           points="662.5,-978 1252.5,-978 1252.5,-854 662.5,-854 "
+           id="polygon12491" />
+        <text
+           text-anchor="start"
+           x="911"
+           y="-875.79999"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-weight="bold"
+           font-size="14px"
+           id="text12493">Internal Ports</text>
+        <text
+           text-anchor="start"
+           x="955.5"
+           y="-861.79999"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text12495" />
+      </g>
+      <g
+         id="clust4"
+         class="cluster"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12498">cluster_power</title>
+        <polygon
+           fill="#d3d3d3"
+           stroke="#d3d3d3"
+           points="1404.5,-845 2041.5,-845 2041.5,-8 1404.5,-8 "
+           id="polygon12500" />
+        <text
+           text-anchor="start"
+           x="1701"
+           y="-29.799999"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-weight="bold"
+           font-size="14px"
+           id="text12502">Power</text>
+        <text
+           text-anchor="start"
+           x="1721"
+           y="-15.8"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text12504" />
+      </g>
+      <g
+         id="clust5"
+         class="cluster"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12507">cluster_system_control</title>
+        <polygon
+           fill="#ffffff"
+           stroke="#ffffff"
+           points="1429.5,-820 2016.5,-820 2016.5,-345 1429.5,-345 "
+           id="polygon12509" />
+        <text
+           text-anchor="middle"
+           x="1723"
+           y="-367.79999"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text12511">System Control</text>
+        <text
+           text-anchor="middle"
+           x="1723"
+           y="-352.79999"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text12513" />
+      </g>
+      <g
+         id="clust6"
+         class="cluster"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12516">cluster_power_rails</title>
+        <polygon
+           fill="#ffffff"
+           stroke="#ffffff"
+           points="1639.5,-337 1981.5,-337 1981.5,-69 1639.5,-69 "
+           id="polygon12518" />
+        <text
+           text-anchor="middle"
+           x="1810.5"
+           y="-91.800003"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text12520">Power Rails</text>
+        <text
+           text-anchor="middle"
+           x="1810.5"
+           y="-76.800003"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text12522" />
+      </g>
+      <g
+         id="clust7"
+         class="cluster"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12525">cluster_ports</title>
+        <polygon
+           fill="#d3d3d3"
+           stroke="#d3d3d3"
+           points="1411.5,-1170 1799.5,-1170 1799.5,-854 1411.5,-854 "
+           id="polygon12527" />
+        <text
+           text-anchor="start"
+           x="1557"
+           y="-875.79999"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-weight="bold"
+           font-size="14px"
+           id="text12529">External Ports</text>
+        <text
+           text-anchor="start"
+           x="1603.5"
+           y="-861.79999"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text12531" />
+      </g>
+      <g
+         id="clust8"
+         class="cluster"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12534">cluster_hmi</title>
+        <polygon
+           fill="#d3d3d3"
+           stroke="#d3d3d3"
+           points="368.5,-846 1359.5,-846 1359.5,-454 368.5,-454 "
+           id="polygon12536" />
+        <text
+           text-anchor="start"
+           x="775"
+           y="-475.79999"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-weight="bold"
+           font-size="14px"
+           id="text12538">Human Machine Interface</text>
+        <text
+           text-anchor="start"
+           x="862"
+           y="-461.79999"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text12540" />
+      </g>
+      <g
+         id="clust9"
+         class="cluster"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12543">cluster_screen</title>
+        <polygon
+           fill="#ffffff"
+           stroke="#ffffff"
+           points="393.5,-821 666.5,-821 666.5,-623 393.5,-623 "
+           id="polygon12545" />
+        <text
+           text-anchor="middle"
+           x="530"
+           y="-645.79999"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text12547">Screen Assembly</text>
+        <text
+           text-anchor="middle"
+           x="530"
+           y="-630.79999"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text12549" />
+      </g>
+      <g
+         id="clust10"
+         class="cluster"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12552">cluster_trackball</title>
+        <polygon
+           fill="#ffffff"
+           stroke="#ffffff"
+           points="691.5,-820 957.5,-820 957.5,-515 691.5,-515 "
+           id="polygon12554" />
+        <text
+           text-anchor="middle"
+           x="824.5"
+           y="-537.79999"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text12556">Trackball</text>
+        <text
+           text-anchor="middle"
+           x="824.5"
+           y="-522.79999"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text12558" />
+      </g>
+      <g
+         id="clust11"
+         class="cluster"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12561">cluster_keyboard</title>
+        <polygon
+           fill="#ffffff"
+           stroke="#ffffff"
+           points="982.5,-820 1334.5,-820 1334.5,-515 982.5,-515 "
+           id="polygon12563" />
+        <text
+           text-anchor="middle"
+           x="1158.5"
+           y="-537.79999"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text12565">Keyboard</text>
+        <text
+           text-anchor="middle"
+           x="1158.5"
+           y="-522.79999"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text12567" />
+      </g>
+      <g
+         id="node1"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12570">rtc</title>
+        <g
+           id="a_node1">
+          <a
+             xlink:href="system.html#rtc"
+             id="a12578"
+             target="_top"
+             xlink:title="Realtime\nClock">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="0.5,-1146 0.5,-1108 74.5,-1108 74.5,-1146 "
+               id="polygon12572" />
+            <text
+               text-anchor="middle"
+               x="37.5"
+               y="-1130.8"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12574">Realtime</text>
+            <text
+               text-anchor="middle"
+               x="37.5"
+               y="-1115.8"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12576">Clock</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node2"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12582">rtcbat</title>
+        <g
+           id="a_node2">
+          <a
+             xlink:href="system.html#rtc"
+             id="a12588"
+             target="_top"
+             xlink:title="Coin Cell">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="0,-1219 0,-1183 75,-1183 75,-1219 "
+               id="polygon12584" />
+            <text
+               text-anchor="middle"
+               x="37.5"
+               y="-1197.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12586">Coin Cell</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge23"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12592">rtcbat-&gt;rtc</title>
+        <path
+           fill="none"
+           stroke="#ff0000"
+           d="m 37.5,-1182.71 c 0,11.13 0,25.32 0,36.6"
+           id="path12594" />
+      </g>
+      <g
+         id="node3"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12597">dsi</title>
+        <g
+           id="a_node3">
+          <a
+             xlink:href="system.html#mipi-dsi"
+             id="a12603"
+             target="_top"
+             xlink:title="MIPI DSI">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="426.5,-1072 426.5,-1036 498.5,-1036 498.5,-1072 "
+               id="polygon12599" />
+            <text
+               text-anchor="middle"
+               x="462.5"
+               y="-1050.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12601">MIPI DSI</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node29"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12607">dsi2edp</title>
+        <g
+           id="a_node29">
+          <a
+             xlink:href="system.html#dsi2edp"
+             id="a12615"
+             target="_top"
+             xlink:title="DSI to eDP\nConverter">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="419,-953 419,-915 506,-915 506,-953 "
+               id="polygon12609" />
+            <text
+               text-anchor="middle"
+               x="462.5"
+               y="-937.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12611">DSI to eDP</text>
+            <text
+               text-anchor="middle"
+               x="462.5"
+               y="-922.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12613">Converter</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge60"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12619">dsi-&gt;dsi2edp</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 462.5,-1035.77 c 0,0 0,77.58 0,77.58"
+           id="path12621" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="464.25,-958.19 462.5,-953.19 460.75,-958.19 "
+           id="polygon12623" />
+      </g>
+      <g
+         id="node4"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12626">hdmi</title>
+        <g
+           id="a_node4">
+          <a
+             xlink:href="system.html#hdmi"
+             id="a12632"
+             target="_top"
+             xlink:title="HDMI">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="966.5,-1219 966.5,-1183 1038.5,-1183 1038.5,-1219 "
+               id="polygon12628" />
+            <text
+               text-anchor="middle"
+               x="1002.5"
+               y="-1197.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12630">HDMI</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node58"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12636">phdmi</title>
+        <g
+           id="a_node58">
+          <a
+             xlink:href="system.html#hdmi"
+             id="a12642"
+             target="_top"
+             xlink:title="HDMI Port">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1436.5,-1145 1436.5,-1109 1522.5,-1109 1522.5,-1145 "
+               id="polygon12638" />
+            <text
+               text-anchor="middle"
+               x="1479.5"
+               y="-1123.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12640">HDMI Port</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge30"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12646">hdmi-&gt;phdmi</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1002.5,-1182.97 c 0,6.82 0,12.97 0,12.97 0,0 477,0 477,0 0,0 0,12.86 0,24.51"
+           id="path12648" />
+      </g>
+      <g
+         id="node5"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12651">sai</title>
+        <g
+           id="a_node5">
+          <a
+             xlink:href="system.html#sai"
+             id="a12657"
+             target="_top"
+             xlink:title="SAI">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="516.5,-1072 516.5,-1036 588.5,-1036 588.5,-1072 "
+               id="polygon12653" />
+            <text
+               text-anchor="middle"
+               x="552.5"
+               y="-1050.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12655">SAI</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node28"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12661">adac</title>
+        <g
+           id="a_node28">
+          <a
+             xlink:href="system.html#dac"
+             id="a12667"
+             target="_top"
+             xlink:title="DAC WM8960">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="525.5,-952 525.5,-916 637.5,-916 637.5,-952 "
+               id="polygon12663" />
+            <text
+               text-anchor="middle"
+               x="581.5"
+               y="-930.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12665">DAC WM8960</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge35"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12671">sai-&gt;adac</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 557,-1035.77 c 0,22.68 0,61.18 0,83.77"
+           id="path12673" />
+      </g>
+      <g
+         id="node6"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12676">i2c0</title>
+        <g
+           id="a_node6">
+          <a
+             xlink:href="system.html#i2c"
+             id="a12682"
+             target="_top"
+             xlink:title="I2C 1">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="606.5,-1072 606.5,-1036 678.5,-1036 678.5,-1072 "
+               id="polygon12678" />
+            <text
+               text-anchor="middle"
+               x="642.5"
+               y="-1050.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12680">I2C 1</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge58"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12686">i2c0-&gt;adac</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 616.83,-1035.77 c 0,22.68 0,61.18 0,83.77"
+           id="path12688" />
+      </g>
+      <g
+         id="node7"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12691">usb0</title>
+        <g
+           id="a_node7">
+          <a
+             xlink:href="system.html#usb3"
+             id="a12697"
+             target="_top"
+             xlink:title="USB3 Root 1">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="940.5,-1145 940.5,-1109 1038.5,-1109 1038.5,-1145 "
+               id="polygon12693" />
+            <text
+               text-anchor="middle"
+               x="989.5"
+               y="-1123.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12695">USB3 Root 1</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node54"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12701">pusb3</title>
+        <g
+           id="a_node54">
+          <a
+             xlink:href="system.html#usb3"
+             id="a12707"
+             target="_top"
+             xlink:title="USB3 Port 3">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1437,-1072 1437,-1036 1536,-1036 1536,-1072 "
+               id="polygon12703" />
+            <text
+               text-anchor="middle"
+               x="1486.5"
+               y="-1050.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12705">USB3 Port 3</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge29"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12711">usb0-&gt;pusb3</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1002.5,-1108.93 c 0,9.39 0,18.93 0,18.93 0,0 477.25,0 477.25,0 0,0 0,8.72 0,17.58"
+           id="path12713" />
+      </g>
+      <g
+         id="node8"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12716">usb1</title>
+        <g
+           id="a_node8">
+          <a
+             xlink:href="system.html#usb3"
+             id="a12722"
+             target="_top"
+             xlink:title="USB3 Root 2">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="821,-1145 821,-1109 922,-1109 922,-1145 "
+               id="polygon12718" />
+            <text
+               text-anchor="middle"
+               x="871.5"
+               y="-1123.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12720">USB3 Root 2</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node27"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12726">hub</title>
+        <g
+           id="a_node27">
+          <a
+             xlink:href="system.html#usb-hub"
+             id="a12732"
+             target="_top"
+             xlink:title="USB Hub">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1309,-1072 1309,-1036 1386,-1036 1386,-1072 "
+               id="polygon12728" />
+            <text
+               text-anchor="middle"
+               x="1347.5"
+               y="-1050.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12730">USB Hub</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge26"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12736">usb1-&gt;hub</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 899.25,-1108.82 c 0,12.86 0,27.82 0,27.82 0,0 448.25,0 448.25,0 0,0 0,3.96 0,8.84"
+           id="path12738" />
+      </g>
+      <g
+         id="node9"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12741">ddrc</title>
+        <g
+           id="a_node9">
+          <a
+             xlink:href="system.html#ddrc"
+             id="a12747"
+             target="_top"
+             xlink:title="DDRC">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="761.5,-1292 761.5,-1256 833.5,-1256 833.5,-1292 "
+               id="polygon12743" />
+            <text
+               text-anchor="middle"
+               x="797.5"
+               y="-1270.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12745">DDRC</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node23"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12751">ram</title>
+        <g
+           id="a_node23">
+          <a
+             xlink:href="system.html#ddrc"
+             id="a12759"
+             target="_top"
+             xlink:title="LPDDR4\nRAM 4GB">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1088.5,-1220 1088.5,-1182 1168.5,-1182 1168.5,-1220 "
+               id="polygon12753" />
+            <text
+               text-anchor="middle"
+               x="1128.5"
+               y="-1204.8"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12755">LPDDR4</text>
+            <text
+               text-anchor="middle"
+               x="1128.5"
+               y="-1189.8"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12757">RAM 4GB</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge36"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12763">ddrc-&gt;ram</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 827.25,-1255.94 c 0,11.38 0,23.94 0,23.94 0,0 301.25,0 301.25,0 0,0 0,5.52 0,11.9"
+           id="path12765" />
+      </g>
+      <g
+         id="node10"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12768">sd1</title>
+        <g
+           id="a_node10">
+          <a
+             xlink:href="system.html#mmc"
+             id="a12774"
+             target="_top"
+             xlink:title="MMC/SD1">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="852,-1292 852,-1256 935,-1256 935,-1292 "
+               id="polygon12770" />
+            <text
+               text-anchor="middle"
+               x="893.5"
+               y="-1270.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12772">MMC/SD1</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node24"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12778">emmc</title>
+        <g
+           id="a_node24">
+          <a
+             xlink:href="system.html#mmc"
+             id="a12786"
+             target="_top"
+             xlink:title="eMMC\n~8GB">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1186.5,-1220 1186.5,-1182 1258.5,-1182 1258.5,-1220 "
+               id="polygon12780" />
+            <text
+               text-anchor="middle"
+               x="1222.5"
+               y="-1204.8"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12782">eMMC</text>
+            <text
+               text-anchor="middle"
+               x="1222.5"
+               y="-1189.8"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12784">~8GB</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge37"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12790">sd1-&gt;emmc</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 901.75,-1255.86 c 0,6.32 0,11.86 0,11.86 0,0 320.75,0 320.75,0 0,0 0,12.31 0,23.76"
+           id="path12792" />
+      </g>
+      <g
+         id="node11"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12795">sd2</title>
+        <g
+           id="a_node11">
+          <a
+             xlink:href="system.html#mmc"
+             id="a12801"
+             target="_top"
+             xlink:title="MMC/SD2">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="953,-1292 953,-1256 1038,-1256 1038,-1292 "
+               id="polygon12797" />
+            <text
+               text-anchor="middle"
+               x="995.5"
+               y="-1270.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12799">MMC/SD2</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node62"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12805">lshift</title>
+        <g
+           id="a_node62">
+          <a
+             xlink:href="system.html#mmc"
+             id="a12811"
+             target="_top"
+             xlink:title="Level Shifter">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1424.5,-1219 1424.5,-1183 1524.5,-1183 1524.5,-1219 "
+               id="polygon12807" />
+            <text
+               text-anchor="middle"
+               x="1474.5"
+               y="-1197.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12809">Level Shifter</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge31"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12815">sd2-&gt;lshift</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1038.01,-1274 c 117.23,0 436.49,0 436.49,0 0,0 0,33.34 0,54.96"
+           id="path12817" />
+      </g>
+      <g
+         id="node12"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12820">uart1</title>
+        <g
+           id="a_node12">
+          <a
+             xlink:href="system.html#uart"
+             id="a12826"
+             target="_top"
+             xlink:title="UART 2">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="876.5,-1072 876.5,-1036 948.5,-1036 948.5,-1072 "
+               id="polygon12822" />
+            <text
+               text-anchor="middle"
+               x="912.5"
+               y="-1050.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12824">UART 2</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node31"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12830">iuart1</title>
+        <g
+           id="a_node31">
+          <a
+             xlink:href="system.html#uart"
+             id="a12838"
+             target="_top"
+             xlink:title="UART2\nConsole">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="885.5,-953 885.5,-915 957.5,-915 957.5,-953 "
+               id="polygon12832" />
+            <text
+               text-anchor="middle"
+               x="921.5"
+               y="-937.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12834">UART2</text>
+            <text
+               text-anchor="middle"
+               x="921.5"
+               y="-922.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12836">Console</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge42"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12842">uart1-&gt;iuart1</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 917,-1035.77 c 0,22.29 0,59.85 0,82.58"
+           id="path12844" />
+      </g>
+      <g
+         id="node13"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12847">pcie0</title>
+        <g
+           id="a_node13">
+          <a
+             xlink:href="system.html#pcie"
+             id="a12853"
+             target="_top"
+             xlink:title="PCIe 1">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="786.5,-1072 786.5,-1036 858.5,-1036 858.5,-1072 "
+               id="polygon12849" />
+            <text
+               text-anchor="middle"
+               x="822.5"
+               y="-1050.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12851">PCIe 1</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node34"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12857">impcie</title>
+        <g
+           id="a_node34">
+          <a
+             xlink:href="system.html#pcie"
+             id="a12863"
+             target="_top"
+             xlink:title="mPCIe Slot">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="778,-952 778,-916 867,-916 867,-952 "
+               id="polygon12859" />
+            <text
+               text-anchor="middle"
+               x="822.5"
+               y="-930.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12861">mPCIe Slot</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge39"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12867">pcie0-&gt;impcie</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 822.5,-1035.77 c 0,22.68 0,61.18 0,83.77"
+           id="path12869" />
+      </g>
+      <g
+         id="node14"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12872">pcie1</title>
+        <g
+           id="a_node14">
+          <a
+             xlink:href="system.html#pcie"
+             id="a12878"
+             target="_top"
+             xlink:title="PCIe 2">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="696.5,-1072 696.5,-1036 768.5,-1036 768.5,-1072 "
+               id="polygon12874" />
+            <text
+               text-anchor="middle"
+               x="732.5"
+               y="-1050.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12876">PCIe 2</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node35"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12882">im2</title>
+        <g
+           id="a_node35">
+          <a
+             xlink:href="system.html#pcie"
+             id="a12890"
+             target="_top"
+             xlink:title="M.2 Slot\nKey M">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="687.5,-953 687.5,-915 759.5,-915 759.5,-953 "
+               id="polygon12884" />
+            <text
+               text-anchor="middle"
+               x="723.5"
+               y="-937.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12886">M.2 Slot</text>
+            <text
+               text-anchor="middle"
+               x="723.5"
+               y="-922.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12888">Key M</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge40"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12894">pcie1-&gt;im2</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 728,-1035.77 c 0,22.29 0,59.85 0,82.58"
+           id="path12896" />
+      </g>
+      <g
+         id="node15"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12899">uart0</title>
+        <g
+           id="a_node15">
+          <a
+             xlink:href="system.html#uart"
+             id="a12905"
+             target="_top"
+             xlink:title="UART 1">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="966.5,-1072 966.5,-1036 1038.5,-1036 1038.5,-1072 "
+               id="polygon12901" />
+            <text
+               text-anchor="middle"
+               x="1002.5"
+               y="-1050.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12903">UART 1</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node30"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12909">iuart0</title>
+        <g
+           id="a_node30">
+          <a
+             xlink:href="system.html#uart"
+             id="a12915"
+             target="_top"
+             xlink:title="UART1">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="975.5,-952 975.5,-916 1047.5,-916 1047.5,-952 "
+               id="polygon12911" />
+            <text
+               text-anchor="middle"
+               x="1011.5"
+               y="-930.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12913">UART1</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge41"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12919">uart0-&gt;iuart0</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1007,-1035.77 c 0,22.68 0,61.18 0,83.77"
+           id="path12921" />
+      </g>
+      <g
+         id="node16"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12924">pwm</title>
+        <g
+           id="a_node16">
+          <a
+             xlink:href="system.html#pwm"
+             id="a12930"
+             target="_top"
+             xlink:title="PWM">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="336.5,-1072 336.5,-1036 408.5,-1036 408.5,-1072 "
+               id="polygon12926" />
+            <text
+               text-anchor="middle"
+               x="372.5"
+               y="-1050.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12928">PWM</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node64"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12934">backlight</title>
+        <g
+           id="a_node64">
+          <a
+             xlink:href="system.html#panel"
+             id="a12940"
+             target="_top"
+             xlink:title="Backlight">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="443,-722 443,-686 520,-686 520,-722 "
+               id="polygon12936" />
+            <text
+               text-anchor="middle"
+               x="481.5"
+               y="-700.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12938">Backlight</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge63"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12944">pwm-&gt;backlight</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 372.5,-1035.68 c 0,72.02 0,331.68 0,331.68 0,0 65.26,0 65.26,0"
+           id="path12946" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="437.76,-705.75 442.76,-704 437.76,-702.25 "
+           id="polygon12948" />
+      </g>
+      <g
+         id="node17"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12951">ethmac</title>
+        <g
+           id="a_node17">
+          <a
+             xlink:href="system.html#eth-mac"
+             id="a12957"
+             target="_top"
+             xlink:title="ETH MAC">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="868.5,-1219 868.5,-1183 948.5,-1183 948.5,-1219 "
+               id="polygon12953" />
+            <text
+               text-anchor="middle"
+               x="908.5"
+               y="-1197.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12955">ETH MAC</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node25"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12961">ethphy</title>
+        <g
+           id="a_node25">
+          <a
+             xlink:href="system.html#eth-phy"
+             id="a12967"
+             target="_top"
+             xlink:title="ETH PHY">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1135,-1145 1135,-1109 1212,-1109 1212,-1145 "
+               id="polygon12963" />
+            <text
+               text-anchor="middle"
+               x="1173.5"
+               y="-1123.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12965">ETH PHY</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge33"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12971">ethmac-&gt;ethphy</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 944.5,-1182.51 c 0,11.65 0,24.51 0,24.51 0,0 207.25,0 207.25,0 0,0 0,6.15 0,12.97"
+           id="path12973" />
+      </g>
+      <g
+         id="node18"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12976">cpu0</title>
+        <g
+           id="a_node18">
+          <a
+             xlink:href="system.html#cortex-a53"
+             id="a12982"
+             target="_top"
+             xlink:title="Cortex-A53">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="628.5,-1292 628.5,-1256 724.5,-1256 724.5,-1292 "
+               id="polygon12978" />
+            <text
+               text-anchor="middle"
+               x="676.5"
+               y="-1270.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12980">Cortex-A53</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node19"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12986">cpu1</title>
+        <g
+           id="a_node19">
+          <a
+             xlink:href="system.html#cortex-m4f"
+             id="a12992"
+             target="_top"
+             xlink:title="Cortex-M4F">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="473,-1292 473,-1256 572,-1256 572,-1292 "
+               id="polygon12988" />
+            <text
+               text-anchor="middle"
+               x="522.5"
+               y="-1270.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text12990">Cortex-M4F</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node20"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title12996">gpu</title>
+        <g
+           id="a_node20">
+          <a
+             xlink:href="system.html#gpu"
+             id="a13002"
+             target="_top"
+             xlink:title="GPU GC7000L">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="265.5,-1292 265.5,-1256 379.5,-1256 379.5,-1292 "
+               id="polygon12998" />
+            <text
+               text-anchor="middle"
+               x="322.5"
+               y="-1270.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13000">GPU GC7000L</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node21"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13006">i2c1</title>
+        <g
+           id="a_node21">
+          <a
+             xlink:href="system.html#i2c"
+             id="a13012"
+             target="_top"
+             xlink:title="I2C 2">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="246.5,-1145 246.5,-1109 318.5,-1109 318.5,-1145 "
+               id="polygon13008" />
+            <text
+               text-anchor="middle"
+               x="282.5"
+               y="-1123.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13010">I2C 2</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge57"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13016">i2c1-&gt;rtc</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 246.35,-1127 c -46.06,0 -125.24,0 -171.75,0"
+           id="path13018" />
+      </g>
+      <g
+         id="node22"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13021">spi1</title>
+        <g
+           id="a_node22">
+          <a
+             xlink:href="system.html#spi"
+             id="a13027"
+             target="_top"
+             xlink:title="SPI">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="246.5,-1072 246.5,-1036 318.5,-1036 318.5,-1072 "
+               id="polygon13023" />
+            <text
+               text-anchor="middle"
+               x="282.5"
+               y="-1050.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13025">SPI</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node36"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13031">lpc</title>
+        <g
+           id="a_node36">
+          <a
+             xlink:href="system.html#lpc"
+             id="a13037"
+             target="_top"
+             xlink:title="MCU LPC11U24">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1587.5,-795 1587.5,-759 1875.5,-759 1875.5,-795 "
+               id="polygon13033" />
+            <text
+               text-anchor="middle"
+               x="1731.5"
+               y="-773.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13035">MCU LPC11U24</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge59"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13041">spi1-&gt;lpc</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 282.5,-1035.99 c 0,48.99 0,180.99 0,180.99 0,0 1341.5,0 1341.5,0 0,0 0,36.87 0,59.91"
+           id="path13043" />
+      </g>
+      <g
+         id="node60"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13046">peth</title>
+        <g
+           id="a_node60">
+          <a
+             xlink:href="system.html#eth-mac"
+             id="a13052"
+             target="_top"
+             xlink:title="1G Ethernet Port">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1554.5,-1072 1554.5,-1036 1680.5,-1036 1680.5,-1072 "
+               id="polygon13048" />
+            <text
+               text-anchor="middle"
+               x="1617.5"
+               y="-1050.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13050">1G Ethernet Port</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge34"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13056">ethphy-&gt;peth</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1183.75,-1108.79 c 0,5.34 0,9.79 0,9.79 0,0 414.5,0 414.5,0 0,0 0,14.44 0,26.96"
+           id="path13058" />
+      </g>
+      <g
+         id="node26"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13061">s5v</title>
+        <polygon
+           fill="#ffffff"
+           stroke="#000000"
+           points="124.5,-1292 124.5,-1256 196.5,-1256 196.5,-1292 "
+           id="polygon13063" />
+        <text
+           text-anchor="middle"
+           x="160.5"
+           y="-1270.3"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text13065">5V Input</text>
+      </g>
+      <g
+         id="node32"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13068">iusb0</title>
+        <g
+           id="a_node32">
+          <a
+             xlink:href="system.html#usb3"
+             id="a13074"
+             target="_top"
+             xlink:title="IUSB1">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1155.5,-952 1155.5,-916 1227.5,-916 1227.5,-952 "
+               id="polygon13070" />
+            <text
+               text-anchor="middle"
+               x="1191.5"
+               y="-930.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13072">IUSB1</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge44"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13078">hub-&gt;iusb0</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1308.82,-1048 c -37.6,0 -89.07,0 -89.07,0 0,0 0,63.79 0,95.94"
+           id="path13080" />
+      </g>
+      <g
+         id="node33"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13083">iusb1</title>
+        <g
+           id="a_node33">
+          <a
+             xlink:href="system.html#usb3"
+             id="a13089"
+             target="_top"
+             xlink:title="IUSB2">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1065.5,-952 1065.5,-916 1137.5,-916 1137.5,-952 "
+               id="polygon13085" />
+            <text
+               text-anchor="middle"
+               x="1101.5"
+               y="-930.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13087">IUSB2</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge43"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13093">hub-&gt;iusb1</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1308.83,-1060 c -66.88,0 -197.08,0 -197.08,0 0,0 0,73.11 0,107.95"
+           id="path13095" />
+      </g>
+      <g
+         id="node55"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13098">pusb2</title>
+        <g
+           id="a_node55">
+          <a
+             xlink:href="system.html#usb3"
+             id="a13104"
+             target="_top"
+             xlink:title="USB3 Port 2">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1562.5,-952 1562.5,-916 1660.5,-916 1660.5,-952 "
+               id="polygon13100" />
+            <text
+               text-anchor="middle"
+               x="1611.5"
+               y="-930.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13102">USB3 Port 2</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge28"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13108">hub-&gt;pusb2</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1334.7,-1036 c 0,17.68 0,42 0,42 0,0 276.8,0 276.8,0 0,0 0,24.32 0,42"
+           id="path13110" />
+      </g>
+      <g
+         id="node56"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13113">pusb1</title>
+        <g
+           id="a_node56">
+          <a
+             xlink:href="system.html#usb3"
+             id="a13119"
+             target="_top"
+             xlink:title="USB3 Port 1">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1678.5,-952 1678.5,-916 1774.5,-916 1774.5,-952 "
+               id="polygon13115" />
+            <text
+               text-anchor="middle"
+               x="1726.5"
+               y="-930.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13117">USB3 Port 1</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge27"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13123">hub-&gt;pusb1</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1360.35,-1035.87 c 0,10.18 0,20.87 0,20.87 0,0 361.15,0 361.15,0 0,0 0,38.72 0,62.62"
+           id="path13125" />
+      </g>
+      <g
+         id="node61"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13128">paudio</title>
+        <g
+           id="a_node61">
+          <a
+             xlink:href="system.html#audiojack"
+             id="a13136"
+             target="_top"
+             xlink:title="Headphone &amp;\nMic Jack">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1437,-953 1437,-915 1544,-915 1544,-953 "
+               id="polygon13130" />
+            <text
+               text-anchor="middle"
+               x="1490.5"
+               y="-937.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13132">Headphone &amp;</text>
+            <text
+               text-anchor="middle"
+               x="1490.5"
+               y="-922.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13134">Mic Jack</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge65"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13140">adac-&gt;paudio</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-dasharray="5, 2"
+           d="m 627.17,-952.13 c 0,-10.18 0,-20.87 0,-20.87 0,0 859.33,0 859.33,0 0,0 0,10.06 0,19.96"
+           id="path13142" />
+      </g>
+      <g
+         id="node65"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13145">speakers</title>
+        <g
+           id="a_node65">
+          <a
+             xlink:href="system.html#speakers"
+             id="a13153"
+             target="_top"
+             xlink:title="Stereo\nSpeakers">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="562,-796 562,-758 641,-758 641,-796 "
+               id="polygon13147" />
+            <text
+               text-anchor="middle"
+               x="601.5"
+               y="-780.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13149">Stereo</text>
+            <text
+               text-anchor="middle"
+               x="601.5"
+               y="-765.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13151">Speakers</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge64"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13157">adac-&gt;speakers</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           stroke-dasharray="5, 2"
+           d="m 599.75,-915.99 c 0,29.8 0,89.12 0,119.72"
+           id="path13159" />
+      </g>
+      <g
+         id="node63"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13162">panel</title>
+        <g
+           id="a_node63">
+          <a
+             xlink:href="system.html#panel"
+             id="a13170"
+             target="_top"
+             xlink:title="12.5&quot; 1920x1080\nIPS Panel">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="419,-796 419,-758 544,-758 544,-796 "
+               id="polygon13164" />
+            <text
+               text-anchor="middle"
+               x="481.5"
+               y="-780.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13166">12.5&quot; 1920x1080</text>
+            <text
+               text-anchor="middle"
+               x="481.5"
+               y="-765.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13168">IPS Panel</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge61"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13174">dsi2edp-&gt;panel</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 462.5,-914.75 c 0,0 0,113.34 0,113.34"
+           id="path13176" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="464.25,-801.41 462.5,-796.41 460.75,-801.41 "
+           id="polygon13178" />
+      </g>
+      <g
+         id="node71"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13181">kmcu</title>
+        <g
+           id="a_node71">
+          <a
+             xlink:href="system.html#kbctrl"
+             id="a13187"
+             target="_top"
+             xlink:title="MCU Atmega32U4">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1064.5,-795 1064.5,-759 1280.5,-759 1280.5,-795 "
+               id="polygon13183" />
+            <text
+               text-anchor="middle"
+               x="1172.5"
+               y="-773.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13185">MCU Atmega32U4</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge45"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13191">iusb0-&gt;kmcu</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1191.5,-915.99 c 0,30.12 0,90.4 0,120.71"
+           id="path13193" />
+      </g>
+      <g
+         id="node66"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13196">tmcu</title>
+        <g
+           id="a_node66">
+          <a
+             xlink:href="system.html#tbctrl"
+             id="a13202"
+             target="_top"
+             xlink:title="MCU Atmega32U2">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="716.5,-795 716.5,-759 932.5,-759 932.5,-795 "
+               id="polygon13198" />
+            <text
+               text-anchor="middle"
+               x="824.5"
+               y="-773.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13200">MCU Atmega32U2</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge46"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13206">iusb1-&gt;tmcu</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1065.21,-934 c -5.41,0 -9.21,0 -9.21,0 0,0 0,157 0,157 0,0 -62.96,0 -123.21,0"
+           id="path13208" />
+      </g>
+      <g
+         id="node40"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13211">lspi</title>
+        <g
+           id="a_node40">
+          <a
+             xlink:href="system.html#spi"
+             id="a13217"
+             target="_top"
+             xlink:title="SPI">
+            <polygon
+               fill="#d3d3d3"
+               stroke="#000000"
+               points="1645.5,-704 1681.5,-686 1717.5,-704 1681.5,-722 "
+               id="polygon13213" />
+            <text
+               text-anchor="middle"
+               x="1681.5"
+               y="-700.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13215">SPI</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge1"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13221">lpc-&gt;lspi</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1681.5,-758.96 c 0,11.24 0,25.63 0,36.87"
+           id="path13223" />
+      </g>
+      <g
+         id="node41"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13226">li2c</title>
+        <g
+           id="a_node41">
+          <a
+             xlink:href="system.html#i2c"
+             id="a13232"
+             target="_top"
+             xlink:title="I2C">
+            <polygon
+               fill="#d3d3d3"
+               stroke="#000000"
+               points="1745.5,-704 1781.5,-686 1817.5,-704 1781.5,-722 "
+               id="polygon13228" />
+            <text
+               text-anchor="middle"
+               x="1781.5"
+               y="-700.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13230">I2C</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge3"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13236">lpc-&gt;li2c</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1781.5,-758.96 c 0,11.24 0,25.63 0,36.87"
+           id="path13238" />
+      </g>
+      <g
+         id="node44"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13241">enabchg</title>
+        <g
+           id="a_node44">
+          <a
+             xlink:href="system.html#lpc"
+             id="a13247"
+             target="_top"
+             xlink:title="Charge On">
+            <polygon
+               fill="#d3d3d3"
+               stroke="#000000"
+               points="1464.73,-704 1545.5,-686 1626.27,-704 1545.5,-722 "
+               id="polygon13243" />
+            <text
+               text-anchor="middle"
+               x="1545.5"
+               y="-700.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13245">Charge On</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge5"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13251">lpc-&gt;enabchg</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1606.94,-758.96 c 0,0 0,45.65 0,45.65"
+           id="path13253" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="1608.69,-713.31 1606.94,-708.31 1605.19,-713.31 "
+           id="polygon13255" />
+      </g>
+      <g
+         id="node45"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13258">enab5v</title>
+        <g
+           id="a_node45">
+          <a
+             xlink:href="system.html#lpc"
+             id="a13264"
+             target="_top"
+             xlink:title="On">
+            <polygon
+               fill="#d3d3d3"
+               stroke="#000000"
+               points="1829.5,-427 1865.5,-409 1901.5,-427 1865.5,-445 "
+               id="polygon13260" />
+            <text
+               text-anchor="middle"
+               x="1865.5"
+               y="-423.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13262">On</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge11"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13268">lpc-&gt;enab5v</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1868,-758.68 c 0,0 0,309.78 0,309.78"
+           id="path13270" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="1869.75,-448.9 1868,-443.9 1866.25,-448.9 "
+           id="polygon13272" />
+      </g>
+      <g
+         id="node46"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13275">enab3v3</title>
+        <g
+           id="a_node46">
+          <a
+             xlink:href="system.html#lpc"
+             id="a13281"
+             target="_top"
+             xlink:title="On">
+            <polygon
+               fill="#d3d3d3"
+               stroke="#000000"
+               points="1919.5,-427 1955.5,-409 1991.5,-427 1955.5,-445 "
+               id="polygon13277" />
+            <text
+               text-anchor="middle"
+               x="1955.5"
+               y="-423.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13279">On</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge13"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13285">lpc-&gt;enab3v3</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1875.58,-777 c 43.48,0 79.92,0 79.92,0 0,0 0,326.68 0,326.68"
+           id="path13287" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="1957.25,-450.32 1955.5,-445.32 1953.75,-450.32 "
+           id="polygon13289" />
+      </g>
+      <g
+         id="node37"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13292">ina</title>
+        <g
+           id="a_node37">
+          <a
+             xlink:href="system.html#ina"
+             id="a13300"
+             target="_top"
+             xlink:title="Current &amp;\nVoltage Monitor">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1738.5,-615 1738.5,-577 1860.5,-577 1860.5,-615 "
+               id="polygon13294" />
+            <text
+               text-anchor="middle"
+               x="1799.5"
+               y="-599.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13296">Current &amp;</text>
+            <text
+               text-anchor="middle"
+               x="1799.5"
+               y="-584.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13298">Voltage Monitor</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node42"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13304">cells</title>
+        <g
+           id="a_node42">
+          <a
+             xlink:href="system.html#cells"
+             id="a13310"
+             target="_top"
+             xlink:title="8x LiFePO4 18650 Batteries">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1610,-445 1610,-409 1811,-409 1811,-445 "
+               id="polygon13306" />
+            <text
+               text-anchor="middle"
+               x="1710.5"
+               y="-423.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13308">8x LiFePO4 18650 Batteries</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge8"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13314">ina-&gt;cells</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1774.75,-576.94 c 0,32.8 0,99.51 0,131.72"
+           id="path13316" />
+      </g>
+      <g
+         id="node38"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13319">ltc</title>
+        <g
+           id="a_node38">
+          <a
+             xlink:href="system.html#ltc4020"
+             id="a13327"
+             target="_top"
+             xlink:title="Buck/Boost\nDC-DC and Charger">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1455,-615 1455,-577 1606,-577 1606,-615 "
+               id="polygon13321" />
+            <text
+               text-anchor="middle"
+               x="1530.5"
+               y="-599.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13323">Buck/Boost</text>
+            <text
+               text-anchor="middle"
+               x="1530.5"
+               y="-584.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13325">DC-DC and Charger</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge9"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13331">ltc-&gt;cells</title>
+        <path
+           fill="none"
+           stroke="#ff0000"
+           d="m 1601.33,-576.94 c 0,44.2 0,149.94 0,149.94 0,0 3.23,0 8.57,0"
+           id="path13333" />
+      </g>
+      <g
+         id="node47"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13336">r28v</title>
+        <polygon
+           fill="#d3d3d3"
+           stroke="#000000"
+           points="1667.57,-294 1716.5,-276 1765.43,-294 1716.5,-312 "
+           id="polygon13338" />
+        <text
+           text-anchor="middle"
+           x="1716.5"
+           y="-290.29999"
+           font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+           font-size="14px"
+           id="text13340">~28V</text>
+      </g>
+      <g
+         id="edge21"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13343">ltc-&gt;r28v</title>
+        <path
+           fill="none"
+           stroke="#ff0000"
+           d="m 1596.67,-576.65 c 0,66.66 0,282.65 0,282.65 0,0 66.09,0 66.09,0"
+           id="path13345" />
+        <polygon
+           fill="#ff0000"
+           stroke="#ff0000"
+           points="1662.76,-295.75 1667.76,-294 1662.76,-292.25 "
+           id="polygon13347" />
+      </g>
+      <g
+         id="node39"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13350">mon</title>
+        <g
+           id="a_node39">
+          <a
+             xlink:href="system.html#balancer"
+             id="a13358"
+             target="_top"
+             xlink:title="Cell Monitor\nBalancer">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1624.5,-615 1624.5,-577 1720.5,-577 1720.5,-615 "
+               id="polygon13352" />
+            <text
+               text-anchor="middle"
+               x="1672.5"
+               y="-599.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13354">Cell Monitor</text>
+            <text
+               text-anchor="middle"
+               x="1672.5"
+               y="-584.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13356">Balancer</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge7"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13362">mon-&gt;cells</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1672.5,-576.94 c 0,32.8 0,99.51 0,131.72"
+           id="path13364" />
+      </g>
+      <g
+         id="edge2"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13367">lspi-&gt;mon</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1681.5,-685.68 c 0,19.62 0,50.61 0,70.54"
+           id="path13369" />
+      </g>
+      <g
+         id="edge4"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13372">li2c-&gt;ina</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1781.5,-685.68 c 0,19.62 0,50.61 0,70.54"
+           id="path13374" />
+      </g>
+      <g
+         id="edge22"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13377">cells-&gt;r28v</title>
+        <path
+           fill="none"
+           stroke="transparent"
+           d="m 1716.5,-408.79 c 0,0 0,91.37 0,91.37"
+           id="path13379" />
+        <polygon
+           fill="transparent"
+           stroke="transparent"
+           points="1718.25,-317.42 1716.5,-312.42 1714.75,-317.42 "
+           id="polygon13381" />
+      </g>
+      <g
+         id="node43"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13384">supply</title>
+        <g
+           id="a_node43">
+          <a
+             xlink:href="system.html#barreljack"
+             id="a13392"
+             target="_top"
+             xlink:title="24V Power Supply\nfrom Barrel Jack">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1455,-446 1455,-408 1592,-408 1592,-446 "
+               id="polygon13386" />
+            <text
+               text-anchor="middle"
+               x="1523.5"
+               y="-430.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13388">24V Power Supply</text>
+            <text
+               text-anchor="middle"
+               x="1523.5"
+               y="-415.79999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13390">from Barrel Jack</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge10"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13396">supply-&gt;ltc</title>
+        <path
+           fill="none"
+           stroke="#ff0000"
+           d="m 1523.5,-446.06 c 0,-32.46 0,-98.11 0,-130.69"
+           id="path13398" />
+      </g>
+      <g
+         id="edge6"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13401">enabchg-&gt;ltc</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1535.31,-688.06 c 0,0 0,67.77 0,67.77"
+           id="path13403" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="1537.06,-620.29 1535.31,-615.29 1533.56,-620.29 "
+           id="polygon13405" />
+      </g>
+      <g
+         id="node49"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13408">r5v</title>
+        <g
+           id="a_node49">
+          <a
+             xlink:href="system.html#r5v"
+             id="a13414"
+             target="_top"
+             xlink:title="5V">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1787,-240 1787,-204 1866,-204 1866,-240 "
+               id="polygon13410" />
+            <text
+               text-anchor="middle"
+               x="1826.5"
+               y="-218.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13412">5V</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge12"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13418">enab5v-&gt;r5v</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1847.75,-417.66 c 0,0 0,172.44 0,172.44"
+           id="path13420" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="1849.5,-245.22 1847.75,-240.22 1846,-245.22 "
+           id="polygon13422" />
+      </g>
+      <g
+         id="node50"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13425">r3v3</title>
+        <g
+           id="a_node50">
+          <a
+             xlink:href="system.html#r3v3"
+             id="a13431"
+             target="_top"
+             xlink:title="3V3">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1884.5,-240 1884.5,-204 1956.5,-204 1956.5,-240 "
+               id="polygon13427" />
+            <text
+               text-anchor="middle"
+               x="1920.5"
+               y="-218.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13429">3V3</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge14"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13435">enab3v3-&gt;r3v3</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1938,-417.66 c 0,0 0,172.44 0,172.44"
+           id="path13437" />
+        <polygon
+           fill="#000000"
+           stroke="#000000"
+           points="1939.75,-245.22 1938,-240.22 1936.25,-245.22 "
+           id="polygon13439" />
+      </g>
+      <g
+         id="node48"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13442">stby</title>
+        <g
+           id="a_node48">
+          <a
+             xlink:href="system.html#standby"
+             id="a13448"
+             target="_top"
+             xlink:title="3V3 Standby">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1664.5,-240 1664.5,-204 1768.5,-204 1768.5,-240 "
+               id="polygon13444" />
+            <text
+               text-anchor="middle"
+               x="1716.5"
+               y="-218.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13446">3V3 Standby</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge17"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13452">r28v-&gt;stby</title>
+        <path
+           fill="none"
+           stroke="#ff0000"
+           d="m 1716.5,-275.83 c 0,0 0,30.42 0,30.42"
+           id="path13454" />
+        <polygon
+           fill="#ff0000"
+           stroke="#ff0000"
+           points="1718.25,-245.41 1716.5,-240.41 1714.75,-245.41 "
+           id="polygon13456" />
+      </g>
+      <g
+         id="edge15"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13459">r28v-&gt;r5v</title>
+        <path
+           fill="none"
+           stroke="#ff0000"
+           d="m 1749.34,-288 c 21.51,0 45.66,0 45.66,0 0,0 0,42.97 0,42.97"
+           id="path13461" />
+        <polygon
+           fill="#ff0000"
+           stroke="#ff0000"
+           points="1796.75,-245.03 1795,-240.03 1793.25,-245.03 "
+           id="polygon13463" />
+      </g>
+      <g
+         id="edge16"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13466">r28v-&gt;r3v3</title>
+        <path
+           fill="none"
+           stroke="#ff0000"
+           d="m 1749.28,-300 c 51.05,0 143.72,0 143.72,0 0,0 0,54.91 0,54.91"
+           id="path13468" />
+        <polygon
+           fill="#ff0000"
+           stroke="#ff0000"
+           points="1894.75,-245.09 1893,-240.09 1891.25,-245.09 "
+           id="polygon13470" />
+      </g>
+      <g
+         id="edge24"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13473">stby-&gt;lpc</title>
+        <path
+           fill="none"
+           stroke="#ff0000"
+           d="m 1664.29,-228 c -77.85,0 -215.29,0 -215.29,0 0,0 0,-540 0,-540 0,0 133.35,0 133.35,0"
+           id="path13475" />
+        <polygon
+           fill="#ff0000"
+           stroke="#ff0000"
+           points="1582.35,-769.75 1587.35,-768 1582.35,-766.25 "
+           id="polygon13477" />
+      </g>
+      <g
+         id="edge25"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)"
+         style="stroke-width:0.99922915;stroke-miterlimit:4;stroke-dasharray:none">
+        <title
+           id="title13480">stby-&gt;kmcu</title>
+        <path
+           fill="none"
+           stroke="#ff0000"
+           d="m 1664.41,-216 c -79.35,0 -221.41,0 -221.41,0 0,0 0,-561 0,-561 0,0 -157.43,0 -157.43,0"
+           id="path13482"
+           style="stroke-width:0.99922915;stroke-miterlimit:4;stroke-dasharray:none" />
+        <polygon
+           fill="#ff0000"
+           stroke="#ff0000"
+           points="1285.57,-775.25 1280.57,-777 1285.57,-778.75 "
+           id="polygon13484"
+           style="stroke-width:0.99922915;stroke-miterlimit:4;stroke-dasharray:none" />
+      </g>
+      <g
+         id="edge38"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13487">r5v-&gt;s5v</title>
+        <path
+           fill="none"
+           stroke="#ff0000"
+           d="m 1803,-240.42 c 0,-8.86 0,-17.58 0,-17.58 0,0 -1642.5,0 -1642.5,0 0,0 0,-992.93 0,-992.93"
+           id="path13489" />
+        <polygon
+           fill="#ff0000"
+           stroke="#ff0000"
+           points="158.75,-1250.93 160.5,-1255.93 162.25,-1250.93 "
+           id="polygon13491" />
+      </g>
+      <g
+         id="node51"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13494">r1v2</title>
+        <g
+           id="a_node51">
+          <a
+             xlink:href="system.html#r1v2"
+             id="a13500"
+             target="_top"
+             xlink:title="1V2">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1764,-168 1764,-132 1805,-132 1805,-168 "
+               id="polygon13496" />
+            <text
+               text-anchor="middle"
+               x="1784.5"
+               y="-146.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13498">1V2</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge18"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13504">r5v-&gt;r1v2</title>
+        <path
+           fill="none"
+           stroke="#ff0000"
+           d="m 1796,-203.83 c 0,0 0,30.42 0,30.42"
+           id="path13506" />
+        <polygon
+           fill="#ff0000"
+           stroke="#ff0000"
+           points="1797.75,-173.41 1796,-168.41 1794.25,-173.41 "
+           id="polygon13508" />
+      </g>
+      <g
+         id="node52"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13511">r1v5</title>
+        <g
+           id="a_node52">
+          <a
+             xlink:href="system.html#r1v5"
+             id="a13517"
+             target="_top"
+             xlink:title="1V5">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1823,-168 1823,-132 1864,-132 1864,-168 "
+               id="polygon13513" />
+            <text
+               text-anchor="middle"
+               x="1843.5"
+               y="-146.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13515">1V5</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge19"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13521">r5v-&gt;r1v5</title>
+        <path
+           fill="none"
+           stroke="#ff0000"
+           d="m 1843.5,-203.83 c 0,0 0,30.42 0,30.42"
+           id="path13523" />
+        <polygon
+           fill="#ff0000"
+           stroke="#ff0000"
+           points="1845.25,-173.41 1843.5,-168.41 1841.75,-173.41 "
+           id="polygon13525" />
+      </g>
+      <g
+         id="node53"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13528">r1v8</title>
+        <g
+           id="a_node53">
+          <a
+             xlink:href="system.html#r1v8"
+             id="a13534"
+             target="_top"
+             xlink:title="1V8">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1900,-168 1900,-132 1941,-132 1941,-168 "
+               id="polygon13530" />
+            <text
+               text-anchor="middle"
+               x="1920.5"
+               y="-146.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13532">1V8</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge20"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13538">r3v3-&gt;r1v8</title>
+        <path
+           fill="none"
+           stroke="#ff0000"
+           d="m 1920.5,-203.83 c 0,0 0,30.42 0,30.42"
+           id="path13540" />
+        <polygon
+           fill="#ff0000"
+           stroke="#ff0000"
+           points="1922.25,-173.41 1920.5,-168.41 1918.75,-173.41 "
+           id="polygon13542" />
+      </g>
+      <g
+         id="node57"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13545">pbarrel</title>
+        <g
+           id="a_node57">
+          <a
+             xlink:href="system.html#barreljack"
+             id="a13551"
+             target="_top"
+             xlink:title="Barrel Jack">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1672.5,-1145 1672.5,-1109 1762.5,-1109 1762.5,-1145 "
+               id="polygon13547" />
+            <text
+               text-anchor="middle"
+               x="1717.5"
+               y="-1123.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13549">Barrel Jack</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="node59"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13555">psdcard</title>
+        <g
+           id="a_node59">
+          <a
+             xlink:href="system.html#mmc"
+             id="a13561"
+             target="_top"
+             xlink:title="SD Card Slot">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1541,-1145 1541,-1109 1642,-1109 1642,-1145 "
+               id="polygon13557" />
+            <text
+               text-anchor="middle"
+               x="1591.5"
+               y="-1123.3"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13559">SD Card Slot</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge32"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13565">lshift-&gt;psdcard</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1524.8,-1201 c 31.71,0 66.7,0 66.7,0 0,0 0,33.79 0,55.71"
+           id="path13567" />
+      </g>
+      <g
+         id="edge62"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13570">panel-&gt;backlight</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 481.5,-757.82 c 0,10.98 0,24.69 0,35.52"
+           id="path13572" />
+      </g>
+      <g
+         id="node68"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13575">ti2c</title>
+        <g
+           id="a_node68">
+          <a
+             xlink:href="system.html#i2c"
+             id="a13581"
+             target="_top"
+             xlink:title="I2C">
+            <polygon
+               fill="#d3d3d3"
+               stroke="#000000"
+               points="741.5,-704 777.5,-686 813.5,-704 777.5,-722 "
+               id="polygon13577" />
+            <text
+               text-anchor="middle"
+               x="777.5"
+               y="-700.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13579">I2C</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge47"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13585">tmcu-&gt;ti2c</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 777.5,-758.96 c 0,11.24 0,25.63 0,36.87"
+           id="path13587" />
+      </g>
+      <g
+         id="node69"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13590">tgpio</title>
+        <g
+           id="a_node69">
+          <a
+             xlink:href="system.html#tbctrl"
+             id="a13596"
+             target="_top"
+             xlink:title="GPIO">
+            <polygon
+               fill="#d3d3d3"
+               stroke="#000000"
+               points="837.58,-704 883.5,-686 929.42,-704 883.5,-722 "
+               id="polygon13592" />
+            <text
+               text-anchor="middle"
+               x="883.5"
+               y="-700.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13594">GPIO</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge49"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13600">tmcu-&gt;tgpio</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 883.5,-758.96 c 0,11.24 0,25.63 0,36.87"
+           id="path13602" />
+      </g>
+      <g
+         id="node67"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13605">tsens</title>
+        <g
+           id="a_node67">
+          <a
+             xlink:href="system.html#tbsensor"
+             id="a13611"
+             target="_top"
+             xlink:title="Motion Sensor">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="719,-614 719,-578 832,-578 832,-614 "
+               id="polygon13607" />
+            <text
+               text-anchor="middle"
+               x="775.5"
+               y="-592.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13609">Motion Sensor</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge48"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13615">ti2c-&gt;tsens</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 777.5,-685.68 c 0,19.98 0,51.76 0,71.63"
+           id="path13617" />
+      </g>
+      <g
+         id="node70"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13620">tkeys</title>
+        <g
+           id="a_node70">
+          <a
+             xlink:href="system.html#kbkeys"
+             id="a13626"
+             target="_top"
+             xlink:title="5 Buttons">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="850.5,-614 850.5,-578 930.5,-578 930.5,-614 "
+               id="polygon13622" />
+            <text
+               text-anchor="middle"
+               x="890.5"
+               y="-592.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13624">5 Buttons</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge50"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13630">tgpio-&gt;tkeys</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 889.98,-688.53 c 0,19.6 0,53.32 0,74.19"
+           id="path13632" />
+      </g>
+      <g
+         id="node73"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13635">ki2c</title>
+        <g
+           id="a_node73">
+          <a
+             xlink:href="system.html#i2c"
+             id="a13641"
+             target="_top"
+             xlink:title="I2C">
+            <polygon
+               fill="#d3d3d3"
+               stroke="#000000"
+               points="1007.5,-704 1043.5,-686 1079.5,-704 1043.5,-722 "
+               id="polygon13637" />
+            <text
+               text-anchor="middle"
+               x="1043.5"
+               y="-700.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13639">I2C</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge51"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13645">kmcu-&gt;ki2c</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1072,-758.96 c 0,17.06 0,41.42 0,50.93"
+           id="path13647" />
+      </g>
+      <g
+         id="node74"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13650">kuart</title>
+        <g
+           id="a_node74">
+          <a
+             xlink:href="system.html#kbctrl"
+             id="a13656"
+             target="_top"
+             xlink:title="UART">
+            <polygon
+               fill="#d3d3d3"
+               stroke="#000000"
+               points="1207.89,-704 1258.5,-686 1309.11,-704 1258.5,-722 "
+               id="polygon13652" />
+            <text
+               text-anchor="middle"
+               x="1258.5"
+               y="-700.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13654">UART</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge55"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13660">kmcu-&gt;kuart</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1244.22,-758.96 c 0,13.01 0,30.25 0,41.93"
+           id="path13662" />
+      </g>
+      <g
+         id="node75"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13665">kgpio</title>
+        <g
+           id="a_node75">
+          <a
+             xlink:href="system.html#kbctrl"
+             id="a13671"
+             target="_top"
+             xlink:title="GPIO">
+            <polygon
+               fill="#d3d3d3"
+               stroke="#000000"
+               points="1097.58,-704 1143.5,-686 1189.42,-704 1143.5,-722 "
+               id="polygon13667" />
+            <text
+               text-anchor="middle"
+               x="1143.5"
+               y="-700.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13669">GPIO</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge53"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13675">kmcu-&gt;kgpio</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1143.5,-758.96 c 0,11.24 0,25.63 0,36.87"
+           id="path13677" />
+      </g>
+      <g
+         id="node72"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13680">oled</title>
+        <g
+           id="a_node72">
+          <a
+             xlink:href="system.html#oled"
+             id="a13686"
+             target="_top"
+             xlink:title="OLED Display 128x32">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1008,-614 1008,-578 1163,-578 1163,-614 "
+               id="polygon13682" />
+            <text
+               text-anchor="middle"
+               x="1085.5"
+               y="-592.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13684">OLED Display 128x32</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge52"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13690">ki2c-&gt;oled</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1043.75,-685.68 c 0,19.98 0,51.76 0,71.63"
+           id="path13692" />
+      </g>
+      <g
+         id="edge56"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13695">kuart-&gt;lpc</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1294.75,-709.38 c 0,-18.24 0,-76.62 0,-76.62 0,0 165.32,0 292.53,0"
+           id="path13697" />
+      </g>
+      <g
+         id="node76"
+         class="node"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13700">kkeys</title>
+        <g
+           id="a_node76">
+          <a
+             xlink:href="system.html#kbkeys"
+             id="a13706"
+             target="_top"
+             xlink:title="Key Matrix">
+            <polygon
+               fill="#ffffff"
+               stroke="#000000"
+               points="1181.5,-614 1181.5,-578 1267.5,-578 1267.5,-614 "
+               id="polygon13702" />
+            <text
+               text-anchor="middle"
+               x="1224.5"
+               y="-592.29999"
+               font-family="Inter, Roboto, Helvetica, 'Helvetica Neue', 'Open Sans', Arial, sans-serif"
+               font-size="14px"
+               id="text13704">Key Matrix</text>
+          </a>
+        </g>
+      </g>
+      <g
+         id="edge54"
+         class="edge"
+         transform="matrix(1.0381407,0,0,1.0381407,-18.595746,-9.664054)">
+        <title
+           id="title13710">kgpio-&gt;kkeys</title>
+        <path
+           fill="none"
+           stroke="#000000"
+           d="m 1185.48,-702.13 c 0,10.31 0,60.63 0,88.11"
+           id="path13712" />
+      </g>
+    </g>
+  </g>
+</svg>
