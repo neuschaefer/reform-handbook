@@ -1,6 +1,9 @@
 Safety & Environment
 ====================
 
+Hazards
+-------
+
 .. image:: _static/illustrations/hazard-electric-icon.png
   :width: 10%
 

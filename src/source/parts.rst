@@ -9,7 +9,7 @@ Parts
 Case Parts
 ==========
 
-The case consists of the following 5 parts. All parts except the bottom plate are milled from sand-blasted and anodized 6061 aluminum.
+The case consists of the following 5 parts. All parts except the Bottom Plate are milled from sand-blasted and anodized 6061 aluminum.
 
 1. **Main Box:** the chassis of MNT Reform. All PCBs (printed circuit boards) are attached to it via screws: The keyboard from the top and motherboard, trackball/trackpad, and battery boards from the bottom. The lower half of the hinges and the system controller OLED PCB are mounted from the top as well.
 2. **Keyboard Frame:** a thin rectangle that covers the sides of the keyboard and the system controller OLED
@@ -66,14 +66,14 @@ Bottom Plate
 
 .. image:: _static/illustrations/33.png
 
-The bottom plate closes the Main Box from the bottom with ten M2x6 flathead screws.
+The Bottom Plate closes the Main Box from the bottom with ten M2x6 flathead screws.
 
 Port Covers
 -----------
 
 .. image:: _static/illustrations/ports-callouts.png
 
-The port covers are two pieces of laser cut acrylic (1mm thick) that cover the side openings of the Main Box. You can exchange these to fit a future motherboard or an expansion that requires a different port layout.
+The Port Covers are two pieces of laser cut acrylic (1mm thick) that cover the side openings of the Main Box. You can exchange these to fit a future motherboard or an expansion that requires a different port layout.
 
 Motherboard
 ===========
@@ -82,13 +82,13 @@ Motherboard
 
 The motherboard spans the inner width of the device and has outward-facing ports on both sides. It has the following main features:
 
-- **Power system:** based on the LTC4020 buck/boost converter, regulates charging of the LiFePO4 batteries and seamlessly switches between wall and battery power.
+- **Power system:** based on the LTC4020 buck/boost converter, it regulates charging of the LiFePO4 batteries and seamlessly switches between wall and battery power.
 - **System controller:** coupled to the power system, an NXP LPC11U24 Cortex-M0 MCU controls an analog monitor chip for the eight battery cells as well as the charger. It is connected to the CPU module via SPI, and has GPIO lines to the main power rail switchers in the system. It has a UART (SYSCTL) that the keyboard can talk to directly for issuing power on/off commands and battery status queries.
 - **DSI to eDP bridge:** The SN65DSI86 chip converts the MIPI-DSI output from the CPU module to an embedded DisplayPort (eDP) signal that the display panel can understand.
 - **USB 3.0 hub:** The CPU module has two USB 3.0 controllers. To provide for a total of five USB ports (two internal and three external), there is a TUSB8041 USB hub chip on the motherboard that provides the extra ports. USB load switches on each external port protect the system from too much current draw.
 - **Sound chip:** A Wolfson/Cirrus WM8960 audio DAC (digital-to-analog converter)/amplifier interfaces to the headphone/microphone jack and powers two speakers housed below the main display.
 - **mPCIe slot:** An mPCIe connector that you can use for expansions like a Wi-Fi card.
-- **M.2 slot:** An M-key NGFF slot that can house an NVMe SSD (solid state disk).
+- **M.2 slot:** An NGFF slot (Key M) that can house an NVMe SSD (solid state disk).
 
 System Controller
 -----------------
