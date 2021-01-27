@@ -27,9 +27,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4"
-     inkscape:cx="222.06768"
-     inkscape:cy="329.44515"
+     inkscape:zoom="1.979899"
+     inkscape:cx="332.20722"
+     inkscape:cy="217.37925"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -55,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -66,12 +66,12 @@
     <image
        sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/27t.png"
        xlink:href="../_static/illustrations/27t.png"
-       y="22.162907"
-       x="0.22333933"
-       id="image2748"
-       preserveAspectRatio="none"
+       width="147.63989"
        height="81.663322"
-       width="147.63989" />
+       preserveAspectRatio="none"
+       id="image2748"
+       x="0.22333933"
+       y="22.162907" />
     <text
        xml:space="preserve"
        style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"

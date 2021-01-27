@@ -35,10 +35,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4"
-     inkscape:cx="383.57214"
-     inkscape:cy="329.93091"
+     inkscape:cx="453.73895"
+     inkscape:cy="310.66682"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
      showgrid="true"
      inkscape:window-width="2560"
@@ -63,7 +63,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -79,11 +79,11 @@
        id="image10539"
        preserveAspectRatio="none"
        height="105.6225"
-       width="147.77229" />
+       width="147.77232" />
     <circle
-       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.0999998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:red;fill-opacity:1;stroke:none;stroke-width:0.0999998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path1303-3-5-92"
-       cx="94.692757"
+       cx="94.663231"
        cy="110.85004"
        r="1" />
   </g>
@@ -92,8 +92,8 @@
      id="layer2"
      inkscape:label="callouts">
     <path
-       style="fill:none;stroke:#ff0000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 90,68.672423 V 130 h 10"
+       style="fill:none;stroke:red;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 92.551339,68.672423 V 130 H 100"
        id="path204"
        sodipodi:nodetypes="ccc" />
     <text
@@ -108,8 +108,8 @@
          y="129.98386"
          style="stroke-width:0.264583">Battery Connector 2</tspan></text>
     <path
-       style="fill:none;stroke:#ff0000;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="M 84.982547,68.652728 V 140.18687 H 100.04647"
+       style="fill:none;stroke:red;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 85.644005,68.652728 V 140.18687 H 100.04647"
        id="path204-3"
        sodipodi:nodetypes="ccc" />
     <text
@@ -188,9 +188,9 @@
        cy="110.86514"
        r="1" />
     <circle
-       style="fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:0.0999998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:red;fill-opacity:1;stroke:none;stroke-width:0.0999998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path1303-3-5-75"
-       cx="53.362026"
+       cx="53.368286"
        cy="110.85839"
        r="1" />
     <circle

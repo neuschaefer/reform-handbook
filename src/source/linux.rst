@@ -469,7 +469,7 @@ MNT Reform has an HDMI connector that has different functions depending on the i
 
 i.MX8MQ has two display engines, LCDIF and DCSS. In the default configuration, DCSS powers the internal display. If you want to use an external display, DCSS has to power HDMI instead. The internal display can then either be turned off or powered by LCDIF. At the time of writing, there is a limitation in i.MX8MQ that prevents the use of LCDIF together with PCIe devices like NVMe storage---the LCDIF output will glitch when the disk is accessed over PCIe. This means that if you want to use a dual display setup with i.MX8MQ and MNT Reform, you have to run your system from eMMC or SD card instead. You can also use external USB3.0 based storage.
 
-The HDMI controller of i.MX8MQ requires a piece of binary firmware that is signed by NXP and loaded by the CPU into the HDMI controller as part of the U-Boot bootloader. If you don't want to use HDMI, you can download an alternative version of U-Boot with the HDMI firmware stripped out at the MNT Reform website.
+The HDMI controller of i.MX8MQ requires a piece of binary firmware that is signed by NXP and loaded by the CPU into  the HDMI controller as part of the U-Boot bootloader. If you don't want to use HDMI, you can download an alternative version of U-Boot with the HDMI firmware stripped out at the MNT Reform website.
 
 The MNT Reform system software comes with a script to select your desired display output mode and reboot:
 
@@ -478,6 +478,19 @@ The MNT Reform system software comes with a script to select your desired displa
  reform-display-config
 
 Executing the script without any parameters will show you the available options.
+
+Shutdown
+--------
+
+Before turning off MNT Reform, you should shut down the system cleanly by executing:
+
+.. code-block:: none
+
+ shutdown -h now
+
+In the GNOME desktop environment, you can do this---without typing commands---from the menu that appears when you click the power button in the right corner of bar on top of the screen.
+
+In the Debian system shipped with MNT Reform, the shutdown process will ask the System Controller to turn off the power. The OLED display will then show an animation of a disappearing MNT Research logo. In case you have to turn off the power manually (for example if the system is unresponsive or you are using an alternative OS), press *Circle* and then *0* (zero).
 
 Standby
 -------

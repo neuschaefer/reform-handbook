@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="148mm"
+   height="120mm"
+   viewBox="0 0 148 120"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="refman-ports.svg"
+   inkscape:export-filename="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/ports-callouts.png"
+   inkscape:export-xdpi="600.0954"
+   inkscape:export-ydpi="600.0954">
+  <defs
+     id="defs2">
+    <rect
+       x="34.146812"
+       y="128.59737"
+       width="45.334026"
+       height="16.606207"
+       id="rect1287" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="239.10072"
+     inkscape:cy="279.25838"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     inkscape:document-rotation="0"
+     showgrid="true"
+     inkscape:window-width="2560"
+     inkscape:window-height="1406"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:snap-global="false"
+     inkscape:snap-intersection-paths="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid10"
+       units="mm"
+       spacingx="10"
+       spacingy="10" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="pic"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <image
+       sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/24.png"
+       xlink:href="../_static/illustrations/24.png"
+       y="44.481251"
+       x="10.003625"
+       id="image5721"
+       preserveAspectRatio="none"
+       height="25.556532"
+       width="130.28888" />
+    <image
+       sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/25.png"
+       xlink:href="../_static/illustrations/25.png"
+       y="74.65892"
+       x="10.107879"
+       id="image5735"
+       preserveAspectRatio="none"
+       height="25.53063"
+       width="130.19211" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="callouts">
+    <path
+       style="fill:none;stroke:red;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 32.396192,65.110925 0,-55.110838 7.616786,0"
+       id="path204-3"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="40.586746"
+       y="10.099239"
+       id="text130-3-5-6-9-2"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2-1-6"
+         x="40.586746"
+         y="10.099239"
+         style="stroke-width:0.264583">Wall Power Jack</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="50.482121"
+       y="19.984617"
+       id="text130-3-5-6-9-2-7"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2-1-6-4"
+         x="50.482121"
+         y="19.984617"
+         style="stroke-width:0.264583">Gigabit Ethernet</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="60.420944"
+       y="29.996733"
+       id="text130-3-5-6-9-2-7-5"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2-1-6-4-2"
+         x="60.420944"
+         y="29.996733"
+         style="stroke-width:0.264583">TRRS Headset Port</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="70.543526"
+       y="39.967216"
+       id="text130-3-5-6-9-2-7-5-5"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2-1-6-4-2-4"
+         x="70.543526"
+         y="39.967216"
+         style="stroke-width:0.264583">SD Card Slot</tspan></text>
+    <path
+       style="fill:none;stroke:red;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 42.876858,63.55066 V 20.007512 h 7.135753"
+       id="path204-3-0"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:red;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 55.32089,62.48831 0,-32.488983 h 4.692545"
+       id="path204-3-0-7"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="57.347763"
+       y="110.00636"
+       id="text130-3-5-6-9-2-7-5-8"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2-1-6-4-2-6"
+         x="57.347763"
+         y="110.00636"
+         style="stroke-width:0.264583">USB3.0</tspan></text>
+    <path
+       style="fill:none;stroke:red;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 74.915218,93.974907 V 110.00891"
+       id="path204-3-0-7-8"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="120.3745"
+       y="110.00812"
+       id="text130-3-5-6-9-2-7-5-8-4"><tspan
+         sodipodi:role="line"
+         id="tspan128-6-3-2-1-6-4-2-6-4"
+         x="120.3745"
+         y="110.00812"
+         style="stroke-width:0.264583">HDMI (opt.)</tspan></text>
+    <path
+       style="fill:none;stroke:red;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 115.17543,93.904165 v 16.106505 h 4.80185"
+       id="path204-3-0-7-8-4"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:red;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 89.018874,93.974907 V 110.00891"
+       id="path204-3-0-7-8-47"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;stroke:red;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 103.16721,93.974907 v 16.034003 l -33.174596,0"
+       id="path204-3-0-7-8-47-6"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;stroke:red;stroke-width:0.25;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 69.423675,62.048528 V 40.012746 h 0.606834"
+       id="path204-3-0-3"
+       sodipodi:nodetypes="ccc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="callouts 2" />
+</svg>

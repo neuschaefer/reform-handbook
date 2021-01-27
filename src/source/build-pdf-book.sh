@@ -22,9 +22,9 @@ for section in \
   online \
   credits
 do
-  pandoc -o _$section.tex -frst+smart --verbose -V fontsize=10pt --top-level-division=chapter $section.rst
+  cat $section.rst | grep -v '`KiCAD: ' | grep -v '`PDF: ' | pandoc -o _$section.tex -frst+smart --verbose -V fontsize=10pt --top-level-division=chapter
   cat _tex/section.tex >>reform-handbook.tex
-  sed 's/-callouts\.png/x\.eps/g' _$section.tex >>reform-handbook.tex
+  sed 's/\(-callouts\|-icon\)\.png/x\.eps/g' _$section.tex >>reform-handbook.tex
 done
 
 cat _tex/post.tex >>reform-handbook.tex

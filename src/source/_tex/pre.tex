@@ -1,8 +1,9 @@
-\documentclass{book}
+\documentclass[cmyk]{book}
 
 \usepackage[a5paper,left=2cm,right=2.5cm,top=2cm,bottom=2.5cm]{geometry}
 \usepackage{graphicx}
 \usepackage{microtype}
+\usepackage{tocloft}
 \usepackage{parskip}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fontspec}
@@ -11,6 +12,7 @@
 \usepackage{longtable}
 \usepackage[final]{pdfpages}
 \usepackage{ragged2e}
+\usepackage[toc,enum]{tabfigures}
 
 \setmainfont[Ligatures=TeX]{Inter}
 
@@ -22,6 +24,11 @@
 
 % turn off paragraph indentation
 \setlength{\parindent}{0pt}
+\setlength{\cftsecindent}{2em}
+\setlength{\cftsecnumwidth}{4em}
+\setlength{\cftsubsecindent}{2em}
+\setlength{\cftsubsecnumwidth}{4em}
+\setlength{\cftsubsubsecnumwidth}{4em}
 % \setlength{\parskip}{1em}
 \raggedbottom
 

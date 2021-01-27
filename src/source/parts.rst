@@ -15,18 +15,16 @@ The case consists of the following 5 parts. All parts except the bottom plate ar
 2. **Keyboard Frame:** a thin rectangle that covers the sides of the keyboard and the system controller OLED
 3. **Screen Back:** housing the display and upper half of hinges
 4. **Screen Front:** housing speakers and providing display bezel
-5. **Bottom Plate:** the clear acrylic bottom lid
+5. **Bottom Plate:** the clear acrylic plate that closes the laptop from the bottom
 
-For easy (dis)assembly, Reform only uses M2 screws with Phillips-head everywhere---with one exception: M4x5 on the top half of the hinges.
-
-When closed, the case is held shut by four neodymium bar magnets which are located in the front edge of the screen enclosure and another four in the front of the main box (8 in total).
+For easy (dis)assembly, Reform uses M2 screws with Phillips-head everywhere---with one exception: M4x5 on the top half of the hinges.
 
 Main Box
 --------
 
 .. image:: _static/illustrations/17.png
 
-The main box houses most of the electronics:
+The Main Box houses most of the electronics:
 
 - Motherboard, exposing ports through openings on the left and right
 - Two LiFePO4 battery packs, connecting to the motherboard via Molex PicoLock cables
@@ -34,14 +32,14 @@ The main box houses most of the electronics:
 - OLED display, connecting to the keyboard via a 4-pin 1mm pitch flex cable
 - Trackball or Trackpad, connecting to the motherboard via one JST-PH cable
 
-The main box features four neodymium bar magnets inserted into slots below the front edge. These match with their counterparts in the screen front.
+The Main Box features four neodymium bar magnets inserted into slots below the front edge. These match with their counterparts in the Screen Front.
 
 Keyboard Frame
 --------------
 
 .. image:: _static/illustrations/23.png
 
-The Keyboard Frame is inserted into the main box to close it from the top. It has four tabs on the front that must be inserted first. The frame is mounted with six M2x6 flathead screws.
+The Keyboard Frame is inserted into the Main Box to close it from the top. It has four tabs on the front that must be inserted first. The frame is mounted with six M2x6 flathead screws.
 
 Screen Back
 -----------
@@ -50,13 +48,11 @@ Screen Back
 
 The eDP display panel rests in this case part. The left and right hinges are mounted in the bottom left and right corners with three M4x5 flathead screws each.
 
+Four neodymium magnets are mounted along the top edge of the Screen Back. These, together with their counterparts in the Main Box, hold the laptop shut when closed.
+
 .. image:: _static/illustrations/speaker.png
 
-The stereo speakers are mounted below the display and secured with the speaker holders. Each holder is mounted with two M2x4 flathead screws.
-
-Both speaker and display cable are fed through a cutout in the hinge and into the main box.
-
-Four neodymium magnets are mounted along the top edge. These, together with their counterparts in the main box, hold the laptop shut when closed.
+The stereo speakers are mounted below the display and secured with the speaker holders. Each holder is mounted with two M2x4 flathead screws. Both speaker and display cable are fed through a cutout in the hinge and into the Main Box.
 
 Screen Front
 ------------
@@ -70,7 +66,14 @@ Bottom Plate
 
 .. image:: _static/illustrations/33.png
 
-The bottom plate closes the main box from the bottom with ten M2x6 flathead screws.
+The bottom plate closes the Main Box from the bottom with ten M2x6 flathead screws.
+
+Port Covers
+-----------
+
+.. image:: _static/illustrations/ports-callouts.png
+
+The port covers are two pieces of laser cut acrylic (1mm thick) that cover the side openings of the Main Box. You can exchange these to fit a future motherboard or an expansion that requires a different port layout.
 
 Motherboard
 ===========
@@ -332,6 +335,11 @@ For flashing, the MCU has to be in bootloader USB mode. Toggle the programming D
 .. code-block:: none
 
    ./flash.sh
+
+Exchanging Trackball/Trackpad
+=============================
+
+You can easily swap the Trackball for the Trackpad module and vice versa. To do this, first disconnect the wall power and flip MNT Reform on its back. Open the Bottom Plate and remove all battery cells. Unplug the side of the internal USB cable that is connected to the installed module. Then, unscrew the module's case mounting screws (four for the Trackball, two for the Trackpad) and pull out the module. Reverse the process to install the new input device. The Trackball is inserted so that its four mounting holes line up with four matching holes in the Main Box. The Trackpad slides into a slot in the Main Box with one end first (the end without mounting tabs) and is then mounted to the Main Box with two screws that go through the tabs on the other end. After mounting the desired module, reconnect the internal USB cable to it.
 
 Battery Packs
 =============

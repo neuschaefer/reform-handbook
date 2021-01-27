@@ -55,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -66,12 +66,12 @@
     <image
        sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/21t.png"
        xlink:href="../_static/illustrations/21t.png"
-       y="18.937204"
-       x="20.103657"
-       id="image6782"
-       preserveAspectRatio="none"
+       width="109.63025"
        height="74.964378"
-       width="109.85291" />
+       preserveAspectRatio="none"
+       id="image6782"
+       x="20.103657"
+       y="18.937204" />
     <text
        xml:space="preserve"
        style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"

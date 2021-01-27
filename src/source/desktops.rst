@@ -7,8 +7,8 @@ MNT Reform ships with two graphical environments ("desktops") on the SD card. Th
 
 2. The **GNOME** desktop features classic overlapping windows and a modern look. It is easy to learn and use with mouse/trackball/trackpad pointing and clicking, but requires more system resources.
 
-Sway Basics
------------
+Sway
+----
 
 .. image:: _static/illustrations/reform-sway.png
 
@@ -92,10 +92,10 @@ Config File
 
 You can tailor Sway's behaviour and keyboard shortcuts by editing the file ``~/.config/sway/config``.
 
-All configuration options are documented in the Sway Wiki: `<https://github.com/swaywm/sway/wiki>`_.
+All configuration options are documented in the Sway Wiki: `<https://github.com/swaywm/sway/wiki>`_
 
-GNOME Basics
-------------
+GNOME
+-----
 
 .. image:: _static/illustrations/reform-gnome.png
 
@@ -119,3 +119,5 @@ GNOME supports a range of keyboard shortcuts to speed up working with the deskto
 ================= ===========================
 
 GNOME displays system status icons in the top-right corner of the screen. You can click these icons to access network configuration, see the battery status and log out or shut down the computer.
+
+To learn more about the details of the GNOME desktop and its software suite, visit: `<https://help.gnome.org>`_

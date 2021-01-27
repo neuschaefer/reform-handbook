@@ -27,14 +27,14 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497475"
-     inkscape:cx="270.11537"
-     inkscape:cy="650.34221"
+     inkscape:zoom="1.979899"
+     inkscape:cx="309.98494"
+     inkscape:cy="212.17264"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="true"
-     inkscape:window-width="1270"
+     inkscape:window-width="2560"
      inkscape:window-height="1406"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -66,21 +66,21 @@
     <image
        sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/8-2.png"
        xlink:href="../_static/illustrations/8-2.png"
-       width="130"
-       height="86.446213"
-       preserveAspectRatio="none"
-       id="image1795"
+       y="17.598461"
        x="10"
-       y="17.598461" />
+       id="image1795"
+       preserveAspectRatio="none"
+       height="86.446213"
+       width="129.99999" />
     <text
        xml:space="preserve"
        style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
-       x="8.5382891"
+       x="8.4437952"
        y="20.024555"
        id="text130-3-5-6"><tspan
          sodipodi:role="line"
          id="tspan128-6-3-2"
-         x="8.5382891"
+         x="8.4437952"
          y="20.024555"
          style="stroke-width:0.264583">Capactive Touch Sensor</tspan></text>
     <path
@@ -91,12 +91,12 @@
     <text
        xml:space="preserve"
        style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
-       x="81.030586"
+       x="81.314079"
        y="100.01137"
        id="text130-3-5-6-3"><tspan
          sodipodi:role="line"
          id="tspan128-6-3-2-6"
-         x="81.030586"
+         x="81.314079"
          y="100.01137"
          style="stroke-width:0.264583">USB Port</tspan></text>
     <path
@@ -107,12 +107,12 @@
     <text
        xml:space="preserve"
        style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
-       x="91.013237"
+       x="91.391228"
        y="90.155533"
        id="text130-3-5-6-3-5"><tspan
          sodipodi:role="line"
          id="tspan128-6-3-2-6-3"
-         x="91.013237"
+         x="91.391228"
          y="90.155533"
          style="stroke-width:0.264583">ATmega32U2</tspan></text>
     <path
@@ -123,11 +123,11 @@
     <text
        xml:space="preserve"
        style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
-       x="111.04997"
+       x="111.33347"
        y="80.070412"
        id="text130-3-5-6-3-5-6"><tspan
          sodipodi:role="line"
-         x="111.04997"
+         x="111.33347"
          y="80.070412"
          style="stroke-width:0.264583"
          id="tspan1862">Flashing Switch</tspan></text>
@@ -135,6 +135,22 @@
        style="fill:none;stroke:#ff0000;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 110.69293,80.040599 h -0.64557 l 0,-14.441106"
        id="path200-7-5-9"
+       sodipodi:nodetypes="ccc" />
+    <text
+       xml:space="preserve"
+       style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
+       x="111.4581"
+       y="19.997463"
+       id="text130-3-5-6-3-5-6-3"><tspan
+         sodipodi:role="line"
+         x="111.4581"
+         y="19.997463"
+         style="stroke-width:0.264583"
+         id="tspan1862-6">Reset</tspan></text>
+    <path
+       style="fill:none;stroke:red;stroke-width:0.264999;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 110.90196,19.992599 h -4.48689 l 0,38.79096"
+       id="path200-75"
        sodipodi:nodetypes="ccc" />
   </g>
 </svg>
