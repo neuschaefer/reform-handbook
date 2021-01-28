@@ -95,7 +95,7 @@ If you want to know more details, such as the modification times and permissions
 
  ls -l
 
-You can also add the flag ``-h`` to get "human readable" filesizes instead of the raw number of bytes:
+You can also add the flag ``-h`` to get "human readable" file sizes instead of the raw number of bytes:
 
 .. code-block:: none
 
@@ -190,9 +190,9 @@ If you list the contents of your home directory with ``ls -l``, you will see you
 
 The letters and dashes at the beginning describe the **file mode bits** of the file or directory. A "d" at the beginning signifies a directory. The following 9 letters are three triplets describing "user" (owner), "group", and "all" **permissions**, in that order. "r" means read, "w" write and "x" execute. An "x" on a file means that this is an "executable", a program that can be run, or in the case of a directory, that it can be entered.
 
-The first occurence of a username in each row is the **owner** of the file or directory. The first triplet of mode bits on ``notes.txt`` tells you that you, the owner, can read and write but not execute this file (after all, it is just a text file).
+The first occurrence of a username in each row is the **owner** of the file or directory. The first triplet of mode bits on ``notes.txt`` tells you that you, the owner, can read and write but not execute this file (after all, it is just a text file).
 
-The second occurence of ``kim`` names the group ``kim``, not the user. When you create a new user, the system also creates a group with the same name and only you as a member. You could add other users to your group to share files with them, for example. The second triplet of mode bits, ``r--``, tells you that members of this group can only read your file, not change it.
+The second occurrence of ``kim`` names the group ``kim``, not the user. When you create a new user, the system also creates a group with the same name and only you as a member. You could add other users to your group to share files with them, for example. The second triplet of mode bits, ``r--``, tells you that members of this group can only read your file, not change it.
 
 Lastly, the third mode triplet (``r--`` in this example) says that any other user logged into your system can read this file.
 
@@ -249,7 +249,7 @@ The ``rgrep`` command will look for words in the content of a file:
 
  rgrep --color spice
 
-This will look for any occurence of the word "spice" in files in the current directory and its subdirectories, and display each line in which the word was found, with the word itself highlighted.
+This will look for any occurrence of the word "spice" in files in the current directory and its subdirectories, and display each line in which the word was found, with the word itself highlighted.
 
 Mount
 +++++
@@ -426,7 +426,7 @@ To see a table of interrupts:
 Clock
 -----
 
-The motherboard of MNT Reform has a battery-backed realtime clock chip (PCF8523T, U5). This chip saves the date and time even if your system is shut down or loses power. You can interact (as ``root``) with the clock using the ``hwclock`` tool. Review ``man hwclock`` for the details.
+The motherboard of MNT Reform has a battery-backed real-time clock chip (PCF8523T, U5). This chip saves the date and time even if your system is shut down or loses power. You can interact (as ``root``) with the clock using the ``hwclock`` tool. Review ``man hwclock`` for the details.
 
 Network
 -------
@@ -460,7 +460,7 @@ You can then login to MNT Reform from another computer on your local network by 
 
 Substitute your username for ``kim`` and your IP address for ``192.168.1.242``. You can find your IP address by looking for the ``inet`` entries in the output of the ``ip addr`` command.
 
-Before using SSH functionality, you should generate a public/private keypair by executing ``ssh-keygen``.
+Before using SSH functionality, you should generate a public/private key pair by executing ``ssh-keygen``.
 
 External Display
 ----------------

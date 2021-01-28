@@ -15,7 +15,7 @@ Step 2: Turn On
 
 .. image:: _static/illustrations/5-callouts.png
 
-First, insert the included SD card intot the slot on the left hand side of the device.
+First, insert the included SD card into the slot on the left hand side of the device.
 
 Then, to turn Reform on, press **Circle** and then **1**. The **Circle** key is used for system control commands. When you press **Circle**, a menu of system control functions and their shortcuts will be displayed on the OLED screen embedded in the keyboard.
 

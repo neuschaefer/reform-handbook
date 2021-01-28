@@ -18,7 +18,7 @@ As always, before working with MNT Reform internals, first disconnect the intern
 Serial Console
 ++++++++++++++
 
-The motherboard connector labelled SER1 is a serial port (UART) to which U-Boot and the Linux kernel output diagnostic information on startup. The baud rate is 115200, 8N1.
+The motherboard connector labeled SER1 is a serial port (UART) to which U-Boot and the Linux kernel output diagnostic information on startup. The baud rate is 115200, 8N1.
 
 Wire up a generic USB-to-UART adapter to the following pins of connector J18:
 
@@ -67,7 +67,7 @@ U-Boot itself has to be compiled with the board support files for Reform. This i
 The build process combines the following files into ``flash.bin``:
 
 - Synopsys DDR4 calibration firmware ``lpddr4_pmu_train_*.bin`` (no source available)
-- Cadence HDMI controller firmare ``signed_hdmi_imx8m.bin`` (no source available, optional)
+- Cadence HDMI controller firmware ``signed_hdmi_imx8m.bin`` (no source available, optional)
 - ARM trusted firmware "TF-A" ``bl31-iMX8MQ.bin`` (open source)
 - The u-boot binary (open source)
 

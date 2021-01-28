@@ -97,7 +97,7 @@ Independent from the main processor module, a low-power processor sits on MNT Re
 
 The System Controller runs a program in an endless loop that has the following jobs:
 
-- Powering the individual voltage rails of the system on and off (including the main processor's power and the mPCIe slot's power, to implement a WiFi-killswitch, for example)
+- Powering the individual voltage rails of the system on and off (including the main processor's power and the mPCIe slot's power, to implement a WiFi killswitch, for example)
 - Hard resetting the main processor on demand
 - Monitoring the voltage of each battery cell
 - Balancing battery cells. If a cell is overvolted, charging is halted and the overvolted cells are discharged until they are back to a nominal voltage
@@ -151,7 +151,7 @@ Expansion Port
 
 .. image:: _static/illustrations/28-callouts.png
 
-The Expansion Port U18, labelled "Hack the Planet" is meant for advanced users that want to connect sensors or other peripherals to MNT Reform's system controller. Please note that changing the system controller's program can disrupt the battery charging control loop, potentially causing over- or undercharged cells, resulting in physical damage and/or injury. **Experiment with the system controller only if you know exactly what you're doing and at your own risk.**
+The Expansion Port U18, labeled "Hack the Planet" is meant for advanced users that want to connect sensors or other peripherals to MNT Reform's system controller. Please note that changing the system controller's program can disrupt the battery charging control loop, potentially causing over- or undercharged cells, resulting in physical damage and/or injury. **Experiment with the system controller only if you know exactly what you're doing and at your own risk.**
 
 The Expansion Port features an SPI interface, two analog-digital converters, a UART, JTAG and 3.3V Power. All non-power pins can alternatively be used as GPIOs.
 
@@ -296,7 +296,7 @@ Trackball Firmware
 
 You can find the trackball firmware in the source folder `reform2-trackball-fw <https://source.mnt.re/reform/reform/-/tree/master/reform2-trackball-fw>`_.
 
-The trackball firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackball, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
+The trackball firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behavior of the trackball, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
 
 .. code-block:: none
 
@@ -317,14 +317,12 @@ The trackpad uses the same microcontroller as the keyboard and trackball. To sen
 
 .. image:: _static/illustrations/8-2-callouts.png
 
-TODO: missing reset button in model
-
 Trackpad Firmware
 -----------------
 
 You can find the trackpad firmware in the source folder `reform2-trackpad-fw <https://source.mnt.re/reform/reform/-/tree/master/reform2-trackpad-fw>`_.
 
-Same as the trackball and keyboard, the trackpad firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behaviour of the trackpad, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
+Same as the trackball and keyboard, the trackpad firmware is based on the LUFA USB device library and implements a USB HID Mouse. To modify the behavior of the trackpad, edit the file Mouse.c and rebuild the firmware by typing the following command in a terminal:
 
 .. code-block:: none
 

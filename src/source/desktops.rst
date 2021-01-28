@@ -25,7 +25,7 @@ From now on, you can start a new terminal window by holding down the *SUPER* [#]
 Tiling
 ++++++
 
-When you press *SUPER+ENTER* multiple times to open several terminals, you'll notice that your currently open windows will be resized to accomodate for the new window. You can switch between these windows by holding the *SUPER* key and pressing the cursor (arrow) keys in the desired direction.
+When you press *SUPER+ENTER* multiple times to open several terminals, you'll notice that your currently open windows will be resized to accommodate for the new window. You can switch between these windows by holding the *SUPER* key and pressing the cursor (arrow) keys in the desired direction.
 
 If you keep adding windows, they will continuously shrink horizontally, but if you would rather have a window split vertically, you can. Use these shortcuts for deciding:
 
@@ -90,7 +90,7 @@ You can set the display's brightness using the ``brightnessctl`` command or, mor
 Config File
 +++++++++++
 
-You can tailor Sway's behaviour and keyboard shortcuts by editing the file ``~/.config/sway/config``.
+You can tailor Sway's behavior and keyboard shortcuts by editing the file ``~/.config/sway/config``.
 
 All configuration options are documented in the Sway Wiki: `<https://github.com/swaywm/sway/wiki>`_
 
