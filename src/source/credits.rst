@@ -39,7 +39,7 @@ Printed in Berlin.
 
 :Lab Tools: Rigol DS1054Z, Fluke 117, Weller WD-1, Puhui T-962C, AmScope SM-4T, BCN3D Sigma R17, Formlabs Form2, Epilog Mini 18
 
-:Software: Debian GNU/Linux, KiCAD, Inkscape, GIMP, Emacs, Vim, GitLab, LUFA, MicroBuilder, Blender, FreeCAD, OpenSCAD, Fusion 360, Cura, Sphinx
+:Software: Debian GNU/Linux, KiCAD, Inkscape, GIMP, Emacs, Vim, GitLab, LUFA, MicroBuilder, Blender, FreeCAD, OpenSCAD, Fusion, Cura, Sphinx, Pandoc, XeTeX, Scribus
 
 | © 2018-2021 MNT Research GmbH, Fehlerstr. 8, 12161 Berlin
 | Managing Director: Lukas F. Hartmann
