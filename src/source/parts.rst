@@ -39,48 +39,48 @@ Keyboard Frame
 
 .. image:: _static/illustrations/23.png
 
-The Keyboard Frame is inserted into the Main Box to close it from the top. It has four tabs on the front that must be inserted first. The frame is mounted with six M2x6 flathead screws.
+The Keyboard Frame is inserted into the Main Box to close it from the top. It has four tabs on the front that must be inserted first. The frame is mounted with six black M2x5 countersunk screws.
 
 Screen Back
 -----------
 
 .. image:: _static/illustrations/14.png
 
-The eDP display panel rests in this case part. The left and right hinges are mounted in the bottom left and right corners with three M4x5 flathead screws each.
+The eDP display panel rests in this case part. The left and right hinges are mounted in the bottom left and right corners with three M4x5 countersunk screws each. Note that the hinge labeled "SMS-ZZ-219-L" goes on the right side, and the hinge labeled "SMS-ZZ-219-R" goes on the left side. The other half of each hinge is mounted to the Main Box with four M2x6 countersunk screws.
 
 Four neodymium magnets are mounted along the top edge of the Screen Back. These, together with their counterparts in the Main Box, hold the laptop shut when closed.
 
 .. image:: _static/illustrations/speaker.png
 
-The stereo speakers are mounted below the display and secured with the speaker holders. Each holder is mounted with two M2x4 flathead screws. Both speaker and display cable are fed through a cutout in the hinge and into the Main Box.
+The stereo speakers are mounted below the display and secured with the speaker holders. Each holder is mounted with two black M2x5 countersunk screws. Both speaker and display cable are fed through a cutout in the hinge and into the Main Box.
 
 Screen Front
 ------------
 
 .. image:: _static/illustrations/16.png
 
-This part serves as a bezel for the display. It is mounted with seven M2x6 flathead screws to the Screen Back.
+This part serves as a bezel for the display. It is mounted with seven black M2x5 countersunk screws to the Screen Back.
 
 Bottom Plate
 ------------
 
 .. image:: _static/illustrations/33.png
 
-The Bottom Plate closes the Main Box from the bottom with ten M2x6 flathead screws.
+The Bottom Plate closes the Main Box from the bottom with ten M2x6 countersunk screws.
 
 Port Covers
 -----------
 
 .. image:: _static/illustrations/ports-callouts.png
 
-The Port Covers are two pieces of laser cut acrylic (1mm thick) that cover the side openings of the Main Box. You can exchange these to fit a future motherboard or an expansion that requires a different port layout.
+The Port Covers are two pieces of laser cut acrylic (1mm thick) that cover the side openings of the Main Box (mounted with two black M2x5 screws each). You can exchange these to fit a future motherboard or an expansion that requires a different port layout.
 
 Motherboard
 ===========
 
 .. image:: _static/illustrations/3-callouts.png
 
-The motherboard spans the inner width of the device and has outward-facing ports on both sides. It has the following main features:
+The Motherboard spans the inner width of the device and has outward-facing ports on both sides. It is mounted to the Main Box with four M2x4 pan head screws. The Motherboard has the following main features:
 
 - **Power system:** based on the LTC4020 buck/boost converter, it regulates charging of the LiFePO4 batteries and seamlessly switches between wall and battery power.
 - **System controller:** coupled to the power system, an NXP LPC11U24 Cortex-M0 MCU controls an analog monitor chip for the eight battery cells as well as the charger. It is connected to the CPU module via SPI, and has GPIO lines to the main power rail switchers in the system. It has a UART (SYSCTL) that the keyboard can talk to directly for issuing power on/off commands and battery status queries.
@@ -121,7 +121,7 @@ The individual cell voltages are measured by the Battery Monitor LTC6803IG-4#PBF
 
 To understand the available commands in more detail, you can take a look at the System Controller's ``handle_commands()`` function.
 
-The System Controller is permanently connected to the main processor's UART2 (``/dev/ttymxc2`` in Linux). You can monitor the raw output of the System Controller going to the keyboard by connecting a terminal such as GNU Screen to the internal serial port UART2:
+The System Controller is permanently connected to the main processor's UART2 (``/dev/ttymxc2`` in Linux). You can monitor the raw output of the System Controller going to the Keyboard by connecting a terminal such as GNU Screen to the internal serial port UART2:
 
 .. code-block:: none
 
@@ -221,9 +221,9 @@ Keyboard
 
 .. image:: _static/illustrations/kbd-callouts.png
 
-The keyboard is powered by an ATmega32U4_ 8-bit microcontroller. The controller scans the row/column matrix of keyswitches and reports keypresses via USB HID (human interface device) to the motherboard. Each switch has a diode to prevent ghosting, so you can press multiple keys at once. The microcontroller runs a firmware based on LUFA_, which is an open source library for implementing USB input devices.
+The Keyboard is mounted to the top of the Main Box with six M2x4 pan head screws. It is powered by an ATmega32U4_ 8-bit microcontroller. The controller scans the row/column matrix of keyswitches and reports keypresses via USB HID (human interface device) to the motherboard. Each switch has a diode to prevent ghosting, so you can press multiple keys at once. The microcontroller runs a firmware based on LUFA_, which is an open source library for implementing USB input devices.
 
-The second role of the keyboard is to serve as a user interface to the LPC system controller on the mainboard, even when the main SoC is turned off. To make this possible, the keyboard connects via a separate UART cable to the motherboards SYSCTL header (J23).
+The second role of the keyboard is to serve as a user interface to the LPC system controller on the mainboard, even when the main SoC is turned off. To make this possible, the Keyboard connects via a separate UART cable to the motherboards SYSCTL header (J23).
 
 Keyboard Firmware
 -----------------
@@ -273,7 +273,7 @@ OLED Module
 
 .. image:: _static/illustrations/21-callouts.png
 
-The OLED display sits on the OLED Module which is connected to the keyboard through a 4-pin, 1mm pitch flex cable. The communication protocol is I²C. The module is mounted in the Main Box on top of the keyboard with two M2x6 flathead screws.
+The OLED display sits on the OLED Module which is connected to the keyboard through a 4-pin, 1mm pitch flex cable. The communication protocol is I²C. The module is mounted in the Main Box on top of the keyboard with two M2x4 pan head screws.
 
 Trackball
 =========
@@ -336,15 +336,15 @@ For flashing, the MCU has to be in bootloader USB mode. Toggle the programming D
 
    ./flash.sh
 
-Exchanging Trackball/Trackpad
-=============================
+Exchanging Trackball and Trackpad
+=================================
 
-You can easily swap the Trackball for the Trackpad module and vice versa. To do this, first disconnect the wall power and flip MNT Reform on its back. Open the Bottom Plate and remove all battery cells. Unplug the side of the internal USB cable that is connected to the installed module. Then, unscrew the module's case mounting screws (four for the Trackball, two for the Trackpad) and pull out the module. Reverse the process to install the new input device. The Trackball is inserted so that its four mounting holes line up with four matching holes in the Main Box. The Trackpad slides into a slot in the Main Box with one end first (the end without mounting tabs) and is then mounted to the Main Box with two screws that go through the tabs on the other end. After mounting the desired module, reconnect the internal USB cable to it.
+You can easily swap the Trackball for the Trackpad module and vice versa. To do this, first disconnect the wall power and flip MNT Reform on its back. Open the Bottom Plate and remove all battery cells. Unplug the side of the internal USB cable that is connected to the installed module. Then, unscrew the module's case mounting screws (four M2x4 pan head screws for the Trackball, two M2x4 pan head screws for the Trackpad) and pull out the module. Reverse the process to install the new input device. The Trackball is inserted so that its four mounting holes line up with four matching holes in the Main Box. The Trackpad slides into a slot in the Main Box with one end first (the end without mounting tabs) and is then mounted to the Main Box with two screws that go through the tabs on the other end. After mounting the desired module, reconnect the internal USB cable to it.
 
 Battery Packs
 =============
 
-MNT Reform has two identical battery packs, referred to as the Left and Right packs. Each pack has four 18650 cells with LiFePO4 chemistry and 3.2V. You may be tempted to try cells of other chemistries like Li-Ion or NiMH, **but never do this, as these are incompatible.**
+MNT Reform has two identical battery packs, referred to as the Left and Right packs. Each pack has four 18650 cells with LiFePO4 chemistry (3.2V) and is mounted to the Main Box with four M2x4 pan head screws. You may be tempted to try cells of other chemistries like Li-Ion or NiMH, **but never do this, as these are incompatible.**
 
 **Only use LiFePO4 cells with MNT Reform!**
 

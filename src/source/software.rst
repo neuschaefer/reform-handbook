@@ -91,7 +91,7 @@ Evince
 
   Command: ``evince``
 
-  `Evince website <https://wiki.gnome.org/Apps/Evince>`_
+  `<https://wiki.gnome.org/Apps/Evince>`_
 
 Sxiv
   A simple and fast image viewer.
@@ -138,12 +138,12 @@ Amiberry
 
   `<https://blitterstudio.com/amiberry/>`_
 
-DOSbox
+DOSBox
   MS-DOS PC system emulator
 
   Command: ``dosbox``
 
-  `DOSbox website <https://www.dosbox.com>`_
+  `<https://www.dosbox.com>`_
 
 Tools
 -----
@@ -152,7 +152,7 @@ Thunar
 
   Command: ``thunar``
 
-  Sway keyboard shortcut: *Super+T*
+  Sway keyboard shortcut: *SUPER+T*
 
   `<https://docs.xfce.org/xfce/thunar/start>`_
 
@@ -161,7 +161,7 @@ Xfce4 Terminal
 
   Command: ``xfce4-terminal``
 
-  Sway keyboard shortcut: *Super+ENTER*
+  Sway keyboard shortcut: *SUPER+ENTER*
 
   `<https://docs.xfce.org/apps/terminal/start>`_
 
@@ -170,7 +170,7 @@ Grim & Slurp
 
   Command: ``grim -g "$(slurp)"``
 
-  Sway keyboard shortcut: *Super+SHIFT+X*
+  Sway keyboard shortcut: *SUPER+SHIFT+X*
 
   `<https://wayland.emersion.fr/grim>`_
 
@@ -209,15 +209,15 @@ GNOME Disks
 
   `<https://wiki.gnome.org/Apps/Disks>`_
 
-Ncdu
+NCurses Disk Usage
   Terminal-based disk usage analysis utility.
 
   Command: ``ncdu``
 
-  `Ncdu website <https://dev.yorhel.nl/ncdu>`_
+  `<https://dev.yorhel.nl/ncdu>`_
 
-Wev
-  Event viewer useful when debugging input devices under wayland-based compositors such as Sway.
+Wayland Event Viewer
+  Useful when debugging input devices under wayland-based compositors such as Sway.
 
   Command: ``wev``
 
@@ -228,7 +228,7 @@ Wayvnc
 
   Command: ``wayvnc``
 
-  `Wayvnc website <https://github.com/any1/wayvnc>`_
+  `<https://github.com/any1/wayvnc>`_
 
 Wf-Recorder
   Record MP4 video of your desktop with this program.

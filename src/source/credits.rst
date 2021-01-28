@@ -23,7 +23,7 @@ Printed in Berlin.
 
 :Accounting: Christian Heller
 
-:Help and Consulting: Daniel Amor (RBZ.es), Felix Schneider, Zoé & Elen (Fully Automated), timonsku, Lukas Stach, Marek Vasut, Christian Gmeiner, Daniel Stone, Chris Healy, Drew Fustini, Jonas Haring, Philip Steffan, Florian Hadler (Interface Critique), Felix Bayer, Nils Dagsson Moskopp, Li0n, schneider, Sven Gebhardt, Jan Varwig, Gabriel Yoran, Martin Meyerhoff, Stefan Kalkowski, GyrosGeier, Philipp Dikmann, Michael Christophersson, Markus Angermeier
+:Help and Consulting: Daniel Amor (RBZ.es), Felix Schneider, Zoé & Elen (Fully Automated), Boundary Devices, timonsku, Lukas Stach, Marek Vasut, Christian Gmeiner, Daniel Stone, Simon Ser, Chris Healy, Drew Fustini, Jonas Haring, Philip Steffan, Florian Hadler (Interface Critique), Felix Bayer, Nils Dagsson Moskopp, Li0n, schneider, Sven Gebhardt, Jan Varwig, Gabriel Yoran, Martin Meyerhoff, Stefan Kalkowski, GyrosGeier, Philipp Dikmann, Michael Christophersson, Markus Angermeier
 
 :Therapy Dog: Tina
 
