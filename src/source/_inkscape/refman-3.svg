@@ -35,13 +35,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
-     inkscape:cx="272.38481"
-     inkscape:cy="283.8207"
+     inkscape:cx="347.89371"
+     inkscape:cy="299.33404"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="true"
-     inkscape:window-width="2560"
+     inkscape:window-width="1270"
      inkscape:window-height="1406"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -75,14 +75,14 @@
      id="layer1"
      style="display:inline">
     <image
-       sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/3t.png"
-       xlink:href="../_static/illustrations/3t.png"
-       y="45.634579"
-       x="0.84745508"
-       id="image2411"
-       preserveAspectRatio="none"
+       sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/3.png"
+       xlink:href="../_static/illustrations/3.png"
+       width="146.85492"
        height="83.815681"
-       width="146.85495" />
+       preserveAspectRatio="none"
+       id="image2411"
+       x="0.84745508"
+       y="45.634579" />
   </g>
   <g
      inkscape:groupmode="layer"

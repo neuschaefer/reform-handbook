@@ -15,7 +15,7 @@
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    sodipodi:docname="refman-2.svg"
-   inkscape:export-filename="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/2t-callouts.png"
+   inkscape:export-filename="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/2-callouts.png"
    inkscape:export-xdpi="600.0954"
    inkscape:export-ydpi="600.0954">
   <defs
@@ -38,10 +38,10 @@
      inkscape:cx="453.73895"
      inkscape:cy="310.66682"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="true"
-     inkscape:window-width="2560"
+     inkscape:window-width="1270"
      inkscape:window-height="1406"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -72,14 +72,14 @@
      inkscape:groupmode="layer"
      id="layer1">
     <image
-       sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/2t.png"
-       xlink:href="../_static/illustrations/2t.png"
-       y="10.586558"
-       x="0.15725827"
-       id="image10539"
-       preserveAspectRatio="none"
+       sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/2.png"
+       xlink:href="../_static/illustrations/2.png"
+       width="147.77232"
        height="105.6225"
-       width="147.77232" />
+       preserveAspectRatio="none"
+       id="image10539"
+       x="0.15725827"
+       y="10.586558" />
     <circle
        style="fill:red;fill-opacity:1;stroke:none;stroke-width:0.0999998;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="path1303-3-5-92"

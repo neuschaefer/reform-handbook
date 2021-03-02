@@ -34,7 +34,7 @@
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="true"
-     inkscape:window-width="2560"
+     inkscape:window-width="1270"
      inkscape:window-height="1406"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -55,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -64,14 +64,14 @@
      inkscape:groupmode="layer"
      id="layer1">
     <image
-       sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/28t.png"
-       xlink:href="../_static/illustrations/28t.png"
-       y="20.098196"
-       x="0.15884216"
-       id="image2625"
-       preserveAspectRatio="none"
+       sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/28.png"
+       xlink:href="../_static/illustrations/28.png"
+       width="147.90561"
        height="78.660019"
-       width="147.90559" />
+       preserveAspectRatio="none"
+       id="image2625"
+       x="0.15884216"
+       y="20.098196" />
     <text
        xml:space="preserve"
        style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"

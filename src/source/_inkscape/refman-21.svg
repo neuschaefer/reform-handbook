@@ -34,7 +34,7 @@
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="true"
-     inkscape:window-width="2560"
+     inkscape:window-width="1270"
      inkscape:window-height="1406"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -64,14 +64,14 @@
      inkscape:groupmode="layer"
      id="layer1">
     <image
-       sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/21t.png"
-       xlink:href="../_static/illustrations/21t.png"
-       width="109.63025"
-       height="74.964378"
-       preserveAspectRatio="none"
-       id="image6782"
+       sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/21.png"
+       xlink:href="../_static/illustrations/21.png"
+       y="18.937204"
        x="20.103657"
-       y="18.937204" />
+       id="image6782"
+       preserveAspectRatio="none"
+       height="74.964378"
+       width="109.63025" />
     <text
        xml:space="preserve"
        style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"

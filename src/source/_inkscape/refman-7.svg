@@ -28,13 +28,13 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="319.61107"
-     inkscape:cy="574.29108"
+     inkscape:cx="298.26371"
+     inkscape:cy="499.77655"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
-     inkscape:window-width="2560"
+     inkscape:window-width="1270"
      inkscape:window-height="1406"
      inkscape:window-x="0"
      inkscape:window-y="0"
@@ -55,7 +55,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -63,6 +63,15 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <image
+       sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/7.png"
+       xlink:href="../_static/illustrations/7.png"
+       width="130.49016"
+       height="254.42349"
+       preserveAspectRatio="none"
+       id="image917"
+       x="9.7684412"
+       y="10.024235" />
     <text
        xml:space="preserve"
        style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"
@@ -79,15 +88,6 @@
        d="M 51.589604,120 H 20"
        id="path200-7-5-1"
        sodipodi:nodetypes="cc" />
-    <image
-       sodipodi:absref="/home/mntmn/code/reform-handbook/src/source/_static/illustrations/7t.png"
-       xlink:href="../_static/illustrations/7t.png"
-       y="10.024235"
-       x="9.7684412"
-       id="image917"
-       preserveAspectRatio="none"
-       height="254.42348"
-       width="130.49016" />
     <text
        xml:space="preserve"
        style="font-size:3.52777px;line-height:1.25;font-family:Inter;-inkscape-font-specification:Inter;stroke-width:0.264583"

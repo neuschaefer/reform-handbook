@@ -103,7 +103,7 @@ Launch the GNOME desktop from the Linux console by typing:
 
 .. code-block:: none
 
- gnome-session
+ gnome
 
 After a while, the label "Activities" will appear in the top-left corner of the screen. Click this label to reveal the Activities overview. Alternatively, you can press the *SUPER* key to open this overview. From here, you can launch applications by typing their name. You can drag and drop applications that you commonly use into the "dock" on the left. Applications that are already running are displayed in the dock, too. Clicking on them will bring them to the foreground.
 

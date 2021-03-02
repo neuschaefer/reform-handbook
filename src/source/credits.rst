@@ -1,9 +1,11 @@
 Credits
 =======
 
+.. role:: raw-latex(raw)
+   :format: latex
+
 The MNT Reform Operator Handbook, First Edition. Berlin, January 2021.
 Written by Lukas F. Hartmann. Published by MNT Research GmbH.
-Printed in Berlin.
 
 :Concept, Electronics, Software: Lukas F. Hartmann
 
@@ -48,10 +50,21 @@ Printed in Berlin.
 | VAT ID: DE278908891
 | WEEE: DE 33315564
 | Web: https://mntre.com
-| Email: info@mntre.com
 
 MNT Reform is Open Source Hardware certified by OSHWA (UID DE000017).
 
-The sources for this handbook and most MNT Reform software components (check repositories for details) are licensed under GNU GPL v3 or newer. The artwork is licensed under CC BY-SA 4.0. The MNT Reform hardware design files are licensed under CERN-OHL-S 2.0.
+The sources for this handbook and most MNT Reform software components (check repositories for details) are licensed under GNU GPL v3 or newer. The artwork is licensed under CC BY-SA 4.0. The MNT Reform hardware design files are licensed under CERN-OHL-S 2.0. The MNT symbol is a registered trademark of MNT Research GmbH.
 
-The MNT symbol is a registered trademark of MNT Research GmbH.
+.. image:: _static/illustrations/pinguin-druck-icon.png
+   :width: 30%
+
+:raw-latex:`\newpage`
+
+:raw-latex:`\null`
+
+:raw-latex:`\newpage\vspace*{\fill}\begingroup\centering`
+
+| We don't have to be mean, cause, remember:
+| no matter where you go, there you are.
+
+:raw-latex:`\endgroup\vspace*{\fill}`
