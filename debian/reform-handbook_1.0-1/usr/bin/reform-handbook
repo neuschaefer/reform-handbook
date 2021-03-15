@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ -z ${DISPLAY+x} ]
+then
+  # not running under X/wayland
+  elinks /usr/share/doc/reform-handbook/html/index.html
+else
+  xdg-open /usr/share/doc/reform-handbook/html/index.html
+fi
