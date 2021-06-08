@@ -214,7 +214,7 @@ The default display in MNT Reform conforms to the eDP (embedded DisplayPort) sta
 Heatsink
 ========
 
-The heatsink is a piece of milled aluminum that connects to the silicon die of the main SoC on the CPU module, with a dab of thermal paste applied on the die. The heatsink is fixed to the motherboard by four M2x14 screws. The screws are supported by four plastic cylindrical spacers.
+The heatsink is a piece of milled aluminum that connects to the silicon die of the main SoC on the CPU module, with a dab of thermal paste applied on the die. The heatsink is fixed to the motherboard by four M2x12 screws. The screws are supported by four plastic cylindrical spacers.
 
 Keyboard
 ========
