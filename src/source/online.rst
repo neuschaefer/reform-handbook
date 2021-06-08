@@ -8,7 +8,7 @@ Get the latest news and additional resources for your MNT Reform at:
 - MNT Reform on Crowd Supply: `<https://www.crowdsupply.com/mnt/reform>`_
 - For email support, contact: support@mntre.com
 
-You can join fellow MNT Reform enthusiasts in the official IRC channel ``#reform`` on ``irc.freenode.net``.
+You can join fellow MNT Reform enthusiasts in the official IRC channel ``#mnt-reform`` on ``irc.libera.chat``.
 
 Discover more about the main software building blocks of the MNT Reform system:
 
