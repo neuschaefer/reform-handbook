@@ -1,11 +1,15 @@
 #!/bin/bash
 
-version="1.0-1"
+version="1.0-3"
 target="./reform-handbook_${version}/usr/share/doc/reform-handbook"
+
+mkdir -p "${target}/usr/bin"
+cp reform-handbook "${target}/usr/bin/"
 
 mkdir -p "${target}/html"
 rm -r "${target}/html"
 
+cp -Rv ./DEBIAN "./reform-handbook_${version}/"
 cp -Rv ../src/build/html "${target}/"
 
 rm "${target}/html/_static/schem/"*.sla

@@ -1,0 +1,9 @@
+Package: reform-handbook
+Version: 1.0-2
+Section: base
+Priority: optional
+Architecture: all
+Depends: bash, xdg-utils, elinks
+Maintainer: Lukas F. Hartmann <lukas@mntre.com>
+Description: MNT Reform Operator Handbook
+ The HTML version of the handbook for the MNT Reform OSHW laptop, plus a helper script /usr/bin/reform-handbook which opens the web pages using xdg-open or elinks. Includes a copy of the Inter font by rsms.
