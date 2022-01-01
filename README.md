@@ -44,7 +44,7 @@ firefox build/html/index.html
 ### Build LaTeX/PDF version
 
 ```bash
-cd src/source
+cd src
 ./build-pdf-book.sh
 ```
 
