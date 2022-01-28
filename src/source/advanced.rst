@@ -18,7 +18,7 @@ As always, before working with MNT Reform internals, first disconnect the intern
 Serial Console
 ++++++++++++++
 
-The motherboard connector labeled SER1 is a serial port (UART) to which U-Boot and the Linux kernel output diagnostic information on startup. The baud rate is 115200, 8N1.
+The motherboard connector labeled S1 is a serial port (UART) to which U-Boot and the Linux kernel output diagnostic information on startup. The baud rate is 115200, 8N1.
 
 Wire up a generic USB-to-UART adapter to the following pins of connector J18:
 
@@ -88,7 +88,7 @@ The default boot script will load the DTB and Kernel Image from the SD card usin
 
 This means that the Kernel and DTB files reside in the root directory of the boot medium, which has to be the first partition, Ext4 formatted.
 
-You can interrupt this script within the first second of boot by sending a character (key press) via the SER1 UART and type ``help`` to get a list of supported commands. You can inspect all environment variables with the ``printenv`` command.
+You can interrupt this script within the first second of boot by sending a character (key press) via the S1 UART and type ``help`` to get a list of supported commands. You can inspect all environment variables with the ``printenv`` command.
 
 The Linux kernel parameters are passed via the ``bootargs`` U-Boot environment variable:
 
@@ -98,7 +98,7 @@ The Linux kernel parameters are passed via the ``bootargs`` U-Boot environment v
      console=ttymxc0,115200 console=tty1 cma=512M
      pci=nomsi
 
-This tells the kernel to mount the root filesystem from the ``mmcblk1p1`` device, which is the first partition on the SD card. To boot from the second partition, for example, you would change this to ``mmcblk1p2``. ``mmcblk0...`` is the eMMC flash. ``ttymxc0`` is the serial UART SER1. ``cma=512M`` sets up a memory area for contiguous allocation for the GPU. ``pci=nomsi`` turns off message-signaled interrupts (MSI) for the PCIe controller, which helps with some WiFi cards.
+This tells the kernel to mount the root filesystem from the ``mmcblk1p1`` device, which is the first partition on the SD card. To boot from the second partition, for example, you would change this to ``mmcblk1p2``. ``mmcblk0...`` is the eMMC flash. ``ttymxc0`` is the serial UART S1. ``cma=512M`` sets up a memory area for contiguous allocation for the GPU. ``pci=nomsi`` turns off message-signaled interrupts (MSI) for the PCIe controller, which helps with some WiFi cards.
 
 Operating System on NVMe
 ------------------------
