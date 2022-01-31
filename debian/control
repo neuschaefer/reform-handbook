@@ -1,0 +1,26 @@
+Source: reform-handbook
+Section: doc
+Priority: optional
+Maintainer: Lukas F. Hartmann <lukas@mntre.com>
+Uploaders: Johannes Schauer Marin Rodrigues <josch@debian.org>
+Homepage: https://source.mnt.re/reform/reform-handbook/
+Standards-Version: 4.6.0.1
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-sphinxdoc,
+               fonts-inter,
+               ghostscript,
+               pandoc,
+               python3-sphinx,
+               texlive-font-utils,
+               texlive-fonts-recommended,
+               texlive-latex-extra,
+               texlive-xetex
+Rules-Requires-Root: no
+
+Package: reform-handbook
+Architecture: all
+Depends: elinks, xdg-utils, ${misc:Depends}, ${sphinxdoc:Depends}
+Description: MNT Reform Operator Handbook
+ The HTML version of the handbook for the MNT Reform OSHW laptop, plus a helper
+ script /usr/bin/reform-handbook which opens the web pages using xdg-open or
+ elinks.
