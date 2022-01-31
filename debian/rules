@@ -1,0 +1,12 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	make -C src html
+	env --chdir=src ./build-pdf-book.sh
+	find src/build/html/_static -name '*.sla' -delete
+
+override_dh_compress:
+	dh_compress -X.csv -X.eps -X.pdf -X.sla -X.ttf
