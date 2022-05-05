@@ -41,7 +41,7 @@ If you then switch on Reform (powered by the wall adapter) with the provided SD 
 Power Rails
 +++++++++++
 
-Reform will accept 9-32V of DC power on barrel jack J1. The nominal input voltage is 24V. If you can't measure the input voltage on R49, check if fuse F1 is blown.
+Reform will accept 9-32V of DC power on barrel jack J1. The barrel jack plug is sized with 5.5 mm outer diameter (OD) and 2.1 mm inner diameter (ID), with positive inner contact (IEC 60130-10:1971 Type A). The nominal input voltage is 24V. If you can't measure the input voltage on R49, check if fuse F1 is blown.
 
 Either wall or battery power will be regulated to ~29V by the buck-boost regulator/charger LTC4020 and output to the main system regulators. U14 is the always-on 3V3 regulator that powers critical chips like the System Controller (LPC11U24, U18). You can confirm LPC_VCC power with 3.3V on J22 pin 15.
 
