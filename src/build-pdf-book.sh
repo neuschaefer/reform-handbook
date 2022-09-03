@@ -32,10 +32,10 @@ done
 cat _tex/post.tex >>reform-handbook.tex
 
 # generate reform-handbook.pdf
-xelatex reform-handbook.tex
+xelatex --interaction=nonstopmode reform-handbook.tex
 # thrice to get the TOC right
-xelatex reform-handbook.tex
-xelatex reform-handbook.tex
+xelatex --interaction=nonstopmode reform-handbook.tex
+xelatex --interaction=nonstopmode reform-handbook.tex
 
 # clean up
 mv reform-handbook.pdf ../build/
