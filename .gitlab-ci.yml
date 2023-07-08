@@ -3,8 +3,7 @@ image: bitnami/minideb:latest
 build:
   script:
     - apt update
-    - apt install -y --no-install-recommends python3-pip texlive-xetex texlive-latex-extra pandoc wget unzip fontconfig texlive-font-utils texlive-fonts-recommended ghostscript
-    - pip3 install sphinx
+    - apt install -y --no-install-recommends python3-sphinx texlive-xetex texlive-latex-extra pandoc wget unzip fontconfig texlive-font-utils texlive-fonts-recommended ghostscript
     - wget https://github.com/rsms/inter/releases/download/v3.15/Inter-3.15.zip
     - mkdir -p ~/.local/share/fonts
     - unzip Inter-3.15.zip
