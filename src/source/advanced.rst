@@ -58,6 +58,8 @@ The System Controller has to have working firmware to turn on the main power rai
 System Boot
 -----------
 
+TODO: This section must be completely rewritten and potentially a chapter about the different CPU modules inserted.
+
 i.MX8MQ will try to load boot code from either the eMMC flash on the module or from the SD card (default), depending on the setting of the DIP switch on the Nitrogen8M_SOM module. MNT Reform comes with the U-Boot bootloader on both the eMMC and on the SD Card.
 
 U-Boot is a mini operating system and shell that allows you to inspect parts of the system (like PCIe, USB devices or Ethernet) and set up parameters to be passed to the real operating system kernel such as Linux, and start it.
