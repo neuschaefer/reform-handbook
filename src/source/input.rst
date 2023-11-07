@@ -13,12 +13,14 @@ The biggest difference is the split spacebar: instead of one long key, there are
 
 This makes the use of *CTRL* key combinations more ergonomic. Next to the *CTRL* key is a key with 3 dots (an ellipsis). This is normally the Menu key, but on the default MNT Reform system software, it is mapped to *Compose* (a key that allows you to generate Unicode symbols from Compose sequences). Lastly, MNT Reform features an additional modifier key, the *HYPER* key, in the lower left. The idea is to let you assign this key to whatever function you require.
 
+.. _oled-menu:
+
 OLED Menu
 ---------
 
 .. image:: _static/illustrations/oled1-callouts.png
 
-The keyboard has a built-in OLED display for interaction with the System Controller on the motherboard. You can highlight an option and scroll through the menu by using the *↑* and *↓* keys. To trigger the highlighted option, press *ENTER*. Alternatively, you can press the shortcut key that is displayed on the right hand side of each menu option. For example, to show the Battery Status, press *B* when the menu is active. To leave the menu, press *ESC*.
+The keyboard has a built-in OLED display for interaction with the System Controller on the motherboard. You can open the OLED menu by pressing the *circle* key. Afterwards, you can highlight an option and scroll through the menu by using the *↑* and *↓* keys. To trigger the highlighted option, press *ENTER*. Alternatively, you can press the shortcut key that is displayed on the right hand side of each menu option. For example, to show the Battery Status, press *B* when the menu is active. To leave the menu, press *ESC*.
 
 .. image:: _static/illustrations/oled2-callouts.png
 

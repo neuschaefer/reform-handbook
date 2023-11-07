@@ -117,6 +117,8 @@ It accepts commands in the form of a single letter followed by return. A command
 - *s*: Get System Controller state (a message string)
 - *g*: Get estimated "fuel gauge" of batteries (percentage)
 
+Note that the keyboard shortcuts for these commands are slightly different — see :ref:`oled-menu`.
+
 The individual cell voltages are measured by the Battery Monitor LTC6803IG-4#PBF and reported via SPI to the System Controller. The total voltage and current are measured by the INA260 chip and reported via I²C.
 
 To understand the available commands in more detail, you can take a look at the System Controller's ``handle_commands()`` function.
